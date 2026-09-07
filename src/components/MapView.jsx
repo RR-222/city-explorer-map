@@ -2,10 +2,11 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 
-// Fix default icon issue in some bundlers
+// Fix default icon paths for Leaflet (CDN images)
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+  iconRetinaUrl:
+    'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
   iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
@@ -14,18 +15,34 @@ function ClickAdd({ onAdd }) {
   useMapEvents({
     click(e) {
       onAdd({ lat: e.latlng.lat, lng: e.latlng.lng });
-    }
+    },
   });
   return null;
 }
 
 export default function MapView({ places = [], onMapClick }) {
+  const tk = import.meta.env.VITE_TDT_KEY || ''; // ensure defined
+
   return (
-    <MapContainer center={[31.2304, 121.4737]} zoom={13} style={{ height: '100%' }}>
-      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+    <MapContainer center={[31.2304, 121.4737]} zoom={12} style={{ height: '100%' }}>
+      {/* Tianditu 矢量底图（中文） */}
+      <TileLayer
+        url={`https://t{s}.tianditu.gov.cn/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=${tk}`}
+        subdomains={"01234567"}
+        attribution="&copy; 天地图"
+      />
+
+      {/* 注记层（让中文标签显示） */}
+      <TileLayer
+        url={`https://t{s}.tianditu.gov.cn/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=${tk}`}
+        subdomains={"01234567"}
+        attribution=""
+      />
+
       {onMapClick && <ClickAdd onAdd={onMapClick} />}
+
       {places.map((p) => (
-        <Marker key={p.id || `${p.lat}-${p.lng}-${Math.random()}`} position={[p.lat, p.lng]}>
+        <Marker key={p.id ?? `${p.lat}-${p.lng}-${Math.random()}`} position={[p.lat, p.lng]}>
           <Popup>
             <div style={{ maxWidth: 240 }}>
               <div style={{ fontWeight: 600 }}>{p.name}</div>
