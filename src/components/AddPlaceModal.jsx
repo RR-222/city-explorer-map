@@ -74,13 +74,26 @@ export default function AddPlaceModal({ coords, onClose, onSaved }) {
         photos.push(publicUrl);
       }
 
-      // 插入 places 表
+      // 获取当前登录用户并把 owner 设置为 user.id（避免 RLS 拒绝）
+      const {
+        data: { user },
+        error: userError,
+      } = await supabase.auth.getUser();
+
+      if (userError) {
+        console.warn('getUser error', userError);
+      }
+
+      const owner = user?.id ?? null;
+
+      // 插入 places 表（包含 owner 字段以满足 RLS 策略）
       const toInsert = {
         name,
         description,
         lat: coords.lat,
         lng: coords.lng,
-        photos
+        photos,
+        owner,
       };
 
       const { data: insertData, error: insertError } = await supabase
