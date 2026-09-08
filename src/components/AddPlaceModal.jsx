@@ -84,17 +84,20 @@ export default function AddPlaceModal({ coords, onClose, onSaved }) {
         console.warn('getUser error', userError);
       }
 
-      const owner = user?.id ?? null;
+      const userId = user?.id ?? null;
 
-      // 插入 places 表（包含 owner 字段以满足 RLS 策略）
+      if (!userId) {
+        throw new Error('未登录，无法保存');
+      }
+
+      // 插入 places 表（user_id 用于 RLS 策略）
       const toInsert = {
         name,
         description,
         lat: coords.lat,
         lng: coords.lng,
         photos,
-        owner,
-        user_id: owner,
+        user_id: userId,
       };
 
       const { data: insertData, error: insertError } = await supabase
