@@ -94,6 +94,7 @@ export default function AddPlaceModal({ coords, onClose, onSaved }) {
         lng: coords.lng,
         photos,
         owner,
+        user_id: owner,
       };
 
       const { data: insertData, error: insertError } = await supabase
