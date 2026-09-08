@@ -1,54 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import MapView from './components/MapView';
-import AddPlaceModal from './components/AddPlaceModal';
-import './index.css';
-import 'leaflet/dist/leaflet.css';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import MapPage from './pages/MapPage';
 import { supabase } from './supabaseClient';
 
 export default function App() {
-  const [addingCoords, setAddingCoords] = useState(null);
-  const [places, setPlaces] = useState([]);
+  const [user, setUser] = useState(null);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    async function load() {
-      const { data, error } = await supabase.from('places').select('*');
-      if (error) console.error('load places error', error);
-      else setPlaces(data || []);
-    }
-    load();
+    let mounted = true;
+    (async () => {
+      const { data } = await supabase.auth.getUser();
+      if (!mounted) return;
+      setUser(data?.user ?? null);
+      setReady(true);
+    })();
+
+    const { subscription } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+
+    return () => {
+      mounted = false;
+      subscription?.unsubscribe();
+    };
   }, []);
 
-  const handleMapClick = (coords) => {
-    setAddingCoords(coords);
-  };
-
-  const handleSaved = (newPlace) => {
-    // newPlace may be the inserted row returned from Supabase or payload
-    setPlaces((prev) => {
-      const np = newPlace && newPlace.id ? newPlace : (newPlace && newPlace[0]) || newPlace;
-      return [ ...(prev || []), np ];
-    });
-  };
+  if (!ready) return <div />;
 
   return (
-    <div className="h-screen flex flex-col">
-      <header className="p-4 bg-indigo-600 text-white">
-        <h1 className="text-xl font-semibold">City Explorer Map (Local Prototype)</h1>
-      </header>
-      <main className="flex-1">
-        <MapView places={places} onMapClick={handleMapClick} />
-      </main>
-
-      {addingCoords && (
-        <AddPlaceModal
-          coords={addingCoords}
-          onClose={() => setAddingCoords(null)}
-          onSaved={(p) => {
-            handleSaved(p);
-            setAddingCoords(null);
-          }}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={user ? <MapPage /> : <Navigate to="/register" replace />}
         />
-      )}
-    </div>
+      </Routes>
+    </BrowserRouter>
   );
 }
