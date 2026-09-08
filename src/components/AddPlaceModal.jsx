@@ -1,144 +1,129 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabaseClient';
-import { v4 as uuidv4 } from 'uuid';
 
 export default function AddPlaceModal({ coords, onClose, onSaved }) {
   const [name, setName] = useState('');
-  const [note, setNote] = useState('');
-  const [cost, setCost] = useState('');
-  const [files, setFiles] = useState([]);
-  const [previews, setPreviews] = useState([]);
+  const [description, setDescription] = useState('');
+  const [file, setFile] = useState(null);
+  const [preview, setPreview] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [errorMsg, setErrorMsg] = useState(null);
+  const bucket = 'places-photos';
 
-  const bucket = import.meta.env.VITE_SUPABASE_BUCKET || 'places-photos';
-
-  function handleFilesChange(e) {
-    const chosen = Array.from(e.target.files || []);
-    setFiles(chosen);
-    const p = chosen.map((f) => URL.createObjectURL(f));
-    setPreviews(p);
-  }
-
-  async function uploadFiles(placeId) {
-    if (!files.length) return [];
-
-    const uploadedUrls = [];
-    for (const file of files) {
-      const ext = file.name.split('.').pop();
-      const path = `${placeId}/${Date.now()}_${uuidv4()}.${ext}`;
-      const { data: uploadData, error: uploadError } = await supabase.storage
-        .from(bucket)
-        .upload(path, file, { cacheControl: '3600', upsert: false });
-
-      if (uploadError) {
-        console.error('Supabase upload error', uploadError);
-        throw new Error(uploadError.message || 'Upload failed');
-      }
-
-      const { data: publicData } = await supabase.storage.from(bucket).getPublicUrl(path);
-      if (publicData?.publicUrl) {
-        uploadedUrls.push(publicData.publicUrl);
-      } else {
-        const { data: signedData, error: signedErr } = await supabase.storage
-          .from(bucket)
-          .createSignedUrl(path, 3600);
-        if (signedErr) {
-          console.error('createSignedUrl error', signedErr);
-          throw new Error(signedErr.message || 'Signed URL failed');
-        }
-        uploadedUrls.push(signedData.signedUrl);
-      }
+  const handleFileChange = (e) => {
+    const f = e.target.files?.[0];
+    if (f) {
+      setFile(f);
+      setPreview(URL.createObjectURL(f));
     }
-    return uploadedUrls;
-  }
+  };
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setErrorMsg(null);
+  const handleSave = async () => {
+    if (!name) {
+      alert('请填写名称');
+      return;
+    }
     setLoading(true);
-
-    const placeId = uuidv4();
-
     try {
-      const { data: userData } = await supabase.auth.getUser();
-      const userId = userData?.user?.id || null;
+      let photos = [];
 
-      const photoUrls = await uploadFiles(placeId);
+      if (file) {
+        // 生成不带前导斜杠的路径（必须）
+        const ext = file.name.split('.').pop();
+        const filename = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+        const path = filename; // 或 `places/${filename}` (不要以 '/' 开头)
 
-      const payload = {
-        id: placeId,
-        user_id: userId,
-        name: name || 'Untitled',
-        description: note || '',
-        lat: coords?.lat ?? null,
-        lng: coords?.lng ?? null,
-        photos: photoUrls,
-        cost: cost ? Number(cost) : null,
-        time_start: new Date().toISOString(),
-        visibility: 'private'
+        // 上传（注意检查返回的 error）
+        const { data: uploadData, error: uploadError } = await supabase
+          .storage
+          .from(bucket)
+          .upload(path, file, { cacheControl: '3600', upsert: false });
+
+        if (uploadError) throw uploadError;
+
+        // 如果 bucket 是 public，getPublicUrl 返回 publicUrl
+        const { data: publicData, error: publicError } = await supabase
+          .storage
+          .from(bucket)
+          .getPublicUrl(path);
+
+        if (publicError) {
+          // 不终止：我们在这里记录并尝试使用 signed URL（见下）
+          console.warn('getPublicUrl error', publicError);
+        }
+
+        let publicUrl = publicData?.publicUrl ?? publicData?.publicURL ?? '';
+
+        // 如果没有 publicUrl（bucket 为 private），尝试生成 signed URL（需要后端 service_role 权限有时）
+        if (!publicUrl) {
+          const { data: signedData, error: signedErr } = await supabase
+            .storage
+            .from(bucket)
+            .createSignedUrl(path, 60 * 60); // 1 hour
+
+          if (signedErr) {
+            console.warn('createSignedUrl error', signedErr);
+          } else {
+            publicUrl = signedData?.signedUrl ?? signedData?.signedURL ?? '';
+          }
+        }
+
+        if (!publicUrl) {
+          throw new Error('无法获取图片访问 URL，请检查 bucket 权限或 storage policy');
+        }
+
+        photos.push(publicUrl);
+      }
+
+      // 插入 places 表
+      const toInsert = {
+        name,
+        description,
+        lat: coords.lat,
+        lng: coords.lng,
+        photos
       };
 
-      const { data, error } = await supabase.from('places').insert([payload]);
+      const { data: insertData, error: insertError } = await supabase
+        .from('places')
+        .insert(toInsert)
+        .select()
+        .single();
 
-      if (error) {
-        console.error('insert place error', error);
-        setErrorMsg(error.message || 'Failed to save place');
-      } else {
-        onSaved && onSaved(data?.[0] ?? payload);
-        onClose && onClose();
-      }
+      if (insertError) throw insertError;
+
+      onSaved && onSaved(insertData);
+      onClose && onClose();
     } catch (err) {
-      console.error('AddPlaceModal unexpected error', err);
-      setErrorMsg(err.message || String(err));
+      console.error('保存失败', err);
+      alert('保存失败: ' + (err.message || JSON.stringify(err)));
     } finally {
       setLoading(false);
     }
-  }
+  };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-50 p-4">
-      <form onSubmit={handleSubmit} className="bg-white rounded p-4 w-full max-w-md">
-        <h2 className="text-lg font-semibold mb-2">添加地点</h2>
-        <p className="text-sm text-gray-600 mb-2">坐标: {coords?.lat?.toFixed?.(6) ?? '-'}, {coords?.lng?.toFixed?.(6) ?? '-'}</p>
-
-        <label className="block mb-2">
-          <div className="text-sm">名称</div>
-          <input required value={name} onChange={(e) => setName(e.target.value)} className="w-full border p-2" />
-        </label>
-
-        <label className="block mb-2">
-          <div className="text-sm">备注 / 感想</div>
-          <textarea value={note} onChange={(e) => setNote(e.target.value)} className="w-full border p-2" />
-        </label>
-
-        <label className="block mb-2">
-          <div className="text-sm">花销（可选）</div>
-          <input value={cost} onChange={(e) => setCost(e.target.value)} className="w-full border p-2" />
-        </label>
-
-        <label className="block mb-2">
-          <div className="text-sm">照片（可选）</div>
-          <input type="file" multiple accept="image/*" onChange={handleFilesChange} />
-        </label>
-
-        {previews.length > 0 && (
-          <div className="grid grid-cols-4 gap-2 mt-2">
-            {previews.map((src, i) => (
-              <img key={i} src={src} alt={`preview-${i}`} className="w-full h-20 object-cover rounded" />
-            ))}
-          </div>
-        )}
-
-        {errorMsg && <div className="text-red-600 mt-2">{errorMsg}</div>}
-
-        <div className="flex justify-end gap-2 mt-4">
-          <button type="button" onClick={onClose} className="px-3 py-1 border rounded" disabled={loading}>取消</button>
-          <button type="submit" className="px-3 py-1 bg-indigo-600 text-white rounded" disabled={loading}>
-            {loading ? '保存中...' : '保存'}
-          </button>
+    <div style={{ position:'fixed', left:0, right:0, top:0, bottom:0, display:'flex', alignItems:'center', justifyContent:'center', background:'rgba(0,0,0,0.4)', zIndex:9999 }}>
+      <div style={{ width:400, background:'#fff', padding:16, borderRadius:8 }}>
+        <h3>添加地点</h3>
+        <div>坐标: {coords.lat.toFixed(5)}, {coords.lng.toFixed(5)}</div>
+        <div style={{ marginTop:8 }}>
+          <label>名称（必填）</label><br />
+          <input value={name} onChange={(e)=>setName(e.target.value)} style={{ width:'100%' }} />
         </div>
-      </form>
+        <div style={{ marginTop:8 }}>
+          <label>描述</label><br />
+          <textarea value={description} onChange={(e)=>setDescription(e.target.value)} style={{ width:'100%' }} />
+        </div>
+        <div style={{ marginTop:8 }}>
+          <label>图片（可选）</label><br />
+          <input type="file" accept="image/*" onChange={handleFileChange} />
+          {preview && <img src={preview} alt="preview" style={{ width:'100%', marginTop:8 }} />}
+        </div>
+        <div style={{ display:'flex', justifyContent:'flex-end', gap:8, marginTop:12 }}>
+          <button onClick={onClose} disabled={loading}>取消</button>
+          <button onClick={handleSave} disabled={loading}>{loading ? '保存中...' : '保存'}</button>
+        </div>
+      </div>
     </div>
   );
 }
