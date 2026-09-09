@@ -35,8 +35,21 @@ export default function MapView({ places = [], onMapClick }) {
   const tdtVecUrl = `https://t0.tianditu.gov.cn/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(tdtKey)}`;
   const tdtCvaUrl = `https://t0.tianditu.gov.cn/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(tdtKey)}`;
 
+  // 上海行政区域边界（含崇明岛），稍微外扩让边缘可见
+  const shanghaiBounds = [
+    [30.60, 120.80], // 西南
+    [31.95, 122.25], // 东北
+  ];
+
   return (
-    <MapContainer center={[31.2304, 121.4737]} zoom={12} style={{ height: '100%', width: '100%' }}>
+    <MapContainer
+      center={[31.2304, 121.4737]}
+      zoom={12}
+      minZoom={10}
+      maxBounds={shanghaiBounds}
+      maxBoundsViscosity={1.0}
+      style={{ height: '100%', width: '100%' }}
+    >
       {/* Tianditu 矢量底图（中文） */}
       <TileLayer url={tdtVecUrl} attribution="&copy; 天地图" />
 
