@@ -95,6 +95,7 @@ export default function ProfilePage() {
         <div className="user-area">
           {user ? (
             <>
+              <Link to="/achievements" className="link">成就</Link>
               <span>{user.email}</span>
               <button
                 onClick={async () => {

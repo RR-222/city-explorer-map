@@ -64,6 +64,7 @@ export default function MapPage() {
           {user ? (
             <>
               <span>{user.email}</span>
+              <Link to="/achievements" className="link">成就</Link>
               <Link to="/profile" className="link">个人中心</Link>
               <button
                 onClick={async () => {

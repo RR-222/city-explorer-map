@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabaseClient';
+import { getDistrict } from '../utils/geocode';
 
 export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
   const isEdit = !!place;
@@ -84,6 +85,9 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
       const padHour = (h) => (h === '' || h == null ? '00' : String(h).padStart(2, '0'));
       const buildTs = (date, hour) => (date ? `${date}T${padHour(hour)}:00:00` : null);
 
+      // 逆地理编码获取所在区（用于区域成就），失败不阻断保存
+      const district = await getDistrict(lat, lng);
+
       const payload = {
         name,
         description,
@@ -95,6 +99,7 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
         cost: cost === '' ? null : Number(cost),
         visibility,
         photos,
+        district,
         user_id: userId,
       };
 
