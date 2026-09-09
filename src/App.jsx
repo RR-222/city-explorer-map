@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import MapPage from './pages/MapPage';
+import ProfilePage from './pages/ProfilePage';
 import { supabase } from './supabaseClient';
 
 export default function App() {
@@ -38,6 +39,10 @@ export default function App() {
         <Route
           path="/"
           element={user ? <MapPage /> : <Navigate to="/register" replace />}
+        />
+        <Route
+          path="/profile"
+          element={user ? <ProfilePage /> : <Navigate to="/register" replace />}
         />
       </Routes>
     </BrowserRouter>

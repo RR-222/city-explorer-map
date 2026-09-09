@@ -49,3 +49,25 @@ button.link { background:none; border:none; color:#2563eb; cursor:pointer; margi
 /* Modal basic */
 .modal-backdrop { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.35); z-index:9999; }
 .modal-card { width:400px; background:#fff; padding:16px; border-radius:8px; }
+
+/* Profile page */
+.profile-page { max-width: 960px; margin: 0 auto; padding: 24px 16px; }
+.place-list { display: flex; flex-direction: column; gap: 16px; }
+.place-card { background:#fff; border:1px solid #eee; border-radius:8px; padding:16px; display:flex; gap:16px; }
+.place-card-photos { display:flex; gap:8px; flex-shrink:0; }
+.place-card-photos img { width:80px; height:80px; object-fit:cover; border-radius:6px; }
+.place-card-info { flex:1; }
+.place-card-info .meta { color:#888; font-size:13px; margin-top:8px; }
+.place-actions { display:flex; gap:8px; align-self:flex-start; }
+.tag-chip { display:inline-block; background:#eef; padding:2px 8px; border-radius:12px; font-size:12px; margin-right:4px; }
+
+/* Form fields */
+.form-field { margin-top:8px; }
+.form-field label { display:block; font-size:13px; color:#666; margin-bottom:4px; }
+.form-field input, .form-field select, .form-field textarea { width:100%; padding:6px 8px; box-sizing:border-box; }
+
+/* Photo thumbnails (with delete button) */
+.photo-thumbs { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+.photo-thumb { position:relative; }
+.photo-thumb img { width:80px; height:80px; object-fit:cover; border-radius:6px; }
+.photo-thumb button { position:absolute; top:-6px; right:-6px; background:#e55; color:#fff; border:none; border-radius:50%; width:20px; height:20px; cursor:pointer; display:flex; align-items:center; justify-content:center; line-height:1; }

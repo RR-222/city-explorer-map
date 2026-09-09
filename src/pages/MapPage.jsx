@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import MapView from '../components/MapView';
 import AddPlaceModal from '../components/AddPlaceModal';
 import { supabase } from '../supabaseClient';
@@ -63,6 +64,7 @@ export default function MapPage() {
           {user ? (
             <>
               <span>{user.email}</span>
+              <Link to="/profile" className="link">个人中心</Link>
               <button
                 onClick={async () => {
                   await supabase.auth.signOut();

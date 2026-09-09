@@ -36,7 +36,7 @@ export default function MapView({ places = [], onMapClick }) {
   const tdtCvaUrl = `https://t0.tianditu.gov.cn/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(tdtKey)}`;
 
   return (
-    <MapContainer center={[31.2304, 121.4737]} zoom={12} style={{ height: '80vh', width: '100%' }}>
+    <MapContainer center={[31.2304, 121.4737]} zoom={12} style={{ height: '100%', width: '100%' }}>
       {/* Tianditu 矢量底图（中文） */}
       <TileLayer url={tdtVecUrl} attribution="&copy; 天地图" />
 
