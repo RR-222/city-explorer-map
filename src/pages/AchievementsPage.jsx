@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { supabase } from '../supabaseClient';
+import { useToast } from '../components/Toast';
+import Brand from '../components/Brand';
 import { SHANGHAI_DISTRICTS, getDistrict } from '../utils/geocode';
 
 // 徽章定义：按已解锁区数触发
@@ -13,6 +15,7 @@ const BADGES = [
 ];
 
 export default function AchievementsPage() {
+  const toast = useToast();
   const [places, setPlaces] = useState([]);
   const [user, setUser] = useState(null);
   const [enriching, setEnriching] = useState(false);
@@ -89,14 +92,14 @@ export default function AchievementsPage() {
       }
     }
     setEnriching(false);
-    if (updated > 0) alert(`已补全 ${updated} 个地点的区域信息`);
-    else alert('没有可补全的区域信息');
+    if (updated > 0) toast.success(`已补全 ${updated} 个地点的区域信息`);
+    else toast.info('没有可补全的区域信息');
   };
 
   return (
     <div className="app-root">
       <div className="topbar">
-        <Link to="/" className="brand" style={{ textDecoration: 'none', color: 'inherit' }}>← 返回地图</Link>
+        <Brand asLink to="/" />
         <div className="user-area">
           {user ? (
             <>
@@ -116,24 +119,22 @@ export default function AchievementsPage() {
         </div>
       </div>
 
-      <div className="profile-page">
-        <h2 style={{ marginTop: 0 }}>区域成就</h2>
+      <div className="page" id="main" tabIndex={-1}>
+        <div className="page-header">
+          <h2 className="page-title">区域成就</h2>
+        </div>
 
         {/* 进度总览 */}
-        <div style={{ background: '#fff', border: '1px solid #eee', borderRadius: 8, padding: 16, marginBottom: 24 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-            <span style={{ fontWeight: 600 }}>已解锁 {visitedCount} / {SHANGHAI_DISTRICTS.length} 个区</span>
-            <span style={{ color: '#888', fontSize: 13 }}>{progress}%</span>
+        <div className="progress-card">
+          <div className="progress-header">
+            <span className="progress-title">已解锁 {visitedCount} / {SHANGHAI_DISTRICTS.length} 个区</span>
+            <span className="progress-value">{progress}%</span>
           </div>
-          <div style={{ height: 10, background: '#eee', borderRadius: 5, overflow: 'hidden' }}>
-            <div style={{
-              height: '100%', width: `${progress}%`,
-              background: 'linear-gradient(90deg, #3b82f6, #10b981)',
-              transition: 'width 0.3s',
-            }} />
+          <div className="progress-track">
+            <div className="progress-fill" style={{ width: `${progress}%` }} />
           </div>
           {places.some((p) => !p.district) && (
-            <div style={{ marginTop: 12 }}>
+            <div className="progress-note">
               <button
                 onClick={enrichMissingDistricts}
                 disabled={enriching}
@@ -141,58 +142,42 @@ export default function AchievementsPage() {
               >
                 {enriching ? '补全中...' : '补全历史地点区域'}
               </button>
-              <span style={{ marginLeft: 8, color: '#888', fontSize: 12 }}>
-                （旧数据无区域信息，点击调用逆地理编码补全）
-              </span>
+              <span>旧数据无区域信息，点击调用逆地理编码补全</span>
             </div>
           )}
         </div>
 
         {/* 徽章区 */}
-        <h3 style={{ marginBottom: 8 }}>徽章</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 8, marginBottom: 20 }}>
+        <h3 className="section-title">徽章</h3>
+        <div className="badge-grid">
           {BADGES.map((b) => {
             const unlocked = visitedCount >= b.threshold;
             return (
               <div
                 key={b.id}
-                style={{
-                  background: unlocked ? '#fff' : '#f5f5f5',
-                  border: `2px solid ${unlocked ? '#f59e0b' : '#ddd'}`,
-                  borderRadius: 6,
-                  padding: '10px 4px',
-                  textAlign: 'center',
-                  opacity: unlocked ? 1 : 0.45,
-                }}
+                className={`badge-card ${unlocked ? 'unlocked' : ''}`}
               >
-                <div style={{ fontSize: 26 }}>{unlocked ? b.icon : '🔒'}</div>
-                <div style={{ fontWeight: 600, marginTop: 2, fontSize: 14 }}>{b.name}</div>
-                <div style={{ fontSize: 11, color: '#888' }}>{b.desc}</div>
+                <div className="badge-icon">{unlocked ? b.icon : '🔒'}</div>
+                <div className="badge-name">{b.name}</div>
+                <div className="badge-desc">{b.desc}</div>
               </div>
             );
           })}
         </div>
 
         {/* 16 区网格 */}
-        <h3 style={{ marginBottom: 8 }}>上海 16 区</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: 6 }}>
+        <h3 className="section-title">上海 16 区</h3>
+        <div className="district-grid">
           {SHANGHAI_DISTRICTS.map((d) => {
             const count = districtCounts[d] || 0;
             const visited = count > 0;
             return (
               <div
                 key={d}
-                style={{
-                  background: visited ? '#dbeafe' : '#fff',
-                  border: `1px solid ${visited ? '#3b82f6' : '#eee'}`,
-                  borderRadius: 5,
-                  padding: '10px 4px',
-                  textAlign: 'center',
-                  color: visited ? '#1e40af' : '#888',
-                }}
+                className={`district-cell ${visited ? 'visited' : ''}`}
               >
-                <div style={{ fontWeight: visited ? 600 : 400, fontSize: 13 }}>{d}</div>
-                <div style={{ fontSize: 11, marginTop: 2 }}>
+                <div className="district-name">{d}</div>
+                <div className="district-count">
                   {visited ? `${count}个` : '未解锁'}
                 </div>
               </div>

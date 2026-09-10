@@ -1,5 +1,6 @@
-// 天地图逆地理编码工具
-// 根据经纬度返回所在区（county），用于区域成就功能
+// 天地图地理编码工具
+// 正向：地址 → 经纬度
+// 逆向：经纬度 → 区名
 
 const getTdtKey = () => {
   if (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_TDT_KEY) {
@@ -11,6 +12,34 @@ const getTdtKey = () => {
   }
   return '';
 };
+
+// 正向地理编码：地址 → { lat, lng, district }
+// addr 示例："上海市徐汇区武康路113号" 或 "武康大楼"
+export async function geocodeAddress(addr) {
+  const tk = getTdtKey();
+  if (!tk) return null;
+
+  // 天地图正向地理编码：type=query 需指定 query 参数
+  const postStr = JSON.stringify({ keyWord: addr, queryLatitude: '39.904030', queryLongitude: '116.427030' });
+  const url = `https://api.tianditu.gov.cn/geocoder?postStr=${encodeURIComponent(postStr)}&type=query&tk=${encodeURIComponent(tk)}`;
+
+  try {
+    const res = await fetch(url);
+    const json = await res.json();
+    // 返回结构: { status, location: { lon, lat }, result: { addressComponent: { county } } }
+    const loc = json?.location;
+    if (!loc || loc.lat == null || loc.lon == null) return null;
+
+    return {
+      lat: loc.lat,
+      lng: loc.lon,
+      district: json?.result?.addressComponent?.county || null,
+    };
+  } catch (err) {
+    console.warn('正向地理编码失败', err);
+    return null;
+  }
+}
 
 // 逆地理编码：返回区名（如 "浦东新区"），失败返回 null
 export async function getDistrict(lat, lng) {

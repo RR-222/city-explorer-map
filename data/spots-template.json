@@ -1,0 +1,46 @@
+[
+  {
+    "name": "武康大楼",
+    "address": "上海市徐汇区武康路113号",
+    "description": "上海标志性历史建筑，街拍热门机位，建议工作日前往避开人流",
+    "district": "徐汇区",
+    "photos": [
+      "./data/photos/wukang-1.jpg"
+    ],
+    "seasons": [3, 4, 5, 10, 11],
+    "weather_tags": ["晴天", "日落", "夜景"],
+    "tags": ["小众", "老建筑", "街拍"],
+    "shoot_spots": [
+      {
+        "title": "对面人行道",
+        "address": "武康路对面人行道",
+        "tip": "下午4-5点光线最好，建议带中长焦",
+        "best_hour": "16:00-17:00"
+      }
+    ],
+    "source": "摄影社区整理",
+    "source_url": null
+  },
+  {
+    "name": "外滩源",
+    "address": "上海市黄浦区中山东一路33号",
+    "description": "外滩北端历史建筑群，人少机位多",
+    "district": "黄浦区",
+    "photos": [
+      "https://example.com/waitanyuan-1.jpg"
+    ],
+    "seasons": [3, 4, 5, 9, 10, 11],
+    "weather_tags": ["日出", "夜景", "晴天"],
+    "tags": ["小众", "老建筑", "江景"]
+  },
+  {
+    "name": "西岸美术馆大道",
+    "address": "上海市徐汇区龙腾大道",
+    "description": "滨江步道+工业遗存，适合漫步拍摄",
+    "district": "徐汇区",
+    "photos": [],
+    "seasons": [4, 5, 6, 9, 10],
+    "weather_tags": ["晴天", "多云", "日落"],
+    "tags": ["小众", "江景", "工业风"]
+  }
+]

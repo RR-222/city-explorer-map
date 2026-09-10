@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AddPlaceModal from '../components/AddPlaceModal';
+import Brand from '../components/Brand';
+import { useToast } from '../components/Toast';
+import { PlaceListSkeleton } from '../components/Skeleton';
 import { supabase } from '../supabaseClient';
+import EmptyState from '../components/EmptyState';
 
 export default function ProfilePage() {
+  const toast = useToast();
   const [places, setPlaces] = useState([]);
+  const [placesLoading, setPlacesLoading] = useState(true);
   const [user, setUser] = useState(null);
   const [editingPlace, setEditingPlace] = useState(null);
   const [deleting, setDeleting] = useState(null);
@@ -31,6 +37,7 @@ export default function ProfilePage() {
     const fetchPlaces = async () => {
       if (!user) {
         setPlaces([]);
+        setPlacesLoading(false);
         return;
       }
       const { data, error } = await supabase
@@ -40,9 +47,10 @@ export default function ProfilePage() {
         .order('created_at', { ascending: false });
       if (error) {
         console.error('load places error', error);
-        return;
+      } else {
+        setPlaces(data || []);
       }
-      setPlaces(data || []);
+      setPlacesLoading(false);
     };
     fetchPlaces();
   }, [user]);
@@ -68,7 +76,7 @@ export default function ProfilePage() {
       setPlaces((prev) => prev.filter((p) => p.id !== place.id));
     } catch (err) {
       console.error('删除失败', err);
-      alert('删除失败: ' + (err.message || ''));
+      toast.error('删除失败: ' + (err.message || ''));
     } finally {
       setDeleting(null);
     }
@@ -91,7 +99,7 @@ export default function ProfilePage() {
   return (
     <div className="app-root">
       <div className="topbar">
-        <Link to="/" className="brand" style={{ textDecoration: 'none', color: 'inherit' }}>← 返回地图</Link>
+        <Brand asLink to="/" />
         <div className="user-area">
           {user ? (
             <>
@@ -111,14 +119,20 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      <div className="profile-page">
-        <h2 style={{ marginTop: 0 }}>我的地点</h2>
+      <div className="page" id="main" tabIndex={-1}>
+        <div className="page-header">
+          <h2 className="page-title">我的地点</h2>
+        </div>
 
-        {places.length === 0 ? (
-          <div style={{ textAlign: 'center', padding: '48px 16px', color: '#888' }}>
-            <p>还没有添加任何地点</p>
-            <Link to="/" className="link">去地图添加</Link>
-          </div>
+        {placesLoading ? (
+          <PlaceListSkeleton />
+        ) : places.length === 0 ? (
+          <EmptyState
+            title="还没有地点"
+            description="在地图上标记你去过的地方，开始记录城市足迹。"
+          >
+            <Link to="/" className="primary">去地图添加</Link>
+          </EmptyState>
         ) : (
           <div className="place-list">
             {places.map((place) => (
@@ -129,12 +143,12 @@ export default function ProfilePage() {
                       <img key={url} src={url} alt={place.name} />
                     ))
                   ) : (
-                    <div style={{ width: 80, height: 80, background: '#f0f0f0', borderRadius: 6, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#aaa', fontSize: 12 }}>无图</div>
+                    <div className="photo-placeholder">无图</div>
                   )}
                 </div>
                 <div className="place-card-info">
-                  <h4 style={{ margin: '0 0 8px' }}>{place.name}</h4>
-                  {place.description && <div style={{ color: '#555', fontSize: 14 }}>{place.description}</div>}
+                  <h4>{place.name}</h4>
+                  {place.description && <div className="description">{place.description}</div>}
                   {(place.tags?.length ?? 0) > 0 && (
                     <div style={{ marginTop: 6 }}>
                       {place.tags.map((t) => (
@@ -159,8 +173,7 @@ export default function ProfilePage() {
                   <button
                     onClick={() => handleDelete(place)}
                     disabled={deleting === place.id}
-                    className="link"
-                    style={{ color: '#e55' }}
+                    className="link danger"
                   >
                     {deleting === place.id ? '删除中...' : '删除'}
                   </button>

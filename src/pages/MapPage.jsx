@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MapView from '../components/MapView';
 import AddPlaceModal from '../components/AddPlaceModal';
+import Brand from '../components/Brand';
 import { supabase } from '../supabaseClient';
 
 export default function MapPage() {
   const [places, setPlaces] = useState([]);
+  const [spots, setSpots] = useState([]);
   const [addingCoords, setAddingCoords] = useState(null);
   const [user, setUser] = useState(null);
 
@@ -15,7 +17,7 @@ export default function MapPage() {
       const { data } = await supabase.auth.getUser();
       if (!mounted) return;
       setUser(data?.user ?? null);
-    })();
+    });
 
     const { subscription } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
@@ -25,6 +27,23 @@ export default function MapPage() {
       mounted = false;
       subscription?.unsubscribe();
     };
+  }, []);
+
+  // 加载预设景点（spots，公开可读，不依赖登录）
+  useEffect(() => {
+    const fetchSpots = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('spots')
+          .select('*')
+          .order('created_at', { ascending: false });
+        if (error) throw error;
+        setSpots(data || []);
+      } catch (err) {
+        console.error('load spots error', err);
+      }
+    };
+    fetchSpots();
   }, []);
 
   useEffect(() => {
@@ -56,14 +75,21 @@ export default function MapPage() {
     setPlaces((p) => [newPlace, ...p]);
   };
 
+  // 点击景点标记：先弹 popup，后续可跳详情页
+  const handleSpotClick = (spot) => {
+    // TODO: 后续接景点详情页 navigate(`/spots/${spot.id}`)
+    console.log('spot clicked', spot.name);
+  };
+
   return (
     <div className="app-root">
       <div className="topbar">
-        <div className="brand">探索上海</div>
+        <Brand />
         <div className="user-area">
           {user ? (
             <>
               <span>{user.email}</span>
+              <Link to="/recommend" className="link">今日推荐</Link>
               <Link to="/achievements" className="link">成就</Link>
               <Link to="/profile" className="link">个人中心</Link>
               <button
@@ -76,12 +102,22 @@ export default function MapPage() {
                 登出
               </button>
             </>
-          ) : null}
+          ) : (
+            <>
+              <Link to="/login" className="link">登录</Link>
+              <Link to="/register" className="link">注册</Link>
+            </>
+          )}
         </div>
       </div>
 
-      <div className="map-container">
-        <MapView places={places} onMapClick={handleMapClick} />
+      <div className="map-container" id="main" tabIndex={-1}>
+        <MapView
+          spots={spots}
+          places={places}
+          onMapClick={user ? handleMapClick : null}
+          onSpotClick={handleSpotClick}
+        />
       </div>
 
       {addingCoords && (

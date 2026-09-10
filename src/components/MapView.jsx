@@ -1,16 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet.heat';
-
-// Fix default icon paths for Leaflet (CDN images)
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl:
-    'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-});
 
 function ClickAdd({ onAdd }) {
   useMapEvents({
@@ -28,7 +20,6 @@ function HeatmapLayer({ points, show }) {
   useEffect(() => {
     let layer = null;
     if (show && points.length > 0) {
-      // 格式：[lat, lng, intensity]，intensity 用 1，半径/模糊由参数控制
       const data = points.map((p) => [p.lat, p.lng, 1]);
       layer = L.heatLayer(data, { radius: 40, blur: 50, maxZoom: 15 }).addTo(map);
     }
@@ -54,8 +45,113 @@ function getDateKey(place) {
   return ts.slice(0, 10);
 }
 
-export default function MapView({ places = [], onMapClick }) {
-  // Read Tianditu key with fallback: import.meta.env -> index.html meta
+// 自定义定位针 SVG
+const PIN_SVG = `
+  <svg class="map-marker-shape" viewBox="0 0 32 40" aria-hidden="true">
+    <path
+      d="M16 0C7.16 0 0 7.16 0 16c0 11 16 24 16 24s16-13 16-24C32 7.16 24.84 0 16 0z"
+      fill="var(--card)"
+      stroke="var(--primary)"
+      stroke-width="2"
+    />
+    <circle cx="16" cy="15" r="5" fill="var(--primary)" />
+  </svg>
+`;
+
+const CAMERA_ICON = `
+  <svg class="map-marker-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20 7h-2.5l-1.5-2h-7L7.5 7H5C3.9 7 3 7.9 3 9v8c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM12 17a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" fill="currentColor" />
+  </svg>
+`;
+
+const CHECK_ICON = `
+  <svg class="map-marker-icon" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor" />
+  </svg>
+`;
+
+function createMarkerHtml(innerIcon) {
+  return `
+    <div class="map-marker">
+      ${PIN_SVG}
+      ${innerIcon}
+    </div>
+  `;
+}
+
+const spotIcon = L.divIcon({
+  className: 'map-marker-root',
+  html: createMarkerHtml(CAMERA_ICON),
+  iconSize: [32, 40],
+  iconAnchor: [16, 40],
+  popupAnchor: [0, -34],
+});
+
+const userIcon = L.divIcon({
+  className: 'map-marker-root',
+  html: createMarkerHtml(CHECK_ICON),
+  iconSize: [32, 40],
+  iconAnchor: [16, 40],
+  popupAnchor: [0, -34],
+});
+
+// 地图图层切换按钮图标
+function CameraIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20 7h-2.5l-1.5-2h-7L7.5 7H5C3.9 7 3 7.9 3 9v8c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM12 17a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" />
+    </svg>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+    </svg>
+  );
+}
+
+function RouteIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M4 19l5-5 4 4 7-7" />
+    </svg>
+  );
+}
+
+function HeatIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2s-4 5-4 9a4 4 0 0 0 8 0c0-4-4-9-4-9z" />
+    </svg>
+  );
+}
+
+function LayerButton({ active, icon: Icon, label, onClick }) {
+  return (
+    <button
+      type="button"
+      className={`map-layer-btn ${active ? 'active' : ''}`}
+      onClick={onClick}
+      aria-pressed={active}
+      title={label}
+    >
+      <Icon />
+      <span className="map-layer-tooltip">{label}</span>
+    </button>
+  );
+}
+
+export default function MapView({
+  spots = [],
+  places = [],
+  onMapClick,
+  onSpotClick,
+  showUserPlaces = true,
+}) {
+  const navigate = useNavigate();
+
   const getMeta = (name) => {
     if (typeof document === 'undefined') return undefined;
     const el = document.querySelector(`meta[name="${name}"]`);
@@ -63,23 +159,22 @@ export default function MapView({ places = [], onMapClick }) {
   };
 
   const tdtKey = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_TDT_KEY) || getMeta('VITE_TDT_KEY');
-
   if (!tdtKey) console.error('TDT key missing: please set VITE_TDT_KEY in .env.local or index.html meta');
 
   const tdtVecUrl = `https://t0.tianditu.gov.cn/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(tdtKey)}`;
   const tdtCvaUrl = `https://t0.tianditu.gov.cn/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(tdtKey)}`;
 
-  // 上海行政区域边界（含崇明岛），稍微外扩让边缘可见
   const shanghaiBounds = [
-    [30.60, 120.80], // 西南
-    [31.95, 122.25], // 东北
+    [30.60, 120.80],
+    [31.95, 122.25],
   ];
 
   const [showRoute, setShowRoute] = useState(false);
   const [showHeatmap, setShowHeatmap] = useState(false);
+  const [showSpots, setShowSpots] = useState(true);
+  const [showUserMarks, setShowUserMarks] = useState(showUserPlaces);
 
-  // 按日期分组地点，并按时间排序，生成路线
-  const routeGroups = React.useMemo(() => {
+  const routeGroups = useMemo(() => {
     if (!showRoute) return [];
     const groups = {};
     places.forEach((p) => {
@@ -98,35 +193,31 @@ export default function MapView({ places = [], onMapClick }) {
       .filter((line) => line.length >= 2);
   }, [places, showRoute]);
 
-  // 热力图数据点
-  const heatPoints = React.useMemo(
+  const heatPoints = useMemo(
     () => places.filter((p) => p.lat != null && p.lng != null).map((p) => ({ lat: p.lat, lng: p.lng })),
     [places]
   );
 
+  const layers = [
+    { key: 'spots', label: '景点', icon: CameraIcon, active: showSpots, toggle: () => setShowSpots((v) => !v) },
+    { key: 'places', label: '我的打卡', icon: CheckIcon, active: showUserMarks, toggle: () => setShowUserMarks((v) => !v) },
+    { key: 'route', label: '足迹路线', icon: RouteIcon, active: showRoute, toggle: () => setShowRoute((v) => !v) },
+    { key: 'heatmap', label: '探索热力图', icon: HeatIcon, active: showHeatmap, toggle: () => setShowHeatmap((v) => !v) },
+  ];
+
   return (
     <div style={{ position: 'relative', height: '100%', width: '100%' }}>
       {/* 图层切换控件 */}
-      <div style={{
-        position: 'absolute', top: 12, right: 12, zIndex: 1000,
-        display: 'flex', flexDirection: 'column', gap: 6,
-      }}>
-        <label style={{
-          background: '#fff', padding: '6px 10px', borderRadius: 6,
-          boxShadow: '0 1px 4px rgba(0,0,0,0.2)', fontSize: 13, cursor: 'pointer',
-          display: 'flex', alignItems: 'center', gap: 6,
-        }}>
-          <input type="checkbox" checked={showRoute} onChange={(e) => setShowRoute(e.target.checked)} />
-          足迹路线
-        </label>
-        <label style={{
-          background: '#fff', padding: '6px 10px', borderRadius: 6,
-          boxShadow: '0 1px 4px rgba(0,0,0,0.2)', fontSize: 13, cursor: 'pointer',
-          display: 'flex', alignItems: 'center', gap: 6,
-        }}>
-          <input type="checkbox" checked={showHeatmap} onChange={(e) => setShowHeatmap(e.target.checked)} />
-          探索热力图
-        </label>
+      <div className="map-layer-bar">
+        {layers.map((layer) => (
+          <LayerButton
+            key={layer.key}
+            active={layer.active}
+            icon={layer.icon}
+            label={layer.label}
+            onClick={layer.toggle}
+          />
+        ))}
       </div>
 
       <MapContainer
@@ -140,12 +231,69 @@ export default function MapView({ places = [], onMapClick }) {
         {/* Tianditu 矢量底图（中文） */}
         <TileLayer url={tdtVecUrl} attribution="&copy; 天地图" />
 
-        {/* 注记层（让中文标签显示） */}
+        {/* 注记层 */}
         <TileLayer url={tdtCvaUrl} attribution="" />
 
         {onMapClick && <ClickAdd onAdd={onMapClick} />}
 
-        {/* 足迹路线：按日期分组，每组一种颜色 */}
+        {/* 预设景点图层 */}
+        {showSpots && spots.map((s) => (
+          <Marker
+            key={`spot-${s.id}`}
+            position={[s.lat, s.lng]}
+            icon={spotIcon}
+            eventHandlers={{
+              click: () => onSpotClick && onSpotClick(s),
+            }}
+          >
+            <Popup>
+              <div className="map-popup">
+                <div className="map-popup-title">{s.name}</div>
+                {s.district && <div className="map-popup-district">{s.district}</div>}
+                {s.description && <div className="map-popup-desc">{s.description}</div>}
+                {s.photos && s.photos.length > 0 && (
+                  <img className="map-popup-img" src={s.photos[0]} alt={s.name} />
+                )}
+                {s.weather_tags && s.weather_tags.length > 0 && (
+                  <div className="map-popup-tags">
+                    {s.weather_tags.map((t) => (
+                      <span key={t} className="map-popup-tag">{t}</span>
+                    ))}
+                  </div>
+                )}
+                {onSpotClick && (
+                  <button
+                    className="map-popup-link"
+                    onClick={() => navigate(`/spots/${s.id}`)}
+                  >
+                    查看详情 →
+                  </button>
+                )}
+              </div>
+            </Popup>
+          </Marker>
+        ))}
+
+        {/* 用户打卡图层 */}
+        {showUserMarks && places.map((p) => (
+          <Marker
+            key={p.id ?? `p-${p.lat}-${p.lng}`}
+            position={[p.lat, p.lng]}
+            icon={userIcon}
+          >
+            <Popup>
+              <div className="map-popup">
+                <div className="map-popup-title">{p.name}</div>
+                {p.description && <div className="map-popup-desc">{p.description}</div>}
+                {p.photos && p.photos.length > 0 && (
+                  <img className="map-popup-img" src={p.photos[0]} alt={p.name} />
+                )}
+              </div>
+            </Popup>
+          </Marker>
+        ))}
+
+        {/* 足迹路线 */}
         {routeGroups.map((positions, idx) => (
           <Polyline
             key={`route-${idx}`}
@@ -158,20 +306,6 @@ export default function MapView({ places = [], onMapClick }) {
 
         {/* 探索热力图 */}
         <HeatmapLayer points={heatPoints} show={showHeatmap} />
-
-        {places.map((p) => (
-          <Marker key={p.id ?? `${p.lat}-${p.lng}-${Math.random()}`} position={[p.lat, p.lng]}>
-            <Popup>
-              <div style={{ maxWidth: 240 }}>
-                <div style={{ fontWeight: 600 }}>{p.name}</div>
-                <div style={{ fontSize: 12, color: '#444' }}>{p.description}</div>
-                {p.photos && p.photos.length > 0 && (
-                  <img src={p.photos[0]} alt="thumb" style={{ width: '100%', marginTop: 8, borderRadius: 6 }} />
-                )}
-              </div>
-            </Popup>
-          </Marker>
-        ))}
       </MapContainer>
     </div>
   );

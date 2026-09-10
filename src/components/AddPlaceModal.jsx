@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabaseClient';
 import { getDistrict } from '../utils/geocode';
+import { useToast } from './Toast';
 
 export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
+  const toast = useToast();
   const isEdit = !!place;
   const bucket = 'places-photos';
 
@@ -53,7 +55,7 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
       if (!publicUrl) throw new Error('无法获取图片访问 URL');
       setPhotos((prev) => [...prev, publicUrl]);
     } catch (err) {
-      alert('图片上传失败: ' + (err.message || ''));
+      toast.error('图片上传失败: ' + (err.message || ''));
     } finally {
       setUploading(false);
       e.target.value = '';
@@ -72,7 +74,7 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
 
   const handleSave = async () => {
     if (!name) {
-      alert('请填写名称');
+      toast.warning('请填写名称');
       return;
     }
     setLoading(true);
@@ -126,7 +128,7 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
       onClose && onClose();
     } catch (err) {
       console.error('保存失败', err);
-      alert('保存失败: ' + (err.message || JSON.stringify(err)));
+      toast.error('保存失败: ' + (err.message || JSON.stringify(err)));
     } finally {
       setLoading(false);
     }
@@ -134,9 +136,11 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
 
   return (
     <div className="modal-backdrop">
-      <div className="modal-card" style={{ width: 480, maxHeight: '90vh', overflowY: 'auto' }}>
+      <div className="modal-card">
         <h3>{isEdit ? '编辑地点' : '添加地点'}</h3>
-        <div>坐标: {lat?.toFixed(5)}, {lng?.toFixed(5)}</div>
+        <div className="modal-coords">
+          坐标: {lat?.toFixed(5)}, {lng?.toFixed(5)}
+        </div>
 
         <div className="form-field">
           <label>名称（必填）</label>
@@ -161,7 +165,7 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
             {tags.map((t) => (
               <span key={t} className="tag-chip">
                 {t}
-                <button onClick={() => removeTag(t)} style={{ background: 'none', border: 'none', cursor: 'pointer', marginLeft: 4, color: '#e55' }}>×</button>
+                <button onClick={() => removeTag(t)}>×</button>
               </span>
             ))}
           </div>
@@ -205,7 +209,7 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
         <div className="form-field">
           <label>图片</label>
           <input type="file" accept="image/*" onChange={uploadNewPhoto} disabled={uploading} />
-          {uploading && <span style={{ fontSize: 12, color: '#888' }}> 上传中...</span>}
+          {uploading && <span className="text-muted text-small"> 上传中...</span>}
           {photos.length > 0 && (
             <div className="photo-thumbs">
               {photos.map((url) => (
@@ -218,8 +222,8 @@ export default function AddPlaceModal({ coords, onClose, onSaved, place }) {
           )}
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 8, marginTop: 12 }}>
-          <button onClick={onClose} disabled={loading}>取消</button>
+        <div className="modal-actions">
+          <button onClick={onClose} disabled={loading} className="ghost">取消</button>
           <button onClick={handleSave} disabled={loading || uploading} className="primary">
             {loading ? '保存中...' : '保存'}
           </button>

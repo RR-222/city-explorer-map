@@ -141,3 +141,9 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Editor / 调试产物
+.trae/
+.edge_profile/
+capture_register.js
+register_screenshot_*.png
