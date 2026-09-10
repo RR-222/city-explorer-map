@@ -5,6 +5,7 @@ import L from 'leaflet';
 import Brand from '../components/Brand';
 import { SpotDetailSkeleton } from '../components/Skeleton';
 import { supabase } from '../supabaseClient';
+import { HIDDEN_SPOT_NAMES } from '../utils/spotsFilter';
 
 // 默认图标
 delete L.Icon.Default.prototype._getIconUrl;
@@ -48,7 +49,11 @@ export default function SpotDetailPage() {
           .eq('id', id)
           .single();
         if (error) throw error;
-        setSpot(data);
+        if (!data || HIDDEN_SPOT_NAMES.includes(data.name)) {
+          setError('景点未找到');
+        } else {
+          setSpot(data);
+        }
       } catch (err) {
         setError('景点未找到');
         console.error(err);

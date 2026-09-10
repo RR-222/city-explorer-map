@@ -122,13 +122,34 @@ export default function AchievementsPage() {
       <div className="page" id="main" tabIndex={-1}>
         <div className="page-header">
           <h2 className="page-title">区域成就</h2>
+          <p className="text-muted text-small">用脚步丈量上海，解锁城区徽章。</p>
+        </div>
+
+        {/* 数据总览 */}
+        <div className="achievements-stats">
+          <div className="stat-box">
+            <span className="stat-value">{visitedCount}</span>
+            <span className="stat-label">已解锁区</span>
+          </div>
+          <div className="stat-box">
+            <span className="stat-value">{places.length}</span>
+            <span className="stat-label">打卡地点</span>
+          </div>
+          <div className="stat-box">
+            <span className="stat-value">{unlockedBadges.length}</span>
+            <span className="stat-label">获得徽章</span>
+          </div>
+          <div className="stat-box highlight">
+            <span className="stat-value">{progress}%</span>
+            <span className="stat-label">总进度</span>
+          </div>
         </div>
 
         {/* 进度总览 */}
         <div className="progress-card">
           <div className="progress-header">
-            <span className="progress-title">已解锁 {visitedCount} / {SHANGHAI_DISTRICTS.length} 个区</span>
-            <span className="progress-value">{progress}%</span>
+            <span className="progress-title">解锁进度</span>
+            <span className="progress-value">{visitedCount} / {SHANGHAI_DISTRICTS.length} 区</span>
           </div>
           <div className="progress-track">
             <div className="progress-fill" style={{ width: `${progress}%` }} />
@@ -157,6 +178,7 @@ export default function AchievementsPage() {
                 key={b.id}
                 className={`badge-card ${unlocked ? 'unlocked' : ''}`}
               >
+                {unlocked && <span className="badge-check">✓</span>}
                 <div className="badge-icon">{unlocked ? b.icon : '🔒'}</div>
                 <div className="badge-name">{b.name}</div>
                 <div className="badge-desc">{b.desc}</div>
@@ -178,7 +200,7 @@ export default function AchievementsPage() {
               >
                 <div className="district-name">{d}</div>
                 <div className="district-count">
-                  {visited ? `${count}个` : '未解锁'}
+                  {visited ? `${count}个地点` : '未解锁'}
                 </div>
               </div>
             );

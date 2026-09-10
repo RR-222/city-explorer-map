@@ -13,6 +13,17 @@ function ClickAdd({ onAdd }) {
   return null;
 }
 
+// 当选中推荐景点时，平滑移动到目标位置
+function MapCenter({ lat, lng }) {
+  const map = useMap();
+  useEffect(() => {
+    if (lat != null && lng != null) {
+      map.flyTo([lat, lng], 15, { duration: 0.8 });
+    }
+  }, [map, lat, lng]);
+  return null;
+}
+
 // 热力图层组件：用 useMap 拿到地图实例，再调用 L.heatLayer
 function HeatmapLayer({ points, show }) {
   const map = useMap();
@@ -45,16 +56,16 @@ function getDateKey(place) {
   return ts.slice(0, 10);
 }
 
-// 自定义定位针 SVG
+// 自定义定位针 SVG：浅色简约
 const PIN_SVG = `
-  <svg class="map-marker-shape" viewBox="0 0 32 40" aria-hidden="true">
+  <svg class="map-marker-shape" viewBox="0 0 26 34" aria-hidden="true">
     <path
-      d="M16 0C7.16 0 0 7.16 0 16c0 11 16 24 16 24s16-13 16-24C32 7.16 24.84 0 16 0z"
-      fill="var(--card)"
+      d="M13 0C5.82 0 0 5.82 0 13c0 8.84 13 21 13 21s13-12.16 13-21C26 5.82 20.18 0 13 0z"
+      fill="rgba(245, 245, 245, 0.95)"
       stroke="var(--primary)"
-      stroke-width="2"
+      stroke-width="1.5"
     />
-    <circle cx="16" cy="15" r="5" fill="var(--primary)" />
+    <circle cx="13" cy="12" r="3.5" fill="var(--primary)" />
   </svg>
 `;
 
@@ -82,28 +93,20 @@ function createMarkerHtml(innerIcon) {
 const spotIcon = L.divIcon({
   className: 'map-marker-root',
   html: createMarkerHtml(CAMERA_ICON),
-  iconSize: [32, 40],
-  iconAnchor: [16, 40],
-  popupAnchor: [0, -34],
+  iconSize: [26, 34],
+  iconAnchor: [13, 34],
+  popupAnchor: [0, -28],
 });
 
 const userIcon = L.divIcon({
   className: 'map-marker-root',
   html: createMarkerHtml(CHECK_ICON),
-  iconSize: [32, 40],
-  iconAnchor: [16, 40],
-  popupAnchor: [0, -34],
+  iconSize: [26, 34],
+  iconAnchor: [13, 34],
+  popupAnchor: [0, -28],
 });
 
 // 地图图层切换按钮图标
-function CameraIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M20 7h-2.5l-1.5-2h-7L7.5 7H5C3.9 7 3 7.9 3 9v8c0 1.1.9 2 2 2h15c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM12 17a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" />
-    </svg>
-  );
-}
-
 function CheckIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -148,7 +151,8 @@ export default function MapView({
   places = [],
   onMapClick,
   onSpotClick,
-  showUserPlaces = true,
+  showUserPlaces = false,
+  highlightSpot,
 }) {
   const navigate = useNavigate();
 
@@ -171,7 +175,6 @@ export default function MapView({
 
   const [showRoute, setShowRoute] = useState(false);
   const [showHeatmap, setShowHeatmap] = useState(false);
-  const [showSpots, setShowSpots] = useState(true);
   const [showUserMarks, setShowUserMarks] = useState(showUserPlaces);
 
   const routeGroups = useMemo(() => {
@@ -199,7 +202,6 @@ export default function MapView({
   );
 
   const layers = [
-    { key: 'spots', label: '景点', icon: CameraIcon, active: showSpots, toggle: () => setShowSpots((v) => !v) },
     { key: 'places', label: '我的打卡', icon: CheckIcon, active: showUserMarks, toggle: () => setShowUserMarks((v) => !v) },
     { key: 'route', label: '足迹路线', icon: RouteIcon, active: showRoute, toggle: () => setShowRoute((v) => !v) },
     { key: 'heatmap', label: '探索热力图', icon: HeatIcon, active: showHeatmap, toggle: () => setShowHeatmap((v) => !v) },
@@ -236,43 +238,46 @@ export default function MapView({
 
         {onMapClick && <ClickAdd onAdd={onMapClick} />}
 
-        {/* 预设景点图层 */}
-        {showSpots && spots.map((s) => (
-          <Marker
-            key={`spot-${s.id}`}
-            position={[s.lat, s.lng]}
-            icon={spotIcon}
-            eventHandlers={{
-              click: () => onSpotClick && onSpotClick(s),
-            }}
-          >
-            <Popup>
-              <div className="map-popup">
-                <div className="map-popup-title">{s.name}</div>
-                {s.district && <div className="map-popup-district">{s.district}</div>}
-                {s.description && <div className="map-popup-desc">{s.description}</div>}
-                {s.photos && s.photos.length > 0 && (
-                  <img className="map-popup-img" src={s.photos[0]} alt={s.name} />
-                )}
-                {s.weather_tags && s.weather_tags.length > 0 && (
-                  <div className="map-popup-tags">
-                    {s.weather_tags.map((t) => (
-                      <span key={t} className="map-popup-tag">{t}</span>
-                    ))}
-                  </div>
-                )}
-                {onSpotClick && (
-                  <button
-                    className="map-popup-link"
-                    onClick={() => navigate(`/spots/${s.id}`)}
-                  >
-                    查看详情 →
-                  </button>
-                )}
-              </div>
-            </Popup>
-          </Marker>
-        ))}
+        {/* 高亮选中的推荐景点 */}
+        {highlightSpot && (
+          <>
+            <MapCenter lat={highlightSpot.lat} lng={highlightSpot.lng} />
+            <Marker
+              key={`highlight-${highlightSpot.id}`}
+              position={[highlightSpot.lat, highlightSpot.lng]}
+              icon={spotIcon}
+              eventHandlers={{
+                click: () => onSpotClick && onSpotClick(highlightSpot),
+              }}
+            >
+              <Popup>
+                <div className="map-popup">
+                  <div className="map-popup-title">{highlightSpot.name}</div>
+                  {highlightSpot.district && <div className="map-popup-district">{highlightSpot.district}</div>}
+                  {highlightSpot.description && <div className="map-popup-desc">{highlightSpot.description}</div>}
+                  {highlightSpot.photos && highlightSpot.photos.length > 0 && (
+                    <img className="map-popup-img" src={highlightSpot.photos[0]} alt={highlightSpot.name} />
+                  )}
+                  {highlightSpot.weather_tags && highlightSpot.weather_tags.length > 0 && (
+                    <div className="map-popup-tags">
+                      {highlightSpot.weather_tags.map((t) => (
+                        <span key={t} className="map-popup-tag">{t}</span>
+                      ))}
+                    </div>
+                  )}
+                  {onSpotClick && (
+                    <button
+                      className="map-popup-link"
+                      onClick={() => navigate(`/spots/${highlightSpot.id}`)}
+                    >
+                      查看详情 →
+                    </button>
+                  )}
+                </div>
+              </Popup>
+            </Marker>
+          </>
+        )}
 
         {/* 用户打卡图层 */}
         {showUserMarks && places.map((p) => (

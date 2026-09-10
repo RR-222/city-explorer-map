@@ -822,11 +822,11 @@ button.danger:hover {
 }
 
 .home-recommend {
-  width: 400px;
+  width: 520px;
   flex-shrink: 0;
   background: var(--background);
   border-right: 1px solid var(--border);
-  padding: var(--s-4);
+  padding: var(--s-5);
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -837,12 +837,12 @@ button.danger:hover {
   align-items: baseline;
   justify-content: space-between;
   gap: var(--s-2);
-  margin-bottom: var(--s-2);
+  margin-bottom: var(--s-3);
 }
 
 .home-recommend-title {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.85rem;
   font-weight: 700;
   color: var(--foreground);
   text-transform: uppercase;
@@ -853,21 +853,22 @@ button.danger:hover {
 .home-recommend-weather {
   display: flex;
   align-items: center;
-  gap: var(--s-2);
-  font-size: 0.8rem;
+  gap: var(--s-3);
+  font-size: 0.9rem;
   color: var(--muted-foreground);
   flex-shrink: 0;
 }
 
 .home-recommend-now {
   color: var(--primary);
+  font-weight: 600;
 }
 
 .home-recommend-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--muted-foreground);
   line-height: 1.5;
-  margin: 0 0 var(--s-4);
+  margin: 0 0 var(--s-5);
 }
 
 .home-recommend-loading {
@@ -876,13 +877,13 @@ button.danger:hover {
   align-items: center;
   justify-content: center;
   color: var(--muted-foreground);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 .home-recommend-list {
   display: flex;
   flex-direction: column;
-  gap: var(--s-3);
+  gap: var(--s-4);
   flex: 1;
 }
 
@@ -894,32 +895,35 @@ button.danger:hover {
   text-decoration: none;
   color: inherit;
   overflow: hidden;
-  transition: border-color var(--t-fast), transform var(--t-fast);
+  cursor: pointer;
+  transition: border-color var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
 }
 
-.home-recommend-card:hover {
+.home-recommend-card:hover,
+.home-recommend-card.selected {
   border-color: var(--primary);
+  box-shadow: 0 0 0 1px var(--primary), 0 0 24px rgba(255, 64, 0, 0.18);
   transform: translateY(-2px);
 }
 
-.home-recommend-card:hover .home-recommend-img {
+.home-recommend-card.selected .home-recommend-img {
   transform: scale(1.04);
 }
 
 .home-recommend-rank {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 12px;
   z-index: 2;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--primary);
   color: var(--primary-foreground);
   font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
 }
 
@@ -933,7 +937,7 @@ button.danger:hover {
 
 .home-recommend-img {
   width: 100%;
-  height: 170px;
+  height: 220px;
   object-fit: cover;
   border-bottom: 1px solid var(--border);
   transition: transform var(--t-base);
@@ -941,7 +945,7 @@ button.danger:hover {
 
 .home-recommend-img-placeholder {
   width: 100%;
-  height: 170px;
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -952,21 +956,21 @@ button.danger:hover {
 }
 
 .home-recommend-body {
-  padding: var(--s-3);
+  padding: var(--s-4);
 }
 
 .home-recommend-name {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--foreground);
   letter-spacing: 0.02em;
 }
 
 .home-recommend-district {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--primary);
-  margin-top: 2px;
+  margin-top: 3px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -974,20 +978,35 @@ button.danger:hover {
 .home-recommend-reasons {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s-1);
-  margin-top: var(--s-2);
+  gap: var(--s-2);
+  margin: var(--s-3) 0;
+}
+
+.home-recommend-detail {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+.home-recommend-detail:hover {
+  color: var(--primary);
 }
 
 .home-recommend-more {
   display: block;
   text-align: center;
-  margin-top: var(--s-4);
+  margin-top: var(--s-5);
   padding: var(--s-3);
   background: transparent;
   border: 1px solid var(--border);
   color: var(--muted-foreground);
   font-family: var(--font-display);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -2422,5 +2441,39 @@ textarea:focus-visible {
 
   .gallery-main img {
     max-height: 280px;
+  }
+
+  .home-layout {
+    flex-direction: column;
+    height: calc(100vh - 52px);
+  }
+
+  .home-recommend {
+    width: 100%;
+    height: 60%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: var(--s-3);
+  }
+
+  .home-map {
+    height: 40%;
+  }
+
+  .home-recommend-title {
+    font-size: 1.35rem;
+  }
+
+  .home-recommend-img,
+  .home-recommend-img-placeholder {
+    height: 160px;
+  }
+
+  .achievements-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-value {
+    font-size: 1.75rem;
   }
 }

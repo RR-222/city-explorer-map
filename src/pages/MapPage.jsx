@@ -1,15 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MapView from '../components/MapView';
 import AddPlaceModal from '../components/AddPlaceModal';
 import Brand from '../components/Brand';
+import EmptyState from '../components/EmptyState';
 import { supabase } from '../supabaseClient';
+import { fetchShanghaiWeather, getCurrentMonth } from '../utils/weather';
+import { recommendSpots } from '../utils/recommend';
+import { filterVisibleSpots } from '../utils/spotsFilter';
+
+const WEATHER_EMOJI = {
+  '晴天': '☀️', '多云': '⛅', '雨天': '🌧️', '雾天': '🌫️',
+  '雪天': '❄️', '雷雨': '⛈️', '日出': '🌅', '日落': '🌇', '夜景': '🌃',
+};
+
+const MONTH_NAMES = ['', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
 
 export default function MapPage() {
   const [places, setPlaces] = useState([]);
   const [spots, setSpots] = useState([]);
   const [addingCoords, setAddingCoords] = useState(null);
   const [user, setUser] = useState(null);
+  const [weather, setWeather] = useState(null);
+  const [loadingRecs, setLoadingRecs] = useState(true);
+  const [selectedSpot, setSelectedSpot] = useState(null);
+
+  const month = getCurrentMonth();
 
   useEffect(() => {
     let mounted = true;
@@ -17,7 +33,7 @@ export default function MapPage() {
       const { data } = await supabase.auth.getUser();
       if (!mounted) return;
       setUser(data?.user ?? null);
-    });
+    })();
 
     const { subscription } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null);
@@ -29,7 +45,7 @@ export default function MapPage() {
     };
   }, []);
 
-  // 加载预设景点（spots，公开可读，不依赖登录）
+  // 加载预设景点（公开可读）并过滤隐藏项
   useEffect(() => {
     const fetchSpots = async () => {
       try {
@@ -38,7 +54,7 @@ export default function MapPage() {
           .select('*')
           .order('created_at', { ascending: false });
         if (error) throw error;
-        setSpots(data || []);
+        setSpots(filterVisibleSpots(data || []));
       } catch (err) {
         console.error('load spots error', err);
       }
@@ -46,8 +62,24 @@ export default function MapPage() {
     fetchSpots();
   }, []);
 
+  // 加载当前天气并计算今日推荐
   useEffect(() => {
-    // load initial places for current user if authenticated
+    const loadWeatherAndRecs = async () => {
+      try {
+        setLoadingRecs(true);
+        const w = await fetchShanghaiWeather();
+        setWeather(w);
+      } catch (err) {
+        console.error('weather error', err);
+      } finally {
+        setLoadingRecs(false);
+      }
+    };
+    loadWeatherAndRecs();
+  }, []);
+
+  // 用户打卡记录
+  useEffect(() => {
     const fetchPlaces = async () => {
       try {
         if (!user) {
@@ -68,17 +100,18 @@ export default function MapPage() {
     fetchPlaces();
   }, [user]);
 
+  const todayRecommendations = useMemo(() => {
+    return recommendSpots(spots, weather, month).slice(0, 3);
+  }, [spots, weather, month]);
+
   const handleMapClick = (coords) => setAddingCoords(coords);
 
   const handleSaved = (newPlace) => {
-    // append to state
     setPlaces((p) => [newPlace, ...p]);
   };
 
-  // 点击景点标记：先弹 popup，后续可跳详情页
-  const handleSpotClick = (spot) => {
-    // TODO: 后续接景点详情页 navigate(`/spots/${spot.id}`)
-    console.log('spot clicked', spot.name);
+  const handleSelectSpot = (spot) => {
+    setSelectedSpot(spot);
   };
 
   return (
@@ -111,13 +144,96 @@ export default function MapPage() {
         </div>
       </div>
 
-      <div className="map-container" id="main" tabIndex={-1}>
-        <MapView
-          spots={spots}
-          places={places}
-          onMapClick={user ? handleMapClick : null}
-          onSpotClick={handleSpotClick}
-        />
+      <div className="home-layout" id="main" tabIndex={-1}>
+        {/* 今日推荐面板 */}
+        <aside className="home-recommend">
+          <div className="home-recommend-header">
+            <h2 className="home-recommend-title">今日推荐</h2>
+            {weather && (
+              <div className="home-recommend-weather">
+                <span className="home-recommend-now">
+                  {WEATHER_EMOJI[weather.keyword] || '🌤️'} {weather.keyword}
+                </span>
+                {weather.temp != null && (
+                  <span className="home-recommend-temp">{weather.temp}°C</span>
+                )}
+                <span className="home-recommend-month">{MONTH_NAMES[month]}</span>
+              </div>
+            )}
+          </div>
+
+          <p className="home-recommend-subtitle">
+            根据当前天气和季节，挑选适合今天打卡的拍摄点。点击卡片在地图上查看位置。
+          </p>
+
+          {loadingRecs ? (
+            <div className="home-recommend-loading">正在生成推荐…</div>
+          ) : todayRecommendations.length === 0 ? (
+            <EmptyState
+              title="暂无今日推荐"
+              description="当前天气下没有特别匹配的景点，可以去地图自由探索。"
+            />
+          ) : (
+            <div className="home-recommend-list">
+              {todayRecommendations.map((spot, idx) => {
+                const isSelected = selectedSpot?.id === spot.id;
+                return (
+                  <div
+                    key={spot.id}
+                    className={`home-recommend-card ${isSelected ? 'selected' : ''}`}
+                    onClick={() => handleSelectSpot(spot)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') handleSelectSpot(spot);
+                    }}
+                  >
+                    <span className={`home-recommend-rank rank-${idx + 1}`}>{idx + 1}</span>
+                    {spot.photos && spot.photos.length > 0 ? (
+                      <img src={spot.photos[0]} alt={spot.name} className="home-recommend-img" />
+                    ) : (
+                      <div className="home-recommend-img-placeholder">📷</div>
+                    )}
+                    <div className="home-recommend-body">
+                      <div className="home-recommend-name">{spot.name}</div>
+                      {spot.district && <div className="home-recommend-district">{spot.district}</div>}
+                      {spot.matchReasons && spot.matchReasons.length > 0 && (
+                        <div className="home-recommend-reasons">
+                          {spot.matchReasons.slice(0, 2).map((r) => (
+                            <span key={r} className="reason-chip">
+                              {WEATHER_EMOJI[r] || ''} {r}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                      <Link
+                        to={`/spots/${spot.id}`}
+                        className="home-recommend-detail"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        查看详情 →
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          <Link to="/recommend" className="home-recommend-more">
+            查看全部推荐 →
+          </Link>
+        </aside>
+
+        {/* 地图区域 */}
+        <main className="home-map">
+          <MapView
+            spots={spots}
+            places={places}
+            onMapClick={user ? handleMapClick : null}
+            highlightSpot={selectedSpot}
+          />
+        </main>
       </div>
 
       {addingCoords && (

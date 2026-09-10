@@ -6,6 +6,7 @@ import EmptyState from '../components/EmptyState';
 import { RecommendSkeleton } from '../components/Skeleton';
 import { fetchShanghaiWeather, getCurrentMonth } from '../utils/weather';
 import { recommendSpots, filterByDistrict } from '../utils/recommend';
+import { filterVisibleSpots } from '../utils/spotsFilter';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
 
 const MONTH_NAMES = ['', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
@@ -31,7 +32,7 @@ export default function RecommendPage() {
           supabase.from('spots').select('*'),
           fetchShanghaiWeather(),
         ]);
-        setSpots(spotsRes.data || []);
+        setSpots(filterVisibleSpots(spotsRes.data || []));
         setWeather(w);
       } catch (err) {
         console.error('加载失败', err);
