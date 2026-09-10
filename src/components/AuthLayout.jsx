@@ -7,7 +7,7 @@ const SPOTS_WITH_PHOTOS = spots.filter(
 );
 
 const SLIDE_COUNT = 6;
-const SLIDE_INTERVAL = 5000;
+const SLIDE_INTERVAL = 8000;
 
 function toAbsolutePhotoPath(path) {
   if (path.startsWith('./')) return path.slice(1);

@@ -305,6 +305,7 @@ button:disabled {
 }
 
 button.primary,
+a.primary,
 .source-btn,
 .district-btn.active,
 .submit-btn {
@@ -316,10 +317,13 @@ button.primary,
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  text-decoration: none;
+  display: inline-block;
   transition: background var(--t-fast), transform var(--t-fast);
 }
 
 button.primary:hover:not(:disabled),
+a.primary:hover,
 .source-btn:hover,
 .district-btn.active:hover,
 .submit-btn:hover:not(:disabled) {
@@ -327,6 +331,7 @@ button.primary:hover:not(:disabled),
 }
 
 button.primary:active:not(:disabled),
+a.primary:active,
 .submit-btn:active:not(:disabled),
 .auth-primary-btn:active:not(:disabled),
 .map-layer-btn:active {
@@ -598,7 +603,7 @@ button.danger:hover {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .auth-slide.active {
@@ -809,6 +814,198 @@ button.danger:hover {
   background: #1a1a1a;
 }
 
+.home-layout {
+  display: flex;
+  flex: 1 1 auto;
+  height: calc(100vh - 61px);
+  overflow: hidden;
+}
+
+.home-recommend {
+  width: 400px;
+  flex-shrink: 0;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  padding: var(--s-4);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-recommend-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-2);
+  margin-bottom: var(--s-2);
+}
+
+.home-recommend-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.home-recommend-weather {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  flex-shrink: 0;
+}
+
+.home-recommend-now {
+  color: var(--primary);
+}
+
+.home-recommend-subtitle {
+  font-size: 0.85rem;
+  color: var(--muted-foreground);
+  line-height: 1.5;
+  margin: 0 0 var(--s-4);
+}
+
+.home-recommend-loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+}
+
+.home-recommend-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  flex: 1;
+}
+
+.home-recommend-card {
+  position: relative;
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: border-color var(--t-fast), transform var(--t-fast);
+}
+
+.home-recommend-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.home-recommend-card:hover .home-recommend-img {
+  transform: scale(1.04);
+}
+
+.home-recommend-rank {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.home-recommend-rank.rank-2 {
+  background: var(--muted-foreground);
+}
+
+.home-recommend-rank.rank-3 {
+  background: #8d6e63;
+}
+
+.home-recommend-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+  transition: transform var(--t-base);
+}
+
+.home-recommend-img-placeholder {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--input);
+  color: var(--muted-foreground);
+  font-size: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-recommend-body {
+  padding: var(--s-3);
+}
+
+.home-recommend-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+.home-recommend-district {
+  font-size: 0.75rem;
+  color: var(--primary);
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.home-recommend-reasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-1);
+  margin-top: var(--s-2);
+}
+
+.home-recommend-more {
+  display: block;
+  text-align: center;
+  margin-top: var(--s-4);
+  padding: var(--s-3);
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: border-color var(--t-fast), color var(--t-fast);
+}
+
+.home-recommend-more:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.home-map {
+  flex: 1 1 auto;
+  position: relative;
+  min-width: 0;
+}
+
 .leaflet-container {
   background: #1a1a1a !important;
   filter: brightness(0.92) contrast(1.05) saturate(0.9);
@@ -825,8 +1022,8 @@ button.danger:hover {
 }
 
 .map-layer-btn {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -839,6 +1036,11 @@ button.danger:hover {
   backdrop-filter: blur(6px);
 }
 
+.map-layer-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
 .map-layer-btn:hover {
   border-color: var(--primary);
   color: var(--foreground);
@@ -847,19 +1049,19 @@ button.danger:hover {
 .map-layer-btn.active {
   border-color: var(--primary);
   color: var(--primary);
-  background: rgba(255, 64, 0, 0.1);
+  background: rgba(255, 64, 0, 0.12);
 }
 
 .map-layer-tooltip {
   position: absolute;
-  right: 50px;
+  right: 62px;
   top: 50%;
   transform: translateY(-50%);
-  padding: 4px 10px;
+  padding: 5px 12px;
   background: var(--card);
   border: 1px solid var(--border);
   color: var(--foreground);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
@@ -878,27 +1080,27 @@ button.danger:hover {
 
 .map-marker {
   position: relative;
-  width: 32px;
-  height: 40px;
+  width: 26px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .map-marker-shape {
-  width: 32px;
-  height: 40px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.45));
+  width: 26px;
+  height: 34px;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.35));
 }
 
 .map-marker-icon {
   position: absolute;
-  top: 6px;
+  top: 5px;
   left: 50%;
   transform: translateX(-50%);
-  width: 14px;
-  height: 14px;
-  color: #fff;
+  width: 10px;
+  height: 10px;
+  color: var(--foreground);
   pointer-events: none;
 }
 
@@ -1601,6 +1803,53 @@ button.danger:hover {
 }
 
 /* ===== 成就页 ===== */
+.achievements-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--s-3);
+  margin-bottom: var(--s-5);
+}
+
+.stat-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: var(--s-4);
+  text-align: center;
+  transition: border-color var(--t-fast), transform var(--t-fast);
+}
+
+.stat-box:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.stat-box.highlight {
+  border-color: var(--primary);
+  background: rgba(255, 64, 0, 0.08);
+}
+
+.stat-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  line-height: 1;
+}
+
+.stat-box.highlight .stat-value {
+  color: var(--primary);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--s-2);
+}
+
 .progress-card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -1625,11 +1874,11 @@ button.danger:hover {
 
 .progress-value {
   color: var(--muted-foreground);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .progress-track {
-  height: 8px;
+  height: 10px;
   background: var(--input);
   border: 1px solid var(--border-strong);
   overflow: hidden;
@@ -1638,7 +1887,7 @@ button.danger:hover {
 .progress-fill {
   height: 100%;
   background: var(--primary);
-  transition: width 0.3s ease;
+  transition: width 0.6s ease;
 }
 
 .progress-note {
@@ -1652,33 +1901,33 @@ button.danger:hover {
 
 .badge-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  gap: var(--s-2);
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--s-3);
   margin-bottom: var(--s-5);
 }
 
 .badge-card {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: var(--s-3) var(--s-2);
+  padding: var(--s-4) var(--s-3);
   text-align: center;
   transition: border-color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
   position: relative;
 }
 
 .badge-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   border-color: var(--border-strong);
 }
 
 .badge-card.unlocked {
   border-color: var(--primary);
-  box-shadow: 0 0 0 1px var(--primary), 0 0 20px rgba(255, 64, 0, 0.25);
+  box-shadow: 0 0 0 1px var(--primary), 0 0 22px rgba(255, 64, 0, 0.22);
 }
 
 .badge-card.unlocked:hover {
-  box-shadow: 0 0 0 1px var(--primary), 0 0 28px rgba(255, 64, 0, 0.4);
-  transform: translateY(-3px);
+  box-shadow: 0 0 0 1px var(--primary), 0 0 32px rgba(255, 64, 0, 0.35);
+  transform: translateY(-4px);
 }
 
 .badge-card:not(.unlocked) .badge-icon {
@@ -1686,21 +1935,36 @@ button.danger:hover {
   opacity: 0.4;
 }
 
+.badge-check {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
 .badge-icon {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   line-height: 1;
   transition: transform var(--t-base);
 }
 
 .badge-card.unlocked:hover .badge-icon {
-  transform: scale(1.15);
+  transform: scale(1.12);
 }
 
 .badge-name {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.75rem;
-  margin-top: var(--s-2);
+  font-size: 0.85rem;
+  margin-top: var(--s-3);
   color: var(--foreground);
   letter-spacing: 0.03em;
 }
@@ -1710,23 +1974,23 @@ button.danger:hover {
 }
 
 .badge-desc {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: var(--muted-foreground);
-  margin-top: 2px;
+  margin-top: 3px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
 
 .district-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-  gap: var(--s-2);
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: var(--s-3);
 }
 
 .district-cell {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: var(--s-2) var(--s-1);
+  padding: var(--s-3) var(--s-2);
   text-align: center;
   transition: border-color var(--t-fast), background var(--t-fast), transform var(--t-fast);
   cursor: default;
@@ -1734,7 +1998,7 @@ button.danger:hover {
 
 .district-cell:hover {
   border-color: var(--border-strong);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .district-cell.visited {
@@ -1744,11 +2008,11 @@ button.danger:hover {
 
 .district-cell.visited:hover {
   background: rgba(255, 64, 0, 0.18);
-  box-shadow: 0 0 12px rgba(255, 64, 0, 0.2);
+  box-shadow: 0 0 14px rgba(255, 64, 0, 0.22);
 }
 
 .district-name {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--foreground);
 }
@@ -1758,9 +2022,9 @@ button.danger:hover {
 }
 
 .district-count {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: var(--muted-foreground);
-  margin-top: 2px;
+  margin-top: 3px;
   text-transform: uppercase;
 }
 
