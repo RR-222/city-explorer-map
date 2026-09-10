@@ -29,10 +29,13 @@ if (!url || !anonKey) {
 const dummySupabase = {
   auth: {
     async getUser() { return { data: { user: null } }; },
+    async getSession() { return { data: { session: null } }; },
     onAuthStateChange() { return { subscription: { unsubscribe() {} } }; },
     async signUp() { return { error: new Error('Supabase not configured') }; },
     async signInWithPassword() { return { error: new Error('Supabase not configured') }; },
-    async signOut() { return; }
+    async signOut() { return; },
+    async resend() { return { error: new Error('Supabase not configured') }; },
+    async resetPasswordForEmail() { return { error: new Error('Supabase not configured') }; }
   },
   from() {
     return {
@@ -41,4 +44,18 @@ const dummySupabase = {
   }
 };
 
-export const supabase = (url && anonKey) ? createClient(url, anonKey) : dummySupabase;
+// 显式配置 auth 选项,确保:
+// - persistSession: session 持久化到 localStorage,刷新页面后仍可保持登录
+// - autoRefreshToken: token 过期前自动刷新
+// - detectSessionInUrl: 处理邮箱验证回调链接中的 session
+export const supabase = (url && anonKey)
+  ? createClient(url, anonKey, {
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+        storageKey: 'sb-city-explorer-auth-token',
+        storage: typeof window !== 'undefined' ? window.localStorage : undefined
+      }
+    })
+  : dummySupabase;
