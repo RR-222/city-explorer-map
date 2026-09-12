@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-12T12:27:50.601Z",
+  "updatedAt": "2026-09-12T14:10:28.921Z",
   "articles": [
     {
       "account": "上海本地宝",
       "title": "期待！上海新一波演唱会定档！",
-      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789215965&ver=6962&signature=*IKPyhmtUx-YwCcMdH*VOIdgj*xZViPYbZUqrmphWzSf-okbz3yiJLinQu5lQxW8j7pRA5Imt1QlExnt7vDy4rh739GryzFGTGt5SFjCsuc1gpvRoH8GGkOMh5387Jem&new=1",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789222041&ver=6962&signature=*IKPyhmtUx-YwCcMdH*VOIdgj*xZViPYbZUqrmphWzTzHRrdngX6bwXb-dZAaeRFkq5r17d4-wvIDL2zk7AYCnQQYPWfEjuk5UhA2C0Zq7CU70XbLdHOm-DuFcR7gBFl&new=1",
       "biz": "MzI1MzA5MDEyNQ==",
       "mid": "2658278179",
       "idx": 1,
@@ -14,6 +14,20 @@
       "category": null,
       "category_name": null,
       "pinned_until": null
+    },
+    {
+      "account": "上海发布",
+      "title": "剧透来了！上海旅游节大巡游正在彩排中，小布带你抢先看→",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789222036&ver=6962&signature=yPLOLZ*Fp14nnebRtHlfSDc2yRNUu6jqKykl2Eore*R700MTognQx2e88I00JkDcodGnO6Jr-9TNkcyi3gTbH1*U1Ldz0oAWb0WVelkK5-57Hl3u7E48JyiY1d4JNZvU&new=1",
+      "biz": "MjM5NTA5NzYyMA==",
+      "mid": "2655471279",
+      "idx": 1,
+      "cover": "/wechat-covers/MjM5NTA5NzYyMA==-2655471279-1.jpg",
+      "summary": "9月12日晚， 2026年第37届上海旅游节大巡游活动 将在黄浦区中山东一路盛大举行。 今年全新制作的 21辆主题花车 将首次集结亮相，与 21支境内外表演方队 共同组成巡游方阵，邀请海内外游客“跟着花车游上海”，共赴“人民大众的节日”。 现在，大巡游正在紧张彩排中，小布也正在现",
+      "publish_at": "2026-09-11T16:54:57.000Z",
+      "category": "festival",
+      "category_name": "上海旅游节",
+      "pinned_until": "2026-10-06T23:59:59+08:00"
     },
     {
       "account": "上海发布",
@@ -39,14 +53,14 @@
       "cover": "/wechat-covers/MzU5MzQ3NDE4MA==-2248193172-1.jpg",
       "summary": "百老汇爆款音乐剧《六皇后》 6位顶配卡司集结 合唱、对唱、独唱轮番上演 Stars Gala 百老汇 Queens 专场 明天开演，只演3天 在后台发送&nbsp; &nbsp;皇后&nbsp; 可获取购票方式 上海的音乐剧剧迷们“过大年了”！百老汇爆款音乐剧《六皇后》原版原卡同",
       "publish_at": "2026-09-10T06:25:49.000Z",
-      "category": null,
-      "category_name": null,
-      "pinned_until": null
+      "category": "monthly",
+      "category_name": "每月汇总/预告",
+      "pinned_until": "2026-09-30T16:00:00.000Z"
     },
     {
       "account": "上海本地宝",
       "title": "2026上海教师节景区免费/优惠活动汇总",
-      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789215983&ver=6962&signature=*IKPyhmtUx-YwCcMdH*VOIdgj*xZViPYbZUqrmphWzTJ1PmTSCmscNOrxCESHwC1tWWQGWSNDhV525CzZzsH*lhkXnbKmQS6*wn8zoVAF6KZDfyzFASeG-QZmjVyv0qr&new=1",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789222057&ver=6962&signature=*IKPyhmtUx-YwCcMdH*VOIdgj*xZViPYbZUqrmphWzRa9Z1s6AIKwpxk6sfX6uSAOS9w8zfLMt71Qi1xqQ*L6JpXGiEh4iRkT7*tuhJkDyHsa1zFBKSzwEioRzbV-hRM&new=1",
       "biz": "MzI1MzA5MDEyNQ==",
       "mid": "2658277978",
       "idx": 3,
@@ -60,7 +74,7 @@
     {
       "account": "上海本地宝",
       "title": "2026上海第一波中秋活动推荐！游园会、演唱会、展览、赛事......",
-      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789215983&ver=6962&signature=*IKPyhmtUx-YwCcMdH*VOIdgj*xZViPYbZUqrmphWzRiI9ngDaiFHTMpQzbcfdQ5Q6yk3HR5GVKw64Ip4WkTDm-4i-RPXx0p36Yal-QHBXoq-blZsF-Qih2KXbU0qZfV&new=1",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789222057&ver=6962&signature=*IKPyhmtUx-YwCcMdH*VOIdgj*xZViPYbZUqrmphWzQMmPX3Nx02JaOICsAmPy9Rw9qL-yVFcYjMegAZFljHNPr5I3k9EFQPRFNE6qJU6NlA92Qf9b-RndRIgRS8wMH1&new=1",
       "biz": "MzI1MzA5MDEyNQ==",
       "mid": "2658277686",
       "idx": 3,
@@ -74,7 +88,7 @@
     {
       "account": "乐游上海",
       "title": "第37届上海旅游节经典活动季重点主题活动发布！",
-      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789215939&ver=6962&signature=sI0CWS7PY7X5-q-biw68UrpuNZXe6InwLX2CSfrrMpXE-OwIfJMYxsW3M40KQdZrXZZXvGQ3v-RVqU-78VhBAZ236GJgVF9eW*Yk2H1SUo3qPmYHbuPEk5xi5kvDYd08&new=1",
+      "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1789222006&ver=6962&signature=sI0CWS7PY7X5-q-biw68UrpuNZXe6InwLX2CSfrrMpUbtJRROAo3J4CuFWYgqZguxVkyAk2YukC2Mu8PfwcgAdvtOyx-reGISRmr6dI0URLQT-f5Q50U7gT7IWfPVBis&new=1",
       "biz": "MjM5MTkxMDk4NA==",
       "mid": "2652562615",
       "idx": 1,
