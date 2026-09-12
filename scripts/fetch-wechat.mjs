@@ -36,9 +36,9 @@ const projectRoot = resolve(__dirname, '..');
 // strict=false：仅按账号+时间+负向词过滤（用于纯文旅号，避免误杀演唱会/巡游等）
 const ACCOUNTS = [
   { name: '上海艺术展览', queries: [''],                          strict: false },
-  { name: '上海发布',     queries: ['', '展览', '演出', '演唱会', '文旅', '旅游', '活动', '开馆'], strict: true },
+  { name: '上海发布',     queries: ['', '展览', '演出', '演唱会', '文旅', '旅游', '活动', '开馆', '花车', '巡游'], strict: true },
   { name: '上海本地宝',   queries: ['', '展览', '演出', '演唱会', '旅游', '活动', '市集', '攻略'], strict: true },
-  { name: '乐游上海',     queries: ['', '活动', '展览', '演出', '演唱会', '旅游', '市集', '打卡'], strict: false },
+  { name: '乐游上海',     queries: ['', '活动', '展览', '演出', '演唱会', '旅游', '市集', '打卡', '花车', '巡游'], strict: false },
   { name: 'ShanghaiLOOK', queries: ['', '展览', '演出', '活动', '探店', '打卡'],                strict: false },
 ];
 const ACCOUNT_NAMES = new Set(ACCOUNTS.map((a) => a.name));
@@ -291,7 +291,7 @@ function detectPin(title, summary, publishTs) {
     }
   }
   // 3) 每周/每月汇总预告 → 置顶到该周/该月末
-  const aggRe = /(预告|汇总|盘点|推荐|指南|攻略|上新|清单|合集)/;
+  const aggRe = /(预告|汇总|盘点|推荐|指南|攻略|上新|清单|合集|必看)/;
   const weeklyRe = /(本?周|每周|周[一二三四五六日天末])/;
   const monthlyRe = /(本?月|每月)/;
   const pub = new Date(publishTs * 1000);
