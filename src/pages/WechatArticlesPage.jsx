@@ -40,6 +40,11 @@ function pinLabel(item) {
 function WechatCard({ item }) {
   const color = ACCOUNT_COLORS[item.account] || '#a1a1aa';
   const pin = pinLabel(item);
+  // 封面路径兼容子路径部署：数据里的 /wechat-covers/... 绝对路径在 GitHub Pages 子路径下会 404，
+  // 统一以 base 前缀重写为相对路径
+  const coverSrc = item.cover
+    ? (item.cover.startsWith('/') ? import.meta.env.BASE_URL + item.cover.slice(1) : item.cover)
+    : null;
   return (
     <a
       className={`wechat-card${pin ? ' wechat-card-pinned' : ''}`}
@@ -49,7 +54,7 @@ function WechatCard({ item }) {
     >
       {item.cover ? (
         <div className="wechat-card-cover">
-          <img src={item.cover} alt="" loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+          <img src={coverSrc} alt="" loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
         </div>
       ) : (
         <div className="wechat-card-cover wechat-card-cover-empty">📰</div>

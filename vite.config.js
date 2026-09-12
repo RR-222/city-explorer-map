@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  // 相对路径 base：兼容 GitHub Pages 子路径（https://<user>.github.io/<repo>/）与自定义域名
+  base: './',
   server: {
     port: 5173,
     watch: {

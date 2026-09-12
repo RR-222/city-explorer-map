@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import MapPage from './pages/MapPage';
@@ -53,7 +53,7 @@ export default function App() {
 
   return (
     <ToastProvider>
-      <BrowserRouter>
+      <HashRouter>
         <a href="#main" className="skip-link">跳到主要内容</a>
         <Routes>
         <Route path="/register" element={<Register />} />
@@ -80,7 +80,7 @@ export default function App() {
         <Route path="/flower-spot/:name" element={<SpotFlowerPage />} />
         <Route path="/recommend" element={<RecommendPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ToastProvider>
   );
 }
