@@ -419,12 +419,24 @@ async function persist(rows, supabase) {
     }
   }
   if (supabase && rows.length > 0) {
-    const { error } = await supabase.from('wechat_articles').upsert(rows, { onConflict: 'biz,mid,idx' });
-    if (error) {
-      console.error('  ✗ 写入 Supabase 失败:', error.message);
-      console.error('    请先在 Supabase Dashboard → SQL Editor 运行（更新版）supabase/wechat-articles-schema.sql');
+    // 与快照同规则过滤后再写库，避免旧文（超出保留期且无有效置顶）被 upsert 重新引入
+    const writeCutoff = Date.now() - RETAIN_DAYS * 86400000;
+    const keep = rows.filter((r) => {
+      if (NEGATIVE_KEYWORDS.some((k) => (r.title || '').includes(k))) return false;
+      const pinned = r.pinned_until && new Date(r.pinned_until).getTime() > Date.now();
+      if (pinned) return true;
+      return r.publish_at && new Date(r.publish_at).getTime() >= writeCutoff;
+    });
+    if (keep.length > 0) {
+      const { error } = await supabase.from('wechat_articles').upsert(keep, { onConflict: 'biz,mid,idx' });
+      if (error) {
+        console.error('  ✗ 写入 Supabase 失败:', error.message);
+        console.error('    请先在 Supabase Dashboard → SQL Editor 运行（更新版）supabase/wechat-articles-schema.sql');
+      } else {
+        console.log(`  ✓ 已写入 Supabase wechat_articles（${keep.length} 条，过滤 ${rows.length - keep.length} 条超期旧文）`);
+      }
     } else {
-      console.log(`  ✓ 已写入 Supabase wechat_articles（${rows.length} 条）`);
+      console.log(`  ✓ 无可写数据（${rows.length} 条均超期）`);
     }
   }
 }

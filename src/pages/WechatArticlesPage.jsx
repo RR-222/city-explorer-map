@@ -4,7 +4,7 @@ import Brand from '../components/Brand';
 import { supabase } from '../supabaseClient';
 import snapshot from '../../data/wechat-articles.json';
 
-const ACCOUNTS = ['上海艺术展览', '上海发布', '上海本地宝', '乐游上海', 'ShanghaiLOOK'];
+const ACCOUNTS = ['上海艺术展览', '上海发布', '上海本地宝', '乐游上海', 'ShanghaiLOOK', '上海展览'];
 
 const ACCOUNT_COLORS = {
   '上海艺术展览': '#e879f9',
@@ -12,6 +12,7 @@ const ACCOUNT_COLORS = {
   '上海本地宝': '#4ade80',
   '乐游上海': '#fb923c',
   'ShanghaiLOOK': '#22d3ee',
+  '上海展览': '#a78bfa',
 };
 
 function formatDate(iso) {
@@ -112,7 +113,10 @@ export default function WechatArticlesPage() {
     const list = articles.filter((a) => {
       if (account !== '全部' && a.account !== account) return false;
       if (kw && !(`${a.title}${a.summary || ''}`.toLowerCase().includes(kw))) return false;
-      return true;
+      // 防御性过滤：仅显示有效置顶或近三天内的文章（防止库中残留的超期行出现在页面）
+      const pinned = a.pinned_until && new Date(a.pinned_until).getTime() > now;
+      if (pinned) return true;
+      return a.publish_at && now - new Date(a.publish_at).getTime() <= 3 * 86400000;
     });
     // 置顶优先：置顶文章按到期时间升序（最先到期的最靠前），其余按发布时间倒序
     return [...list].sort((a, b) => {
@@ -144,7 +148,7 @@ export default function WechatArticlesPage() {
         <div className="page-header">
           <h2 className="page-title">文旅情报</h2>
           <p className="text-muted">
-            聚合「上海艺术展览 · 上海发布 · 上海本地宝 · 乐游上海 · ShanghaiLOOK」五个公众号的文旅相关内容，
+            聚合「上海艺术展览 · 上海发布 · 上海本地宝 · 乐游上海 · ShanghaiLOOK · 上海展览」六个公众号的文旅相关内容，
             每天两次自动抓取（近三天内容），每月/每周汇总与重要节日文章自动置顶至结束。
             {updatedAt && <span className="wechat-updated">数据更新于 {updatedAt.toLocaleDateString('zh-CN')}</span>}
           </p>
