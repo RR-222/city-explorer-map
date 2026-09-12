@@ -1,0 +1,2057 @@
+{
+  "_说明": "上海四季赏花时令景点数据。months 为适合月份（逗号分隔），spots 后续补充 lat/lng/photos/source_url。district 待补。",
+  "_花历": [
+    {
+      "flower": "梅花",
+      "months": "2,3",
+      "category": "传统名花",
+      "spots": [
+        {
+          "name": "鲁迅公园-梅园",
+          "district": "虹口区",
+          "photos": [
+            "./data/flower-photos/梅花/鲁迅公园-梅园.jpg",
+            "./data/flower-photos/梅花/鲁迅公园-梅园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6991db8e000000000a02c2aa?xsec_token=ABuu3n7C6XW-H4TxWh7h7j2qeN47Rna8eDzdrbA51WTAs=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "世纪公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/梅花/世纪公园 .jpg",
+            "./data/flower-photos/梅花/世纪公园  (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/699584f1000000000a02f850?xsec_token=AB_ZjF29UeO54DHlJtVjhWAUbAuIZZgK_-MVoOMKIapNg=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "上海总商会旧址",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/梅花/上海总商会旧址.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/697196cf000000001a025d55?xsec_token=ABpPQ-bivinlRRGWIgT-TN6cCMQdhMJLNwWEvfPdegRRg=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "莘庄公园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/梅花/莘庄公园.jpg",
+            "./data/flower-photos/梅花/莘庄公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6979582400000000220097c8?xsec_token=AB8J3LnnPK81qyTEg9ylsBVwMcvB8tdEbAKMjqP-BvAPo=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "梅园公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/梅花/梅园公园.jpg",
+            "./data/flower-photos/梅花/梅园公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6988ae2a000000001b015caf?xsec_token=ABm8B8QWL8zF7T1bU7PI_QGvYlFRF8BHeR1k0iwj0gxbI=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "广富林",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/梅花/广富林.jpg",
+            "./data/flower-photos/梅花/广富林 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69715e12000000002103ec1f?xsec_token=ABpPQ-bivinlRRGWIgT-TN6XmpCRgePEl6uoQsDvsd32Y=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "花开海上生态园",
+          "district": "金山区",
+          "photos": [
+            "./data/flower-photos/梅花/花开海上生态园.jpg",
+            "./data/flower-photos/梅花/花开海上生态园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/699009eb000000001d02768e?xsec_token=AB_38MKvWhC1Tpo80xlhbnevLDq5xPB7tX8aRUkdYkJck=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "曲水园",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/梅花/曲水园.jpg",
+            "./data/flower-photos/梅花/曲水园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/699a8b4a000000000a03d4bf?xsec_token=ABH1D_Ebzj64-4Ew4Hu2v6G4W744o2qNinelo7pzpa7mM=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "青溪园",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/梅花/青溪园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6988418a000000001b01cd17?xsec_token=ABm8B8QWL8zF7T1bU7PI_QGuAnaKI0ed7ID2wvt5saPM4=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "宝山寺",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/梅花/宝山寺.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/697196cf000000001a025d55?xsec_token=ABpPQ-bivinlRRGWIgT-TN6cCMQdhMJLNwWEvfPdegRRg=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：蔷薇科李属落叶小乔木，高4-10米，树皮浅灰色或带绿色、平滑，小枝绿色。花单生或2朵同生于1芽内，花径2-2.5厘米，先叶开放，香味浓郁；花萼多红褐色，花瓣倒卵形，白至粉红色；叶卵形或椭圆形，边缘具细锐锯齿。核果近球形，熟时黄或绿白色，味酸，果期5-6月。花期冬春（长江流域12月至翌年3月）。\n植物文化：中国十大名花之首，与兰、竹、菊并称“四君子”，与松、竹合称“岁寒三友”。梅花在严寒中先花后叶、凌寒独放，象征坚韧不拔、高洁傲岸的品格；民间以梅花五瓣喻“梅开五福”（快乐、幸福、长寿、顺利、和平），常用于年节装饰。“疏影横斜水清浅，暗香浮动月黄昏”等咏梅名句流传千年，梅已有3000多年栽培史。\n主要品种：全国梅花有11个品种群、400余个品种。真梅系最常见：江梅单瓣白花、宫粉重瓣粉红着花繁密、朱砂紫红、绿萼白花绿萼清新、玉蝶重瓣白色、洒金一树开红白多色；垂枝梅枝条下垂如柳，龙游梅枝干扭曲如游龙，最富画意。杏梅系（梅×杏）抗寒性强，美人梅（紫叶李×宫粉梅）花叶俱紫红。\n观赏注意点：花期受气温影响大，暖冬会提前，出发前可查实时花讯；清晨逆光拍摄花枝更有意境。"
+    },
+    {
+      "flower": "腊梅",
+      "months": "2",
+      "category": "传统名花",
+      "spots": [
+        {
+          "name": "真如公园",
+          "district": "普陀区"
+        },
+        {
+          "name": "古猗园",
+          "district": "嘉定区"
+        }
+      ],
+      "notes": "介绍：形态特征：蜡梅科蜡梅属落叶灌木，高2-4米，常丛生，枝近四棱。叶对生，椭圆状卵形，表面粗糙、背面灰绿。花单生，着生于二年生枝的叶腋，冬末先叶开放，花瓣蜡黄色、具蜡质光泽，内轮花瓣基部常带紫褐色斑纹，香气浓郁如蜜蜡。果托近坛状，口部收缩。花期11月至翌年3月，是少有的冬季开花木本植物。\n植物文化：蜡梅与梅花并无亲缘关系（分属蜡梅科与蔷薇科），因色似蜜蜡、香近梅花而得名“蜡梅”，北宋经苏轼、黄庭坚题咏后名声大振，被列为传统名花。它在百花凋零的隆冬绽放，斗寒傲霜，象征坚韧不屈；明清起为“岁朝清供”主角，与南天竹红果、水仙同置案头，寓意新年吉祥。\n主要品种：常见三大品种群：素心蜡梅内轮花瓣纯黄无斑、香气最浓，被视为上品；磬口蜡梅花大，外轮淡黄、内轮紫红，盛开时花瓣内弯如古磬口；狗牙蜡梅（狗蝇梅）花瓣细长尖、色浅香淡。另有虎蹄、金钟、檀香等特色品种，全国已登录170余个栽培品种。\n观赏注意点：2月中下旬为最佳观赏期，花期约一个月；香气浓烈，适合近闻细赏。"
+    },
+    {
+      "flower": "樱花",
+      "months": "3",
+      "category": "樱花",
+      "spots": [
+        {
+          "name": "宝山寺",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/樱花/宝山寺.jpg",
+            "./data/flower-photos/樱花/宝山寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d101d7000000001a0257f5?xsec_token=ABbJYBpxfgPp027ro9aMKWt6kOkhKyPGYFrdoDPoMNXKU=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "御澜湾",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/樱花/御澜湾.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d3864c000000001a022acf?xsec_token=ABLVs2MKKdCUwCnP5rfZQItbi6GM4ssG7QqJfHBaM-QTA=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "德莱蒙德住宅（华山路263弄7号）",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/樱花/德莱蒙德住宅（华山路263弄7号）.jpg",
+            "./data/flower-photos/樱花/德莱蒙德住宅（华山路263弄7号） (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cf00a3000000002003919d?xsec_token=ABIVMRtGTrN36FMIzCkriYB-4QRvgOrCBTGFLTiiQ9VCY=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "龙美术馆",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/樱花/龙美术馆.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cb55d7000000001a032530?xsec_token=ABQGBkvw3DPDGuTm4BkqxtsTlcxp39SvsItyPr8RYpheg=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "上海交通大学（徐汇校区）",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/樱花/上海交通大学（徐汇校区）.jpg",
+            "./data/flower-photos/樱花/上海交通大学（徐汇校区） (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69bff67d00000000210076e4?xsec_token=AB-j35qVxj444xrQJT2UnH74G3X8vbDNmXVCeR-eGTsaA=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "虹口足球场",
+          "district": "虹口区",
+          "photos": [
+            "./data/flower-photos/樱花/虹口足球场.jpg",
+            "./data/flower-photos/樱花/虹口足球场 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cd10fe000000002302718d?xsec_token=ABye8gtEFt07bvUvGBh3DC3acJDwFKgIgu7-h7XSZCj6Y=&xsec_source=pc_search&source=web_search_result_notes",
+          "notes": "含夜樱"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/樱花/世博文化公园.jpg",
+            "./data/flower-photos/樱花/世博文化公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d0788a00000000210050fd?xsec_token=ABcy53L9DiSd-Y_Y9MqzVg_XSzRsysbmYKtv6dYghGiXI=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "顾村公园",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/樱花/顾村公园.jpg",
+            "./data/flower-photos/樱花/顾村公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d5a6f3000000002102db6c?xsec_token=AByFkRCiwBDECN9zEGz6LSzVIbWR4ogsfOwcqq-sukBu8=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "大宁灵石公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/樱花/大宁灵石公园.jpg",
+            "./data/flower-photos/樱花/大宁灵石公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/698daa87000000001a02d230?xsec_token=AB5M_BKziGMu9osdwKrShPUCCrFza7R6GlGqyddriR1PY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "同济大学（四平路校区）",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/樱花/同济大学（四平路校区）.jpg",
+            "./data/flower-photos/樱花/同济大学（四平路校区） (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ca9e030000000023026042?xsec_token=ABK3tWU2FO1lGwSTi9iYE0n6phn71Wxmn5Knvtf-juBG8=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "南浦大桥",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/樱花/南浦大桥.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d1e13c000000002102d982?xsec_token=ABbJYBpxfgPp027ro9aMKWt0JEXRbvaitJzgEl5PODKx0=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "四川路桥",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/樱花/四川路桥.jpg",
+            "./data/flower-photos/樱花/四川路桥 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cccb47000000001a02595f?xsec_token=ABDHS_5ALuGVatL0a-bO6p1Th-lYTOeIDdalaAO5y7e4U=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "绿之丘",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/樱花/绿之丘.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69db3229000000002202b8fa?xsec_token=ABRJIldyw6NEQKldTbcOt34dIS2I0HgHKsvpkmXXRwdG8=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "东方渔人码头",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/樱花/东方渔人码头.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/67e927f2000000000903a0b4?xsec_token=AB6gpXyFvyjctaK9lzwARsgw4TwcG6YbArkvzJ_pyKzKY=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "华青南路",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/樱花/华青南路.jpg",
+            "./data/flower-photos/樱花/华青南路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ce2ca9000000002200086d?xsec_token=ABbON8WwsPW5MVYrePBmFIaJBv22mgL6eIE4qYAznGLhU=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：蔷薇科李属樱亚属落叶乔木，高4-16米，树皮灰色，常有横向皮孔。叶卵状椭圆形或倒卵形，长5-12厘米，边缘具尖锐重锯齿，齿端有小腺体。花3-5朵组成伞形或伞房状花序，花瓣5枚（栽培品种常为重瓣），先端有缺刻，花色白至粉红，先叶开放或花叶同放；核果近球形，成熟时紫黑色。花期一般2月下旬至4月。\n植物文化：樱花原产北半球温带喜马拉雅地区，中国是原产地之一，秦汉时期宫苑已有栽培，唐代随万国来朝传入日本。樱花盛开时满树烂漫如云似霞，花期却极短（单株约一周），这种“刹那芳华”成为日本“物哀”美学的象征；在中国则更多寄托报春与浪漫之意。\n主要品种：按花期分三类：早樱（2月下旬-3月上旬）有河津樱、钟花樱、迎春樱等，先花后叶、单瓣色深；中樱以染井吉野樱为代表（3月中下旬，白色花瓣带粉晕，花叶整齐如云）、大岛樱（花白单瓣，许多品种的亲本）；晚樱（4月上中旬）有关山樱、松月樱、八重红垂枝樱等重瓣大花品种。另有御衣黄、郁金樱等黄绿色珍稀品种。全球樱花栽培品种约600个，中国自主选育超300个。\n观赏注意点：花期极短（约1-2周），一场风雨即落，出发前务必查实时花讯；顾村公园等热门点位周末人流极大，建议工作日清晨前往。"
+    },
+    {
+      "flower": "白玉兰 / 二乔玉兰",
+      "months": "3",
+      "category": "玉兰",
+      "spots": [
+        {
+          "name": "上海展览中心·西花园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/白玉兰/上海展览中心·西花园.jpg",
+            "./data/flower-photos/白玉兰/上海展览中心·西花园 (2).jpg",
+            "./data/flower-photos/白玉兰/上海展览中心·西花园 (3).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69af882f000000001600be85?xsec_token=ABE7E5FfSE-IA1NxVuwYtaT1JpBsntyp6PUDqaknF2SBA=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "龙华寺",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/白玉兰/龙华寺.jpg",
+            "./data/flower-photos/白玉兰/龙华寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b2273a000000001503b18c?xsec_token=ABlMROzwA6ukUJyydqZHxmwmo4yZTUnYUjeouKPkw7rVM=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "陆家嘴中心绿地",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/白玉兰/陆家嘴中心绿地.jpg",
+            "./data/flower-photos/白玉兰/陆家嘴中心绿地 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b6656f000000001d01d380?xsec_token=ABDJFl_Gcse1utba87CRR8LcGbOn6xHIQS4eiR_GjrKuk=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "闵行文化公园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/白玉兰/闵行文化公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b4d93c00000000230216a6?xsec_token=ABGAi05fEa0xMWJgIIkY-fJFXLdiB40Bd83LbPNfasy9w=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：白玉兰（玉兰，木兰科玉兰属落叶乔木）：高达25米，胸径可达1米，树皮深灰色、粗糙开裂。叶纸质，倒卵形或宽倒卵形，长10-15厘米。花先叶开放，单生枝顶，直立、芳香，直径10-16厘米，花被片9枚、白色，基部常带粉红色；聚合果圆柱形，成熟蓇葖厚木质、褐色，种子外种皮鲜红色。花期2-3月（气候适宜时7-9月可二次开花）。二乔玉兰为白玉兰与紫玉兰的杂交种，花被片外面淡紫红色、内面白色，花形似郁金香，先花后叶，花期略晚于白玉兰。\n植物文化：白玉兰是中国特有种，1986年被定为上海市市花，象征“一马当先、奋发向上”。其名首见于明代《大明一统志》，此前一直称“木兰”；“玉兰”因“色白微碧、香味似兰”得名，花蕾直立如笔，又称“望春花”“木笔”。古人将玉兰与海棠、牡丹、桂花并植，寓意“玉堂富贵”；屈原《离骚》“朝饮木兰之坠露”的吟咏已历两千余年。玉兰花蕾（辛夷）入药，可祛风散寒、宣肺通鼻，用于鼻塞头痛。\n主要品种：白玉兰属全球记载44种，约40种原产中国。园林常见种与品种：望春玉兰（花期最早，花蕾为辛夷正品）、紫玉兰（灌木状，外紫内白，花叶同放）、二乔玉兰（白玉兰×紫玉兰杂交，外紫内白渐变）、星花玉兰（花瓣细长如星芒）、飞黄玉兰（黄绿色花，白玉兰园艺品种，最晚开）。上海绿化近年还选育出丹霞映娇、玉翡翠等新品种以延长观赏期。\n观赏注意点：玉兰树高花高，建议带长焦镜头；花期约十天，遇风雨易落，宜及时观赏。"
+    },
+    {
+      "flower": "桃花",
+      "months": "3",
+      "category": "传统名花",
+      "spots": [
+        {
+          "name": "天马射电天文望远镜",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/桃花/天马射电天文望远镜.jpg",
+            "./data/flower-photos/桃花/天马射电天文望远镜 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cb7b50000000001a02f7cc?xsec_token=ABQGBkvw3DPDGuTm4BkqxtsSH6yRrj1l-MHmPnRehYunc=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "桃林路",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/桃花/桃林路.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cf7187000000001a0213a2?xsec_token=ABIVMRtGTrN36FMIzCkriYB6hD4CzCMEYISGsBorUV0g8=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "南汇桃花村",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/桃花/南汇桃花村.jpg",
+            "./data/flower-photos/桃花/南汇桃花村 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69c537310000000023024346?xsec_token=ABxJLD9NLmFCFwiE5a0e_IRoRAGrUF-zg0wfalweDDSso=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：蔷薇科李属落叶乔木，高3-8米，树皮暗红褐色，小枝绿色、向阳面转红。叶椭圆状披针形，长7-15厘米，边缘有细锯齿，叶柄基部常具腺体。花单生，先叶开放，径2.5-3.5厘米，花梗极短；花瓣长圆状椭圆形或宽倒卵形，粉红色，稀白色，雄蕊约20-30枚、花药绯红色（识别桃花的重要特征）；核果卵圆形，成熟时向阳面具红晕。花期3-4月，果期6-9月。\n植物文化：桃原产中国，栽培史3000多年，260万年前的“昆明桃”化石证明其起源于华夏。桃花自古象征春天与美好：《诗经》“桃之夭夭，灼灼其华”以桃花喻新娘之美；“桃李满天下”喻弟子众多；桃子是西王母蟠桃、老寿星仙桃，象征吉祥长寿，祝寿送“寿桃”的习俗流传至今；桃木被视为“五木之精”，辟邪镇宅，王安石“总把新桃换旧符”即源于此。陶渊明《桃花源记》更让“桃花源”成为理想世界的代名词。\n主要品种：桃分食用桃与观赏桃两大类。观赏桃按枝姿分五大类：直枝桃（最常见，如碧桃、绛桃、人面桃）、垂枝桃（枝条下垂如瀑布，如红雨垂枝）、寿星桃（株高不超2米，矮化盆栽佳品）、帚桃（树形直立如扫帚，如照手红）、曲枝桃（枝条扭曲如游龙，如云龙桃）。名品还有一树开红白双色的洒金碧桃（五色碧桃）、花瓣细长如菊的菊花桃、整株紫叶的紫叶桃等。\n观赏注意点：南汇桃花村等传统赏桃地花期集中在3月中下旬；桃林花粉较多，过敏人群注意防护。"
+    },
+    {
+      "flower": "海棠",
+      "months": "3",
+      "category": "海棠",
+      "spots": [
+        {
+          "name": "闸北公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/海棠/闸北公园.jpg",
+            "./data/flower-photos/海棠/闸北公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cd08d80000000023027e94?xsec_token=ABye8gtEFt07bvUvGBh3DC3UTulaTEiwyfDPYLwkVROdo=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "人民公园",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/海棠/人民公园.jpg",
+            "./data/flower-photos/海棠/人民公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69cbbdbe000000002102ef3d?xsec_token=ABQGBkvw3DPDGuTm4BkqxtsSj4yrl-Cf8MIQrdtDP4M8E=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "中科路",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/海棠/中科路.jpg",
+            "./data/flower-photos/海棠/中科路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ce9041000000001f00617b?xsec_token=ABbON8WwsPW5MVYrePBmFIaM1oOctFce3hDFR_wY6k2Lk=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "黄兴公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/海棠/黄兴公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69c8ebce0000000021010ee8?xsec_token=ABMrzz2ZnvdJnt5AtB-LdY2HFNpX0HKZgYWGIjzEn5I9g=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "同济大学（四平路校区）",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/海棠/同济大学（四平路校区）.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ccc3bf000000001b001055?xsec_token=ABDHS_5ALuGVatL0a-bO6p1Y0zNEHldl_54v_zFIt7aJs=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：蔷薇科苹果属（西府、垂丝等）及木瓜属（贴梗、木瓜等）落叶乔木或灌木的通称。西府海棠小乔木，枝直立，花梗短粗直立，花蕾红艳如胭脂、开后渐粉白，是海棠四品中唯一有香气的；垂丝海棠花梗细弱下垂（长2-4厘米、紫色），花瓣玫瑰红，花朵低垂如含羞少女，先花后叶；贴梗海棠为灌木、枝有刺，花梗极短，花紧贴枝条，猩红色；木瓜海棠果大如木瓜。花期一般3-5月。\n植物文化：海棠自古为“花中神仙”“花贵妃”，与玉兰、牡丹、桂花并称“玉堂富贵”。唐代起“海棠春睡”典故流传：唐明皇以“海棠睡未足”喻醉后杨贵妃，苏轼据此写下“只恐夜深花睡去，故烧高烛照红妆”；李清照《如梦令》“知否，知否？应是绿肥红瘦”写尽暮春惜花之情。明代《群芳谱》定“海棠四品”：西府、垂丝、贴梗、木瓜。张爱玲“人生三恨”中“海棠无香”之憾流传最广，而西府海棠其实有清香。\n主要品种：“海棠四品”即西府海棠、垂丝海棠、贴梗海棠、木瓜海棠。西府海棠为四品中上品，花向上开放、有香气，北方园林常见；垂丝海棠花梗下垂、柔美婉约，多植于江南水畔；贴梗海棠（皱皮木瓜）深红簇生、枝干有刺；木瓜海棠果实可食。现代园林还大量应用北美海棠系列（如绚丽、红宝石等），花量极大、花色红艳，观赏期长。\n观赏注意点：盛花期约两周；海棠多与亭台楼阁搭配，适合拍摄古典园林意境。"
+    },
+    {
+      "flower": "油菜花",
+      "months": "3",
+      "category": "田园花海",
+      "spots": [
+        {
+          "name": "上海稻德粮食合作社",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/油菜花/上海稻德粮食合作社.jpg",
+            "./data/flower-photos/油菜花/上海稻德粮食合作社 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b6af4300000000210119d6?xsec_token=ABDJFl_Gcse1utba87CRR8Le4PxROubo4jQFTn3m8W-L0=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "广富林",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/油菜花/广富林.jpg",
+            "./data/flower-photos/油菜花/广富林 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b02fa30000000009020972?xsec_token=AB29vRpk7vIMWfZUKfXhLfobY1MFE4mpo-ZWRBelf3k0I=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/油菜花/世博文化公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b403d4000000001a02f2b2?xsec_token=ABGAi05fEa0xMWJgIIkY-fJPg__S_bIHH4Ep1nH-mzSR4=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "余德耀美术馆",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/油菜花/余德耀美术馆.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b17fc9000000002603089e?xsec_token=ABVsZBBBzHTOTSYqZhC9-Il0qIy5LjciJZosbTc5vv2IM=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "和睦村",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/油菜花/和睦村.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69afb3e40000000015030a4e?xsec_token=ABE7E5FfSE-IA1NxVuwYtaT2H3-hTcUqZhmPziWbsIOQ4=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "辰花路",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/油菜花/辰花路.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69bd67e8000000002202b7a4?xsec_token=AB8R_LPlT3VzoJ2CwzcCqQM69Hibn8dM_RsTjBVjQv_3g=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：十字花科芸苔属一年生草本，株高30-90厘米，主根发达。基生叶大头羽状分裂，茎生叶抱茎。总状花序伞房状，花鲜黄色、花瓣4枚成十字形，雄蕊6枚4长2短；角果线形，长3-8厘米。花期2-4月（长江流域），盛花期花田如金色海洋。\n植物文化：油菜原产中国，栽培历史数千年，是\"油\"字来源——其种子含油率35%-50%，中国古人以\"芸苔\"榨油。油菜花是江南春景的代名词，乾隆\"黄萼裳裳绿叶稠，千村欣卜榨新油\"写尽农事；近年油菜花田成为乡村旅游与摄影胜地，象征丰收与希望；油菜花蜜与蜂产品亦是重要物产。\n主要品种：按品种分三类：白菜型油菜（江南早熟，株矮）、甘蓝型油菜（20世纪从欧洲引入，现为主栽品种，高油抗病）、芥菜型油菜（耐旱耐瘠，西南常见）。近年各地引种粉、橙、白等彩色油菜与\"七彩油菜\"景观田，兼具观赏与榨油价值。\n观赏注意点：花海中蜜蜂较多，注意防护；田埂泥土湿滑，建议穿防滑鞋；日出日落光线斜射时色彩最浓郁。"
+    },
+    {
+      "flower": "郁金香",
+      "months": "3",
+      "category": "球根花卉",
+      "spots": [
+        {
+          "name": "大宁公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/郁金香/大宁公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69a80b30000000002602e2bf?xsec_token=ABYcY0z568S4dDvOY--mM6npwEbpwcaOwG2yDKra_POdo=&xsec_source=pc_search&source=web_search_result_note"
+        },
+        {
+          "name": "静安雕塑公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/郁金香/静安雕塑公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69c92cf90000000021011dfc?xsec_token=AB2l-GJpld_gYjdcYy_C2PGR8AEJxZGDX-ExSo6j0AA5M=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "杨浦滨江",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/郁金香/杨浦滨江.jpg",
+            "./data/flower-photos/郁金香/杨浦滨江 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69c3d6170000000023017e7e?xsec_token=AB19cOWkAcQeIYMp_CzcOdUljDjpEQgw75bbD2lHtsYsw=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "琴键春园",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/郁金香/琴键春园.jpg",
+            "./data/flower-photos/郁金香/琴键春园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69bdf9f5000000002800999a?xsec_token=AB8R_LPlT3VzoJ2CwzcCqQM5eN0REtgvqZJjeb1s3e3vk=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "外滩",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/郁金香/外滩.jpg",
+            "./data/flower-photos/郁金香/外滩 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/699ea790000000000d009e84?xsec_token=ABDXMaOUCU2Jd0ja785QMAazWRND4fBCSRI0L65IvQpFQ=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "襄阳公园",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/郁金香/襄阳公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69c9c72a000000001a03385a?xsec_token=AB2l-GJpld_gYjdcYy_C2PGZk9LFFosF86oM5vRfGsLPg=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：百合科郁金香属多年生鳞茎草本，鳞茎扁圆锥形，外被褐色皮膜。叶3-5枚，带状披针形，灰绿色，有白粉。花单生茎顶，杯状或碗状，花被片6枚，直立或反卷，花色几乎涵盖所有色系（除纯蓝）；蒴果。花期3-5月，单朵花期约一周。\n植物文化：郁金香原产地中海沿岸及中亚（土耳其安纳托利亚高原），16世纪传入荷兰后引发\"郁金香狂热\"（1637年球茎价格泡沫），是欧洲最早的金融泡沫之一；今为荷兰国花，荷兰是世界郁金香种球贸易中心，库肯霍夫公园年接待百万游客。土耳其人最早栽培，花语为博爱、名誉与美丽；在东方则象征优雅与春天。\n主要品种：全球栽培品种逾万，按花期与花型分15群：单瓣早花、重瓣早花、凯旋型、达尔文杂交型、百合花型（花瓣尖长）、鹦鹉型（花瓣皱裂）、饰边型、绿色型、伦勃朗型等。上海大宁公园、静安雕塑公园等每年举办郁金香花展。\n观赏注意点：3月底为盛花末期，部分晚花品种仍在开，出发前确认花况；花田多设围栏，请勿踩入。"
+    },
+    {
+      "flower": "牡丹",
+      "months": "4",
+      "category": "传统名花",
+      "spots": [
+        {
+          "name": "浦东牡丹园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/牡丹/浦东牡丹园 .jpg",
+            "./data/flower-photos/牡丹/浦东牡丹园  (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d9a2cc000000002200fc38?xsec_token=ABAgo1Mq2Mg_kw6ne3yeR2c21wv6QYexZv6PG3gE6UHWU=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "漕溪公园",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/牡丹/漕溪公园.jpg",
+            "./data/flower-photos/牡丹/漕溪公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d4e4bf000000002100658b?xsec_token=ABLFuYLeRYptEOd7Ji4i6ZnDCklWd6FKRwFK3x4-xb6ZU=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "龙华寺",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/牡丹/龙华寺.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d995a9000000001a02ad0a?xsec_token=ABAgo1Mq2Mg_kw6ne3yeR2c7cj-sV9jG_RJ9L-KVClriw=&xsec_source=pc_search&source=web_search_result_notes"
+        },
+        {
+          "name": "古猗园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/牡丹/古猗园.jpg",
+            "./data/flower-photos/牡丹/古猗园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d70d9e00000000220033d2?xsec_token=ABUl4Scr-HuLXwemFgwvlZYDA7LEkylx21caQs0ks-Ccs=&xsec_source=pc_search&source=web_search_result_notes"
+        }
+      ],
+      "notes": "介绍：形态特征：芍药科芍药属落叶灌木，高0.5-2米，枝粗壮。二回三出复叶，小叶3-5裂，背面有白粉。花单生枝顶，径10-30厘米，花瓣5枚至数十枚（重瓣），白、粉、红、紫、黄、绿、墨、复色，花大色艳；心皮5枚密生柔毛；蓇葖果。花期4-5月。\n植物文化：\"国色天香\"\"花中之王\"，中国十大名花之二（一说之首）。唐刘禹锡\"唯有牡丹真国色，花开时节动京城\"写尽盛况；隋唐宫廷广植，洛阳、菏泽为栽培中心，\"洛阳牡丹甲天下\"延续千年。牡丹象征富贵吉祥、繁荣昌盛，是瓷器、织锦、年画最经典的纹样，寓意\"花开富贵\"。\n主要品种：品种1000余个，按花型分单瓣、荷花、菊花、蔷薇、托桂、金环、皇冠、绣球等十大花型；名品姚黄、魏紫、赵粉、豆绿、二乔等。上海古猗园、漕溪公园、龙华寺等以牡丹花展闻名。\n观赏注意点：花期约1-2周，雨后花瓣易受损；4月上旬最盛，中旬后渐次凋谢。"
+    },
+    {
+      "flower": "紫藤",
+      "months": "4",
+      "category": "藤蔓花卉",
+      "spots": [
+        {
+          "name": "上海师范大学（徐汇校区）",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/紫藤/上海师范大学（徐汇校区）.jpg",
+            "./data/flower-photos/紫藤/上海师范大学（徐汇校区） (2).jpg",
+            "./data/flower-photos/紫藤/上海师范大学（徐汇校区） (3).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69da54cb000000001a03212f?xsec_token=ABnA77rx-rBbFLH54D28Jp4xOJ0deYaEGnyGgN29E8t-I=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "嘉定紫藤园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/紫藤/嘉定紫藤园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e19cc6000000001b022d22?xsec_token=ABb1VW8Rx2nZALQCvo5w12TiAluMHXAya6nE0RaQxRKEM=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "闵行古藤园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/紫藤/闵行古藤园.jpg",
+            "./data/flower-photos/紫藤/闵行古藤园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d79b20000000001b0023a9?xsec_token=ABUl4Scr-HuLXwemFgwvlZYAtkaIJB5gv_l_qGgfLzq3o=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "太原路215弄",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/紫藤/太原路215弄.jpg",
+            "./data/flower-photos/紫藤/太原路215弄 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69db6d55000000002103a23a?xsec_token=ABRJIldyw6NEQKldTbcOt34Yxu5eQy2WD0rJH1mtQYSZI=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "东平森林公园",
+          "district": "崇明区",
+          "photos": [
+            "./data/flower-photos/紫藤/东平森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69eccd07000000002202677e?xsec_token=ABvPRmUpX8f23vRx6g6UISXWCM0Gid87yeb6N3Q9c5nDc=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：豆科紫藤属落叶藤本，茎左旋缠绕，长可达20米。奇数羽状复叶，小叶7-13枚，卵状椭圆形。总状花序下垂，长15-30厘米，蝶形花，蓝紫色至紫色，有芳香；荚果密生黄色绒毛。花期4-5月，果期8-10月。\n植物文化：中国庭园传统棚架植物，\"紫藤挂云木，花蔓宜阳春\"（李白）传颂千年；紫谐音\"紫气东来\"，象征祥瑞与尊贵。日本紫藤文化同样深厚，足利花卉公园\"大藤\"树龄150年、花穗垂达1米；紫藤与木香、凌霄并称\"中国三大藤本名花\"。\n主要品种：常见种与品种：多花紫藤（花序长可达50厘米）、藤萝（花序短而密，华北常见）、白花藤（银藤）、粉花紫藤、重瓣紫藤及“Rosea”粉花品种。上海嘉定紫藤园、闵行古藤园以古紫藤闻名。\n观赏注意点：盛花期约两周，热门藤架下人流密集，建议工作日清晨前往；仰拍藤架垂花效果最佳。"
+    },
+    {
+      "flower": "蔷薇",
+      "months": "4",
+      "category": "藤蔓花卉",
+      "spots": [
+        {
+          "name": "广富林郊野公园",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/蔷薇/广富林郊野公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69fd6377000000003502fad1?xsec_token=ABuBBdEGj29WaWT74Xf9aCo5XGFEa3pgavJs_x9msKKLM=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "复兴中路",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/蔷薇/复兴中路.jpg",
+            "./data/flower-photos/蔷薇/复兴中路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69f06008000000002202a690?xsec_token=ABu7Ld2K76xmvr2DMWzDh_bNjUJMqjPzEPCxMoWaf2VYo=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "黄浦滨江",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/蔷薇/黄浦滨江.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ff0233000000002202a063?xsec_token=ABez0J5Ib8jqUeVFbovnkAqcj36rg5g0SYeGr_IO3C_c4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "东江文体公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/蔷薇/东江文体公园.jpg",
+            "./data/flower-photos/蔷薇/东江文体公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69fc92fa00000000350313d8?xsec_token=ABrThYEMLNjyjt2dP0C0Ju7yYAsewHZt3ixfLaFoHN5fo=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：蔷薇科蔷薇属落叶或半常绿灌木、藤本，茎具皮刺。奇数羽状复叶，小叶5-9枚，边缘有锯齿。圆锥状伞房花序，花单瓣或重瓣，粉、白、红、黄等，多数芳香；蔷薇果近球形，红褐色。花期5-6月，果期8-10月。\n植物文化：中国栽培蔷薇逾2000年，与月季、玫瑰并称\"蔷薇三姐妹\"；\"水晶帘动微风起，满架蔷薇一院香\"（高骈）是夏日庭院名句。中国蔷薇品种18世纪传入欧洲，参与培育出庞大现代月季家族；蔷薇象征爱情与浪漫，欧洲庭园\"蔷薇拱门\"\"蔷薇墙\"传统悠久。\n主要品种：野蔷薇变种与园艺品种：粉团蔷薇（单瓣粉红）、七姊妹（重瓣多头，俗称十姐妹）、白玉堂（白色重瓣）、荷花蔷薇（重瓣粉红）等；现代藤本月季（如龙沙宝石）在庭院中也常被通称蔷薇。\n观赏注意点：多沿栅栏墙垣分布，适合顺光拍摄花墙；4月底至5月初为最佳观赏期。"
+    },
+    {
+      "flower": "喜林草",
+      "months": "4",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "辰山植物园",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/喜林草/辰山植物园.jpg",
+            "./data/flower-photos/喜林草/辰山植物园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ec99410000000023016e92?xsec_token=ABvPRmUpX8f23vRx6g6UISXb9VN0AQzde1L3Vq8c5nHeY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "前滩休闲公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/喜林草/前滩休闲公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69df5e390000000022026944?xsec_token=ABQDlneqZulku1KklAbSs7xXO8o1QkgeMcqX3vYUn-YQA=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "花开海上生态园",
+          "district": "金山区",
+          "photos": [
+            "./data/flower-photos/喜林草/花开海上生态园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e06108000000001f0044a5?xsec_token=ABbYz5CVqKk_kYdRsak6alWFcbp5KEVgC1jsFKQn3XmHQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "滨江森林公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/喜林草/滨江森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d3baa90000000023013bc9?xsec_token=ABLVs2MKKdCUwCnP5rfZQItSAgsbIyC9y4Qm67tSSbcKI=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：紫草科粉蝶花属一年生草本，株高15-30厘米，茎匍匐或斜升。叶羽状深裂至浅裂，互生。花单生叶腋，径2-3厘米，花冠5裂，边缘白色、中心蓝色（\"婴儿蓝眼\"），或全蓝、粉、白等色，花心常有白斑；坚果。花期3-5月（上海4-5月盛花）。\n植物文化：原产北美西部（加州），英文名Baby Blue Eyes（婴儿蓝眼）；日语称\"瑠璃唐草\"，花语为\"可憐、期待\"。成片开放如蓝色海洋，常与油菜花、郁金香混植形成春季花海，是近年国内最受欢迎的\"蓝紫色花海\"主角之一。\n主要品种：主要栽培Nemophila menziesii（喜林草），园艺品种：“Insignis”（蓝色镶白边）、“Snowstorm”（纯白）、“Penny Black”（深紫近黑）、“Five Spot”（蓝花五白斑）等。\n观赏注意点：花期可延续至5月；花海多设步道，请沿步道观赏，雨后草地湿滑。"
+    },
+    {
+      "flower": "鲁冰花",
+      "months": "4",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "花开海上生态园",
+          "district": "金山区",
+          "photos": [
+            "./data/flower-photos/鲁冰花/花开海上生态园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d254880000000023014589?xsec_token=ABSR-0CDc1cufomW_BdoJPDBu_4ooFZepcaHkHaHKqFkc=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "前滩休闲公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/鲁冰花/前滩休闲公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d4ce3c0000000022001d10?xsec_token=ABLFuYLeRYptEOd7Ji4i6ZnHvc3oC7UvTxnYXEZarzxtA=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：豆科羽扇豆属一年生或多年生草本，株高30-150厘米，掌状复叶，小叶9-17枚，背面有毛。总状花序顶生直立，长10-60厘米，蝶形花密集轮生，蓝、紫、粉、白、黄、橙等多色；荚果含数粒种子。花期4-6月。\n植物文化：原产地中海沿岸与北美。\"鲁冰花\"之名源自台湾，由闽南语\"路边花\"谐音而来；1989年电影《鲁冰花》及同名歌曲\"夜夜想起妈妈的话，闪闪的泪光鲁冰花\"传唱两岸，鲁冰花从此成为母爱与奉献的象征。花语为母爱、幸福、苦涩的思念。\n主要品种：园林主栽为多叶羽扇豆（Lupinus polyphyllus，高可达1.5米、花序长，“Gallery”、“Russell”系列色彩丰富）；另有窄叶羽扇豆、黄花羽扇豆等。上海花开海上生态园、前滩休闲公园近年引种成片花海。\n观赏注意点：花序高低错落，适合低角度拍摄；部分品种全株有微毒，请勿采摘入口。"
+    },
+    {
+      "flower": "雏菊",
+      "months": "4",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "闵行文化公园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/雏菊/闵行文化公园.jpg",
+            "./data/flower-photos/雏菊/闵行文化公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ecae4a00000000370379cb?xsec_token=ABvPRmUpX8f23vRx6g6UISXfMxX4ahctscQ7vg714VbB4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "陈春绿地",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/雏菊/陈春绿地.jpg",
+            "./data/flower-photos/雏菊/陈春绿地 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69ee2cbb000000003503a836?xsec_token=AB0c1er7SBWNsV5INSeECKakuYaswOLFf1W4AgdUVNf4Y=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：菊科雏菊属多年生草本（常作二年生栽培），株高10-15厘米。基生叶匙形或倒卵形。头状花序单生，径2-3厘米，舌状花白、粉、红，管状花黄色，瘦果扁。花期3-6月。\n植物文化：原产欧洲，意大利国花。花语为天真、和平、希望与纯洁的美；欧洲少女以雏菊花瓣占卜爱情（\"他爱我、不爱我\"），是\"爱情占卜花\"。雏菊低矮繁密、星星点点，象征青春童真，是草坪、花境与岩石园的点缀。\n主要品种：园艺品种：“Robella”（鲑粉色重瓣）、“Pomponette”（绒球状）、“Tasso”系列（重瓣多色）、“Galaxy”系列等，均矮生密集。\n观赏注意点：植株低矮，蹲低拍摄更有花海氛围；花期可持续至5月。"
+    },
+    {
+      "flower": "鸢尾",
+      "months": "4",
+      "category": "水生花卉",
+      "spots": [
+        {
+          "name": "共青森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/鸢尾/共青森林公园.jpg",
+            "./data/flower-photos/鸢尾/共青森林公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a05adf20000000035028164?xsec_token=ABDj4T5OIBZLvYGx-Yp9CbYLbPW-46qcKYii-2NW0eqZ0=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/鸢尾/世博文化公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69f95e3d000000002202a854?xsec_token=ABTN4bYKf2yeKe8I0tNbv3L32HvBkM5mkbUWY9-qojoNw=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "上海植物园",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/鸢尾/上海植物园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a126e8f0000000037037b33?xsec_token=ABVzCKWevpC1dIjtv34VGGrTa5UwFlHuBfoORqFwJ4_s8=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：鸢尾科鸢尾属多年生草本，根状茎匍匐或块状。叶剑形或条形，基生，嵌叠状排成两列。花茎自叶丛抽出，花被片6枚：外轮3枚大而反折（垂瓣），内轮3枚直立（旗瓣），花蓝紫、黄、白、红褐等，常有斑点或须毛；蒴果。花期4-6月。\n植物文化：法国国花——香根鸢尾的\"fleur-de-lis\"自12世纪成为法国王室纹章，象征王权与光明；梵高名画《鸢尾花》令其成为艺术经典；英文Iris取自希腊彩虹女神之名，象征沟通天地、希望与自由。中国以\"鸢尾\"为名见于《本草纲目》，栽培观赏历史悠久。\n主要品种：按生态分两大类：有髯鸢尾（德国鸢尾，垂瓣具须毛，花色繁艳）与无髯鸢尾（西伯利亚鸢尾、路易斯安那鸢尾、日本花菖蒲/玉蝉花、黄菖蒲等）；黄菖蒲耐水湿，常用于水岸。上海植物园设鸢尾专类园。\n观赏注意点：多分布于水边，注意脚下安全；清晨花瓣舒展、姿态最佳。"
+    },
+    {
+      "flower": "杜鹃",
+      "months": "4",
+      "category": "灌木花卉",
+      "spots": [
+        {
+          "name": "滨江森林公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/杜鹃/滨江森林公园.jpg",
+            "./data/flower-photos/杜鹃/滨江森林公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e62d5b000000001a0360ef?xsec_token=AB_vjlm78_Bc1BJOQ-gvJzgk-1oaqHT-GvQaKtVezZjKc=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "外滩老市府露台",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/杜鹃/外滩老市府露台.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e44d97000000001a0321cb?xsec_token=ABtog0IR_nKaVw_DmhzF0CBXsTxl6BEHgM_ivN1KYKbHI=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "辅德里公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/杜鹃/辅德里公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e6041a000000002301d72f?xsec_token=AB_vjlm78_Bc1BJOQ-gvJzgts-dOiuBjXMI4Z92QDyIm4=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：杜鹃花科杜鹃属常绿或落叶灌木，高1-5米，稀小乔木。叶革质或纸质，全缘，常集生枝顶。花2-6朵簇生枝顶，花冠漏斗形、钟形或碟形，5裂，红、粉、白、紫、黄等色，上瓣常有斑点；蒴果。花期4-6月。\n植物文化：中国十大名花之一，野生红杜鹃别名\"映山红\"；\"蜀国曾闻子规鸟，宣城还见杜鹃花\"（李白），花鸟同名源于杜鹃啼血传说，象征思乡与热烈。朝鲜国花（金达莱）、尼泊尔国花（高山杜鹃）；高山常绿杜鹃（大树杜鹃）是世界著名的木本观赏花卉。\n主要品种：栽培品种极多（全球逾千）：按花期分春鹃（毛鹃、东鹃）、夏鹃、西鹃（比利时杜鹃，盆栽年宵花）；上海常见锦绣杜鹃、西洋杜鹃。滨江森林公园等有杜鹃专类园。\n观赏注意点：花期约3-4周；花色对比强烈，适合特写；部分公园品种多样，可逐株细赏。"
+    },
+    {
+      "flower": "木绣球",
+      "months": "4",
+      "category": "灌木花卉",
+      "spots": [
+        {
+          "name": "滨江森林公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/木绣球/滨江森林公园.jpg",
+            "./data/flower-photos/木绣球/滨江森林公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e204a3000000001d01b133?xsec_token=AB5PkG7v7IVWhkfRhPD9qoq5y0fHiobSESVkT2NeVQVCk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "莘庄梅园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/木绣球/莘庄梅园.jpg",
+            "./data/flower-photos/木绣球/莘庄梅园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69c9eecc000000002103a6dc?xsec_token=AB2l-GJpld_gYjdcYy_C2PGciAWQ-cKecCFhqd63chsr0=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "共青森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/木绣球/共青森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e50836000000001f003a79?xsec_token=ABQY2CYkABqErVyl54uU_7xmDaZlBC2X0V-7ZCkE3PkMQ=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：忍冬科荚蒾属落叶或半常绿灌木，高2-4米。叶对生，卵形至椭圆形，缘有细齿。大型聚伞花序呈球状（全部由不孕花组成），径15-20厘米，初开淡绿色渐转纯白，盛开如雪球垂枝；花期4-5月。\n植物文化：木绣球与琼花同属荚蒾属，其\"绣球\"之名因花团锦簇如绣球；古人称\"粉团花\"（《广群芳谱》载\"粉团，木本，花白如球\"）；象征团圆美满、纯洁无瑕。花开时满树白球，是江南庭园四月的标志景观。\n主要品种：常见栽培：欧洲木绣球（“Roseum”，花初绿后白）、中国木绣球（绣球荚蒾）等。注意与\"绣球\"（虎耳草科大花绣球）区别：木绣球为荚蒾属白花、不可调色，花期更早。\n观赏注意点：由绿转白的过程本身就是风景；白色花球在阴天拍摄更显质感；花期约2-3周。"
+    },
+    {
+      "flower": "二月兰",
+      "months": "4",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "横沔公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/二月兰/横沔公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69c698d9000000001a02f012?xsec_token=ABRdR17mfh5CJKCcGHm8wpUdTuGFXVtyxFH06EafyTGmk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "共青国家森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/二月兰/共青国家森林公园.jpg",
+            "./data/flower-photos/二月兰/共青国家森林公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69aae9ad000000001a024554?xsec_token=ABNTBUa9Uafd36ZlVx-iyYUmVkbAX_d8Wwq6ET7eAccig=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "东风公园",
+          "district": "待确认",
+          "photos": [
+            "./data/flower-photos/二月兰/东风公园.jpg",
+            "./data/flower-photos/二月兰/东风公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d50cf9000000002100595b?xsec_token=AByFkRCiwBDECN9zEGz6LSzVX4tnDJDNhr13gn-cEfBXQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "汇一路",
+          "district": "奉贤区",
+          "photos": [
+            "./data/flower-photos/二月兰/汇一路.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/67ed506b000000001d021210?xsec_token=ABY5XHD-rDwx6XKjvIZbz_1kJVOy6rXfXM25ZSfMb5shc=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "沪闵路与银春路交叉口",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/二月兰/沪闵路与银春路交叉口.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69b03031000000000600a83d?xsec_token=AB29vRpk7vIMWfZUKfXhLfoUqeimUhz2PYHP0iWy42z_I=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：十字花科诸葛菜属一年或二年生草本，高10-50厘米。基生叶羽状深裂，茎生叶抱茎。总状花序顶生，花紫色或淡蓝紫色（偶见白花），花瓣4枚十字形；长角果线形。花期3-5月（上海2月底至4月盛花，故称\"二月兰\"）。\n植物文化：又名诸葛菜——相传三国诸葛亮行军时以此菜充饥，故得名；原产中国，遍布林下、路边、坡地，适应性极强。季羡林散文《二月兰》写其\"开得淋漓尽致、气势非凡\"，使其成为平凡坚韧之美的象征；是春季林下地被与花海的绝对主力。\n主要品种：以野生种为主，栽培少见园艺品种；偶有白花变种。花海式种植常与油菜花、樱花林搭配，形成紫色地毯。\n观赏注意点：多自然生长于林缘草地，观赏时注意不要踩踏；与同期油菜花田可串联游览。"
+    },
+    {
+      "flower": "虞美人",
+      "months": "4",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "锦绣文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/虞美人/锦绣文化公园.jpg",
+            "./data/flower-photos/虞美人/锦绣文化公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69fb590600000000360180e4?xsec_token=ABFCW6ip_q48SW84rAAYFYJcI33cISo3jZLxGkHzQ66c0=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "肇嘉浜路2号口",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/虞美人/肇嘉浜路2号口.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69be7e46000000001f001f60?xsec_token=ABHNdU1RBwIaW_2Lxuo1OOUXNcNz-nxi4qbQxlWDqzIGY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "西岸艺术公园",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/虞美人/西岸艺术公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69dce0fb000000002301651e?xsec_token=ABMYyUKYzT_i8f4zpDvKzTb68cN8ktzET6YDEDJeRUpkY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "花开海上生态园",
+          "district": "金山区",
+          "photos": [
+            "./data/flower-photos/虞美人/花开海上生态园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/680c938a000000001202f8c4?xsec_token=AB0mGRhHf31ScGJIUu_uG_OXm-wkqoOv6xw3hl9syxCDk=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：罂粟科罂粟属一年生草本，高25-90厘米，全株被刚毛，含白色乳汁。叶羽状深裂。花单生茎顶，径5-8厘米，花瓣4枚薄如丝绸，红、粉、白、橙、紫及复色，基部常有深色斑；蒴果杯状，孔裂。花期4-7月。\n植物文化：名字源于项羽虞姬传说：虞姬自刎处血染之地长出此花，花瓣如舞裙，故称\"虞美人\"；南唐李煜词牌《虞美人》\"春花秋月何时了\"家喻户晓。虞美人属罂粟科但无毒品价值（全株具刚毛、蒴果极小），是安全的观赏花卉；花语为生离死别、悲歌与安慰。\n主要品种：常见栽培：冰岛虞美人（多年生，花色更艳、无刚毛）、虞美人“Shirley”系列（色彩丰富）、东方虞美人（高秆大花）。上海锦绣文化公园、西岸艺术公园等成片种植。\n观赏注意点：花瓣轻薄，雨后易垂头；风起时花枝摇曳、动感十足；请勿进入花田内部。"
+    },
+    {
+      "flower": "木香花",
+      "months": "4",
+      "category": "藤蔓花卉",
+      "spots": [
+        {
+          "name": "红枫路",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/木香花/红枫路.jpg",
+            "./data/flower-photos/木香花/红枫路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69df90b4000000001a02c206?xsec_token=ABQDlneqZulku1KklAbSs7xdAe8sDccsCID78APILISm4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "山阴路",
+          "district": "虹口区",
+          "photos": [
+            "./data/flower-photos/木香花/山阴路.jpg",
+            "./data/flower-photos/木香花/山阴路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69e08dd900000000230110da?xsec_token=ABbYz5CVqKk_kYdRsak6alWPDspWNuwBwRIVKQ7o11FQQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "愚园路1088弄",
+          "district": "长宁区",
+          "photos": [
+            "./data/flower-photos/木香花/愚园路1088弄.jpg",
+            "./data/flower-photos/木香花/愚园路1088弄 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d64d0b000000001a033a20?xsec_token=ABrTUlbiGj1aD7td_seGP2qQWhmpCTqaHbYiBy5ieZ66M=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "得丘艺术区",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/木香花/得丘艺术区.jpg",
+            "./data/flower-photos/木香花/得丘艺术区 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d8deb4000000001d01f636?xsec_token=ABJNdDQTzj7_EaYdfjjFO2dvyKtO0X5PuUXJlXXh0xF-8=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "顾村公园",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/木香花/顾村公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/67fcd705000000001d03beda?xsec_token=ABtmRezeFrb3szWlpNwLjca5VAEYWH_kXa9YNoKdIEAnU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "春西路",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/木香花/春西路.jpg",
+            "./data/flower-photos/木香花/春西路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/67f905a6000000001c0369c2?xsec_token=ABncs3M2ruuwnER6QW6iVwjxnKJh2gjsjuMUJkijNRohQ=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：蔷薇科蔷薇属半常绿攀援藤本，高可达6米，小枝绿色、无刺或少刺。奇数羽状复叶，小叶3-5枚，边缘有细锯齿。伞形花序，花小而繁，单瓣或重瓣，白色（木香）或黄色（黄木香），芳香浓郁；蔷薇果近球形。花期4-6月。\n植物文化：中国著名传统藤本花卉，与紫藤、凌霄并称\"三大藤本名花\"；花香清甜，古人常以木香花窨茶制香，苏轼\"酒醒门外三竿日，卧看香魂绕玉栏\"（一说咏木香）传为美谈；象征思念、忠贞与浪漫。上海老洋房、山阴路、愚园路等处的木香花墙是暮春街景。\n主要品种：常见品种：白木香（单瓣/重瓣）、黄木香（重瓣，花色金黄，观赏最盛）、复瓣木香等；近年引种“Albéric Barbier”等藤本月季常被混称木香。\n观赏注意点：花量极大，盛花期如雪覆墙；香气浓郁，适合傍晚散步时观赏。"
+    },
+    {
+      "flower": "泡桐",
+      "months": "4",
+      "category": "行道树花",
+      "spots": [
+        {
+          "name": "梅园公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/泡桐/梅园公园.jpg",
+            "./data/flower-photos/泡桐/梅园公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69d8a2230000000022000552?xsec_token=ABJNdDQTzj7_EaYdfjjFO2dm90T4PWIF_np8UN5LogewU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "汉口路老市府",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/泡桐/汉口路老市府.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69eabbbb0000000020013001?xsec_token=ABpgLjHgWE3bixYybe_cKpfCQ0pZfOdZj9qozxRAoOaIo=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "子长路",
+          "district": "普陀区",
+          "photos": [
+            "./data/flower-photos/泡桐/子长路.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69db7c2a000000001f001628?xsec_token=ABRJIldyw6NEQKldTbcOt34WzEB-cipSJkd_cQOLxedvg=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：玄参科泡桐属落叶乔木，高可达30米，树皮灰褐色。叶对生，心形或卵状心形，全缘或波状，背面密生星状毛。聚伞圆锥花序顶生，花冠漏斗状钟形，淡紫色或白色，内面常有紫斑，先叶开放；蒴果卵圆形。花期4月。\n植物文化：中国特有速生用材树种，\"桐\"文化底蕴深厚——古琴面板多用桐木（\"焦尾琴\"传说），木质轻软、纹理美观；\"栽桐引凤\"之说亦常指泡桐。泡桐花大而繁、满树紫云，是北方与长江流域春末的壮观街景；象征清雅高洁、福泽。\n主要品种：中国泡桐约7种：白花泡桐、毛泡桐（紫花泡桐，最常见）、兰考泡桐、楸叶泡桐、台湾泡桐等；兰考泡桐因焦裕禄\"泡桐治沙\"而广为人知。\n观赏注意点：花在高处，适合仰望或长焦拍摄；落花铺地亦是风景，花期约2-3周。"
+    },
+    {
+      "flower": "琼花",
+      "months": "4",
+      "category": "灌木花卉",
+      "spots": [
+        {
+          "name": "世纪公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/琼花/世纪公园.jpg",
+            "./data/flower-photos/琼花/世纪公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/67fbc231000000000b02fbd0?xsec_token=ABFoMNe4tycn7Hye4TVNsBMeqEbRECVxYY7HzFYPLLaGA=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "上海植物园",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/琼花/上海植物园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/67f67db9000000001c03dcdc?xsec_token=ABbKHlwvOD_FGAkWHkBOrTYHeCPEo1jdMT3lq1NZTRWJA=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：忍冬科荚蒾属落叶或半常绿灌木，高可达4米。叶对生，卵形或椭圆形，缘有细锯齿。聚伞花序外围为8朵大型不孕花（白色，径约3厘米，形似蝴蝶），中央为可孕的两性小花，故称\"聚八仙\"；果实红色。花期4-5月。\n植物文化：扬州名花，传说隋炀帝开运河专为看琼花；欧阳修任扬州太守时建\"无双亭\"并题\"琼花芍药世无伦，偶不题诗便怨人\"。琼花象征洁白无瑕、独一无二，是扬州城市名片；与木绣球同属荚蒾属，区别在琼花中央有可孕小花、木绣球全为不孕花。\n主要品种：原变种（聚八仙）与木绣球（绣球荚蒾）为主要栽培类型；另有天目琼花（花带粉晕）等近缘种。世纪公园、上海植物园有琼花专类展示。\n观赏注意点：花型独特，适合拍整朵特写；盛花期约两周，雨后花瓣易受损。"
+    },
+    {
+      "flower": "绣球",
+      "months": "4,5",
+      "category": "灌木花卉",
+      "spots": [
+        {
+          "name": "辅德里公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/绣球/辅德里公园.jpg",
+            "./data/flower-photos/绣球/辅德里公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a0550c80000000008000901?xsec_token=ABDj4T5OIBZLvYGx-Yp9CbYBjUeYIp6MFP3eXX4mEiKWo=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "滨江森林公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/绣球/滨江森林公园.jpg",
+            "./data/flower-photos/绣球/滨江森林公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a1957ec0000000035026fb9?xsec_token=AB2d8ekfIuqGsgC5m31cjK6V-Q0eDBXqOUlVq0wwRTWYQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "共青森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/绣球/共青森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a14385e000000000702bfbb?xsec_token=AB6BO3RVfRkBALwegVFrqEDw2ItkZX6MV307BykJVJzyU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "听翠园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/绣球/听翠园.jpg",
+            "./data/flower-photos/绣球/听翠园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a1944da000000003703489c?xsec_token=AB2d8ekfIuqGsgC5m31cjK6S5rsN_rSE5gtrXiYUnnyww=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "苏州河樱花谷驿站",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/绣球/苏州河樱花谷驿站.jpg",
+            "./data/flower-photos/绣球/苏州河樱花谷驿站 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a1fedc40000000036031c68?xsec_token=ABN1Y5A_TDtzMjXXDISmJmoxTVjb0L4dfu84_3EjoyQew=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "闸北公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/绣球/闸北公园.jpg",
+            "./data/flower-photos/绣球/闸北公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/682fe8a30000000022036919?xsec_token=ABtBSs3EAaEssc-UsWZy4rqQ_TDqRcYkMVW83gnzRMvw4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "肇嘉浜路",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/绣球/肇嘉浜路.jpg",
+            "./data/flower-photos/绣球/肇嘉浜路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a1ba369000000003502c0be?xsec_token=AB8f89cJDpg_5biu3UO0XRW3ShGUpPPyTmov25Sfn3nQU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "桂江路",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/绣球/桂江路.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/682ee93900000000230008e5?xsec_token=ABtq0uYg0q5s-b0q2bXRK8muRVtVipcpoPi0A3w7btKt0=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "鲁迅公园",
+          "district": "虹口区",
+          "photos": [
+            "./data/flower-photos/绣球/鲁迅公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a116ca000000000070216fa?xsec_token=AB7ryXA__8SsD2S2To9yTxRkMWsn8edb2wX0eWByQkUMc=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世纪公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/绣球/世纪公园.jpg",
+            "./data/flower-photos/绣球/世纪公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a3219cb000000002100a079?xsec_token=AB9YZTkz9Qq6g-0ZIQY6GbJHtnI-T7vCVfVauzgjOK2Fg=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：虎耳草科绣球属落叶灌木，高1-4米。叶对生，阔卵形，缘有粗锯齿，叶面粗糙。伞房状聚伞花序顶生，径10-20厘米，不孕花组成球形头状，花色白、粉、蓝、紫——花色随土壤酸碱度变化：酸性土开蓝花，碱性土开粉红花；花期5-8月。\n植物文化：日本称\"紫阳花\"（名出自白居易诗），镰仓明月院、长谷寺以紫阳花海闻名；中国庭院通称\"八仙花\"，象征圆满、希望与浪漫。花色可调（土壤铝离子）是其最大特色，也是园艺爱好者实验的乐趣；梅雨季盛开，是\"雨季之花\"。\n主要品种：大花绣球（球状，“无尽夏”为最常见新枝开花品种）、圆锥绣球（“Limelight”白绿渐粉，花期长）、栎叶绣球、乔木绣球（“Annabelle”白球巨大）、藤绣球（攀援）等。注意与\"木绣球\"（荚蒾属）区别。\n观赏注意点：5月为盛花期；花球沉重，雨后易垂头；同株可呈多色，值得细赏。"
+    },
+    {
+      "flower": "月季",
+      "months": "4,5",
+      "category": "灌木花卉",
+      "spots": [
+        {
+          "name": "前滩休闲公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/月季/前滩休闲公园.jpg",
+            "./data/flower-photos/月季/前滩休闲公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a0f0669000000003601bae3?xsec_token=ABDJLnt9lESLp40IV6fXGErrFv26SJBgkHvQtcxf6YbeE=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "花木月季园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/月季/花木月季园.jpg",
+            "./data/flower-photos/月季/花木月季园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a10f2a90000000008031257?xsec_token=ABRob3L7aqbYfSCAO4RThqxxIJjGntw8jPRYqasgmkRFI=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "东江文体公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/月季/东江文体公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a034df30000000037036318?xsec_token=AB-flTI2TjIEj-Hen3F_MmF8Hva5SGlyVukYLTizoAlUQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "滨江森林公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/月季/滨江森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a007ebb000000000702d8b9?xsec_token=AB0S5uaVkJhC5cv5zhh2UoouX4tnCF3C4TxNghgIHxt0Q=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "桂江路",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/月季/桂江路.jpg",
+            "./data/flower-photos/月季/桂江路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69fdb0c7000000001a02c814?xsec_token=ABuBBdEGj29WaWT74Xf9aCo6aZSViPj4vN_k-zfjgvhrw=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：蔷薇科蔷薇属常绿或半常绿灌木，茎具钩状皮刺。奇数羽状复叶，小叶3-5枚，叶面有光泽。花单生或数朵簇生，花色极多，可四季开花（故名\"月季\"）；蔷薇果。盛花期为5-6月与9-11月。\n植物文化：中国十大名花之一，北京市花；月季原产中国，18世纪末传入欧洲，与当地蔷薇反复杂交育出现代月季（杂交茶香月季），被誉为\"花中皇后\"、世界第一切花与最广泛栽培花卉。象征爱情与和平——\"和平月季\"为纪念二战胜利而命名；中国月季是欧洲现代月季的\"血统之源\"。\n主要品种：现代月季分类：杂交茶香月季（HT，大花高心）、丰花月季、大花月季、藤本月季（攀援）、微型月季（矮生）等；中国古月季名品“月月红”、“香水月季”仍是育种源头。\n观赏注意点：枝干带刺，观赏请勿攀折；春花谢后修剪，6月还有夏花可赏。"
+    },
+    {
+      "flower": "薰衣草",
+      "months": "5",
+      "category": "香草花卉",
+      "spots": [
+        {
+          "name": "薰衣草公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/薰衣草/薰衣草公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/682eec77000000000303c847?xsec_token=ABtq0uYg0q5s-b0q2bXRK8mvxhQaHr4amB7mnYxSnnBMA=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：唇形科薰衣草属半灌木或矮灌木，株高30-90厘米，全株具芳香。叶线形或披针形，灰绿色，密被星状绒毛。轮伞花序在枝顶聚成穗状，花蓝紫色（稀粉白），花冠唇形；小坚果。花期6-8月（上海可多次开花）。\n植物文化：原产地中海沿岸，法国普罗旺斯的紫色浪漫代表；古罗马人以之沐浴熏香，\"薰衣草\"即\"香浴草\"之义。花语为等待爱情、浪漫与宁静；精油广泛用于香薰、护肤与安神，是芳香产业核心原料。\n主要品种：常见种：狭叶薰衣草（精油品质最优）、宽叶薰衣草、杂薰衣草（Lavandin，花穗大、上海常见）、齿叶薰衣草、羽叶薰衣草（观叶观赏）。上海薰衣草公园（莫斯利安香草园）为华东最大薰衣草主题园。\n观赏注意点：5月中下旬最盛；花田多曝晒，注意防晒补水。"
+    },
+    {
+      "flower": "石榴花",
+      "months": "5",
+      "category": "传统名花",
+      "spots": [
+        {
+          "name": "古猗园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/石榴花/古猗园.jpg",
+            "./data/flower-photos/石榴花/古猗园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/647091cc0000000013035635?xsec_token=ABiTCpQF8EmDvU7LQqrrecAxgNtysEYBKiIEZz7fj4g0o=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世纪公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/石榴花/世纪公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a14191f0000000036030c29?xsec_token=AB6BO3RVfRkBALwegVFrqEDxnF4cL0wvCxXAfNKtD1MHo=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "秋霞圃",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/石榴花/秋霞圃.jpg",
+            "./data/flower-photos/石榴花/秋霞圃 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a130e4000000000060353fe?xsec_token=AB6SkRmI-BSb576pvmCgYhaQxOqBnJrTyJlW-9N5W7v20=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "闸北公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/石榴花/闸北公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6839dbbc000000000303e120?xsec_token=AB4f8Tx7cha9k80EMLY_Iq5mUlGlAMNS2XnQE1HA9wGkU=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：石榴科石榴属落叶灌木或小乔木，高2-7米，枝顶端常成刺。叶对生或近簇生，长圆披针形，有光泽。花1至数朵生于枝顶，花萼钟形、革质、红色、宿存，花瓣5-7枚，红、橙红、白、黄等，有重瓣；浆果球形，熟时红黄色。花期5-7月。\n植物文化：石榴原产波斯（今伊朗），汉代张骞通西域引入中国，栽培史2000余年；\"五月榴花照眼明\"（韩愈），榴花红艳如火是初夏象征。石榴多籽，象征\"多子多福\"，是婚嫁吉祥花果；\"拜倒在石榴裙下\"的典故即源于石榴红裙。\n主要品种：分食用与观赏两类：食用石榴（突尼斯软籽、怀远玉石籽等）、花石榴（重瓣，专供观赏，“月季石榴”矮化盆栽）、玛瑙石榴等。古猗园、秋霞圃、闸北公园等为上海赏榴胜地。\n观赏注意点：花期可延续至7月，5月初花最盛；红花绿叶对比强烈，适合明快色彩拍摄。"
+    },
+    {
+      "flower": "马鞭草",
+      "months": "5",
+      "category": "香草花卉",
+      "spots": [
+        {
+          "name": "寻梦源・梦水乡",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/马鞭草/寻梦源・梦水乡.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a25620b0000000021016b1c?xsec_token=ABiHIAvl4t0cTGflEnL8z01qPP6QHysXpLcgi_5JcAWAk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "油罐艺术中心",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/马鞭草/油罐艺术中心.jpg",
+            "./data/flower-photos/马鞭草/油罐艺术中心 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a0c74c900000000350293de?xsec_token=AB64W8GklofnVFW6aejW8blkBi_q-nkjY1zCIjjcWzMoU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "东方渔人码头",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/马鞭草/东方渔人码头.jpg",
+            "./data/flower-photos/马鞭草/东方渔人码头 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a22e281000000000803225e?xsec_token=ABFmgJl8O-fPRz8xulRrayDRh4WC_ZWkCauFx0_oa11H8=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "东滩湿地公园",
+          "district": "崇明区",
+          "photos": [
+            "./data/flower-photos/马鞭草/东滩湿地公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a25284a000000001c027381?xsec_token=ABiHIAvl4t0cTGflEnL8z01pKTYcuTlnqRg9QhnlL0p4Y=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "共青森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/马鞭草/共青森林公园 .jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/682b1901000000000303b296?xsec_token=AB6WI6AA4zU0Q4U-S8DrfZ4GmnqJT_mSUjyk-NtkN1d-0=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：马鞭草科马鞭草属多年生草本（柳叶马鞭草），株高1-1.5米，茎直立四棱。叶对生，长圆状披针形，边缘有锯齿。聚伞花序再组成伞房状，花小，5瓣，淡紫至紫红色，花冠筒细长；小坚果。花期5-11月（上海6-9月盛花）。\n植物文化：原产南美；欧洲传统马鞭草（Verbena officinalis）为驱邪圣草，中世纪人们佩戴以避邪护身，故花语为正义、期待。柳叶马鞭草成片如紫色云霞，常被误认薰衣草——区分看三点：马鞭草株高逾1米、茎四棱、花簇生于枝顶成团。\n主要品种：景观主栽柳叶马鞭草（Verbena bonariensis）；同科近属的美女樱（匍匐低矮）为花园常见品种。寻梦源·梦水乡、油罐艺术中心、东滩湿地公园等有大片紫色花海。\n观赏注意点：与薰衣草同期，紫色花海适合穿浅色衣物拍摄；花田间有步道，请勿踩入。"
+    },
+    {
+      "flower": "金丝桃",
+      "months": "5",
+      "category": "灌木花卉",
+      "spots": [
+        {
+          "name": "龙华寺",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/金丝桃/龙华寺.jpg",
+            "./data/flower-photos/金丝桃/龙华寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/683463a6000000000c03b60f?xsec_token=ABKoEHLF4KDD3evFSqjC9fPSlo5mEX8txuZ7BZpsF6gWo=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "延中绿地",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/金丝桃/延中绿地.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/66604ddb000000000c01a613?xsec_token=ABN1jv2fMvFKaEIXwWkbVpRFVagoYRRAgkCFa6BVscHXw=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：藤黄科金丝桃属半常绿小灌木，高0.5-1.3米，全株光滑无毛。叶对生，长椭圆形，全缘，背面灰白色。花单生或成聚伞花序，径3-5厘米，花瓣5枚金黄色，雄蕊多数、金黄色、长于花瓣（\"金丝\"之名由来），花药具黑色腺点；蒴果。花期5-8月。\n植物文化：原产中国，民间称\"金丝海棠\"\"照月莲\"；花丝如金缕，象征灿烂热情、光明磊落。欧洲近缘种贯叶金丝桃（圣约翰草）是传统抗抑郁草药，现代研究证实其提取物有助缓解轻度抑郁，是\"草药界的明星\"。上海龙华寺、延中绿地常见。\n主要品种：常见种：金丝桃、金丝梅（花瓣更圆、雄蕊短于花瓣，区别明显）、密花金丝桃、多叶金丝桃等。\n观赏注意点：花型精巧，适合微距特写；上午花朵舒展最佳，花期约一个月。"
+    },
+    {
+      "flower": "荷花",
+      "months": "6,7",
+      "category": "水生花卉",
+      "spots": [
+        {
+          "name": "古猗园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/荷花/古猗园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a47b577000000000f028f7c?xsec_token=ABK1KHeloMNXqmylNTYmknEaWTjNSBdB9YFHLYgyZElyk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "大宁公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/荷花/大宁公园.jpg",
+            "./data/flower-photos/荷花/大宁公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a5708640000000011014604?xsec_token=AB6XZB5289W_dQVYghzY2WKMS-LKndAxVRW54F0aUzqmg=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "顾村公园",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/荷花/顾村公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a73f14400000000280307fa?xsec_token=ABH14SeLAgIQxOrkRDIVVF2_5hkvniBYWvLYGaQjb1a9I=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/荷花/世博文化公园.jpg",
+            "./data/flower-photos/荷花/世博文化公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a26765d000000001c024fbc?xsec_token=ABK34bqb3t0hvpVz4w503r9dheuKcZ7DS4pTTehBw0dpA=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世纪公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/荷花/世纪公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a43ac6f0000000007021e08?xsec_token=AB17MQJE2cHKFmxwYzauXGvabcC-0hirfjNKhq9QfBRLU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "莲湖村",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/荷花/莲湖村.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a40d8570000000006022466?xsec_token=ABmUPNmhFF0laiE0Bvijoxl68hzc6jzrSlllJV55Ihc28=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：睡莲科莲属多年生水生草本，根状茎（藕）肥厚横走。叶盾状圆形，径25-90厘米，挺出水面（立叶），叶面被蜡质白粉，具\"荷叶自洁效应\"（出淤泥而不染的科学解释）；花单生花梗顶端，径10-25厘米，花瓣多数，白、粉、红、黄等色；坚果（莲子）椭圆形，成熟时黑色，可千年萌发。花期6-9月。\n植物文化：中国十大名花，佛教圣花（莲台、莲花座），周敦颐《爱莲说》\"出淤泥而不染，濯清涟而不妖\"使之成为高洁品格的化身；\"接天莲叶无穷碧，映日荷花别样红\"（杨万里）是夏日绝唱。藕、莲子、荷叶、荷花皆可食可药，全身是宝；并蒂莲象征爱情与吉祥。\n主要品种：分三大类：藕莲（食用）、子莲（莲子）、花莲（观赏）；名品西湖红莲、太空莲、友谊牡丹莲、千瓣莲等。上海古猗园（荷花睡莲展）、大宁公园、顾村公园等为赏荷胜地。\n观赏注意点：晨开暮合，清晨6-9点拍摄最佳；盛夏注意防晒防暑，水边蚊虫较多。"
+    },
+    {
+      "flower": "百子莲",
+      "months": "6,7",
+      "category": "球根花卉",
+      "spots": [
+        {
+          "name": "漕溪公园",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/百子莲/漕溪公园.jpg",
+            "./data/flower-photos/百子莲/漕溪公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a4c7ff7000000001702adeb?xsec_token=ABLbONIUpaGQtUba9DgexMhfrXY7IM-MeX2Eb3XhJs13Y=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/百子莲/世博文化公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a26a2ed000000001c026889?xsec_token=ABK34bqb3t0hvpVz4w503r9TwsR7q-ZCPhhWMXswpEVao=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：石蒜科百子莲属多年生常绿草本，具粗壮根状茎。叶基生，二列，带状，深绿色，长可达60厘米。花葶直立，高50-100厘米，顶生伞形花序，花30-100朵，漏斗形，蓝紫色或白色，花被片6；蒴果。花期6-8月。\n植物文化：原产南非；花名\"百子\"喻子孙繁茂、多子多福，是欧洲庭院经典\"气质花卉\"。花语为爱情降临、恋爱的造访；成片蓝紫色花球清雅高级，是夏季花园的\"高级感\"担当，近年上海公园绿地大量推广。\n主要品种：园艺品种：“Blue Storm”（蓝紫）、“Alba”（白花）、“Peter Pan”（矮生）等。上海漕溪公园、世博文化公园等有专类种植。\n观赏注意点：球形花序适合与园林建筑搭配构图；花期约一个月。"
+    },
+    {
+      "flower": "向日葵",
+      "months": "6,7",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "闵行体育公园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/向日葵/闵行体育公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a097f68000000003601c07a?xsec_token=ABB3xuWbrqYbB2cJEegzW9APrDRpIDUvnrWkR6gRhD1VE=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "南园滨江绿地",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/向日葵/南园滨江绿地.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a4cf702000000001702e2e7?xsec_token=ABLbONIUpaGQtUba9DgexMhfMiE2RU50YHeXrsgOSDybw=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "桃浦中央绿地",
+          "district": "普陀区",
+          "photos": [
+            "./data/flower-photos/向日葵/桃浦中央绿地.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a9d358e000000000d024311?xsec_token=ABAF5JFTVT-gk6b1lPUm2m2g6ss-Mr251epnMUQJUdsoQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "宝山罗店联合村",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/向日葵/宝山罗店联合村.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a2eabf8000000001702e657?xsec_token=ABqL3BCBCRC1oEb0sMfzCBw86zS9Z-c1bb4iwHrtXKimc=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "大宁公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/向日葵/大宁公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/686e3348000000002201c2d9?xsec_token=ABuozpKpgana-KPdpAZaB3UxentQ9z9851zrm3n874de8=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：菊科向日葵属一年生高大草本，株高1-3米（矮生品种仅30厘米），茎直立粗壮，被粗毛。叶互生，心状卵形，边缘有锯齿。头状花序单生茎顶，径10-30厘米，舌状花黄色，管状花棕色或紫色；瘦果（葵花籽）含油率高。花期7-9月（春播夏开）。\n植物文化：原产北美，16世纪传入欧洲、明代传入中国；幼嫩花盘随太阳转动（\"向日\"之名），象征忠诚、阳光与希望。梵高《向日葵》系列使其成为艺术符号；乌克兰国花。司马光\"更无柳絮因风起，惟有葵花向日倾\"咏其忠贞；葵花籽是世界重要油料与休闲食品。\n主要品种：分三类：食用型（大花盘、籽大）、油用型（低秆、高油率）、观赏型（“Teddy Bear”重瓣绒球、“Moonwalker”柠檬黄、多分枝矮生系列）。上海闵行体育公园、南园滨江绿地等夏季有花海。\n观赏注意点：花盘清晨朝向东方，拍摄时注意朝向；花田开阔少荫，防晒必备。"
+    },
+    {
+      "flower": "紫薇",
+      "months": "8,9",
+      "category": "灌木花卉",
+      "spots": [
+        {
+          "name": "古猗园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/紫薇/古猗园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a85cb99000000001c008cb0?xsec_token=ABiB7DDF60dl5s0yWoduymg232uScGsUdZhvDlbLonWt0=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "醉白池",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/紫薇/醉白池.jpg",
+            "./data/flower-photos/紫薇/醉白池 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a884737000000003502795a?xsec_token=ABAcKJUEbAl7mP4pKri0acKyjSWEDtr0HfeiWnlcZMGr4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "龙华寺",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/紫薇/龙华寺.jpg",
+            "./data/flower-photos/紫薇/龙华寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a4c8be2000000001503f5e2?xsec_token=ABLbONIUpaGQtUba9DgexMhbDQCKaMgrO1vgftGY16k_8=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "闸北公园",
+          "district": "静安区",
+          "photos": [
+            "./data/flower-photos/紫薇/闸北公园.jpg",
+            "./data/flower-photos/紫薇/闸北公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/689731d8000000002203ab67?xsec_token=ABNOdvg5spDz_hljHxZCJdfExW_lmfLX7JAUgqMuWoNIU=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：千屈菜科紫薇属落叶灌木或小乔木，高可达7米，树干光滑，老干表皮片状剥落（\"无皮树\"）；以手轻挠树皮，枝叶颤动，故称\"痒痒树\"。叶对生或互生，椭圆形。圆锥花序顶生，花径3-4厘米，花瓣6枚，边缘皱缩如裙裾，花色紫红、粉、白（银薇）；蒴果球形。花期6-9月，花期极长，称\"百日红\"。\n植物文化：\"紫薇\"与天上\"紫微星\"谐音，唐代中书省称\"紫微省\"，白居易任中书舍人时写\"紫薇花对紫微翁\"，象征尊贵与吉祥；杜牧\"晓迎秋露一枝新，不占园中最上春\"赞其夏秋独放。花期长达百日，是长江流域夏秋最重要的观花灌木。\n主要品种：常见花色品种：紫薇（紫）、赤薇（红）、银薇（白）、翠薇（浅蓝紫）；矮生紫薇、大花紫薇等园艺品种。上海古猗园、醉白池、龙华寺有百年古紫薇。\n观赏注意点：8-9月为盛花期；花开枝顶，适合仰拍；树干光滑，古干虬枝亦有看头。"
+    },
+    {
+      "flower": "百日菊",
+      "months": "8,9",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/百日菊/百日菊_用一百个白昼，烧成漫长的火_11_一个孤独漫步者的随拍_来自小红书网页版.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a608a870000000010026a83?xsec_token=ABS2qRfA7TM8F11Pq3ogW6n8L9yBsT1TsT5VRLMwN8IK0=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "前滩休闲公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/百日菊/前滩公园｜乒乓菊和百日菊的盛开季_1_小杨学摄影_来自小红书网页版.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/68d91e64000000001201decb?xsec_token=ABz4MCleVfyHJLag3WeG4etpegTgiH0k6T9ETs-FRnDyU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "沈杨村",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/百日菊/上海秋日浪漫小众无人油画般花海🌸游玩攻略_10_我是姚嘻嘻_来自小红书网页版.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/65360209000000002500b57a?xsec_token=ABXb9aAzTB5R9OmsDr26M_pYcnmwXEUUhiTNZ8Vq7kN6Y=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：菊科百日菊属一年生草本，株高30-100厘米，茎直立有毛。叶对生，卵形或椭圆形，基部抱茎。头状花序单生枝顶，径5-15厘米，舌状花多轮，红、黄、橙、粉、白、紫及复色，管状花黄色；瘦果。花期6-10月，花期长达百日，故得名。\n植物文化：原产墨西哥，是墨西哥国花。花语为友谊天长地久、思念远方朋友；因花色热烈、花期极长，是夏秋花海与节庆摆花的主力，也是\"国庆花坛\"最常见的材料之一。\n主要品种：园艺品种：大花百日菊（“Benary’s Giant”切花）、“Profusion”系列（矮生多花、耐热）、“Dreamland”系列（矮生大花）等。上海世博文化公园、前滩休闲公园等有大面积花海。\n观赏注意点：8-9月为盛花期；花色浓烈，适合拍大色块；花田注意防晒。"
+    },
+    {
+      "flower": "彼岸花（石蒜，含多色石蒜）",
+      "months": "9,10",
+      "category": "球根花卉",
+      "spots": [
+        {
+          "name": "宝山国际民间艺术博览馆",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/彼岸花/宝山国际民间艺术博览馆.jpg",
+            "./data/flower-photos/彼岸花/宝山国际民间艺术博览馆 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6aa28a390000000011035b10?xsec_token=ABF8eqkORlAAMoFjYfJRMBtVAbL3F0GO_OJg8QMMnyGDk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/彼岸花/世博文化公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/68c69dea000000001c00611f?xsec_token=ABIs6h1v-dxeAqW3wXPd_SF5NNIdNxmtVIjv6aL9gms9o=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "共青森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/彼岸花/共青森林公园.jpg",
+            "./data/flower-photos/彼岸花/共青森林公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/68d53b3600000000070289dc?xsec_token=ABDcRfozhv30tdbWqlB3Z0R_tJYaTPLeJzr_6D3szkD00=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "上海植物园",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/彼岸花/上海植物园.jpg",
+            "./data/flower-photos/彼岸花/上海植物园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a8da843000000002102fa57?xsec_token=ABbiLC0OlyOeDFk1_dEeJiu8sVrcsl9l8l8t0vr6yrN9o=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：石蒜科石蒜属多年生草本，鳞茎近球形，外皮紫褐色。叶基生带状，秋末抽出、夏初枯死（花叶不相见）。花葶先叶抽出，伞形花序有花4-7朵，花被片6，反卷皱缩，红色（红花石蒜）、金黄（忽地笑）、粉红（换锦花）、乳白（石蒜）等，雄蕊显著伸出花被；蒴果。花期8-10月（秋分前后）。\n植物文化：\"彼岸花\"名源于佛经\"彼岸\"意象与日本\"秋彼岸\"（秋分）开放之俗；花叶两不相见，被民间赋予\"生死离别、黄泉之花\"的传说（曼珠沙华出自《法华经》）。实为常见球根观赏植物，鳞茎含生物碱有毒不可食，但观赏无碍。花色多变的\"多色石蒜\"即多种石蒜混植，是上海公园秋日林下的浪漫花境。\n主要品种：常见种：红花石蒜（曼珠沙华）、忽地笑（金黄）、换锦花（粉红）、鹿葱（淡紫红）、长筒石蒜（白色）等，花期略错开可延长观赏期。上海植物园石蒜专类园、共青森林公园等为主要赏地。\n观赏注意点：全株有毒，观赏请勿触碰采摘；多生于林下水边，9月中下旬最盛，花期约两周。"
+    },
+    {
+      "flower": "地肤（绿）",
+      "months": "9,10",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "花开海上生态园",
+          "district": "金山区",
+          "photos": [
+            "./data/flower-photos/地肤（绿）/花开海上生态园 .jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a98c89c000000001103476a?xsec_token=ABWIPcfDbbSp6Z2NFadfpFbUOu5-c2GfgJL2Kn-nCXWYU=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：藜科地肤属一年生草本，株高50-150厘米，分枝极多而密，全株呈卵球形或倒卵形（似绿球）。叶线形或披针形，互生，绿色，柔软；花小，簇生叶腋；胞果扁球形。观赏期6-10月（绿叶期）。\n植物文化：地肤又名扫帚菜——嫩苗可食（\"扫帚苗\"饺子是北方春味），老株扎成扫帚，\"地肤\"即\"地之肤\"。株形圆润如绿色绒球，成片种植如起伏的绿色波浪；日式庭园称\"コキア\"（kokia），常陆海滨公园地肤田夏绿秋红闻名世界；象征坚韧朴素、生机。\n主要品种：园艺品种：细叶地肤、宽叶地肤（食用更佳）、“Summer Cypress”（更紧凑圆整）等。上海花开海上生态园、辰山植物园有大面积地肤球田。\n观赏注意点：由绿转红或黄是渐变过程，绿期与变色期各有看点；花田多设步道，请沿路观赏。"
+    },
+    {
+      "flower": "地肤（黄）",
+      "months": "9,10",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "花开海上生态园",
+          "district": "金山区",
+          "photos": [
+            "./data/flower-photos/地肤（黄）/花开海上生态园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69204aa4000000001e00d591?xsec_token=ABfZ6oNxpHcP1mxNGu-ddRiL82KAfuUx28aso4BueFaG4=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：藜科地肤属一年生草本，形态同地肤（绿）。秋季10-11月随气温与光照变化，叶片由绿转黄绿、橙红直至深红，整株如燃烧的火球，是\"地肤（黄）\"观赏期。\n植物文化：地肤秋红是秋季景观经典：日本常陆海滨公园\"地肤山\"3万余株红叶球田是秋季打卡圣地；中国花开海上生态园等地大面积种植，\"红球田\"与粉黛、菊花构成秋日色谱。秋红地肤象征成熟、热烈与收获。\n主要品种：品种同地肤（绿）。变红程度受温差与光照影响，11月上旬最艳，可持续至12月初。\n观赏注意点：变色进度受气温影响，出发前可查实时花讯；秋日早晚光线低斜时拍摄最佳。"
+    },
+    {
+      "flower": "栾树",
+      "months": "9,10",
+      "category": "行道树花",
+      "spots": [
+        {
+          "name": "大柏树站",
+          "district": "虹口区",
+          "photos": [
+            "./data/flower-photos/栾树/大柏树站.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a8e58c7000000002503b8c1?xsec_token=ABCQC1FxYdwtkZZ9aQql6IiH5L7PVOacqU3ZYvkOP_fNY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "桃林路天桥",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/栾树/桃林路天桥.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a9f9635000000002a007c09?xsec_token=AB_gw0UU4yP2ENN2HY-T4f5_FD93sg_6YN6Yht0AzRurk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "南浦大桥滨江",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/栾树/南浦大桥滨江.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6a9f9635000000002a007c09?xsec_token=AB_gw0UU4yP2ENN2HY-T4f5_FD93sg_6YN6Yht0AzRurk=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：无患子科栾树属落叶乔木，高可达15米，树皮灰褐色、纵裂。奇数羽状复叶或二回羽状复叶，小叶有锯齿。大型圆锥花序顶生，花小，金黄色，花期7-9月；蒴果膨大如灯笼，粉红至橙红色，果期9-10月，故称\"灯笼树\"；种子黑色球形。\n植物文化：中国乡土树种，《周礼》有\"天子树松，诸侯柏，大夫栾\"之载，栾树为\"大夫之树\"，象征身份与风骨。秋季金花红果并挂，\"满树金花一树红灯笼\"，是行道树与庭院树的\"秋日名片\"；上海大柏树、桃林路等以栾树秋色著称。\n主要品种：常见种：栾树（北京栾）、黄山栾树（全缘叶栾树，花更大、果更红）、复羽叶栾树等，华东地区以黄山栾为主栽。\n观赏注意点：花后结红褐色灯笼状果，花果俱可赏；9-10月为最佳观赏期，落花铺路是独特风景。"
+    },
+    {
+      "flower": "桂花",
+      "months": "10",
+      "category": "传统名花",
+      "spots": [
+        {
+          "name": "龙华寺",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/桂花/龙华寺.jpg",
+            "./data/flower-photos/桂花/龙华寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6908adba0000000007009c99?xsec_token=ABYhvR3u72QvXjvxYCqVVab0Uofvpj47JvvYcEbvuHJgg=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "醉白池",
+          "district": "松江区",
+          "photos": [
+            "./data/flower-photos/桂花/醉白池.jpg",
+            "./data/flower-photos/桂花/醉白池 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69088449000000000302d15d?xsec_token=ABYhvR3u72QvXjvxYCqVVab50J66o3PWvtwjV5YkzCQC8=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "古猗园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/桂花/古猗园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69075c380000000004015325?xsec_token=AB_Tqh7jmTmtikZSH5TugSplSN_uvXWLm3Rn7IdL6RPuE=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：木犀科木犀属常绿乔木或灌木，高3-5米（最高18米），树皮灰褐色。叶革质，椭圆形至披针形，对生。聚伞花序簇生叶腋，花小，黄白、金黄、橙红色，极芳香（\"十里香\"）；核果椭圆形，紫黑色。花期9-10月（四季桂全年多次开花）。\n植物文化：中国传统十大名花，\"桂\"谐音\"贵\"，象征富贵吉祥；\"蟾宫折桂\"喻科举及第；中秋赏桂、吴刚伐桂传说使桂花与月亮、团圆深度绑定。李清照\"何须浅碧深红色，自是花中第一流\"；桂花糕、桂花酒、桂花茶是江南秋日风物。\n主要品种：四大品种群：金桂（花金黄、香最浓）、银桂（乳白、香清雅）、丹桂（橙红、最艳）、四季桂（淡黄、多季开花）。上海龙华寺、醉白池、古猗园等古刹名园多植古桂。\n观赏注意点：花期受气温影响常分两波，10月上中旬为盛期；香气上午最浓，适合晨间漫步。"
+    },
+    {
+      "flower": "粉黛乱子草",
+      "months": "10,11",
+      "category": "草甸花海",
+      "spots": [
+        {
+          "name": "滨江森林公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/粉黛乱子草/滨江森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/68ec63810000000005031a2f?xsec_token=ABwyRJgIlbPLEqUnxG3lyq7Lo-hv3Ti1HdLvEsoRB1oEc=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "顾村公园",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/粉黛乱子草/顾村公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/68d8e415000000000e00f555?xsec_token=ABnTprHoVS_F4bJpbWGUCCcesfJnCfYBpfyVDJmN7CjMQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "白莲泾公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/粉黛乱子草/白莲泾公园.jpg",
+            "./data/flower-photos/粉黛乱子草/白莲泾公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/68eb6a8e0000000004028dab?xsec_token=ABuPBZdxA_fEgIapvzTqbw7FdX8uNkskGPDbn4ebJvU4E=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "嘉北郊野公园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/粉黛乱子草/嘉北郊野公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69057ef900000000070397ac?xsec_token=ABYMk9Lf7F-TqdEvcUJMRytp60WJCCjy0CKCC7oovHs8s=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：禾本科乱子草属多年生暖季型草本，株高30-90厘米，冠幅60-90厘米。叶纤细线形，绿色。顶生云雾状圆锥花序，粉紫色，花穗细如发丝（毛芒），远看如粉色云雾；秋冬花序渐退为黄褐色。花期9-11月（10月最佳）。\n植物文化：原产北美大草原；\"粉黛\"出自白居易《长恨歌》\"回眸一笑百媚生，六宫粉黛无颜色\"，喻其柔美如佳丽。近年凭社交媒体走红的\"网红草\"，花语为等待与浪漫；成片种植形成\"粉色海洋\"，是秋季景观顶流。注意：花茎纤细易倒伏，请沿观赏步道赏花、勿踩踏。\n主要品种：主栽Muhlenbergia capillaris（粉黛乱子草），乱子草属全球约100种（多枝乱子草、日本乱子草等）。上海滨江森林公园、顾村公园、嘉北郊野公园等有大片花海。\n观赏注意点：茎秆纤细易倒伏，请务必沿步道观赏、不要躺入踩踏；10-11月最佳，逆光下更梦幻。"
+    },
+    {
+      "flower": "菊花",
+      "months": "11",
+      "category": "传统名花",
+      "spots": [
+        {
+          "name": "共青森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/菊花/共青森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6912b422000000000303bc4a?xsec_token=ABZUMsJh3Ipr4GBlS_S9f2II_H7EekLwz3xgKTl9VuEMk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "曲水园",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/菊花/曲水园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/691b2c210000000004010971?xsec_token=ABWfq1ENtJD_YnRogHXO1F0R55a69qLJ3OoEg9YntyzIA=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：菊科菊属多年生宿根草本，株高60-150厘米，茎直立。叶互生，卵形至披针形，羽状浅裂或深裂。头状花序单生或数朵集生枝顶，径2.5-20厘米，舌状花白、黄、红、紫、绿、复色等，管状花黄色；瘦果。花期9-11月（秋菊）。\n植物文化：中国十大名花第三、花中四君子（梅兰竹菊）之一；陶渊明\"采菊东篱下，悠然见南山\"确立其隐逸高洁品格；重阳赏菊、饮菊花酒习俗千年不衰。《神农本草经》列菊为上品，杭白菊、贡菊、滁菊为药食名品；菊花亦是北京、开封、太原等市花。\n主要品种：全球品种3万余个、中国3000余：按花型分平瓣、匙瓣、管瓣、桂瓣、畸瓣五大类；按花期分夏菊、秋菊、寒菊；名品\"墨荷\"\"绿牡丹\"\"帅旗\"\"十丈珠帘\"等。上海共青森林公园、曲水园等有菊花展。\n观赏注意点：11月为盛花期，园林多办菊展；品种繁多，适合逐株拍特写。"
+    },
+    {
+      "flower": "梧桐",
+      "months": "11,12",
+      "category": "彩叶",
+      "spots": [
+        {
+          "name": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/梧桐/梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）.jpg",
+            "./data/flower-photos/梧桐/梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路） (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/68d3e8f2000000001301c04d?xsec_token=ABWCeI0WbVk4LqRNNj8yKieaDYmQrHrvRoNcZwvHlvoi8=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：上海\"梧桐街道\"实为悬铃木——悬铃木科悬铃木属落叶大乔木（上海主栽二球悬铃木，即\"法国梧桐\"），高可达30米；树皮灰绿色、大片剥落；叶掌状3-5裂，似枫；头状果序球形，2球一串下垂如铃；秋季叶色金黄。真正的梧桐（青桐，锦葵科梧桐属）树干青绿光滑、蓇葖果裂开如凤凰展翅。\n植物文化：\"梧桐\"文化深远：\"栽下梧桐树，引得凤凰来\"，是祥瑞高洁的象征；\"梧桐一叶落，天下皆知秋\"是物候诗意。悬铃木19世纪由法国人引入上海法租界作行道树，从此\"梧桐区\"成为上海浪漫街区的代名词——衡山路、武康路、愚园路等秋日金黄大道是城市记忆符号。\n主要品种：悬铃木按果球数分三种：一球（美国梧桐）、二球（英国梧桐，上海主栽）、三球（法国梧桐）；另有无果球飞絮的少果新品种。真正的中国梧桐（青桐）在上海多见于老庭院。\n观赏注意点：金黄与落叶并存约一个月，落叶期长；光线斜射时林荫道最有氛围，路边观赏注意交通安全。"
+    },
+    {
+      "flower": "红枫",
+      "months": "11,12",
+      "category": "彩叶",
+      "spots": [
+        {
+          "name": "鲁迅公园",
+          "district": "虹口区",
+          "photos": [
+            "./data/flower-photos/红枫/鲁迅公园.jpg",
+            "./data/flower-photos/红枫/鲁迅公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6927c65c000000001e031b22?xsec_token=ABn5yGL8RJHuN32muL5uM9sotr8n1ZSpI9w_qY-Ot8vHw=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "延中绿地",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/红枫/延中绿地.jpg",
+            "./data/flower-photos/红枫/延中绿地 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/693f9a7a000000001b027660?xsec_token=ABsIwqFKhgOPmxDw3wpx9XFxerEdjdNIqaoxic7wXRiJw=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "共青森林公园",
+          "district": "杨浦区",
+          "photos": [
+            "./data/flower-photos/红枫/共青森林公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69306b52000000001e02258d?xsec_token=ABuXWF6-xSInqRrvSWsyHXqbTQDnJylznEOx3Wyhx_ock=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "苏河半马公园",
+          "district": "普陀区",
+          "photos": [
+            "./data/flower-photos/红枫/苏河半马公园.jpg",
+            "./data/flower-photos/红枫/苏河半马公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6916f5be0000000005012670?xsec_token=AB939Z9cMHObVSzwLlEBlb_Vo405ArPiuZmJ3r6YW5ykY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "花开海上生态园",
+          "district": "金山区",
+          "photos": [
+            "./data/flower-photos/红枫/花开海上生态园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6938cf5d000000001e029511?xsec_token=ABuA_ZCoX7YoRlQn2oKCca336tEsD1gQIJQd4VT_wZMeg=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "古华公园",
+          "district": "奉贤区",
+          "photos": [
+            "./data/flower-photos/红枫/古华公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69214043000000001e00fca2?xsec_token=ABAhHWrDEEPajv-tjnRBlMO4BbwZAD8Jx9K2TGcubmEk8=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世博文化公园·申园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/红枫/世博文化公园·申园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69341757000000001b021fad?xsec_token=ABkZtzxNkTJePS9VyIjRXbswyDZCAbURkeIAddOZjpsUI=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "宝山寺",
+          "district": "宝山区",
+          "photos": [
+            "./data/flower-photos/红枫/宝山寺.jpg",
+            "./data/flower-photos/红枫/宝山寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6900e6ab000000000503ad66?xsec_token=ABn5Cx2zd6AJiL16w-frCYq5XUi-hYuLiM265VdEFDl8Y=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "红园",
+          "district": "闵行区",
+          "photos": [
+            "./data/flower-photos/红枫/红园.jpg",
+            "./data/flower-photos/红枫/红园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/693424a5000000000d0350d6?xsec_token=ABkZtzxNkTJePS9VyIjRXbs4gZUE6J2iOwM-wlqjgqSa4=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：无患子科槭属鸡爪槭的栽培变种，落叶小乔木，高5-8米。叶对生，掌状5-9深裂，裂片细长、裂深常达叶片1/2以上，全年紫红色或红色（春季新叶最艳）；花紫色，伞房花序；翅果双翅张开成钝角。观叶期9-11月。\n植物文化：枫叶是秋天与思念的符号：\"停车坐爱枫林晚，霜叶红于二月花\"（杜牧）传诵千年。红枫在江南园林与粉墙黛瓦、太湖石相映成趣，一木成景；日本\"红叶狩\"与枯山水庭院同源；象征热烈、坚韧与静美。\n主要品种：品种极多（全球逾千）：红枫（鸡爪槭变种）、羽毛枫（细裂如羽）、红羽毛枫、美国红枫（红花槭，高大速生）、日本红枫“Bloodgood”、“橙之梦”等。上海鲁迅公园、延中绿地、共青森林公园等为秋枫胜地。\n观赏注意点：变色受温差影响，冷空气后色彩更艳；清晨与傍晚低角度光下红叶通透感最佳。"
+    },
+    {
+      "flower": "乌桕",
+      "months": "11,12",
+      "category": "彩叶",
+      "spots": [
+        {
+          "name": "安亭路",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/乌桕/安亭路.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/693a4245000000001d03e020?xsec_token=ABqWqOUiFYOvlzsL25hmRiutB8FDeGPHuJ36q8uLBwYL0=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "南园滨江绿地",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/乌桕/南园滨江绿地.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69200a47000000001e032259?xsec_token=ABfZ6oNxpHcP1mxNGu-ddRiGxA6MpLYbK7aSwgD8QM1m4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "古猗园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/乌桕/古猗园.jpg",
+            "./data/flower-photos/乌桕/古猗园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/692e56e2000000001b0318f3?xsec_token=ABW8-gHjmeaDfZyN4PGEdzCaQzk1F1HfrPuhKlc9Deww4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/乌桕/世博文化公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6922862b000000000d0363b6?xsec_token=ABqYhmHXVFTdEHQYK74ABw512tPPKxylN_vIp0-zXkqjc=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：大戟科乌桕属落叶乔木，高可达15米，全株具白色乳汁（有毒）。树皮暗灰色、纵裂。叶互生，菱形或菱状卵形，全缘，叶柄顶端有2腺体。穗状花序顶生，花小黄绿色；蒴果梨状球形，熟时黑色开裂，露出白色蜡质种子（假种皮），经冬不落。花期4-8月，观叶期10-11月。\n植物文化：中国特有经济树种，栽培利用史1400余年（《齐民要术》有载）；\"乌桕赤于枫，园林九月中\"（陆游），秋叶红黄交织、层次比枫叶更丰富；\"偶看桕树梢头白，疑是江海小着花\"咏其冬挂白籽如银花。种子蜡质可制蜡烛肥皂，叶可染黑，古人称\"摇钱树\"。\n主要品种：按果序形态分鸡爪桕、葡萄桕两大变种；上海世博文化公园、安亭路、南园滨江绿地等以乌桕秋色著称。\n观赏注意点：变色有先后，红黄绿交织期最耐看；11月下旬至12月为最佳观赏期。"
+    },
+    {
+      "flower": "银杏",
+      "months": "11,12",
+      "category": "彩叶",
+      "spots": [
+        {
+          "name": "龙华寺",
+          "district": "徐汇区",
+          "photos": [
+            "./data/flower-photos/银杏/龙华寺.jpg",
+            "./data/flower-photos/银杏/龙华寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6928dc35000000001b02454e?xsec_token=ABpnK-5_n98DRSwoPW9PfOnRIVukyxgRHh6o_Ef7P3B1Q=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "南园滨江绿地",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/银杏/南园滨江绿地.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/692d5d01000000001b021cbc?xsec_token=AB1gIb_D_HrBJnEgNCi4A7dMvSvSNFeZCm7B_tZlDJWKQ=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "黄金城道步行街",
+          "district": "长宁区",
+          "photos": [
+            "./data/flower-photos/银杏/黄金城道步行街.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6932d686000000001e03b577?xsec_token=ABzt7N54CwBLywb4aSP9Ym6i7F-4I8OyJocpsFKvWuIAY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "真如寺",
+          "district": "普陀区",
+          "photos": [
+            "./data/flower-photos/银杏/真如寺.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6936a1d7000000001f00a19f?xsec_token=ABW5nKk-ylthliSWFJwWzL-dKijnr2wSpSuTVUXZUJfEE=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "上海音乐厅",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/银杏/上海音乐厅.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/692ffa43000000000d00f8df?xsec_token=ABx0LSXTsGOKwqqtjhwCYbEnOqLx8RNPbK5Umbb0lb8C4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "圣三一堂",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/银杏/圣三一堂.jpg",
+            "./data/flower-photos/银杏/圣三一堂 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6933f2fa000000001e0241d6?xsec_token=ABDVInn5UMhFvia44SaHR6qeI-9IRlkDy7MRvebKpnVCk=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "局门路",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/银杏/局门路.jpg",
+            "./data/flower-photos/银杏/局门路 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6928f70a000000001b020d42?xsec_token=ABpnK-5_n98DRSwoPW9PfOnUg2oopOL0AAjcjt886iGLc=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "世博文化公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/银杏/世博文化公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69201f9a000000001e0391db?xsec_token=ABfZ6oNxpHcP1mxNGu-ddRiEexTGJek_ECiSXsWAVIzeU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "古城公园",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/银杏/古城公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/692bd985000000001e00172d?xsec_token=ABNXTUJnehdfKbwAG2e1FcHENqjUghFfBDoGKgONwaY1c=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "汇龙潭公园",
+          "district": "嘉定区",
+          "photos": [
+            "./data/flower-photos/银杏/汇龙潭公园.jpg",
+            "./data/flower-photos/银杏/汇龙潭公园 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/692fe35e000000001d03af0b?xsec_token=ABx0LSXTsGOKwqqtjhwCYbEr7327rd5BWdRMdMFzoySiw=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "报国寺",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/银杏/报国寺.jpg",
+            "./data/flower-photos/银杏/报国寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69313bcd000000001e00c313?xsec_token=AB2AQrRB0JlkIWX6p6x3rBRcD0w7AreGh_1hR633uxYjI=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "颐浩禅寺",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/银杏/颐浩禅寺.jpg",
+            "./data/flower-photos/银杏/颐浩禅寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69435760000000001f00829f?xsec_token=ABUmF_G1XxYmvBNjWePp9b7VNUMoNpjLUmjW9fCnyb738=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "青龙寺",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/银杏/青龙寺.jpg",
+            "./data/flower-photos/银杏/青龙寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69412139000000001d03f7d7?xsec_token=ABRT9JoN62N8SEYXGv5s7e3xzUR58zmuOa0fvz4elCZG4=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "庄严寺",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/银杏/庄严寺.jpg",
+            "./data/flower-photos/银杏/庄严寺 (2).jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69368771000000001e00156d?xsec_token=ABW5nKk-ylthliSWFJwWzL-Us90suXrjkRi-AmbnuFkWU=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "江滨路",
+          "district": "黄浦区",
+          "photos": [
+            "./data/flower-photos/银杏/江滨路.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/6926459b000000000d036efc?xsec_token=AB2iF3qebVPppLmIey1IAlsRojp0_M1fMiRYmAbpQkzN4=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：银杏科银杏属落叶大乔木，高可达40米，胸径4米。叶扇形，先端二裂，有长柄，叶脉二叉状，秋季金黄；雌雄异株，种子（白果）外种皮肉质黄色有臭味、中种皮骨质白色、内种皮膜质。花期3-4月，种熟期9-10月。\n植物文化：中国特产孑遗植物——\"活化石\"，3.45亿年前已出现，约50万年前仅在中国存活至今；现仅浙江天目山有野生种群，各国银杏均源自中国。公孙树（\"公种而孙得食\"）；佛教圣树，多植于古刹名寺，树龄千年者众多（山东莒县浮来山古银杏4000余年）；白果药食同源（多食中毒）。\n主要品种：变种与品种：塔形银杏、垂枝银杏、斑叶银杏、黄叶银杏、叶籽银杏等；果用品种洞庭皇、佛指等。上海真如寺、龙华寺、圣三一堂等处的金黄古银杏是秋日名片。\n观赏注意点：11月下旬至12月上旬最佳，落叶铺地时最美；热门点位人多，建议工作日清晨。"
+    },
+    {
+      "flower": "水杉 落羽杉",
+      "months": "11,12",
+      "category": "彩叶",
+      "spots": [
+        {
+          "name": "青西郊野公园",
+          "district": "青浦区",
+          "photos": [
+            "./data/flower-photos/水杉 落羽杉/青西郊野公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/692d71eb000000001e036404?xsec_token=AB1gIb_D_HrBJnEgNCi4A7dMt5mR2PVzsJr6VhkPm-Kvw=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "横沔公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/水杉 落羽杉/横沔公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/695e47b9000000002202e647?xsec_token=ABC3uzk9E-jb5EpHeXM-Wn_vyQA9IHEUNgN-LHD_Hr2bY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "塘桥公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/水杉 落羽杉/塘桥公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69318e96000000001f00d8fd?xsec_token=AB2AQrRB0JlkIWX6p6x3rBRYAVR0ZUPiev3dQSYJ6s6ek=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "汤巷公园",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/水杉 落羽杉/汤巷公园.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69459cdd000000001f006be3?xsec_token=ABk5ylEUvcoCefIxXlKpiYShdzjEWBwAqswiZ5kY-p4KY=&xsec_source=pc_search&source=web_explore_feed"
+        },
+        {
+          "name": "滨江城市森林",
+          "district": "浦东新区",
+          "photos": [
+            "./data/flower-photos/水杉 落羽杉/滨江城市森林.jpg"
+          ],
+          "source_url": "https://www.xiaohongshu.com/explore/69303411000000001f009752?xsec_token=ABuXWF6-xSInqRrvSWsyHXqfG8nbLF-z9kCFUc9jSFX8k=&xsec_source=pc_search&source=web_explore_feed"
+        }
+      ],
+      "notes": "介绍：形态特征：柏科水杉属（水杉）与落羽杉属（落羽杉）落叶大乔木。水杉：中国特产孑遗\"活化石\"，高达35米，叶条形对生、排成羽状二列，冬季与侧生小枝同落，树冠尖塔形，树干基部膨大；落羽杉：原产北美东南部，高达50米，叶条形互生、更细软，干基膨大、常有膝状呼吸根（出水\"膝根\"）以利水中呼吸，耐水湿。秋色期10-12月，叶色金黄至锈红。\n植物文化：水杉1941年于湖北利川谋道溪被发现、1948年由胡先骕、郑万钧命名，轰动世界植物学界，被誉为20世纪最伟大的植物发现之一，现引种全球50余国；\"活化石\"象征坚韧与生命奇迹。落羽杉\"落羽\"之名源于其叶如羽毛飘落；两者常列植水岸，秋冬红杉林倒映水面，是上海青西郊野公园、横沔公园、塘桥公园等水杉林景观的主角。\n主要品种：水杉仅1种（有金叶水杉等园艺品种）；落羽杉属含落羽杉、池杉、墨西哥落羽杉，杂交种中山杉、培忠杉耐水湿、生长快。区分要点：水杉叶对生、落羽杉叶互生；落羽杉有膝状呼吸根，水杉无。\n观赏注意点：11月底至12月最佳，晨昏光线斜射时倒影最清晰；水上栈道湿滑，注意脚下。"
+    }
+  ]
+}

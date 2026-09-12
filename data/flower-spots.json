@@ -1,0 +1,2049 @@
+{
+ "_说明": "上海时令景观赏花景点汇总（由 seasonal-flowers.json 合并去重，补充地址与介绍）。id 为景点名称，photos 为本地照片相对路径，source_url 为小红书原文链接。",
+ "spots": [
+  {
+   "id": "鲁迅公园-梅园",
+   "name": "鲁迅公园-梅园",
+   "district": "虹口区",
+   "address": "虹口区四川北路2288号（鲁迅公园内）",
+   "intro": "鲁迅公园梅园，蜡梅与梅花寒冬报春。",
+   "source_url": "https://www.xiaohongshu.com/explore/6991db8e000000000a02c2aa?xsec_token=ABuu3n7C6XW-H4TxWh7h7j2qeN47Rna8eDzdrbA51WTAs=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/鲁迅公园-梅园.jpg",
+    "./data/flower-photos/梅花/鲁迅公园-梅园 (2).jpg"
+   ]
+  },
+  {
+   "id": "世纪公园",
+   "name": "世纪公园",
+   "district": "浦东新区",
+   "address": "浦东新区锦绣路1001号",
+   "intro": "上海内环内最大的生态城市公园，四季花海与琼花、荷花、石榴花景观丰富。",
+   "source_url": "https://www.xiaohongshu.com/explore/699584f1000000000a02f850?xsec_token=AB_ZjF29UeO54DHlJtVjhWAUbAuIZZgK_-MVoOMKIapNg=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花",
+    "琼花",
+    "绣球",
+    "石榴花",
+    "荷花"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/世纪公园 .jpg",
+    "./data/flower-photos/梅花/世纪公园  (2).jpg",
+    "./data/flower-photos/琼花/世纪公园.jpg",
+    "./data/flower-photos/琼花/世纪公园 (2).jpg",
+    "./data/flower-photos/绣球/世纪公园.jpg",
+    "./data/flower-photos/绣球/世纪公园 (2).jpg",
+    "./data/flower-photos/石榴花/世纪公园.jpg",
+    "./data/flower-photos/荷花/世纪公园.jpg"
+   ]
+  },
+  {
+   "id": "上海总商会旧址",
+   "name": "上海总商会旧址",
+   "district": "静安区",
+   "address": "静安区北苏州路470号",
+   "intro": "苏州河畔的百年商厦遗址，青藤爬满砖墙，历史感十足。",
+   "source_url": "https://www.xiaohongshu.com/explore/697196cf000000001a025d55?xsec_token=ABpPQ-bivinlRRGWIgT-TN6cCMQdhMJLNwWEvfPdegRRg=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/上海总商会旧址.jpg"
+   ]
+  },
+  {
+   "id": "莘庄公园",
+   "name": "莘庄公园",
+   "district": "闵行区",
+   "address": "闵行区莘浜路421号",
+   "intro": "以梅花闻名的老公园，蜡梅与梅花寒冬报春。",
+   "source_url": "https://www.xiaohongshu.com/explore/6979582400000000220097c8?xsec_token=AB8J3LnnPK81qyTEg9ylsBVwMcvB8tdEbAKMjqP-BvAPo=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/莘庄公园.jpg",
+    "./data/flower-photos/梅花/莘庄公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "梅园公园",
+   "name": "梅园公园",
+   "district": "浦东新区",
+   "address": "浦东新区乳山路180号",
+   "intro": "社区公园，泡桐花与梅花在不同季节接力绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/6988ae2a000000001b015caf?xsec_token=ABm8B8QWL8zF7T1bU7PI_QGvYlFRF8BHeR1k0iwj0gxbI=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花",
+    "泡桐"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/梅园公园.jpg",
+    "./data/flower-photos/梅花/梅园公园 (2).jpg",
+    "./data/flower-photos/泡桐/梅园公园.jpg",
+    "./data/flower-photos/泡桐/梅园公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "广富林",
+   "name": "广富林",
+   "district": "松江区",
+   "address": "松江区广富林路3260号",
+   "intro": "水下博物馆与古文化遗址，油菜花田环绕遗址公园。",
+   "source_url": "https://www.xiaohongshu.com/explore/69715e12000000002103ec1f?xsec_token=ABpPQ-bivinlRRGWIgT-TN6XmpCRgePEl6uoQsDvsd32Y=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花",
+    "油菜花"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/广富林.jpg",
+    "./data/flower-photos/梅花/广富林 (2).jpg",
+    "./data/flower-photos/油菜花/广富林.jpg",
+    "./data/flower-photos/油菜花/广富林 (2).jpg"
+   ]
+  },
+  {
+   "id": "花开海上生态园",
+   "name": "花开海上生态园",
+   "district": "金山区",
+   "address": "金山区朱泾镇待泾村秀泾6060号",
+   "intro": "四季花海生态园，鲁冰花、虞美人、地肤、红枫轮番登场。",
+   "source_url": "https://www.xiaohongshu.com/explore/699009eb000000001d02768e?xsec_token=AB_38MKvWhC1Tpo80xlhbnevLDq5xPB7tX8aRUkdYkJck=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花",
+    "喜林草",
+    "鲁冰花",
+    "虞美人",
+    "地肤（绿）",
+    "地肤（黄）",
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/花开海上生态园.jpg",
+    "./data/flower-photos/梅花/花开海上生态园 (2).jpg",
+    "./data/flower-photos/喜林草/花开海上生态园.jpg",
+    "./data/flower-photos/鲁冰花/花开海上生态园.jpg",
+    "./data/flower-photos/虞美人/花开海上生态园.jpg",
+    "./data/flower-photos/地肤（绿）/花开海上生态园 .jpg",
+    "./data/flower-photos/地肤（黄）/花开海上生态园.jpg",
+    "./data/flower-photos/红枫/花开海上生态园.jpg"
+   ]
+  },
+  {
+   "id": "曲水园",
+   "name": "曲水园",
+   "district": "青浦区",
+   "address": "青浦区公园路612号",
+   "intro": "江南古典园林，菊花展与园林亭台相映成趣。",
+   "source_url": "https://www.xiaohongshu.com/explore/699a8b4a000000000a03d4bf?xsec_token=ABH1D_Ebzj64-4Ew4Hu2v6G4W744o2qNinelo7pzpa7mM=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花",
+    "菊花"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/曲水园.jpg",
+    "./data/flower-photos/梅花/曲水园 (2).jpg",
+    "./data/flower-photos/菊花/曲水园.jpg"
+   ]
+  },
+  {
+   "id": "青溪园",
+   "name": "青溪园",
+   "district": "青浦区",
+   "address": "青浦区（青溪园）",
+   "intro": "青浦城区园林，梅花与园林景致相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/6988418a000000001b01cd17?xsec_token=ABm8B8QWL8zF7T1bU7PI_QGuAnaKI0ed7ID2wvt5saPM4=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/青溪园.jpg"
+   ]
+  },
+  {
+   "id": "宝山寺",
+   "name": "宝山寺",
+   "district": "宝山区",
+   "address": "宝山区罗店镇罗溪路518号",
+   "intro": "唐代风格寺院，樱花与红枫衬托古刹禅意。",
+   "source_url": "https://www.xiaohongshu.com/explore/697196cf000000001a025d55?xsec_token=ABpPQ-bivinlRRGWIgT-TN6cCMQdhMJLNwWEvfPdegRRg=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "梅花",
+    "樱花",
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/梅花/宝山寺.jpg",
+    "./data/flower-photos/樱花/宝山寺.jpg",
+    "./data/flower-photos/樱花/宝山寺 (2).jpg",
+    "./data/flower-photos/红枫/宝山寺.jpg",
+    "./data/flower-photos/红枫/宝山寺 (2).jpg"
+   ]
+  },
+  {
+   "id": "真如公园",
+   "name": "真如公园",
+   "district": "普陀区",
+   "address": "普陀区（真如）",
+   "intro": "社区公园，梅花在早春绽放。",
+   "source_url": "",
+   "flowers": [
+    "腊梅"
+   ],
+   "photos": []
+  },
+  {
+   "id": "古猗园",
+   "name": "古猗园",
+   "district": "嘉定区",
+   "address": "嘉定区南翔镇沪宜公路218号",
+   "intro": "江南五大名园之一，牡丹、石榴花、荷花、紫薇、桂花四季皆有看点。",
+   "source_url": "",
+   "flowers": [
+    "腊梅",
+    "牡丹",
+    "石榴花",
+    "荷花",
+    "紫薇",
+    "桂花",
+    "乌桕"
+   ],
+   "photos": [
+    "./data/flower-photos/牡丹/古猗园.jpg",
+    "./data/flower-photos/牡丹/古猗园 (2).jpg",
+    "./data/flower-photos/石榴花/古猗园.jpg",
+    "./data/flower-photos/石榴花/古猗园 (2).jpg",
+    "./data/flower-photos/荷花/古猗园.jpg",
+    "./data/flower-photos/紫薇/古猗园.jpg",
+    "./data/flower-photos/桂花/古猗园.jpg",
+    "./data/flower-photos/乌桕/古猗园.jpg",
+    "./data/flower-photos/乌桕/古猗园 (2).jpg"
+   ]
+  },
+  {
+   "id": "御澜湾",
+   "name": "御澜湾",
+   "district": "青浦区",
+   "address": "青浦区淀山湖大道（御澜湾）",
+   "intro": "淀山湖畔社区绿地，樱花在春日沿湖绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d3864c000000001a022acf?xsec_token=ABLVs2MKKdCUwCnP5rfZQItbi6GM4ssG7QqJfHBaM-QTA=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/御澜湾.jpg"
+   ]
+  },
+  {
+   "id": "德莱蒙德住宅（华山路263弄7号）",
+   "name": "德莱蒙德住宅（华山路263弄7号）",
+   "district": "静安区",
+   "address": "静安区华山路263弄7号",
+   "intro": "老字号品牌馆所在老洋房，樱花在庭院绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cf00a3000000002003919d?xsec_token=ABIVMRtGTrN36FMIzCkriYB-4QRvgOrCBTGFLTiiQ9VCY=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/德莱蒙德住宅（华山路263弄7号）.jpg",
+    "./data/flower-photos/樱花/德莱蒙德住宅（华山路263弄7号） (2).jpg"
+   ]
+  },
+  {
+   "id": "龙美术馆",
+   "name": "龙美术馆",
+   "district": "徐汇区",
+   "address": "徐汇区龙腾大道3398号",
+   "intro": "西岸艺术地标，樱花在春日点缀滨江美术馆。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cb55d7000000001a032530?xsec_token=ABQGBkvw3DPDGuTm4BkqxtsTlcxp39SvsItyPr8RYpheg=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/龙美术馆.jpg"
+   ]
+  },
+  {
+   "id": "上海交通大学（徐汇校区）",
+   "name": "上海交通大学（徐汇校区）",
+   "district": "徐汇区",
+   "address": "徐汇区华山路1954号",
+   "intro": "百年名校，徐汇校区老图书馆与红砖建筑群掩映于樱花树间，春日樱粉与书香相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/69bff67d00000000210076e4?xsec_token=AB-j35qVxj444xrQJT2UnH74G3X8vbDNmXVCeR-eGTsaA=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/上海交通大学（徐汇校区）.jpg",
+    "./data/flower-photos/樱花/上海交通大学（徐汇校区） (2).jpg"
+   ]
+  },
+  {
+   "id": "虹口足球场",
+   "name": "虹口足球场",
+   "district": "虹口区",
+   "address": "虹口区东江湾路444号",
+   "intro": "樱花环绕的体育场，春日粉色花海引无数游客。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cd10fe000000002302718d?xsec_token=ABye8gtEFt07bvUvGBh3DC3acJDwFKgIgu7-h7XSZCj6Y=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/虹口足球场.jpg",
+    "./data/flower-photos/樱花/虹口足球场 (2).jpg"
+   ]
+  },
+  {
+   "id": "世博文化公园",
+   "name": "世博文化公园",
+   "district": "浦东新区",
+   "address": "浦东新区世博大道1750号",
+   "intro": "上海中心城区最大公园绿地，汇集油菜花、鸢尾、彼岸花、向日葵等四季花海。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d0788a00000000210050fd?xsec_token=ABcy53L9DiSd-Y_Y9MqzVg_XSzRsysbmYKtv6dYghGiXI=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "樱花",
+    "油菜花",
+    "鸢尾",
+    "荷花",
+    "百子莲",
+    "百日菊",
+    "彼岸花（石蒜，含多色石蒜）",
+    "乌桕",
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/世博文化公园.jpg",
+    "./data/flower-photos/樱花/世博文化公园 (2).jpg",
+    "./data/flower-photos/油菜花/世博文化公园.jpg",
+    "./data/flower-photos/鸢尾/世博文化公园.jpg",
+    "./data/flower-photos/荷花/世博文化公园.jpg",
+    "./data/flower-photos/荷花/世博文化公园 (2).jpg",
+    "./data/flower-photos/百子莲/世博文化公园.jpg",
+    "./data/flower-photos/百日菊/百日菊_用一百个白昼，烧成漫长的火_11_一个孤独漫步者的随拍_来自小红书网页版.jpg",
+    "./data/flower-photos/彼岸花/世博文化公园.jpg",
+    "./data/flower-photos/乌桕/世博文化公园.jpg",
+    "./data/flower-photos/银杏/世博文化公园.jpg"
+   ]
+  },
+  {
+   "id": "顾村公园",
+   "name": "顾村公园",
+   "district": "宝山区",
+   "address": "宝山区沪太路4788号",
+   "intro": "上海赏樱胜地，荷花、木香花与粉黛乱子草四季花事不断。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d5a6f3000000002102db6c?xsec_token=AByFkRCiwBDECN9zEGz6LSzVIbWR4ogsfOwcqq-sukBu8=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "樱花",
+    "木香花",
+    "荷花",
+    "粉黛乱子草"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/顾村公园.jpg",
+    "./data/flower-photos/樱花/顾村公园 (2).jpg",
+    "./data/flower-photos/木香花/顾村公园.jpg",
+    "./data/flower-photos/荷花/顾村公园.jpg",
+    "./data/flower-photos/粉黛乱子草/顾村公园.jpg"
+   ]
+  },
+  {
+   "id": "大宁灵石公园",
+   "name": "大宁灵石公园",
+   "district": "静安区",
+   "address": "静安区广中西路288号",
+   "intro": "大宁公园的前身，樱花与郁金香花海依旧。",
+   "source_url": "https://www.xiaohongshu.com/explore/698daa87000000001a02d230?xsec_token=AB5M_BKziGMu9osdwKrShPUCCrFza7R6GlGqyddriR1PY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/大宁灵石公园.jpg",
+    "./data/flower-photos/樱花/大宁灵石公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "同济大学（四平路校区）",
+   "name": "同济大学（四平路校区）",
+   "district": "杨浦区",
+   "address": "杨浦区四平路1239号",
+   "intro": "樱花大道享誉沪上，海棠与樱花共绘春日校园。",
+   "source_url": "https://www.xiaohongshu.com/explore/69ca9e030000000023026042?xsec_token=ABK3tWU2FO1lGwSTi9iYE0n6phn71Wxmn5Knvtf-juBG8=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "樱花",
+    "海棠"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/同济大学（四平路校区）.jpg",
+    "./data/flower-photos/樱花/同济大学（四平路校区） (2).jpg",
+    "./data/flower-photos/海棠/同济大学（四平路校区）.jpg"
+   ]
+  },
+  {
+   "id": "南浦大桥",
+   "name": "南浦大桥",
+   "district": "黄浦区",
+   "address": "黄浦区南浦大桥（跨黄浦江）",
+   "intro": "上海第一座跨江斜拉桥，樱花在引桥与浦江畔绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d1e13c000000002102d982?xsec_token=ABbJYBpxfgPp027ro9aMKWt0JEXRbvaitJzgEl5PODKx0=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/南浦大桥.jpg"
+   ]
+  },
+  {
+   "id": "四川路桥",
+   "name": "四川路桥",
+   "district": "黄浦区",
+   "address": "黄浦区四川路桥（跨苏州河）",
+   "intro": "苏州河老桥，樱花在桥畔与河岸绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cccb47000000001a02595f?xsec_token=ABDHS_5ALuGVatL0a-bO6p1Th-lYTOeIDdalaAO5y7e4U=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/四川路桥.jpg",
+    "./data/flower-photos/樱花/四川路桥 (2).jpg"
+   ]
+  },
+  {
+   "id": "绿之丘",
+   "name": "绿之丘",
+   "district": "杨浦区",
+   "address": "杨浦区杨树浦路（杨浦滨江）",
+   "intro": "滨江地标建筑，樱花在春季环绕绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69db3229000000002202b8fa?xsec_token=ABRJIldyw6NEQKldTbcOt34dIS2I0HgHKsvpkmXXRwdG8=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/绿之丘.jpg"
+   ]
+  },
+  {
+   "id": "东方渔人码头",
+   "name": "东方渔人码头",
+   "district": "杨浦区",
+   "address": "杨浦区杨树浦路1082号",
+   "intro": "滨江工业遗存改造的休闲码头，马鞭草与蔷薇点缀江岸。",
+   "source_url": "https://www.xiaohongshu.com/explore/67e927f2000000000903a0b4?xsec_token=AB6gpXyFvyjctaK9lzwARsgw4TwcG6YbArkvzJ_pyKzKY=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花",
+    "马鞭草"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/东方渔人码头.jpg",
+    "./data/flower-photos/马鞭草/东方渔人码头.jpg",
+    "./data/flower-photos/马鞭草/东方渔人码头 (2).jpg"
+   ]
+  },
+  {
+   "id": "华青南路",
+   "name": "华青南路",
+   "district": "青浦区",
+   "address": "青浦区华青南路",
+   "intro": "青浦城区樱花大道，春日粉色长廊。",
+   "source_url": "https://www.xiaohongshu.com/explore/69ce2ca9000000002200086d?xsec_token=ABbON8WwsPW5MVYrePBmFIaJBv22mgL6eIE4qYAznGLhU=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "樱花"
+   ],
+   "photos": [
+    "./data/flower-photos/樱花/华青南路.jpg",
+    "./data/flower-photos/樱花/华青南路 (2).jpg"
+   ]
+  },
+  {
+   "id": "上海展览中心·西花园",
+   "name": "上海展览中心·西花园",
+   "district": "静安区",
+   "address": "静安区延安中路1000号",
+   "intro": "俄式风格建筑群旁的西花园，白玉兰与郁金香在春日次第绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69af882f000000001600be85?xsec_token=ABE7E5FfSE-IA1NxVuwYtaT1JpBsntyp6PUDqaknF2SBA=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "白玉兰 / 二乔玉兰"
+   ],
+   "photos": [
+    "./data/flower-photos/白玉兰/上海展览中心·西花园.jpg",
+    "./data/flower-photos/白玉兰/上海展览中心·西花园 (2).jpg",
+    "./data/flower-photos/白玉兰/上海展览中心·西花园 (3).jpg"
+   ]
+  },
+  {
+   "id": "龙华寺",
+   "name": "龙华寺",
+   "district": "徐汇区",
+   "address": "徐汇区龙华路2853号",
+   "intro": "千年古刹，白玉兰、牡丹、金丝桃、紫薇与桂花四季花事不断。",
+   "source_url": "https://www.xiaohongshu.com/explore/69b2273a000000001503b18c?xsec_token=ABlMROzwA6ukUJyydqZHxmwmo4yZTUnYUjeouKPkw7rVM=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "白玉兰 / 二乔玉兰",
+    "牡丹",
+    "金丝桃",
+    "紫薇",
+    "桂花",
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/白玉兰/龙华寺.jpg",
+    "./data/flower-photos/白玉兰/龙华寺 (2).jpg",
+    "./data/flower-photos/牡丹/龙华寺.jpg",
+    "./data/flower-photos/金丝桃/龙华寺.jpg",
+    "./data/flower-photos/金丝桃/龙华寺 (2).jpg",
+    "./data/flower-photos/紫薇/龙华寺.jpg",
+    "./data/flower-photos/紫薇/龙华寺 (2).jpg",
+    "./data/flower-photos/桂花/龙华寺.jpg",
+    "./data/flower-photos/桂花/龙华寺 (2).jpg",
+    "./data/flower-photos/银杏/龙华寺.jpg",
+    "./data/flower-photos/银杏/龙华寺 (2).jpg"
+   ]
+  },
+  {
+   "id": "陆家嘴中心绿地",
+   "name": "陆家嘴中心绿地",
+   "district": "浦东新区",
+   "address": "浦东新区陆家嘴环路（近金茂大厦）",
+   "intro": "陆家嘴核心绿肺，白玉兰与摩天楼群相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/69b6656f000000001d01d380?xsec_token=ABDJFl_Gcse1utba87CRR8LcGbOn6xHIQS4eiR_GjrKuk=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "白玉兰 / 二乔玉兰"
+   ],
+   "photos": [
+    "./data/flower-photos/白玉兰/陆家嘴中心绿地.jpg",
+    "./data/flower-photos/白玉兰/陆家嘴中心绿地 (2).jpg"
+   ]
+  },
+  {
+   "id": "闵行文化公园",
+   "name": "闵行文化公园",
+   "district": "闵行区",
+   "address": "闵行区吴中路（近外环）",
+   "intro": "文化主题公园，白玉兰与雏菊在春夏绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69b4d93c00000000230216a6?xsec_token=ABGAi05fEa0xMWJgIIkY-fJFXLdiB40Bd83LbPNfasy9w=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "白玉兰 / 二乔玉兰",
+    "雏菊"
+   ],
+   "photos": [
+    "./data/flower-photos/白玉兰/闵行文化公园.jpg",
+    "./data/flower-photos/雏菊/闵行文化公园.jpg",
+    "./data/flower-photos/雏菊/闵行文化公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "天马射电天文望远镜",
+   "name": "天马射电天文望远镜",
+   "district": "松江区",
+   "address": "松江区佘山镇天马山（近天马山园）",
+   "intro": "上海65米射电望远镜所在地，桃花环绕科技奇观。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cb7b50000000001a02f7cc?xsec_token=ABQGBkvw3DPDGuTm4BkqxtsSH6yRrj1l-MHmPnRehYunc=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "桃花"
+   ],
+   "photos": [
+    "./data/flower-photos/桃花/天马射电天文望远镜.jpg",
+    "./data/flower-photos/桃花/天马射电天文望远镜 (2).jpg"
+   ]
+  },
+  {
+   "id": "桃林路",
+   "name": "桃林路",
+   "district": "浦东新区",
+   "address": "浦东新区桃林路",
+   "intro": "道路桃树成行，春日桃花如霞。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cf7187000000001a0213a2?xsec_token=ABIVMRtGTrN36FMIzCkriYB6hD4CzCMEYISGsBorUV0g8=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "桃花"
+   ],
+   "photos": [
+    "./data/flower-photos/桃花/桃林路.jpg"
+   ]
+  },
+  {
+   "id": "南汇桃花村",
+   "name": "南汇桃花村",
+   "district": "浦东新区",
+   "address": "浦东新区惠南镇（南汇桃花节主会场）",
+   "intro": "上海著名桃花节举办地，万亩桃林春日如霞。",
+   "source_url": "https://www.xiaohongshu.com/explore/69c537310000000023024346?xsec_token=ABxJLD9NLmFCFwiE5a0e_IRoRAGrUF-zg0wfalweDDSso=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "桃花"
+   ],
+   "photos": [
+    "./data/flower-photos/桃花/南汇桃花村.jpg",
+    "./data/flower-photos/桃花/南汇桃花村 (2).jpg"
+   ]
+  },
+  {
+   "id": "闸北公园",
+   "name": "闸北公园",
+   "district": "静安区",
+   "address": "静安区共和新路1555号",
+   "intro": "百年老公园，海棠、绣球、石榴花与紫薇四季花事不断。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cd08d80000000023027e94?xsec_token=ABye8gtEFt07bvUvGBh3DC3UTulaTEiwyfDPYLwkVROdo=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "海棠",
+    "绣球",
+    "石榴花",
+    "紫薇"
+   ],
+   "photos": [
+    "./data/flower-photos/海棠/闸北公园.jpg",
+    "./data/flower-photos/海棠/闸北公园 (2).jpg",
+    "./data/flower-photos/绣球/闸北公园.jpg",
+    "./data/flower-photos/绣球/闸北公园 (2).jpg",
+    "./data/flower-photos/石榴花/闸北公园.jpg",
+    "./data/flower-photos/紫薇/闸北公园.jpg",
+    "./data/flower-photos/紫薇/闸北公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "人民公园",
+   "name": "人民公园",
+   "district": "黄浦区",
+   "address": "黄浦区南京西路231号",
+   "intro": "市中心老牌公园，垂丝海棠与樱花在春日争艳。",
+   "source_url": "https://www.xiaohongshu.com/explore/69cbbdbe000000002102ef3d?xsec_token=ABQGBkvw3DPDGuTm4BkqxtsSj4yrl-Cf8MIQrdtDP4M8E=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "海棠"
+   ],
+   "photos": [
+    "./data/flower-photos/海棠/人民公园.jpg",
+    "./data/flower-photos/海棠/人民公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "中科路",
+   "name": "中科路",
+   "district": "浦东新区",
+   "address": "浦东新区张江中科路",
+   "intro": "张江科学城道路绿化带，垂丝海棠沿路盛放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69ce9041000000001f00617b?xsec_token=ABbON8WwsPW5MVYrePBmFIaM1oOctFce3hDFR_wY6k2Lk=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "海棠"
+   ],
+   "photos": [
+    "./data/flower-photos/海棠/中科路.jpg",
+    "./data/flower-photos/海棠/中科路 (2).jpg"
+   ]
+  },
+  {
+   "id": "黄兴公园",
+   "name": "黄兴公园",
+   "district": "杨浦区",
+   "address": "杨浦区营口路699号",
+   "intro": "以黄兴命名的公园，海棠花在春日绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69c8ebce0000000021010ee8?xsec_token=ABMrzz2ZnvdJnt5AtB-LdY2HFNpX0HKZgYWGIjzEn5I9g=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "海棠"
+   ],
+   "photos": [
+    "./data/flower-photos/海棠/黄兴公园.jpg"
+   ]
+  },
+  {
+   "id": "上海稻德粮食合作社",
+   "name": "上海稻德粮食合作社",
+   "district": "闵行区",
+   "address": "闵行区（浦江镇农田片区）",
+   "intro": "成片油菜花田铺满田野，春日金黄画卷，适合乡野拍照。",
+   "source_url": "https://www.xiaohongshu.com/explore/69b6af4300000000210119d6?xsec_token=ABDJFl_Gcse1utba87CRR8Le4PxROubo4jQFTn3m8W-L0=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "油菜花"
+   ],
+   "photos": [
+    "./data/flower-photos/油菜花/上海稻德粮食合作社.jpg",
+    "./data/flower-photos/油菜花/上海稻德粮食合作社 (2).jpg"
+   ]
+  },
+  {
+   "id": "余德耀美术馆",
+   "name": "余德耀美术馆",
+   "district": "青浦区",
+   "address": "青浦区蟠龙路1238弄（蟠龙天地）",
+   "intro": "当代艺术馆，油菜花与艺术装置交织出田园与艺术气息。",
+   "source_url": "https://www.xiaohongshu.com/explore/69b17fc9000000002603089e?xsec_token=ABVsZBBBzHTOTSYqZhC9-Il0qIy5LjciJZosbTc5vv2IM=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "油菜花"
+   ],
+   "photos": [
+    "./data/flower-photos/油菜花/余德耀美术馆.jpg"
+   ]
+  },
+  {
+   "id": "和睦村",
+   "name": "和睦村",
+   "district": "青浦区",
+   "address": "青浦区赵巷镇和睦村",
+   "intro": "江南水乡村落，油菜花田环绕白墙黛瓦。",
+   "source_url": "https://www.xiaohongshu.com/explore/69afb3e40000000015030a4e?xsec_token=ABE7E5FfSE-IA1NxVuwYtaT2H3-hTcUqZhmPziWbsIOQ4=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "油菜花"
+   ],
+   "photos": [
+    "./data/flower-photos/油菜花/和睦村.jpg"
+   ]
+  },
+  {
+   "id": "辰花路",
+   "name": "辰花路",
+   "district": "松江区",
+   "address": "松江区辰花路",
+   "intro": "通往辰山植物园的道路，油菜花田沿路铺展。",
+   "source_url": "https://www.xiaohongshu.com/explore/69bd67e8000000002202b7a4?xsec_token=AB8R_LPlT3VzoJ2CwzcCqQM69Hibn8dM_RsTjBVjQv_3g=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "油菜花"
+   ],
+   "photos": [
+    "./data/flower-photos/油菜花/辰花路.jpg"
+   ]
+  },
+  {
+   "id": "大宁公园",
+   "name": "大宁公园",
+   "district": "静安区",
+   "address": "静安区广中西路288号",
+   "intro": "以郁金香花展闻名，荷花、向日葵与樱花四季景观丰富。",
+   "source_url": "https://www.xiaohongshu.com/explore/69a80b30000000002602e2bf?xsec_token=ABYcY0z568S4dDvOY--mM6npwEbpwcaOwG2yDKra_POdo=&xsec_source=pc_search&source=web_search_result_note",
+   "flowers": [
+    "郁金香",
+    "荷花",
+    "向日葵"
+   ],
+   "photos": [
+    "./data/flower-photos/郁金香/大宁公园.jpg",
+    "./data/flower-photos/荷花/大宁公园.jpg",
+    "./data/flower-photos/荷花/大宁公园 (2).jpg",
+    "./data/flower-photos/向日葵/大宁公园.jpg"
+   ]
+  },
+  {
+   "id": "静安雕塑公园",
+   "name": "静安雕塑公园",
+   "district": "静安区",
+   "address": "静安区北京西路500号",
+   "intro": "雕塑艺术公园，郁金香在春日与雕塑相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/69c92cf90000000021011dfc?xsec_token=AB2l-GJpld_gYjdcYy_C2PGR8AEJxZGDX-ExSo6j0AA5M=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "郁金香"
+   ],
+   "photos": [
+    "./data/flower-photos/郁金香/静安雕塑公园.jpg"
+   ]
+  },
+  {
+   "id": "杨浦滨江",
+   "name": "杨浦滨江",
+   "district": "杨浦区",
+   "address": "杨浦区杨树浦路（滨江段）",
+   "intro": "工业遗存改造的滨江岸线，郁金香点缀江岸步道。",
+   "source_url": "https://www.xiaohongshu.com/explore/69c3d6170000000023017e7e?xsec_token=AB19cOWkAcQeIYMp_CzcOdUljDjpEQgw75bbD2lHtsYsw=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "郁金香"
+   ],
+   "photos": [
+    "./data/flower-photos/郁金香/杨浦滨江.jpg",
+    "./data/flower-photos/郁金香/杨浦滨江 (2).jpg"
+   ]
+  },
+  {
+   "id": "琴键春园",
+   "name": "琴键春园",
+   "district": "黄浦区",
+   "address": "黄浦区（南浦大桥滨江）",
+   "intro": "滨江琴键主题花园，郁金香在春日沿江铺展。",
+   "source_url": "https://www.xiaohongshu.com/explore/69bdf9f5000000002800999a?xsec_token=AB8R_LPlT3VzoJ2CwzcCqQM5eN0REtgvqZJjeb1s3e3vk=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "郁金香"
+   ],
+   "photos": [
+    "./data/flower-photos/郁金香/琴键春园.jpg",
+    "./data/flower-photos/郁金香/琴键春园 (2).jpg"
+   ]
+  },
+  {
+   "id": "外滩",
+   "name": "外滩",
+   "district": "黄浦区",
+   "address": "黄浦区中山东一路",
+   "intro": "万国建筑博览群，郁金香花带在春日点缀浦江两岸。",
+   "source_url": "https://www.xiaohongshu.com/explore/699ea790000000000d009e84?xsec_token=ABDXMaOUCU2Jd0ja785QMAazWRND4fBCSRI0L65IvQpFQ=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "郁金香"
+   ],
+   "photos": [
+    "./data/flower-photos/郁金香/外滩.jpg",
+    "./data/flower-photos/郁金香/外滩 (2).jpg"
+   ]
+  },
+  {
+   "id": "襄阳公园",
+   "name": "襄阳公园",
+   "district": "徐汇区",
+   "address": "徐汇区淮海中路1008号",
+   "intro": "淮海路旁老公园，郁金香在春日点缀闹市。",
+   "source_url": "https://www.xiaohongshu.com/explore/69c9c72a000000001a03385a?xsec_token=AB2l-GJpld_gYjdcYy_C2PGZk9LFFosF86oM5vRfGsLPg=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "郁金香"
+   ],
+   "photos": [
+    "./data/flower-photos/郁金香/襄阳公园.jpg"
+   ]
+  },
+  {
+   "id": "浦东牡丹园",
+   "name": "浦东牡丹园",
+   "district": "浦东新区",
+   "address": "浦东新区（近高行）",
+   "intro": "以牡丹为主题的园林，暮春国色天香。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d9a2cc000000002200fc38?xsec_token=ABAgo1Mq2Mg_kw6ne3yeR2c21wv6QYexZv6PG3gE6UHWU=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "牡丹"
+   ],
+   "photos": [
+    "./data/flower-photos/牡丹/浦东牡丹园 .jpg",
+    "./data/flower-photos/牡丹/浦东牡丹园  (2).jpg"
+   ]
+  },
+  {
+   "id": "漕溪公园",
+   "name": "漕溪公园",
+   "district": "徐汇区",
+   "address": "徐汇区漕溪路203号",
+   "intro": "江南风格园林，牡丹与百子莲在不同季节绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d4e4bf000000002100658b?xsec_token=ABLFuYLeRYptEOd7Ji4i6ZnDCklWd6FKRwFK3x4-xb6ZU=&xsec_source=pc_search&source=web_search_result_notes",
+   "flowers": [
+    "牡丹",
+    "百子莲"
+   ],
+   "photos": [
+    "./data/flower-photos/牡丹/漕溪公园.jpg",
+    "./data/flower-photos/牡丹/漕溪公园 (2).jpg",
+    "./data/flower-photos/百子莲/漕溪公园.jpg",
+    "./data/flower-photos/百子莲/漕溪公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "上海师范大学（徐汇校区）",
+   "name": "上海师范大学（徐汇校区）",
+   "district": "徐汇区",
+   "address": "徐汇区桂林路100号",
+   "intro": "师大校园紫藤长廊与蔷薇墙是经典打卡点，花季书香满园。",
+   "source_url": "https://www.xiaohongshu.com/explore/69da54cb000000001a03212f?xsec_token=ABnA77rx-rBbFLH54D28Jp4xOJ0deYaEGnyGgN29E8t-I=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "紫藤"
+   ],
+   "photos": [
+    "./data/flower-photos/紫藤/上海师范大学（徐汇校区）.jpg",
+    "./data/flower-photos/紫藤/上海师范大学（徐汇校区） (2).jpg",
+    "./data/flower-photos/紫藤/上海师范大学（徐汇校区） (3).jpg"
+   ]
+  },
+  {
+   "id": "嘉定紫藤园",
+   "name": "嘉定紫藤园",
+   "district": "嘉定区",
+   "address": "嘉定区博乐路45号",
+   "intro": "以紫藤闻名，百株紫藤花棚暮春如紫色瀑布。",
+   "source_url": "https://www.xiaohongshu.com/explore/69e19cc6000000001b022d22?xsec_token=ABb1VW8Rx2nZALQCvo5w12TiAluMHXAya6nE0RaQxRKEM=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "紫藤"
+   ],
+   "photos": [
+    "./data/flower-photos/紫藤/嘉定紫藤园.jpg"
+   ]
+  },
+  {
+   "id": "闵行古藤园",
+   "name": "闵行古藤园",
+   "district": "闵行区",
+   "address": "闵行区临沧路（古藤园）",
+   "intro": "以古紫藤闻名的园林，暮春紫藤垂瀑。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d79b20000000001b0023a9?xsec_token=ABUl4Scr-HuLXwemFgwvlZYAtkaIJB5gv_l_qGgfLzq3o=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "紫藤"
+   ],
+   "photos": [
+    "./data/flower-photos/紫藤/闵行古藤园.jpg",
+    "./data/flower-photos/紫藤/闵行古藤园 (2).jpg"
+   ]
+  },
+  {
+   "id": "太原路215弄",
+   "name": "太原路215弄",
+   "district": "徐汇区",
+   "address": "徐汇区太原路215弄",
+   "intro": "幽静里弄，紫藤攀满老墙，春日紫色花瀑。",
+   "source_url": "https://www.xiaohongshu.com/explore/69db6d55000000002103a23a?xsec_token=ABRJIldyw6NEQKldTbcOt34Yxu5eQy2WD0rJH1mtQYSZI=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "紫藤"
+   ],
+   "photos": [
+    "./data/flower-photos/紫藤/太原路215弄.jpg",
+    "./data/flower-photos/紫藤/太原路215弄 (2).jpg"
+   ]
+  },
+  {
+   "id": "东平森林公园",
+   "name": "东平森林公园",
+   "district": "崇明区",
+   "address": "崇明区北沿公路2188号",
+   "intro": "华东地区最大平原人造森林，紫藤与森林氧吧相融。",
+   "source_url": "https://www.xiaohongshu.com/explore/69eccd07000000002202677e?xsec_token=ABvPRmUpX8f23vRx6g6UISXWCM0Gid87yeb6N3Q9c5nDc=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "紫藤"
+   ],
+   "photos": [
+    "./data/flower-photos/紫藤/东平森林公园.jpg"
+   ]
+  },
+  {
+   "id": "广富林郊野公园",
+   "name": "广富林郊野公园",
+   "district": "松江区",
+   "address": "松江区广富林路（近广富林遗址）",
+   "intro": "郊野花海公园，蔷薇花墙与田园景观相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/69fd6377000000003502fad1?xsec_token=ABuBBdEGj29WaWT74Xf9aCo5XGFEa3pgavJs_x9msKKLM=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "蔷薇"
+   ],
+   "photos": [
+    "./data/flower-photos/蔷薇/广富林郊野公园.jpg"
+   ]
+  },
+  {
+   "id": "复兴中路",
+   "name": "复兴中路",
+   "district": "黄浦区",
+   "address": "黄浦区复兴中路",
+   "intro": "梧桐掩映的优雅马路，蔷薇花墙在春夏沿街绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69f06008000000002202a690?xsec_token=ABu7Ld2K76xmvr2DMWzDh_bNjUJMqjPzEPCxMoWaf2VYo=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "蔷薇"
+   ],
+   "photos": [
+    "./data/flower-photos/蔷薇/复兴中路.jpg",
+    "./data/flower-photos/蔷薇/复兴中路 (2).jpg"
+   ]
+  },
+  {
+   "id": "黄浦滨江",
+   "name": "黄浦滨江",
+   "district": "黄浦区",
+   "address": "黄浦区（黄浦滨江段）",
+   "intro": "黄浦滨江岸线，蔷薇花墙沿江绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69ff0233000000002202a063?xsec_token=ABez0J5Ib8jqUeVFbovnkAqcj36rg5g0SYeGr_IO3C_c4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "蔷薇"
+   ],
+   "photos": [
+    "./data/flower-photos/蔷薇/黄浦滨江.jpg"
+   ]
+  },
+  {
+   "id": "东江文体公园",
+   "name": "东江文体公园",
+   "district": "浦东新区",
+   "address": "浦东新区（近东江）",
+   "intro": "滨江文体休闲公园，蔷薇与月季花墙沿步道盛开。",
+   "source_url": "https://www.xiaohongshu.com/explore/69fc92fa00000000350313d8?xsec_token=ABrThYEMLNjyjt2dP0C0Ju7yYAsewHZt3ixfLaFoHN5fo=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "蔷薇",
+    "月季"
+   ],
+   "photos": [
+    "./data/flower-photos/蔷薇/东江文体公园.jpg",
+    "./data/flower-photos/蔷薇/东江文体公园 (2).jpg",
+    "./data/flower-photos/月季/东江文体公园.jpg"
+   ]
+  },
+  {
+   "id": "辰山植物园",
+   "name": "辰山植物园",
+   "district": "松江区",
+   "address": "松江区辰花路3888号",
+   "intro": "上海最大植物园，喜林草蓝色花海与矿坑花园闻名。",
+   "source_url": "https://www.xiaohongshu.com/explore/69ec99410000000023016e92?xsec_token=ABvPRmUpX8f23vRx6g6UISXb9VN0AQzde1L3Vq8c5nHeY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "喜林草"
+   ],
+   "photos": [
+    "./data/flower-photos/喜林草/辰山植物园.jpg",
+    "./data/flower-photos/喜林草/辰山植物园 (2).jpg"
+   ]
+  },
+  {
+   "id": "前滩休闲公园",
+   "name": "前滩休闲公园",
+   "district": "浦东新区",
+   "address": "浦东新区前滩大道（近东方体育中心）",
+   "intro": "黄浦江畔休闲公园，喜林草、鲁冰花、月季、百日菊层层铺展。",
+   "source_url": "https://www.xiaohongshu.com/explore/69df5e390000000022026944?xsec_token=ABQDlneqZulku1KklAbSs7xXO8o1QkgeMcqX3vYUn-YQA=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "喜林草",
+    "鲁冰花",
+    "月季",
+    "百日菊"
+   ],
+   "photos": [
+    "./data/flower-photos/喜林草/前滩休闲公园.jpg",
+    "./data/flower-photos/鲁冰花/前滩休闲公园.jpg",
+    "./data/flower-photos/月季/前滩休闲公园.jpg",
+    "./data/flower-photos/月季/前滩休闲公园 (2).jpg",
+    "./data/flower-photos/百日菊/前滩公园｜乒乓菊和百日菊的盛开季_1_小杨学摄影_来自小红书网页版.jpg"
+   ]
+  },
+  {
+   "id": "滨江森林公园",
+   "name": "滨江森林公园",
+   "district": "浦东新区",
+   "address": "浦东新区高桥镇凌桥高沙滩3号",
+   "intro": "黄浦江畔森林公园，杜鹃、绣球、月季、粉黛乱子草四季花事不断。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d3baa90000000023013bc9?xsec_token=ABLVs2MKKdCUwCnP5rfZQItSAgsbIyC9y4Qm67tSSbcKI=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "喜林草",
+    "杜鹃",
+    "木绣球",
+    "绣球",
+    "月季",
+    "粉黛乱子草"
+   ],
+   "photos": [
+    "./data/flower-photos/喜林草/滨江森林公园.jpg",
+    "./data/flower-photos/杜鹃/滨江森林公园.jpg",
+    "./data/flower-photos/杜鹃/滨江森林公园 (2).jpg",
+    "./data/flower-photos/木绣球/滨江森林公园.jpg",
+    "./data/flower-photos/木绣球/滨江森林公园 (2).jpg",
+    "./data/flower-photos/绣球/滨江森林公园.jpg",
+    "./data/flower-photos/绣球/滨江森林公园 (2).jpg",
+    "./data/flower-photos/月季/滨江森林公园.jpg",
+    "./data/flower-photos/粉黛乱子草/滨江森林公园.jpg"
+   ]
+  },
+  {
+   "id": "陈春绿地",
+   "name": "陈春绿地",
+   "district": "松江区",
+   "address": "松江区陈春路",
+   "intro": "社区绿地，雏菊花海在春夏铺展。",
+   "source_url": "https://www.xiaohongshu.com/explore/69ee2cbb000000003503a836?xsec_token=AB0c1er7SBWNsV5INSeECKakuYaswOLFf1W4AgdUVNf4Y=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "雏菊"
+   ],
+   "photos": [
+    "./data/flower-photos/雏菊/陈春绿地.jpg",
+    "./data/flower-photos/雏菊/陈春绿地 (2).jpg"
+   ]
+  },
+  {
+   "id": "共青森林公园",
+   "name": "共青森林公园",
+   "district": "杨浦区",
+   "address": "杨浦区军工路2000号",
+   "intro": "森林花海胜地，木绣球、绣球、月季、菊花与彼岸花四季轮转。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a05adf20000000035028164?xsec_token=ABDj4T5OIBZLvYGx-Yp9CbYLbPW-46qcKYii-2NW0eqZ0=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "鸢尾",
+    "木绣球",
+    "绣球",
+    "马鞭草",
+    "彼岸花（石蒜，含多色石蒜）",
+    "菊花",
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/鸢尾/共青森林公园.jpg",
+    "./data/flower-photos/鸢尾/共青森林公园 (2).jpg",
+    "./data/flower-photos/木绣球/共青森林公园.jpg",
+    "./data/flower-photos/绣球/共青森林公园.jpg",
+    "./data/flower-photos/马鞭草/共青森林公园 .jpg",
+    "./data/flower-photos/彼岸花/共青森林公园.jpg",
+    "./data/flower-photos/彼岸花/共青森林公园 (2).jpg",
+    "./data/flower-photos/菊花/共青森林公园.jpg",
+    "./data/flower-photos/红枫/共青森林公园.jpg"
+   ]
+  },
+  {
+   "id": "上海植物园",
+   "name": "上海植物园",
+   "district": "徐汇区",
+   "address": "徐汇区龙吴路1111号",
+   "intro": "上海老牌植物园，鸢尾、琼花、彼岸花等四季花展不断。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a126e8f0000000037037b33?xsec_token=ABVzCKWevpC1dIjtv34VGGrTa5UwFlHuBfoORqFwJ4_s8=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "鸢尾",
+    "琼花",
+    "彼岸花（石蒜，含多色石蒜）"
+   ],
+   "photos": [
+    "./data/flower-photos/鸢尾/上海植物园.jpg",
+    "./data/flower-photos/琼花/上海植物园.jpg",
+    "./data/flower-photos/彼岸花/上海植物园.jpg",
+    "./data/flower-photos/彼岸花/上海植物园 (2).jpg"
+   ]
+  },
+  {
+   "id": "外滩老市府露台",
+   "name": "外滩老市府露台",
+   "district": "黄浦区",
+   "address": "黄浦区中山东一路（外滩源）",
+   "intro": "外滩源露台花园，杜鹃在历史建筑间盛放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69e44d97000000001a0321cb?xsec_token=ABtog0IR_nKaVw_DmhzF0CBXsTxl6BEHgM_ivN1KYKbHI=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "杜鹃"
+   ],
+   "photos": [
+    "./data/flower-photos/杜鹃/外滩老市府露台.jpg"
+   ]
+  },
+  {
+   "id": "辅德里公园",
+   "name": "辅德里公园",
+   "district": "静安区",
+   "address": "静安区老成都北路7弄（辅德里）",
+   "intro": "中共二大会址纪念馆所在里弄，绣球花与杜鹃装点红色街区。",
+   "source_url": "https://www.xiaohongshu.com/explore/69e6041a000000002301d72f?xsec_token=AB_vjlm78_Bc1BJOQ-gvJzgts-dOiuBjXMI4Z92QDyIm4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "杜鹃",
+    "绣球"
+   ],
+   "photos": [
+    "./data/flower-photos/杜鹃/辅德里公园.jpg",
+    "./data/flower-photos/绣球/辅德里公园.jpg",
+    "./data/flower-photos/绣球/辅德里公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "莘庄梅园",
+   "name": "莘庄梅园",
+   "district": "闵行区",
+   "address": "闵行区（近莘庄公园）",
+   "intro": "梅花专类园，木绣球在暮春绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69c9eecc000000002103a6dc?xsec_token=AB2l-GJpld_gYjdcYy_C2PGciAWQ-cKecCFhqd63chsr0=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "木绣球"
+   ],
+   "photos": [
+    "./data/flower-photos/木绣球/莘庄梅园.jpg",
+    "./data/flower-photos/木绣球/莘庄梅园 (2).jpg"
+   ]
+  },
+  {
+   "id": "横沔公园",
+   "name": "横沔公园",
+   "district": "浦东新区",
+   "address": "浦东新区康桥镇（横沔）",
+   "intro": "郊野生态公园，二月兰与水杉林相映成趣。",
+   "source_url": "https://www.xiaohongshu.com/explore/69c698d9000000001a02f012?xsec_token=ABRdR17mfh5CJKCcGHm8wpUdTuGFXVtyxFH06EafyTGmk=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "二月兰",
+    "水杉 落羽杉"
+   ],
+   "photos": [
+    "./data/flower-photos/二月兰/横沔公园.jpg",
+    "./data/flower-photos/水杉 落羽杉/横沔公园.jpg"
+   ]
+  },
+  {
+   "id": "共青国家森林公园",
+   "name": "共青国家森林公园",
+   "district": "杨浦区",
+   "address": "杨浦区军工路2000号",
+   "intro": "上海最大森林公园之一，二月兰铺满林间，野趣盎然。",
+   "source_url": "https://www.xiaohongshu.com/explore/69aae9ad000000001a024554?xsec_token=ABNTBUa9Uafd36ZlVx-iyYUmVkbAX_d8Wwq6ET7eAccig=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "二月兰"
+   ],
+   "photos": [
+    "./data/flower-photos/二月兰/共青国家森林公园.jpg",
+    "./data/flower-photos/二月兰/共青国家森林公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "东风公园",
+   "name": "东风公园",
+   "district": "待确认",
+   "address": "（待确认）",
+   "intro": "上海查无此园，疑为外省同名公园，观赏信息待核实。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d50cf9000000002100595b?xsec_token=AByFkRCiwBDECN9zEGz6LSzVX4tnDJDNhr13gn-cEfBXQ=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "二月兰"
+   ],
+   "photos": [
+    "./data/flower-photos/二月兰/东风公园.jpg",
+    "./data/flower-photos/二月兰/东风公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "汇一路",
+   "name": "汇一路",
+   "district": "奉贤区",
+   "address": "奉贤区汇一路",
+   "intro": "道路绿化带，二月兰在春日铺满路边。",
+   "source_url": "https://www.xiaohongshu.com/explore/67ed506b000000001d021210?xsec_token=ABY5XHD-rDwx6XKjvIZbz_1kJVOy6rXfXM25ZSfMb5shc=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "二月兰"
+   ],
+   "photos": [
+    "./data/flower-photos/二月兰/汇一路.jpg"
+   ]
+  },
+  {
+   "id": "沪闵路与银春路交叉口",
+   "name": "沪闵路与银春路交叉口",
+   "district": "闵行区",
+   "address": "闵行区沪闵路与银春路交叉口",
+   "intro": "路口绿地，二月兰在春日铺满道路边角。",
+   "source_url": "https://www.xiaohongshu.com/explore/69b03031000000000600a83d?xsec_token=AB29vRpk7vIMWfZUKfXhLfoUqeimUhz2PYHP0iWy42z_I=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "二月兰"
+   ],
+   "photos": [
+    "./data/flower-photos/二月兰/沪闵路与银春路交叉口.jpg"
+   ]
+  },
+  {
+   "id": "锦绣文化公园",
+   "name": "锦绣文化公园",
+   "district": "浦东新区",
+   "address": "浦东新区锦绣路（近世纪公园）",
+   "intro": "文化主题公园，虞美人在春夏绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69fb590600000000360180e4?xsec_token=ABFCW6ip_q48SW84rAAYFYJcI33cISo3jZLxGkHzQ66c0=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "虞美人"
+   ],
+   "photos": [
+    "./data/flower-photos/虞美人/锦绣文化公园.jpg",
+    "./data/flower-photos/虞美人/锦绣文化公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "肇嘉浜路2号口",
+   "name": "肇嘉浜路2号口",
+   "district": "徐汇区",
+   "address": "徐汇区肇嘉浜路（地铁站2号口）",
+   "intro": "地铁站口绿地，虞美人在春夏摇曳。",
+   "source_url": "https://www.xiaohongshu.com/explore/69be7e46000000001f001f60?xsec_token=ABHNdU1RBwIaW_2Lxuo1OOUXNcNz-nxi4qbQxlWDqzIGY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "虞美人"
+   ],
+   "photos": [
+    "./data/flower-photos/虞美人/肇嘉浜路2号口.jpg"
+   ]
+  },
+  {
+   "id": "西岸艺术公园",
+   "name": "西岸艺术公园",
+   "district": "徐汇区",
+   "address": "徐汇区龙腾大道（西岸滨江）",
+   "intro": "西岸滨江艺术公园，虞美人在春夏盛开。",
+   "source_url": "https://www.xiaohongshu.com/explore/69dce0fb000000002301651e?xsec_token=ABMYyUKYzT_i8f4zpDvKzTb68cN8ktzET6YDEDJeRUpkY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "虞美人"
+   ],
+   "photos": [
+    "./data/flower-photos/虞美人/西岸艺术公园.jpg"
+   ]
+  },
+  {
+   "id": "红枫路",
+   "name": "红枫路",
+   "district": "浦东新区",
+   "address": "浦东新区红枫路",
+   "intro": "木香花沿街绽放的优雅道路。",
+   "source_url": "https://www.xiaohongshu.com/explore/69df90b4000000001a02c206?xsec_token=ABQDlneqZulku1KklAbSs7xdAe8sDccsCID78APILISm4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "木香花"
+   ],
+   "photos": [
+    "./data/flower-photos/木香花/红枫路.jpg",
+    "./data/flower-photos/木香花/红枫路 (2).jpg"
+   ]
+  },
+  {
+   "id": "山阴路",
+   "name": "山阴路",
+   "district": "虹口区",
+   "address": "虹口区山阴路",
+   "intro": "梧桐老街，木香花攀墙而上，初夏芬芳。",
+   "source_url": "https://www.xiaohongshu.com/explore/69e08dd900000000230110da?xsec_token=ABbYz5CVqKk_kYdRsak6alWPDspWNuwBwRIVKQ7o11FQQ=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "木香花"
+   ],
+   "photos": [
+    "./data/flower-photos/木香花/山阴路.jpg",
+    "./data/flower-photos/木香花/山阴路 (2).jpg"
+   ]
+  },
+  {
+   "id": "愚园路1088弄",
+   "name": "愚园路1088弄",
+   "district": "长宁区",
+   "address": "长宁区愚园路1088弄",
+   "intro": "网红弄堂街区，木香花攀满墙面，初夏芬芳四溢。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d64d0b000000001a033a20?xsec_token=ABrTUlbiGj1aD7td_seGP2qQWhmpCTqaHbYiBy5ieZ66M=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "木香花"
+   ],
+   "photos": [
+    "./data/flower-photos/木香花/愚园路1088弄.jpg",
+    "./data/flower-photos/木香花/愚园路1088弄 (2).jpg"
+   ]
+  },
+  {
+   "id": "得丘艺术区",
+   "name": "得丘艺术区",
+   "district": "闵行区",
+   "address": "闵行区（近莘庄）",
+   "intro": "艺术创意园区，木香花与工业建筑碰撞出文艺气息。",
+   "source_url": "https://www.xiaohongshu.com/explore/69d8deb4000000001d01f636?xsec_token=ABJNdDQTzj7_EaYdfjjFO2dvyKtO0X5PuUXJlXXh0xF-8=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "木香花"
+   ],
+   "photos": [
+    "./data/flower-photos/木香花/得丘艺术区.jpg",
+    "./data/flower-photos/木香花/得丘艺术区 (2).jpg"
+   ]
+  },
+  {
+   "id": "春西路",
+   "name": "春西路",
+   "district": "闵行区",
+   "address": "闵行区春西路",
+   "intro": "道路绿化带，木香花在春夏之交沿墙盛开。",
+   "source_url": "https://www.xiaohongshu.com/explore/67f905a6000000001c0369c2?xsec_token=ABncs3M2ruuwnER6QW6iVwjxnKJh2gjsjuMUJkijNRohQ=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "木香花"
+   ],
+   "photos": [
+    "./data/flower-photos/木香花/春西路.jpg",
+    "./data/flower-photos/木香花/春西路 (2).jpg"
+   ]
+  },
+  {
+   "id": "汉口路老市府",
+   "name": "汉口路老市府",
+   "district": "黄浦区",
+   "address": "黄浦区汉口路193号",
+   "intro": "原上海市府大楼，泡桐花在老建筑旁绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69eabbbb0000000020013001?xsec_token=ABpgLjHgWE3bixYybe_cKpfCQ0pZfOdZj9qozxRAoOaIo=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "泡桐"
+   ],
+   "photos": [
+    "./data/flower-photos/泡桐/汉口路老市府.jpg"
+   ]
+  },
+  {
+   "id": "子长路",
+   "name": "子长路",
+   "district": "普陀区",
+   "address": "普陀区子长路",
+   "intro": "社区道路，泡桐花在春日高处绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/69db7c2a000000001f001628?xsec_token=ABRJIldyw6NEQKldTbcOt34WzEB-cipSJkd_cQOLxedvg=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "泡桐"
+   ],
+   "photos": [
+    "./data/flower-photos/泡桐/子长路.jpg"
+   ]
+  },
+  {
+   "id": "听翠园",
+   "name": "听翠园",
+   "district": "闵行区",
+   "address": "闵行区（近闵行文化公园）",
+   "intro": "新中式园林公园，绣球花海与湖景相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a1944da000000003703489c?xsec_token=AB2d8ekfIuqGsgC5m31cjK6S5rsN_rSE5gtrXiYUnnyww=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "绣球"
+   ],
+   "photos": [
+    "./data/flower-photos/绣球/听翠园.jpg",
+    "./data/flower-photos/绣球/听翠园 (2).jpg"
+   ]
+  },
+  {
+   "id": "苏州河樱花谷驿站",
+   "name": "苏州河樱花谷驿站",
+   "district": "黄浦区",
+   "address": "黄浦区苏州河畔（近外白渡桥）",
+   "intro": "苏州河樱花谷驿站，绣球花与水岸景观相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a1fedc40000000036031c68?xsec_token=ABN1Y5A_TDtzMjXXDISmJmoxTVjb0L4dfu84_3EjoyQew=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "绣球"
+   ],
+   "photos": [
+    "./data/flower-photos/绣球/苏州河樱花谷驿站.jpg",
+    "./data/flower-photos/绣球/苏州河樱花谷驿站 (2).jpg"
+   ]
+  },
+  {
+   "id": "肇嘉浜路",
+   "name": "肇嘉浜路",
+   "district": "徐汇区",
+   "address": "徐汇区肇嘉浜路",
+   "intro": "城市主干道，绣球花点缀绿化带。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a1ba369000000003502c0be?xsec_token=AB8f89cJDpg_5biu3UO0XRW3ShGUpPPyTmov25Sfn3nQU=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "绣球"
+   ],
+   "photos": [
+    "./data/flower-photos/绣球/肇嘉浜路.jpg",
+    "./data/flower-photos/绣球/肇嘉浜路 (2).jpg"
+   ]
+  },
+  {
+   "id": "桂江路",
+   "name": "桂江路",
+   "district": "徐汇区",
+   "address": "徐汇区桂江路",
+   "intro": "社区道路，月季与绣球沿街绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/682ee93900000000230008e5?xsec_token=ABtq0uYg0q5s-b0q2bXRK8muRVtVipcpoPi0A3w7btKt0=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "绣球",
+    "月季"
+   ],
+   "photos": [
+    "./data/flower-photos/绣球/桂江路.jpg",
+    "./data/flower-photos/月季/桂江路.jpg",
+    "./data/flower-photos/月季/桂江路 (2).jpg"
+   ]
+  },
+  {
+   "id": "鲁迅公园",
+   "name": "鲁迅公园",
+   "district": "虹口区",
+   "address": "虹口区四川北路2288号",
+   "intro": "纪念鲁迅的百年公园，红枫与绣球装点四季。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a116ca000000000070216fa?xsec_token=AB7ryXA__8SsD2S2To9yTxRkMWsn8edb2wX0eWByQkUMc=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "绣球",
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/绣球/鲁迅公园.jpg",
+    "./data/flower-photos/红枫/鲁迅公园.jpg",
+    "./data/flower-photos/红枫/鲁迅公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "花木月季园",
+   "name": "花木月季园",
+   "district": "浦东新区",
+   "address": "浦东新区（花木街道）",
+   "intro": "以月季为主题的花园，五月花开满园。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a10f2a90000000008031257?xsec_token=ABRob3L7aqbYfSCAO4RThqxxIJjGntw8jPRYqasgmkRFI=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "月季"
+   ],
+   "photos": [
+    "./data/flower-photos/月季/花木月季园.jpg",
+    "./data/flower-photos/月季/花木月季园 (2).jpg"
+   ]
+  },
+  {
+   "id": "薰衣草公园",
+   "name": "薰衣草公园",
+   "district": "浦东新区",
+   "address": "浦东新区（上海国际旅游度假区）",
+   "intro": "上海国际旅游度假区薰衣草园，初夏紫色花海。",
+   "source_url": "https://www.xiaohongshu.com/explore/682eec77000000000303c847?xsec_token=ABtq0uYg0q5s-b0q2bXRK8mvxhQaHr4amB7mnYxSnnBMA=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "薰衣草"
+   ],
+   "photos": [
+    "./data/flower-photos/薰衣草/薰衣草公园.jpg"
+   ]
+  },
+  {
+   "id": "秋霞圃",
+   "name": "秋霞圃",
+   "district": "嘉定区",
+   "address": "嘉定区东大街314号",
+   "intro": "江南古典园林，石榴花与园景相映成趣。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a130e4000000000060353fe?xsec_token=AB6SkRmI-BSb576pvmCgYhaQxOqBnJrTyJlW-9N5W7v20=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "石榴花"
+   ],
+   "photos": [
+    "./data/flower-photos/石榴花/秋霞圃.jpg",
+    "./data/flower-photos/石榴花/秋霞圃 (2).jpg"
+   ]
+  },
+  {
+   "id": "寻梦源・梦水乡",
+   "name": "寻梦源・梦水乡",
+   "district": "青浦区",
+   "address": "青浦区（朱家角方向）",
+   "intro": "水乡花海景区，马鞭草紫色花田铺展水岸。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a25620b0000000021016b1c?xsec_token=ABiHIAvl4t0cTGflEnL8z01qPP6QHysXpLcgi_5JcAWAk=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "马鞭草"
+   ],
+   "photos": [
+    "./data/flower-photos/马鞭草/寻梦源・梦水乡.jpg"
+   ]
+  },
+  {
+   "id": "油罐艺术中心",
+   "name": "油罐艺术中心",
+   "district": "徐汇区",
+   "address": "徐汇区龙腾大道2380号",
+   "intro": "油罐改造的艺术中心，马鞭草在草坪间紫色摇曳。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a0c74c900000000350293de?xsec_token=AB64W8GklofnVFW6aejW8blkBi_q-nkjY1zCIjjcWzMoU=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "马鞭草"
+   ],
+   "photos": [
+    "./data/flower-photos/马鞭草/油罐艺术中心.jpg",
+    "./data/flower-photos/马鞭草/油罐艺术中心 (2).jpg"
+   ]
+  },
+  {
+   "id": "东滩湿地公园",
+   "name": "东滩湿地公园",
+   "district": "崇明区",
+   "address": "崇明区东旺路（长江口）",
+   "intro": "长江口生态湿地，马鞭草花海与候鸟湿地景观独特。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a25284a000000001c027381?xsec_token=ABiHIAvl4t0cTGflEnL8z01pKTYcuTlnqRg9QhnlL0p4Y=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "马鞭草"
+   ],
+   "photos": [
+    "./data/flower-photos/马鞭草/东滩湿地公园.jpg"
+   ]
+  },
+  {
+   "id": "延中绿地",
+   "name": "延中绿地",
+   "district": "黄浦区",
+   "address": "黄浦区延安中路（延中绿地）",
+   "intro": "市中心大型绿地，红枫与金丝桃花点缀都市绿洲。",
+   "source_url": "https://www.xiaohongshu.com/explore/66604ddb000000000c01a613?xsec_token=ABN1jv2fMvFKaEIXwWkbVpRFVagoYRRAgkCFa6BVscHXw=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "金丝桃",
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/金丝桃/延中绿地.jpg",
+    "./data/flower-photos/红枫/延中绿地.jpg",
+    "./data/flower-photos/红枫/延中绿地 (2).jpg"
+   ]
+  },
+  {
+   "id": "莲湖村",
+   "name": "莲湖村",
+   "district": "青浦区",
+   "address": "青浦区金泽镇莲湖村",
+   "intro": "江南水乡村落，荷花在盛夏铺满池塘。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a40d8570000000006022466?xsec_token=ABmUPNmhFF0laiE0Bvijoxl68hzc6jzrSlllJV55Ihc28=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "荷花"
+   ],
+   "photos": [
+    "./data/flower-photos/荷花/莲湖村.jpg"
+   ]
+  },
+  {
+   "id": "闵行体育公园",
+   "name": "闵行体育公园",
+   "district": "闵行区",
+   "address": "闵行区新镇路456号",
+   "intro": "体育主题公园，向日葵花海在盛夏绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a097f68000000003601c07a?xsec_token=ABB3xuWbrqYbB2cJEegzW9APrDRpIDUvnrWkR6gRhD1VE=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "向日葵"
+   ],
+   "photos": [
+    "./data/flower-photos/向日葵/闵行体育公园.jpg"
+   ]
+  },
+  {
+   "id": "南园滨江绿地",
+   "name": "南园滨江绿地",
+   "district": "黄浦区",
+   "address": "黄浦区龙华东路（近南园）",
+   "intro": "黄浦滨江绿地，向日葵与乌桕、银杏装点四季江岸。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a4cf702000000001702e2e7?xsec_token=ABLbONIUpaGQtUba9DgexMhfMiE2RU50YHeXrsgOSDybw=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "向日葵",
+    "乌桕",
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/向日葵/南园滨江绿地.jpg",
+    "./data/flower-photos/乌桕/南园滨江绿地.jpg",
+    "./data/flower-photos/银杏/南园滨江绿地.jpg"
+   ]
+  },
+  {
+   "id": "桃浦中央绿地",
+   "name": "桃浦中央绿地",
+   "district": "普陀区",
+   "address": "普陀区桃浦（中央绿地）",
+   "intro": "大型城市中央绿地，向日葵花海在盛夏绽放。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a9d358e000000000d024311?xsec_token=ABAF5JFTVT-gk6b1lPUm2m2g6ss-Mr251epnMUQJUdsoQ=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "向日葵"
+   ],
+   "photos": [
+    "./data/flower-photos/向日葵/桃浦中央绿地.jpg"
+   ]
+  },
+  {
+   "id": "宝山罗店联合村",
+   "name": "宝山罗店联合村",
+   "district": "宝山区",
+   "address": "宝山区罗店镇联合村",
+   "intro": "乡村向日葵花田，盛夏金黄笑脸向阳。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a2eabf8000000001702e657?xsec_token=ABqL3BCBCRC1oEb0sMfzCBw86zS9Z-c1bb4iwHrtXKimc=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "向日葵"
+   ],
+   "photos": [
+    "./data/flower-photos/向日葵/宝山罗店联合村.jpg"
+   ]
+  },
+  {
+   "id": "醉白池",
+   "name": "醉白池",
+   "district": "松江区",
+   "address": "松江区人民南路64号",
+   "intro": "上海五大古典园林之一，桂花与牡丹在园中飘香。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a884737000000003502795a?xsec_token=ABAcKJUEbAl7mP4pKri0acKyjSWEDtr0HfeiWnlcZMGr4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "紫薇",
+    "桂花"
+   ],
+   "photos": [
+    "./data/flower-photos/紫薇/醉白池.jpg",
+    "./data/flower-photos/紫薇/醉白池 (2).jpg",
+    "./data/flower-photos/桂花/醉白池.jpg",
+    "./data/flower-photos/桂花/醉白池 (2).jpg"
+   ]
+  },
+  {
+   "id": "沈杨村",
+   "name": "沈杨村",
+   "district": "宝山区",
+   "address": "宝山区顾村镇沈杨村",
+   "intro": "乡村百日菊花田，盛夏五彩花海。",
+   "source_url": "https://www.xiaohongshu.com/explore/65360209000000002500b57a?xsec_token=ABXb9aAzTB5R9OmsDr26M_pYcnmwXEUUhiTNZ8Vq7kN6Y=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "百日菊"
+   ],
+   "photos": [
+    "./data/flower-photos/百日菊/上海秋日浪漫小众无人油画般花海🌸游玩攻略_10_我是姚嘻嘻_来自小红书网页版.jpg"
+   ]
+  },
+  {
+   "id": "宝山国际民间艺术博览馆",
+   "name": "宝山国际民间艺术博览馆",
+   "district": "宝山区",
+   "address": "宝山区沪太路4788号",
+   "intro": "民间艺术展馆，彼岸花在馆前绿地秋日盛放。",
+   "source_url": "https://www.xiaohongshu.com/explore/6aa28a390000000011035b10?xsec_token=ABF8eqkORlAAMoFjYfJRMBtVAbL3F0GO_OJg8QMMnyGDk=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "彼岸花（石蒜，含多色石蒜）"
+   ],
+   "photos": [
+    "./data/flower-photos/彼岸花/宝山国际民间艺术博览馆.jpg",
+    "./data/flower-photos/彼岸花/宝山国际民间艺术博览馆 (2).jpg"
+   ]
+  },
+  {
+   "id": "大柏树站",
+   "name": "大柏树站",
+   "district": "虹口区",
+   "address": "虹口区大柏树（地铁3号线大柏树站）",
+   "intro": "地铁站周边栾树成行，秋季金黄花序缀满枝头。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a8e58c7000000002503b8c1?xsec_token=ABCQC1FxYdwtkZZ9aQql6IiH5L7PVOacqU3ZYvkOP_fNY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "栾树"
+   ],
+   "photos": [
+    "./data/flower-photos/栾树/大柏树站.jpg"
+   ]
+  },
+  {
+   "id": "桃林路天桥",
+   "name": "桃林路天桥",
+   "district": "浦东新区",
+   "address": "浦东新区桃林路（天桥）",
+   "intro": "天桥视角俯瞰栾树金黄，秋日城市景观。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a9f9635000000002a007c09?xsec_token=AB_gw0UU4yP2ENN2HY-T4f5_FD93sg_6YN6Yht0AzRurk=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "栾树"
+   ],
+   "photos": [
+    "./data/flower-photos/栾树/桃林路天桥.jpg"
+   ]
+  },
+  {
+   "id": "南浦大桥滨江",
+   "name": "南浦大桥滨江",
+   "district": "浦东新区",
+   "address": "浦东新区南浦大桥东侧滨江",
+   "intro": "大桥下的滨江绿地，栾树金黄与江水相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/6a9f9635000000002a007c09?xsec_token=AB_gw0UU4yP2ENN2HY-T4f5_FD93sg_6YN6Yht0AzRurk=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "栾树"
+   ],
+   "photos": [
+    "./data/flower-photos/栾树/南浦大桥滨江.jpg"
+   ]
+  },
+  {
+   "id": "白莲泾公园",
+   "name": "白莲泾公园",
+   "district": "浦东新区",
+   "address": "浦东新区世博大道（白莲泾）",
+   "intro": "世博滨江公园，粉黛乱子草秋季粉色如雾。",
+   "source_url": "https://www.xiaohongshu.com/explore/68eb6a8e0000000004028dab?xsec_token=ABuPBZdxA_fEgIapvzTqbw7FdX8uNkskGPDbn4ebJvU4E=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "粉黛乱子草"
+   ],
+   "photos": [
+    "./data/flower-photos/粉黛乱子草/白莲泾公园.jpg",
+    "./data/flower-photos/粉黛乱子草/白莲泾公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "嘉北郊野公园",
+   "name": "嘉北郊野公园",
+   "district": "嘉定区",
+   "address": "嘉定区沪宜公路5051号",
+   "intro": "大型郊野公园，粉黛乱子草与田园花海连绵。",
+   "source_url": "https://www.xiaohongshu.com/explore/69057ef900000000070397ac?xsec_token=ABYMk9Lf7F-TqdEvcUJMRytp60WJCCjy0CKCC7oovHs8s=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "粉黛乱子草"
+   ],
+   "photos": [
+    "./data/flower-photos/粉黛乱子草/嘉北郊野公园.jpg"
+   ]
+  },
+  {
+   "id": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+   "name": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+   "district": "徐汇区",
+   "address": "徐汇区/静安区/长宁区（衡山路-武康路-淮海路等路段）",
+   "intro": "上海最经典的梧桐大道，深秋满城金黄，风情街区如画。",
+   "source_url": "https://www.xiaohongshu.com/explore/68d3e8f2000000001301c04d?xsec_token=ABWCeI0WbVk4LqRNNj8yKieaDYmQrHrvRoNcZwvHlvoi8=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "梧桐"
+   ],
+   "photos": [
+    "./data/flower-photos/梧桐/梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）.jpg",
+    "./data/flower-photos/梧桐/梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路） (2).jpg"
+   ]
+  },
+  {
+   "id": "苏河半马公园",
+   "name": "苏河半马公园",
+   "district": "普陀区",
+   "address": "普陀区苏州河畔（半马公园）",
+   "intro": "苏州河半马赛道沿线公园，红枫秋季点缀河岸。",
+   "source_url": "https://www.xiaohongshu.com/explore/6916f5be0000000005012670?xsec_token=AB939Z9cMHObVSzwLlEBlb_Vo405ArPiuZmJ3r6YW5ykY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/红枫/苏河半马公园.jpg",
+    "./data/flower-photos/红枫/苏河半马公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "古华公园",
+   "name": "古华公园",
+   "district": "奉贤区",
+   "address": "奉贤区南桥镇解放中路220号",
+   "intro": "奉贤古园林公园，秋季红枫与水榭亭台相衬。",
+   "source_url": "https://www.xiaohongshu.com/explore/69214043000000001e00fca2?xsec_token=ABAhHWrDEEPajv-tjnRBlMO4BbwZAD8Jx9K2TGcubmEk8=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/红枫/古华公园.jpg"
+   ]
+  },
+  {
+   "id": "世博文化公园·申园",
+   "name": "世博文化公园·申园",
+   "district": "浦东新区",
+   "address": "浦东新区世博文化公园内",
+   "intro": "江南园林风格园中园，秋季红枫与古典建筑相映成画。",
+   "source_url": "https://www.xiaohongshu.com/explore/69341757000000001b021fad?xsec_token=ABkZtzxNkTJePS9VyIjRXbswyDZCAbURkeIAddOZjpsUI=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/红枫/世博文化公园·申园.jpg"
+   ]
+  },
+  {
+   "id": "红园",
+   "name": "红园",
+   "district": "闵行区",
+   "address": "闵行区江川路354号",
+   "intro": "以红枫闻名的老公园，秋季满园红叶。",
+   "source_url": "https://www.xiaohongshu.com/explore/693424a5000000000d0350d6?xsec_token=ABkZtzxNkTJePS9VyIjRXbs4gZUE6J2iOwM-wlqjgqSa4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "红枫"
+   ],
+   "photos": [
+    "./data/flower-photos/红枫/红园.jpg",
+    "./data/flower-photos/红枫/红园 (2).jpg"
+   ]
+  },
+  {
+   "id": "安亭路",
+   "name": "安亭路",
+   "district": "徐汇区",
+   "address": "徐汇区安亭路",
+   "intro": "乌桕成行的林荫道，秋季红叶如丹。",
+   "source_url": "https://www.xiaohongshu.com/explore/693a4245000000001d03e020?xsec_token=ABqWqOUiFYOvlzsL25hmRiutB8FDeGPHuJ36q8uLBwYL0=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "乌桕"
+   ],
+   "photos": [
+    "./data/flower-photos/乌桕/安亭路.jpg"
+   ]
+  },
+  {
+   "id": "黄金城道步行街",
+   "name": "黄金城道步行街",
+   "district": "长宁区",
+   "address": "长宁区黄金城道（近古北路）",
+   "intro": "银杏大道，深秋满街金黄落叶。",
+   "source_url": "https://www.xiaohongshu.com/explore/6932d686000000001e03b577?xsec_token=ABzt7N54CwBLywb4aSP9Ym6i7F-4I8OyJocpsFKvWuIAY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/黄金城道步行街.jpg"
+   ]
+  },
+  {
+   "id": "真如寺",
+   "name": "真如寺",
+   "district": "普陀区",
+   "address": "普陀区兰溪路399号",
+   "intro": "元代古刹，银杏古树深秋满树金黄。",
+   "source_url": "https://www.xiaohongshu.com/explore/6936a1d7000000001f00a19f?xsec_token=ABW5nKk-ylthliSWFJwWzL-dKijnr2wSpSuTVUXZUJfEE=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/真如寺.jpg"
+   ]
+  },
+  {
+   "id": "上海音乐厅",
+   "name": "上海音乐厅",
+   "district": "黄浦区",
+   "address": "黄浦区延安东路523号",
+   "intro": "欧式古典音乐殿堂，秋季银杏金黄映衬穹顶，音乐与秋色交融。",
+   "source_url": "https://www.xiaohongshu.com/explore/692ffa43000000000d00f8df?xsec_token=ABx0LSXTsGOKwqqtjhwCYbEnOqLx8RNPbK5Umbb0lb8C4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/上海音乐厅.jpg"
+   ]
+  },
+  {
+   "id": "圣三一堂",
+   "name": "圣三一堂",
+   "district": "黄浦区",
+   "address": "黄浦区九江路219号",
+   "intro": "哥特式红砖教堂，秋日银杏与钟楼相映成画。",
+   "source_url": "https://www.xiaohongshu.com/explore/6933f2fa000000001e0241d6?xsec_token=ABDVInn5UMhFvia44SaHR6qeI-9IRlkDy7MRvebKpnVCk=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/圣三一堂.jpg",
+    "./data/flower-photos/银杏/圣三一堂 (2).jpg"
+   ]
+  },
+  {
+   "id": "局门路",
+   "name": "局门路",
+   "district": "黄浦区",
+   "address": "黄浦区局门路",
+   "intro": "城市道路，银杏在深秋洒落满地金黄。",
+   "source_url": "https://www.xiaohongshu.com/explore/6928f70a000000001b020d42?xsec_token=ABpnK-5_n98DRSwoPW9PfOnUg2oopOL0AAjcjt886iGLc=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/局门路.jpg",
+    "./data/flower-photos/银杏/局门路 (2).jpg"
+   ]
+  },
+  {
+   "id": "古城公园",
+   "name": "古城公园",
+   "district": "黄浦区",
+   "address": "黄浦区人民路333号（近豫园）",
+   "intro": "豫园旁的城市公园，秋日银杏金黄映古城墙。",
+   "source_url": "https://www.xiaohongshu.com/explore/692bd985000000001e00172d?xsec_token=ABNXTUJnehdfKbwAG2e1FcHENqjUghFfBDoGKgONwaY1c=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/古城公园.jpg"
+   ]
+  },
+  {
+   "id": "汇龙潭公园",
+   "name": "汇龙潭公园",
+   "district": "嘉定区",
+   "address": "嘉定区塔城路299号",
+   "intro": "嘉定古城公园，银杏古树与潭水相映。",
+   "source_url": "https://www.xiaohongshu.com/explore/692fe35e000000001d03af0b?xsec_token=ABx0LSXTsGOKwqqtjhwCYbEr7327rd5BWdRMdMFzoySiw=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/汇龙潭公园.jpg",
+    "./data/flower-photos/银杏/汇龙潭公园 (2).jpg"
+   ]
+  },
+  {
+   "id": "报国寺",
+   "name": "报国寺",
+   "district": "青浦区",
+   "address": "青浦区朱家角镇（近淀山湖）",
+   "intro": "淀山湖畔古寺，银杏古树深秋金黄。",
+   "source_url": "https://www.xiaohongshu.com/explore/69313bcd000000001e00c313?xsec_token=AB2AQrRB0JlkIWX6p6x3rBRcD0w7AreGh_1hR633uxYjI=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/报国寺.jpg",
+    "./data/flower-photos/银杏/报国寺 (2).jpg"
+   ]
+  },
+  {
+   "id": "颐浩禅寺",
+   "name": "颐浩禅寺",
+   "district": "青浦区",
+   "address": "青浦区金泽镇（金泽古镇）",
+   "intro": "金泽古镇古寺，银杏古树深秋金黄。",
+   "source_url": "https://www.xiaohongshu.com/explore/69435760000000001f00829f?xsec_token=ABUmF_G1XxYmvBNjWePp9b7VNUMoNpjLUmjW9fCnyb738=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/颐浩禅寺.jpg",
+    "./data/flower-photos/银杏/颐浩禅寺 (2).jpg"
+   ]
+  },
+  {
+   "id": "青龙寺",
+   "name": "青龙寺",
+   "district": "青浦区",
+   "address": "青浦区白鹤镇青龙村",
+   "intro": "千年古寺遗址，银杏古树深秋金黄。",
+   "source_url": "https://www.xiaohongshu.com/explore/69412139000000001d03f7d7?xsec_token=ABRT9JoN62N8SEYXGv5s7e3xzUR58zmuOa0fvz4elCZG4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/青龙寺.jpg",
+    "./data/flower-photos/银杏/青龙寺 (2).jpg"
+   ]
+  },
+  {
+   "id": "庄严寺",
+   "name": "庄严寺",
+   "district": "青浦区",
+   "address": "青浦区练塘镇",
+   "intro": "练塘古镇寺院，银杏古树在深秋满树金黄。",
+   "source_url": "https://www.xiaohongshu.com/explore/69368771000000001e00156d?xsec_token=ABW5nKk-ylthliSWFJwWzL-Us90suXrjkRi-AmbnuFkWU=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/庄严寺.jpg",
+    "./data/flower-photos/银杏/庄严寺 (2).jpg"
+   ]
+  },
+  {
+   "id": "江滨路",
+   "name": "江滨路",
+   "district": "黄浦区",
+   "address": "黄浦区龙华东路（滨江段）",
+   "intro": "黄浦滨江道路，银杏在深秋铺成金色长廊。",
+   "source_url": "https://www.xiaohongshu.com/explore/6926459b000000000d036efc?xsec_token=AB2iF3qebVPppLmIey1IAlsRojp0_M1fMiRYmAbpQkzN4=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "银杏"
+   ],
+   "photos": [
+    "./data/flower-photos/银杏/江滨路.jpg"
+   ]
+  },
+  {
+   "id": "青西郊野公园",
+   "name": "青西郊野公园",
+   "district": "青浦区",
+   "address": "青浦区金泽镇紫莲路500号",
+   "intro": "水上森林奇观，水杉与落羽杉秋季层林尽染。",
+   "source_url": "https://www.xiaohongshu.com/explore/692d71eb000000001e036404?xsec_token=AB1gIb_D_HrBJnEgNCi4A7dMt5mR2PVzsJr6VhkPm-Kvw=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "水杉 落羽杉"
+   ],
+   "photos": [
+    "./data/flower-photos/水杉 落羽杉/青西郊野公园.jpg"
+   ]
+  },
+  {
+   "id": "塘桥公园",
+   "name": "塘桥公园",
+   "district": "浦东新区",
+   "address": "浦东新区塘桥（近南泉路）",
+   "intro": "社区公园，水杉与落羽杉秋季变红，水岸倒影迷人。",
+   "source_url": "https://www.xiaohongshu.com/explore/69318e96000000001f00d8fd?xsec_token=AB2AQrRB0JlkIWX6p6x3rBRYAVR0ZUPiev3dQSYJ6s6ek=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "水杉 落羽杉"
+   ],
+   "photos": [
+    "./data/flower-photos/水杉 落羽杉/塘桥公园.jpg"
+   ]
+  },
+  {
+   "id": "汤巷公园",
+   "name": "汤巷公园",
+   "district": "浦东新区",
+   "address": "浦东新区康桥镇（汤巷）",
+   "intro": "康桥社区公园，水杉与落羽杉秋季变红。",
+   "source_url": "https://www.xiaohongshu.com/explore/69459cdd000000001f006be3?xsec_token=ABk5ylEUvcoCefIxXlKpiYShdzjEWBwAqswiZ5kY-p4KY=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "水杉 落羽杉"
+   ],
+   "photos": [
+    "./data/flower-photos/水杉 落羽杉/汤巷公园.jpg"
+   ]
+  },
+  {
+   "id": "滨江城市森林",
+   "name": "滨江城市森林",
+   "district": "浦东新区",
+   "address": "浦东新区三林（滨江）",
+   "intro": "三林滨江森林绿带，水杉与落羽杉秋季层林尽染。",
+   "source_url": "https://www.xiaohongshu.com/explore/69303411000000001f009752?xsec_token=ABuXWF6-xSInqRrvSWsyHXqfG8nbLF-z9kCFUc9jSFX8k=&xsec_source=pc_search&source=web_explore_feed",
+   "flowers": [
+    "水杉 落羽杉"
+   ],
+   "photos": [
+    "./data/flower-photos/水杉 落羽杉/滨江城市森林.jpg"
+   ]
+  }
+ ]
+}
