@@ -35,7 +35,6 @@ const projectRoot = resolve(__dirname, '..');
 // strict=true：标题需命中文旅白名单（用于混民生内容的政务号/本地生活号）
 // strict=false：仅按账号+时间+负向词过滤（用于纯文旅号，避免误杀演唱会/巡游等）
 const ACCOUNTS = [
-  { name: '上海艺术展览', queries: [''],                          strict: false },
   { name: '上海发布',     queries: ['', '展览', '演出', '演唱会', '文旅', '旅游', '活动', '开馆', '花车', '巡游'], strict: true },
   { name: '上海本地宝',   queries: ['', '展览', '演出', '演唱会', '旅游', '活动', '市集', '攻略'], strict: true },
   { name: '乐游上海',     queries: ['', '活动', '展览', '演出', '演唱会', '旅游', '市集', '打卡', '花车', '巡游'], strict: false },

@@ -4,15 +4,13 @@ import Brand from '../components/Brand';
 import { supabase } from '../supabaseClient';
 import snapshot from '../../data/wechat-articles.json';
 
-const ACCOUNTS = ['上海艺术展览', '上海发布', '上海本地宝', '乐游上海', 'ShanghaiLOOK', '上海展览'];
+const ACCOUNTS = ['上海发布', '上海本地宝', '乐游上海', 'ShanghaiLOOK'];
 
 const ACCOUNT_COLORS = {
-  '上海艺术展览': '#e879f9',
   '上海发布': '#60a5fa',
   '上海本地宝': '#4ade80',
   '乐游上海': '#fb923c',
   'ShanghaiLOOK': '#22d3ee',
-  '上海展览': '#a78bfa',
 };
 
 function formatDate(iso) {
@@ -148,7 +146,7 @@ export default function WechatArticlesPage() {
         <div className="page-header">
           <h2 className="page-title">文旅情报</h2>
           <p className="text-muted">
-            聚合「上海艺术展览 · 上海发布 · 上海本地宝 · 乐游上海 · ShanghaiLOOK · 上海展览」六个公众号的文旅相关内容，
+            聚合「上海发布 · 上海本地宝 · 乐游上海 · ShanghaiLOOK」四个公众号的文旅相关内容，
             每天两次自动抓取（近三天内容），每月/每周汇总与重要节日文章自动置顶至结束。
             {updatedAt && <span className="wechat-updated">数据更新于 {updatedAt.toLocaleDateString('zh-CN')}</span>}
           </p>
