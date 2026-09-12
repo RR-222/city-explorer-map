@@ -168,7 +168,7 @@ export default function SpotFlowerPage() {
               <p className="spot-desc">{spot.intro}</p>
               {spot.flowers.length > 0 && (
                 <p className="spot-desc flower-spot-extra">
-                  这里可同时观赏 {spot.flowers.join('、')} 等 {spot.flowers.length} 种时令花卉，位于{spot.district}。建议结合周边景点安排半日行程，清晨或傍晚光线柔和时前往，花色最佳且可避开人流高峰。
+                  这里可同时观赏 {spot.flowers.join('、')} 等 {spot.flowers.length} 种时令花卉，位于{spot.district}。
                 </p>
               )}
             </div>
