@@ -147,3 +147,11 @@ vite.config.ts.timestamp-*
 .edge_profile/
 capture_register.js
 register_screenshot_*.png
+
+# 本地临时脚本与探测产物（不入库）
+data/_*.py
+data/_probes/
+data/_user_upload*.png
+data/screenshot.png
+data/wechat-page-preview.png
+scripts/_probes/
