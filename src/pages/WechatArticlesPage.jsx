@@ -84,7 +84,9 @@ export default function WechatArticlesPage() {
           .select('*')
           .limit(300);
         if (error) throw error;
-        if (data && data.length > 0) {
+        // 仅当数据库已升级到 v2（含置顶字段）才以数据库为准，否则回落本地快照
+        const isV2 = data && data.length > 0 && Object.prototype.hasOwnProperty.call(data[0], 'pinned_until');
+        if (isV2) {
           if (mounted) {
             setArticles(data);
             const times = data.map((r) => r.fetched_at).filter(Boolean);
