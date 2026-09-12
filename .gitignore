@@ -153,5 +153,5 @@ data/_*.py
 data/_probes/
 data/_user_upload*.png
 data/screenshot.png
-data/wechat-page-preview.png
+data/wechat-page-*.png
 scripts/_probes/
