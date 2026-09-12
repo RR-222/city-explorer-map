@@ -3517,6 +3517,23 @@ textarea:focus-visible {
   color: var(--muted-foreground);
 }
 
+.wechat-pin-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  margin: 6px 0 4px;
+  border-radius: 6px;
+  color: #7c3aed;
+  background: linear-gradient(135deg, rgba(201, 167, 232, 0.28), rgba(201, 167, 232, 0.4));
+  border: 1px solid rgba(124, 58, 237, 0.35);
+}
+
+.wechat-card-pinned {
+  border-color: rgba(124, 58, 237, 0.4) !important;
+  background: linear-gradient(180deg, rgba(201, 167, 232, 0.08), rgba(255, 255, 255, 0));
+}
+
 .wechat-card-title {
   font-size: 0.98rem;
   font-weight: 600;
