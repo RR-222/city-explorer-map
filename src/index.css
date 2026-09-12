@@ -822,7 +822,7 @@ button.danger:hover {
 }
 
 .home-recommend {
-  width: 520px;
+  width: 640px;
   flex-shrink: 0;
   background: var(--background);
   border-right: 1px solid var(--border);
@@ -842,7 +842,7 @@ button.danger:hover {
 
 .home-recommend-title {
   font-family: var(--font-display);
-  font-size: 1.85rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--foreground);
   text-transform: uppercase;
@@ -2461,7 +2461,7 @@ textarea:focus-visible {
   }
 
   .home-recommend-title {
-    font-size: 1.35rem;
+    font-size: 1.6rem;
   }
 
   .home-recommend-img,
@@ -2475,5 +2475,1120 @@ textarea:focus-visible {
 
   .stat-value {
     font-size: 1.75rem;
+  }
+}
+
+
+/* ===== 季节问候（今日推荐 / 地图侧栏） ===== */
+.recommend-greeting,
+.home-greeting {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: var(--s-4);
+  margin-top: var(--s-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.recommend-greeting-text,
+.home-greeting-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--foreground);
+}
+
+.recommend-greeting-flowers,
+.home-greeting-flowers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+}
+
+.recommend-greeting-label,
+.home-greeting-label {
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  letter-spacing: 0.02em;
+}
+
+.recommend-greeting-flower-chip,
+.home-greeting-flower-chip {
+  display: inline-block;
+  background: rgba(255, 64, 0, 0.12);
+  border: 1px solid rgba(255, 64, 0, 0.45);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px var(--s-3);
+  border-radius: var(--radius-sm);
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.recommend-greeting-flower-chip:hover,
+.home-greeting-flower-chip:hover {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* 推荐卡片：当季限定徽章 */
+.card-seasonal-badge {
+  position: absolute;
+  top: var(--s-3);
+  right: var(--s-3);
+  z-index: 2;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+}
+
+/* 图片加载占位 */
+.flower-img-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--input);
+  color: var(--muted-foreground);
+  font-size: 2rem;
+}
+
+/* ===== 时令景观页 ===== */
+.seasonal-page {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: var(--s-6) var(--s-4) 80px;
+  animation: page-enter 0.35s ease-out;
+}
+
+.seasonal-page .page-title {
+  font-size: 2.4rem;
+}
+
+.seasonal-page .text-small {
+  font-size: 1rem;
+  margin-top: var(--s-1);
+}
+
+.month-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin: var(--s-5) 0;
+}
+
+.month-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
+  padding: var(--s-2) var(--s-4);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+
+.month-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.month-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--s-4);
+}
+
+.flower-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.flower-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.flower-card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  background: var(--input);
+}
+
+.flower-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--t-base);
+}
+
+.flower-card:hover .flower-card-img {
+  transform: scale(1.04);
+}
+
+.flower-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent 55%);
+  pointer-events: none;
+}
+
+.flower-card-body {
+  padding: var(--s-3) var(--s-4);
+}
+
+.flower-card-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--foreground);
+}
+
+.flower-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+}
+
+.flower-card-category,
+.flower-card-month {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--muted-foreground);
+  border: 1px solid var(--border-strong);
+  background: var(--input);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.flower-card-month {
+  color: var(--primary);
+  border-color: rgba(255, 64, 0, 0.45);
+}
+
+/* ===== 时令花卉详情页 ===== */
+.seasonal-flower-detail {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: var(--s-6) var(--s-4) 80px;
+  animation: page-enter 0.35s ease-out;
+}
+
+.flower-detail-header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.flower-latin {
+  display: block;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--muted-foreground);
+  margin-top: var(--s-1);
+}
+
+.flower-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+}
+
+.flower-detail-hero {
+  margin: var(--s-5) 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--card);
+}
+
+.flower-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+/* 详情页赏花地点 */
+.flower-spots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--s-3);
+  margin-top: var(--s-4);
+}
+
+.flower-spot-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
+  box-shadow: var(--shadow-sm);
+  color: inherit;
+  text-decoration: none;
+}
+
+.flower-spot-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.flower-spot-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.flower-spot-img-placeholder {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--input);
+  font-size: 2rem;
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+}
+
+.flower-spot-body {
+  padding: var(--s-3);
+}
+
+.flower-spot-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--foreground);
+}
+
+.flower-spot-district {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--muted-foreground);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.flower-spot-source {
+  font-size: 0.75rem;
+  color: var(--primary);
+  margin-top: var(--s-2);
+  font-weight: 600;
+}
+
+
+/* ===== 时令景点页（右侧地图 + 侧栏介绍） ===== */
+.flower-spot-layout {
+  height: calc(100vh - 61px);
+}
+
+.flower-spot-sidebar {
+  width: 58%;
+  min-width: 560px;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+  margin-bottom: var(--s-3);
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.flower-spot-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+
+.flower-spot-main-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin: var(--s-4) 0;
+  display: block;
+}
+
+.nearby-btn {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: var(--s-3);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.nearby-btn:hover,
+.nearby-btn.active {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.nearby-list {
+  margin-top: var(--s-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.nearby-card {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  width: 100%;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  padding: var(--s-2) var(--s-3);
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: border-color var(--t-fast), background var(--t-fast);
+}
+
+.nearby-card:hover,
+.nearby-card.active {
+  border-color: var(--primary);
+  background: rgba(255, 64, 0, 0.08);
+}
+
+.nearby-rank {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: var(--input);
+  border-radius: var(--radius-sm);
+  color: var(--muted-foreground);
+}
+
+.nearby-card:nth-child(1) .nearby-rank {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.nearby-name {
+  flex: 1 1 auto;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.nearby-dist {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.map-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted-foreground);
+  background: var(--background);
+}
+
+/* 地图标记 */
+.flower-spot-dot {
+  width: 20px;
+  height: 20px;
+  background: var(--primary);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(255, 64, 0, 0.8);
+}
+
+.flower-nearby-dot {
+  width: 14px;
+  height: 14px;
+  background: #22d3ee;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(34, 211, 238, 0.7);
+}
+
+/* 花卉详情页：可点击景点卡片 + 查看原文按钮 */
+.flower-spot-card.clickable {
+  cursor: pointer;
+}
+
+.flower-spot-original {
+  display: inline-block;
+  margin-top: var(--s-3);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: filter var(--t-fast);
+}
+
+.flower-spot-original:hover {
+  filter: brightness(1.1);
+}
+
+
+/* 时令植物详情页返回按钮（明显） */
+.flower-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-sm);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.flower-back-btn:hover {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+
+/* ===== 今日推荐两栏（时令景观 | 人文建筑） ===== */
+.recommend-split {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--s-6);
+  align-items: start;
+}
+
+.recommend-col {
+  min-width: 0;
+}
+
+.col-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--s-1);
+}
+
+.col-subtitle {
+  color: var(--muted-foreground);
+  font-size: 0.85rem;
+  margin-bottom: var(--s-4);
+}
+
+.seasonal-col .recommend-grid {
+  grid-template-columns: 1fr;
+}
+
+.card-months {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+/* ===== 人文建筑列表页 ===== */
+.tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-bottom: var(--s-5);
+}
+
+.tag-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+
+.tag-btn:hover {
+  border-color: var(--primary);
+  color: var(--foreground);
+}
+
+.tag-btn.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.heritage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--s-4);
+}
+
+.heritage-card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.heritage-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.heritage-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.heritage-img-placeholder {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--input);
+  font-size: 2.4rem;
+  color: var(--muted-foreground);
+  border-bottom: 1px solid var(--border);
+}
+
+.heritage-body {
+  padding: var(--s-3);
+}
+
+.heritage-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--foreground);
+}
+
+.heritage-district {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--muted-foreground);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.heritage-desc {
+  font-size: 0.82rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin: 8px 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== 时令植物详情页：左右分栏（大图 + 介绍 / 右侧赏花地点） ===== */
+.seasonal-flower-detail {
+  max-width: 1320px;
+  background: linear-gradient(180deg, #1e1e22 0%, #2d2d33 100%);
+  border-radius: var(--radius-lg);
+  margin-top: var(--s-4);
+}
+
+.flower-detail-split {
+  display: flex;
+  gap: var(--s-6);
+  align-items: flex-start;
+}
+
+.flower-detail-main {
+  flex: 1.35 1 0;
+  min-width: 0;
+}
+
+.flower-detail-spots {
+  flex: 1 1 0;
+  min-width: 0;
+  position: sticky;
+  top: 76px;
+  align-self: flex-start;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.flower-detail-hero {
+  margin-top: 0;
+}
+
+.flower-detail-hero .flower-hero-img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.flower-spots-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--s-3);
+}
+
+.flower-detail-spots .flower-spots-grid {
+  grid-template-columns: 1fr;
+  margin-top: 0;
+}
+
+/* ===== 建筑/景点详情页：左介绍大占比 + 右地图 ===== */
+.building-detail {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 61px);
+  overflow: hidden;
+}
+
+.building-info {
+  flex: 1.4 1 0;
+  min-width: 0;
+  background: linear-gradient(180deg, #1e1e22 0%, #2d2d33 100%);
+  padding: var(--s-5);
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+}
+
+.building-map {
+  flex: 1 1 0;
+  min-width: 0;
+  position: relative;
+}
+
+.back-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: var(--s-3);
+  transition: border-color var(--t-fast), color var(--t-fast);
+}
+
+.back-link-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.building-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+  margin-bottom: var(--s-2);
+}
+
+.building-photo-main {
+  margin: var(--s-4) 0 var(--s-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.building-photo-main img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.building-photo-thumbs {
+  display: flex;
+  gap: var(--s-2);
+  margin-bottom: var(--s-4);
+  flex-wrap: wrap;
+}
+
+.building-photo-thumbs .thumb {
+  width: 72px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.building-photo-thumbs .thumb.active {
+  border-color: var(--primary);
+  opacity: 1;
+}
+
+.building-section {
+  margin-top: var(--s-4);
+}
+
+.building-section h3 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--s-2);
+}
+
+.building-desc {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--foreground);
+  white-space: pre-line;
+  margin: 0.2rem 0 1.1rem;
+}
+
+.building-desc-block {
+  margin-bottom: 0.4rem;
+}
+
+.building-desc-label {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(255, 122, 0, 0.12);
+  border: 1px solid rgba(255, 122, 0, 0.35);
+  border-radius: 6px;
+  padding: 0.1rem 0.55rem;
+  margin: 0.25rem 0 0.35rem;
+  letter-spacing: 0.04em;
+}
+
+/* 首页问候语放大 */
+.home-greeting-text {
+  font-size: 1.2rem;
+}
+
+/* 时令景点页补充介绍段 */
+.flower-spot-extra {
+  margin-top: var(--s-3);
+  padding-top: var(--s-3);
+  border-top: 1px dashed var(--border);
+  color: var(--muted-foreground);
+  font-size: 0.92rem;
+}
+
+/* 移动端适配 */
+@media (max-width: 1080px) {
+  .recommend-split {
+    grid-template-columns: 1fr;
+  }
+
+  .flower-detail-split {
+    flex-direction: column;
+  }
+
+  .flower-detail-main,
+  .flower-detail-spots {
+    flex: none;
+  }
+
+  .flower-detail-spots {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .building-detail {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .building-info {
+    flex: none;
+    height: auto;
+    overflow: visible;
+  }
+
+  .building-map {
+    flex: none;
+    height: 420px;
+    order: 2;
+  }
+
+  .flower-spot-sidebar {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .flower-spot-layout {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .flower-spot-layout .home-map {
+    flex: none;
+    height: 420px;
+  }
+}
+
+/* ===== 文旅情报页（微信公众号聚合） ===== */
+.wechat-page {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: var(--s-6) var(--s-4) 64px;
+}
+
+.wechat-updated {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.78rem;
+  color: var(--muted-foreground);
+}
+
+.wechat-search {
+  margin-left: auto;
+  min-width: 200px;
+  background: var(--input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--foreground);
+  padding: 7px 12px;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color var(--t-fast);
+}
+
+.wechat-search:focus {
+  border-color: var(--primary);
+}
+
+.wechat-search::placeholder {
+  color: var(--muted-foreground);
+}
+
+.wechat-count {
+  font-size: 0.82rem;
+  color: var(--muted-foreground);
+  margin: var(--s-2) 0 var(--s-3);
+}
+
+.wechat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--s-4);
+}
+
+.wechat-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.wechat-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.wechat-card-cover {
+  width: 100%;
+  height: 170px;
+  background: var(--input);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.wechat-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wechat-card-cover-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  color: var(--muted-foreground);
+}
+
+.wechat-card-body {
+  padding: var(--s-3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.wechat-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wechat-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 1px 8px;
+  border: 1px solid;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.wechat-date {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+
+.wechat-card-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--foreground);
+  line-height: 1.45;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.wechat-card-summary {
+  font-size: 0.8rem;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.wechat-read-more {
+  margin-top: auto;
+  font-size: 0.78rem;
+  color: var(--primary);
+}
+
+/* 骨架屏 */
+.skeleton-block {
+  background: linear-gradient(90deg, var(--input) 0%, rgba(255, 255, 255, 0.08) 50%, var(--input) 100%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s infinite;
+}
+
+.skeleton-block.cover {
+  height: 170px;
+}
+
+.skeleton-block.line {
+  height: 14px;
+  margin: 12px 14px 0;
+  border-radius: 3px;
+}
+
+.skeleton-block.line.short {
+  width: 60%;
+  margin-bottom: 14px;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.empty-box {
+  text-align: center;
+  padding: 72px var(--s-5);
+  color: var(--muted-foreground);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+@media (max-width: 640px) {
+  .wechat-search {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .wechat-page {
+    padding: var(--s-5) var(--s-3) 48px;
   }
 }

@@ -1,13 +1,13 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { supabase } from '../supabaseClient';
 import Brand from '../components/Brand';
-import EmptyState from '../components/EmptyState';
 import { RecommendSkeleton } from '../components/Skeleton';
 import { fetchShanghaiWeather, getCurrentMonth } from '../utils/weather';
-import { recommendSpots, filterByDistrict } from '../utils/recommend';
-import { filterVisibleSpots } from '../utils/spotsFilter';
+import { getSeasonalGreeting } from '../utils/seasonalGreeting';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
+import { getSeedPhotoUrl } from '../utils/flowerImages';
+import FlowerImage from '../components/FlowerImage';
+import seedSpots from '../../data/spots-seed.json';
 
 const MONTH_NAMES = ['', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
 
@@ -17,44 +17,46 @@ const WEATHER_EMOJI = {
 };
 
 export default function RecommendPage() {
-  const [spots, setSpots] = useState([]);
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(true);
   const [district, setDistrict] = useState('全部');
 
   const month = getCurrentMonth();
+  const greetingInfo = getSeasonalGreeting();
 
-  // 加载景点 + 天气
   useEffect(() => {
-    const load = async () => {
+    let mounted = true;
+    (async () => {
       try {
-        const [spotsRes, w] = await Promise.all([
-          supabase.from('spots').select('*'),
-          fetchShanghaiWeather(),
-        ]);
-        setSpots(filterVisibleSpots(spotsRes.data || []));
-        setWeather(w);
+        const w = await fetchShanghaiWeather();
+        if (mounted) setWeather(w);
       } catch (err) {
-        console.error('加载失败', err);
+        console.error('加载天气失败', err);
       } finally {
-        setLoading(false);
+        if (mounted) setLoading(false);
       }
+    })();
+    return () => {
+      mounted = false;
     };
-    load();
   }, []);
 
-  // 推荐列表（先按区筛选，再推荐评分）
-  const recommendations = useMemo(() => {
-    const filtered = filterByDistrict(spots, district);
-    return recommendSpots(filtered, weather, month);
-  }, [spots, weather, month, district]);
+  // 左栏：当季时令花卉（时令景观）
+  const seasonalRecs = greetingInfo.inSeasonFlowers.map((f, i) => ({
+    id: `seasonal-${f.flower}`,
+    _type: 'seasonal',
+    flower: f.flower,
+    name: f.flower,
+    category: f.category,
+    months: f.months,
+    matchReasons: ['当季限定'],
+    rank: i + 1,
+  }));
 
-  // 所有标签（用于筛选）
-  const allTags = useMemo(() => {
-    const set = new Set();
-    spots.forEach((s) => (s.tags || []).forEach((t) => set.add(t)));
-    return Array.from(set);
-  }, [spots]);
+  // 右栏：人文建筑（spots-seed.json，按区筛选）
+  const heritageSpots = seedSpots.filter(
+    (s) => district === '全部' || s.district === district
+  );
 
   if (loading) {
     return (
@@ -73,6 +75,10 @@ export default function RecommendPage() {
         <Brand asLink to="/" />
         <div className="user-area">
           <Link to="/" className="link">地图</Link>
+          <Link to="/recommend" className="link active">今日推荐</Link>
+          <Link to="/seasonal" className="link">时令景观</Link>
+          <Link to="/heritage" className="link">人文建筑</Link>
+          <Link to="/wechat" className="link">文旅情报</Link>
           <Link to="/achievements" className="link">成就</Link>
           <Link to="/profile" className="link">个人中心</Link>
         </div>
@@ -87,30 +93,14 @@ export default function RecommendPage() {
             </span>
             {weather.temp != null && <span className="weather-temp">{weather.temp}°C</span>}
             <span className="weather-month">{MONTH_NAMES[month]}</span>
-
-            {/* 当前时间 */}
             {weather.currentTimeStr && (
               <span className="weather-sun">🕐 当前 {weather.currentTimeStr}</span>
             )}
-
-            {/* 精确日出日落 */}
-            {weather.sunriseStr && (
-              <span className="weather-sun">🌅 日出 {weather.sunriseStr}</span>
-            )}
-            {weather.sunsetStr && (
-              <span className="weather-sun">🌇 日落 {weather.sunsetStr}</span>
-            )}
-
+            {weather.sunriseStr && <span className="weather-sun">🌅 日出 {weather.sunriseStr}</span>}
+            {weather.sunsetStr && <span className="weather-sun">🌇 日落 {weather.sunsetStr}</span>}
             {weather.lightConditions.length > 0 && (
               <span className="weather-light">
                 {weather.lightConditions.map((l) => WEATHER_EMOJI[l] || '').join(' ')} {weather.lightConditions.join('/')}
-              </span>
-            )}
-
-            {/* 坐标 */}
-            {weather.coords && (
-              <span className="weather-coord">
-                📍 {weather.coords.lat.toFixed(4)}°N, {weather.coords.lng.toFixed(4)}°E
               </span>
             )}
           </div>
@@ -118,12 +108,32 @@ export default function RecommendPage() {
 
         <div className="page-header">
           <h2 className="page-title">今日推荐打卡点</h2>
+          {/* 季节问候 */}
+          <div className="recommend-greeting">
+            <p className="recommend-greeting-text">
+              {greetingInfo.greeting}！{MONTH_NAMES[greetingInfo.month]}是上海的{greetingInfo.monthFeature.season}，{greetingInfo.monthFeature.desc}。
+            </p>
+            {greetingInfo.inSeasonFlowers.length > 0 && (
+              <div className="recommend-greeting-flowers">
+                <span className="recommend-greeting-label">🌸 当季花卉：</span>
+                {greetingInfo.inSeasonFlowers.map((f) => (
+                  <Link
+                    key={f.flower}
+                    to={`/seasonal/${encodeURIComponent(f.flower)}`}
+                    className="recommend-greeting-flower-chip"
+                  >
+                    {f.flower}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
           <p className="text-muted text-small">
             根据{MONTH_NAMES[month]}的上海天气，为你筛选最合适的拍摄景点
           </p>
         </div>
 
-        {/* 区筛选 */}
+        {/* 区筛选（作用于人文建筑栏） */}
         <div className="district-filter">
           <button
             className={`district-btn ${district === '全部' ? 'active' : ''}`}
@@ -138,50 +148,76 @@ export default function RecommendPage() {
           ))}
         </div>
 
-        {/* 推荐列表 */}
-        {recommendations.length === 0 ? (
-          <EmptyState
-            title="暂无推荐"
-            description="当前条件下没有匹配的景点。试试切换区域，或等天气条件变化后再来看看。"
-          />
-        ) : (
-          <div className="recommend-grid">
-            {recommendations.map((spot, idx) => (
-              <Link
-                key={spot.id}
-                to={`/spots/${spot.id}`}
-                className="recommend-card"
-                style={{ textDecoration: 'none', color: 'inherit' }}
-              >
-                {/* 排名徽章 */}
-                {idx < 3 && (
-                  <span className={`rank-badge rank-${idx + 1}`}>{idx + 1}</span>
-                )}
-
-                {/* 样片 */}
-                {spot.photos && spot.photos.length > 0 ? (
-                  <img src={spot.photos[0]} alt={spot.name} className="card-img" />
-                ) : (
-                  <div className="card-img-placeholder">📷</div>
-                )}
-
-                <div className="card-body">
-                  <div className="card-title">{spot.name}</div>
-                  {spot.district && <span className="card-district">{spot.district}</span>}
-
-                  {/* 匹配原因 */}
-                  <div className="card-reasons">
-                    {spot.matchReasons.map((r) => (
-                      <span key={r} className="reason-chip">
-                        {WEATHER_EMOJI[r] || ''} {r}
-                      </span>
-                    ))}
+        {/* 两栏：时令景观 | 人文建筑 */}
+        <div className="recommend-split">
+          {/* 左栏：时令景观 */}
+          <section className="recommend-col seasonal-col">
+            <h3 className="col-title">🌸 时令景观</h3>
+            <p className="col-subtitle">本月当季花卉，正值盛放</p>
+            <div className="recommend-grid">
+              {seasonalRecs.map((spot) => (
+                <Link
+                  key={spot.id}
+                  to={`/seasonal/${encodeURIComponent(spot.flower)}`}
+                  className="recommend-card"
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  <span className="rank-badge rank-1">{spot.rank}</span>
+                  <span className="card-seasonal-badge">当季限定</span>
+                  <FlowerImage name={spot.flower} className="card-img" alt={spot.name} />
+                  <div className="card-body">
+                    <div className="card-title">{spot.name}</div>
+                    {spot.category && <span className="card-district">{spot.category}</span>}
+                    {spot.months && <span className="card-months">📅 {spot.months}月</span>}
                   </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        )}
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          {/* 右栏：人文建筑 */}
+          <section className="recommend-col heritage-col">
+            <h3 className="col-title">🏛 人文建筑</h3>
+            <p className="col-subtitle">
+              {district === '全部' ? '上海经典老建筑与地标' : `${district}的经典建筑与地标`}
+            </p>
+            {heritageSpots.length === 0 ? (
+              <p className="text-muted text-small">该区暂无建筑收录。</p>
+            ) : (
+              <div className="recommend-grid">
+                {heritageSpots.map((s, idx) => {
+                  const photo = s.photos?.[0] ? getSeedPhotoUrl(s.photos[0]) : null;
+                  return (
+                    <Link
+                      key={s.name}
+                      to={`/building/${encodeURIComponent(s.name)}`}
+                      className="recommend-card"
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      {idx < 3 && <span className={`rank-badge rank-${idx + 1}`}>{idx + 1}</span>}
+                      {photo ? (
+                        <img src={photo} alt={s.name} className="card-img" />
+                      ) : (
+                        <div className="card-img-placeholder">🏛</div>
+                      )}
+                      <div className="card-body">
+                        <div className="card-title">{s.name}</div>
+                        {s.district && <span className="card-district">{s.district}</span>}
+                        {s.tags && s.tags.length > 0 && (
+                          <div className="card-reasons">
+                            {s.tags.slice(0, 3).map((t) => (
+                              <span key={t} className="reason-chip">{t}</span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
+          </section>
+        </div>
       </div>
     </div>
   );

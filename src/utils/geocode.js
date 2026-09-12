@@ -14,29 +14,54 @@ const getTdtKey = () => {
 };
 
 // 正向地理编码：地址 → { lat, lng, district }
-// addr 示例："上海市徐汇区武康路113号" 或 "武康大楼"
-export async function geocodeAddress(addr) {
+// 使用天地图 v2 搜索接口（与 scripts/import-spots.mjs 一致），keyWord 加"上海市"前缀避免命中外省同名地点
+export async function geocodeAddress(addr, retry = 0) {
   const tk = getTdtKey();
   if (!tk) return null;
 
-  // 天地图正向地理编码：type=query 需指定 query 参数
-  const postStr = JSON.stringify({ keyWord: addr, queryLatitude: '39.904030', queryLongitude: '116.427030' });
-  const url = `https://api.tianditu.gov.cn/geocoder?postStr=${encodeURIComponent(postStr)}&type=query&tk=${encodeURIComponent(tk)}`;
+  const keyWord = /^(上海|上海市)/.test(addr) ? addr : `上海市${addr}`;
+  const postStr = JSON.stringify({
+    keyWord,
+    level: 11,
+    queryType: 7,
+    mapBound: '120.80,30.60,122.25,31.95',
+    queryTerminal: 1000,
+    start: 0,
+    count: 1,
+  });
+  const url = `https://api.tianditu.gov.cn/v2/search?postStr=${encodeURIComponent(postStr)}&type=query&tk=${encodeURIComponent(tk)}`;
 
   try {
     const res = await fetch(url);
     const json = await res.json();
-    // 返回结构: { status, location: { lon, lat }, result: { addressComponent: { county } } }
-    const loc = json?.location;
-    if (!loc || loc.lat == null || loc.lon == null) return null;
+    if (json?.status?.infocode !== 1000) {
+      // 限流/服务异常时重试一次（延迟 1s）
+      if (retry < 1 && (json?.status?.infocode === 1001 || !json?.status)) {
+        await new Promise((r) => setTimeout(r, 1000));
+        return geocodeAddress(addr, retry + 1);
+      }
+      console.warn('正向地理编码失败:', json?.status?.cndesc || JSON.stringify(json).slice(0, 100));
+      return null;
+    }
+    const pois = json?.pois;
+    if (!Array.isArray(pois) || pois.length === 0) return null;
+    const lonlat = pois[0].lonlat;
+    if (!lonlat) return null;
+    const [lngStr, latStr] = lonlat.split(',');
+    const lat = parseFloat(latStr);
+    const lng = parseFloat(lngStr);
+    if (isNaN(lat) || isNaN(lng)) return null;
 
+    // 从 address 提取区名（如"上海市浦东新区世博大道2200号"）
+    const addrStr = pois[0].address || '';
+    const districtMatch = addrStr.match(/上海市?([^\d]+?区)/);
     return {
-      lat: loc.lat,
-      lng: loc.lon,
-      district: json?.result?.addressComponent?.county || null,
+      lat,
+      lng,
+      district: districtMatch ? districtMatch[1] : null,
     };
   } catch (err) {
-    console.warn('正向地理编码失败', err);
+    console.warn('正向地理编码失败:', err.message);
     return null;
   }
 }

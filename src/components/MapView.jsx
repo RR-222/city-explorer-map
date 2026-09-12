@@ -81,6 +81,12 @@ const CHECK_ICON = `
   </svg>
 `;
 
+const FLOWER_ICON = `
+  <svg class="map-marker-icon" viewBox="0 0 24 24" aria-hidden="true" style="color:#e91e63;">
+    <path d="M12 22c-1.25 0-2.25-1-2.25-2.25 0-.29.06-.56.16-.81-1.01.36-2.16.06-2.87-.65-.72-.72-1.01-1.87-.65-2.88-.25.1-.52.16-.81.16C4.34 15.75 3.34 14.75 3.34 13.5s1-2.25 2.25-2.25c.29 0 .56.06.81.16-.36-1.01-.06-2.16.65-2.88.72-.71 1.87-1.01 2.88-.65-.1-.25-.16-.52-.16-.81 0-1.25 1-2.25 2.25-2.25s2.25 1 2.25 2.25c0 .29-.06.56-.16.81 1.01-.36 2.16-.06 2.88.65.71.72 1.01 1.87.65 2.88.25-.1.52-.16.81-.16 1.25 0 2.25 1 2.25 2.25s-1 2.25-2.25 2.25c-.29 0-.56-.06-.81-.16.36 1.01.06 2.16-.65 2.88-.72.71-1.87 1.01-2.88.65.1.25.16.52.16.81 0 1.25-1 2.25-2.25 2.25zM12 15c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z" fill="currentColor"/>
+  </svg>
+`;
+
 function createMarkerHtml(innerIcon) {
   return `
     <div class="map-marker">
@@ -101,6 +107,14 @@ const spotIcon = L.divIcon({
 const userIcon = L.divIcon({
   className: 'map-marker-root',
   html: createMarkerHtml(CHECK_ICON),
+  iconSize: [26, 34],
+  iconAnchor: [13, 34],
+  popupAnchor: [0, -28],
+});
+
+const flowerIcon = L.divIcon({
+  className: 'map-marker-root',
+  html: createMarkerHtml(FLOWER_ICON),
   iconSize: [26, 34],
   iconAnchor: [13, 34],
   popupAnchor: [0, -28],
@@ -148,6 +162,7 @@ function LayerButton({ active, icon: Icon, label, onClick }) {
 
 export default function MapView({
   spots = [],
+  flowers = [],
   places = [],
   onMapClick,
   onSpotClick,
@@ -278,6 +293,36 @@ export default function MapView({
             </Marker>
           </>
         )}
+
+        {/* 花卉景点图层 */}
+        {flowers.map((f) => (
+          <Marker
+            key={`flower-${f.id}`}
+            position={[f.lat, f.lng]}
+            icon={flowerIcon}
+            eventHandlers={{
+              click: () => onSpotClick && onSpotClick({ ...f, _type: 'flower' }),
+            }}
+          >
+            <Popup>
+              <div className="map-popup">
+                <div className="map-popup-title">🌸 {f.name}</div>
+                {f.flower && <div className="map-popup-district">{f.flower}</div>}
+                {f.district && <div className="map-popup-district">{f.district}</div>}
+                {f.description && <div className="map-popup-desc">{f.description}</div>}
+                {f.photos && f.photos.length > 0 && (
+                  <img className="map-popup-img" src={f.photos[0]} alt={f.name} />
+                )}
+                <button
+                  className="map-popup-link"
+                  onClick={() => navigate(`/flowers/${f.id}`)}
+                >
+                  查看详情 →
+                </button>
+              </div>
+            </Popup>
+          </Marker>
+        ))}
 
         {/* 用户打卡图层 */}
         {showUserMarks && places.map((p) => (

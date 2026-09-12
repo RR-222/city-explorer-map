@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import Brand from '../components/Brand';
@@ -33,8 +33,13 @@ const getMeta = (name) => {
 };
 const TDT_KEY = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_TDT_KEY) || getMeta('VITE_TDT_KEY') || '';
 
+// 与首页相同的天地图矢量底图 + 中文注记层
+const tdtVecUrl = `https://t0.tianditu.gov.cn/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(TDT_KEY)}`;
+const tdtCvaUrl = `https://t0.tianditu.gov.cn/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(TDT_KEY)}`;
+
 export default function SpotDetailPage() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [spot, setSpot] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -85,136 +90,143 @@ export default function SpotDetailPage() {
   const shootSpots = Array.isArray(spot.shoot_spots) ? spot.shoot_spots : [];
   const weatherTags = spot.weather_tags || [];
   const tags = spot.tags || [];
+  const hasMap = spot.lat != null && spot.lng != null;
+
+  // 最佳时节：全年 → 不展示"全年适宜"；具体月份 → 月份网格
+  const seasonMonths =
+    spot.seasons && spot.seasons !== '全年'
+      ? spot.seasons.split(',').map((m) => parseInt(m.trim(), 10)).filter((n) => n >= 1 && n <= 12)
+      : [];
 
   return (
     <div className="app-root">
       <div className="topbar">
         <Brand asLink to="/" />
+        <div className="user-area">
+          <Link to="/" className="link">地图</Link>
+          <Link to="/recommend" className="link">今日推荐</Link>
+          <Link to="/seasonal" className="link">时令景观</Link>
+          <Link to="/heritage" className="link">人文建筑</Link>
+          <Link to="/wechat" className="link">文旅情报</Link>
+          <Link to="/achievements" className="link">成就</Link>
+          <Link to="/profile" className="link">个人中心</Link>
+        </div>
       </div>
 
-      <div className="spot-detail" id="main" tabIndex={-1}>
-        {/* 标题区 */}
-        <div className="spot-header">
-          <h1>{spot.name}</h1>
+      <div className="building-detail" id="main" tabIndex={-1}>
+        {/* 侧栏：介绍占比大 */}
+        <aside className="building-info">
+          <button className="back-link-btn" onClick={() => navigate(-1)}>← 返回</button>
+          <h1 className="building-title">{spot.name}</h1>
           <div className="spot-meta">
             {spot.district && <span className="meta-chip">{spot.district}</span>}
             {tags.map((t) => <span key={t} className="meta-chip tag">{t}</span>)}
           </div>
-          {spot.address && (
-            <div className="spot-address">📍 {spot.address}</div>
-          )}
-        </div>
+          {spot.address && <div className="spot-address">📍 {spot.address}</div>}
 
-        {/* 图片画廊 */}
-        {photos.length > 0 && (
-          <div className="spot-gallery">
-            <div className="gallery-main">
+          {/* 图片画廊 */}
+          {photos.length > 0 && (
+            <div className="building-photo-main">
               <img src={photos[activePhoto]} alt={spot.name} />
             </div>
-            {photos.length > 1 && (
-              <div className="gallery-thumbs">
-                {photos.map((url, i) => (
-                  <img
-                    key={i}
-                    src={url}
-                    alt={`thumb-${i}`}
-                    className={i === activePhoto ? 'thumb active' : 'thumb'}
-                    onClick={() => setActivePhoto(i)}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
-        )}
+          )}
+          {photos.length > 1 && (
+            <div className="building-photo-thumbs">
+              {photos.map((url, i) => (
+                <img
+                  key={i}
+                  src={url}
+                  alt={`thumb-${i}`}
+                  className={i === activePhoto ? 'thumb active' : 'thumb'}
+                  onClick={() => setActivePhoto(i)}
+                />
+              ))}
+            </div>
+          )}
 
-        {/* 描述 */}
-        {spot.description && (
-          <div className="spot-section">
-            <h3>景点介绍</h3>
-            <p className="spot-desc">{spot.description}</p>
-          </div>
-        )}
+          {/* 描述 */}
+          {spot.description && (
+            <div className="building-section">
+              <h3>景点介绍</h3>
+              <p className="building-desc">{spot.description}</p>
+            </div>
+          )}
 
-        {/* 最佳时节 */}
-        {spot.seasons && (
-          <div className="spot-section">
-            <h3>最佳时节</h3>
-            {spot.seasons === '全年' ? (
-              <span className="season-badge">全年适宜</span>
-            ) : (
+          {/* 最佳时节（全年不展示） */}
+          {seasonMonths.length > 0 && (
+            <div className="building-section">
+              <h3>最佳时节</h3>
               <div className="month-grid">
-                {spot.seasons.split(',').map((m) => parseInt(m.trim(), 10)).filter((n) => n >= 1 && n <= 12).map((month) => (
+                {seasonMonths.map((month) => (
                   <span key={month} className="month-chip active">{MONTH_NAMES[month]}</span>
                 ))}
               </div>
-            )}
-          </div>
-        )}
-
-        {/* 推荐天气/光线 */}
-        {weatherTags.length > 0 && (
-          <div className="spot-section">
-            <h3>推荐天气/光线</h3>
-            <div className="weather-tags">
-              {weatherTags.map((w) => <span key={w} className="weather-chip">{w}</span>)}
             </div>
-          </div>
-        )}
+          )}
 
-        {/* 机位列表 */}
-        {shootSpots.length > 0 && (
-          <div className="spot-section">
-            <h3>推荐机位（{shootSpots.length}）</h3>
-            <div className="shoot-spots-list">
-              {shootSpots.map((s, i) => (
-                <div key={i} className="shoot-spot-card">
-                  <div className="shoot-spot-title">机位 {i + 1}{s.title ? ` · ${s.title}` : ''}</div>
-                  {s.tip && <div className="shoot-spot-tip">{s.tip}</div>}
-                  {s.best_hour && <div className="shoot-spot-hour">最佳时段：{s.best_hour}</div>}
-                </div>
-              ))}
+          {/* 推荐天气/光线 */}
+          {weatherTags.length > 0 && (
+            <div className="building-section">
+              <h3>推荐天气/光线</h3>
+              <div className="weather-tags">
+                {weatherTags.map((w) => <span key={w} className="weather-chip">{w}</span>)}
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* 机位小地图 */}
-        {shootSpots.length > 0 && (
-          <div className="spot-section">
-            <h3>机位地图</h3>
-            <div className="spot-mini-map">
-              <MapContainer
-                center={[spot.lat, spot.lng]}
-                zoom={15}
-                style={{ height: 300, width: '100%' }}
-              >
-                <TileLayer
-                  url={`https://t0.tianditu.gov.cn/DataServer?T=img_w&x={x}&y={y}&l={z}&tk=${encodeURIComponent(TDT_KEY)}`}
-                  attribution="&copy; 天地图"
-                />
-                <Marker position={[spot.lat, spot.lng]}>
-                  <Popup>{spot.name}</Popup>
-                </Marker>
-                {shootSpots.filter(s => s.lat != null && s.lng != null).map((s, i) => (
-                  <Marker key={i} position={[s.lat, s.lng]} icon={shootSpotIcon}>
-                    <Popup>
-                      <div>
-                        <div style={{ fontWeight: 600 }}>机位 {i + 1}{s.title ? ` · ${s.title}` : ''}</div>
-                        {s.tip && <div style={{ fontSize: 12 }}>{s.tip}</div>}
-                      </div>
-                    </Popup>
-                  </Marker>
+          {/* 机位列表 */}
+          {shootSpots.length > 0 && (
+            <div className="building-section">
+              <h3>推荐机位（{shootSpots.length}）</h3>
+              <div className="shoot-spots-list">
+                {shootSpots.map((s, i) => (
+                  <div key={i} className="shoot-spot-card">
+                    <div className="shoot-spot-title">机位 {i + 1}{s.title ? ` · ${s.title}` : ''}</div>
+                    {s.tip && <div className="shoot-spot-tip">{s.tip}</div>}
+                    {s.best_hour && <div className="shoot-spot-hour">最佳时段：{s.best_hour}</div>}
+                  </div>
                 ))}
-              </MapContainer>
+              </div>
             </div>
-          </div>
-        )}
+          )}
 
-        {/* 查看原文 */}
-        {spot.source_url && (
-          <div className="spot-section">
-            <a href={spot.source_url} target="_blank" rel="noreferrer" className="source-btn">查看原文 →</a>
-          </div>
-        )}
+          {/* 查看原文 */}
+          {spot.source_url && (
+            <div className="building-section">
+              <a href={spot.source_url} target="_blank" rel="noreferrer" className="source-btn">查看原文 →</a>
+            </div>
+          )}
+        </aside>
+
+        {/* 右侧地图 */}
+        <main className="building-map">
+          {hasMap ? (
+            <MapContainer
+              center={[spot.lat, spot.lng]}
+              zoom={15}
+              style={{ height: '100%', width: '100%' }}
+              scrollWheelZoom
+            >
+              <TileLayer url={tdtVecUrl} attribution="&copy; 天地图" />
+              <TileLayer url={tdtCvaUrl} attribution="" />
+              <Marker position={[spot.lat, spot.lng]}>
+                <Popup>{spot.name}</Popup>
+              </Marker>
+              {shootSpots.filter(s => s.lat != null && s.lng != null).map((s, i) => (
+                <Marker key={i} position={[s.lat, s.lng]} icon={shootSpotIcon}>
+                  <Popup>
+                    <div>
+                      <div style={{ fontWeight: 600 }}>机位 {i + 1}{s.title ? ` · ${s.title}` : ''}</div>
+                      {s.tip && <div style={{ fontSize: 12 }}>{s.tip}</div>}
+                    </div>
+                  </Popup>
+                </Marker>
+              ))}
+            </MapContainer>
+          ) : (
+            <div className="map-placeholder">暂无位置信息</div>
+          )}
+        </main>
       </div>
     </div>
   );

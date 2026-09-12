@@ -1,11 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import MapView from '../components/MapView';
 import AddPlaceModal from '../components/AddPlaceModal';
 import Brand from '../components/Brand';
 import EmptyState from '../components/EmptyState';
+import FlowerImage from '../components/FlowerImage';
 import { supabase } from '../supabaseClient';
 import { fetchShanghaiWeather, getCurrentMonth } from '../utils/weather';
+import { getSeasonalGreeting } from '../utils/seasonalGreeting';
 import { recommendSpots } from '../utils/recommend';
 import { filterVisibleSpots } from '../utils/spotsFilter';
 
@@ -19,6 +21,7 @@ const MONTH_NAMES = ['', '1月', '2月', '3月', '4月', '5月', '6月', '7月',
 export default function MapPage() {
   const [places, setPlaces] = useState([]);
   const [spots, setSpots] = useState([]);
+  const [flowers, setFlowers] = useState([]);
   const [addingCoords, setAddingCoords] = useState(null);
   const [user, setUser] = useState(null);
   const [weather, setWeather] = useState(null);
@@ -26,6 +29,8 @@ export default function MapPage() {
   const [selectedSpot, setSelectedSpot] = useState(null);
 
   const month = getCurrentMonth();
+  const greetingInfo = getSeasonalGreeting();
+  const navigate = useNavigate();
 
   useEffect(() => {
     let mounted = true;
@@ -45,7 +50,7 @@ export default function MapPage() {
     };
   }, []);
 
-  // 加载预设景点（公开可读）并过滤隐藏项
+  // 加载预设建筑景点（公开可读）并过滤隐藏项
   useEffect(() => {
     const fetchSpots = async () => {
       try {
@@ -60,6 +65,24 @@ export default function MapPage() {
       }
     };
     fetchSpots();
+  }, []);
+
+  // 加载时令花卉景点（公开可读）
+  useEffect(() => {
+    const fetchFlowers = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('flowers')
+          .select('*')
+          .order('created_at', { ascending: false });
+        if (error) throw error;
+        setFlowers(data || []);
+      } catch (err) {
+        // flowers 表可能尚未创建，静默处理
+        console.warn('load flowers error', err?.message || err);
+      }
+    };
+    fetchFlowers();
   }, []);
 
   // 加载当前天气并计算今日推荐
@@ -100,18 +123,47 @@ export default function MapPage() {
     fetchPlaces();
   }, [user]);
 
+  // 合并建筑景点 + 花卉景点（花卉的 months 映射为 seasons 以兼容推荐逻辑）
+  const allSpots = useMemo(() => {
+    const normalizedFlowers = flowers.map((f) => ({
+      ...f,
+      _type: 'flower',
+      seasons: f.months || '全年',
+      tags: [...(f.tags || []), f.flower].filter(Boolean),
+    }));
+    return [...spots, ...normalizedFlowers];
+  }, [spots, flowers]);
+
   const todayRecommendations = useMemo(() => {
-    return recommendSpots(spots, weather, month).slice(0, 3);
-  }, [spots, weather, month]);
+    // 当季时令植物并入今日推荐（排在最前）
+    const seasonalRecs = greetingInfo.inSeasonFlowers.map((f, i) => ({
+      id: `seasonal-${f.flower}`,
+      _type: 'seasonal',
+      flower: f.flower,
+      name: f.flower,
+      category: f.category,
+      district: '',
+      months: f.months,
+      photos: [],
+      matchScore: 1000 - i,
+      matchReasons: ['当季限定'],
+    }));
+    return [...seasonalRecs, ...recommendSpots(allSpots, weather, month)].slice(0, 8);
+  }, [allSpots, weather, month, greetingInfo.inSeasonFlowers]);
 
   const handleMapClick = (coords) => setAddingCoords(coords);
 
-  const handleSaved = (newPlace) => {
-    setPlaces((p) => [newPlace, ...p]);
+  const handleSelectSpot = (spot) => {
+    // 当季时令植物：直接跳转花卉详情页
+    if (spot._type === 'seasonal') {
+      navigate(`/seasonal/${encodeURIComponent(spot.flower)}`);
+      return;
+    }
+    setSelectedSpot(spot);
   };
 
-  const handleSelectSpot = (spot) => {
-    setSelectedSpot(spot);
+  const handleSaved = (newPlace) => {
+    setPlaces((p) => [newPlace, ...p]);
   };
 
   return (
@@ -123,6 +175,9 @@ export default function MapPage() {
             <>
               <span>{user.email}</span>
               <Link to="/recommend" className="link">今日推荐</Link>
+              <Link to="/seasonal" className="link">时令景观</Link>
+              <Link to="/heritage" className="link">人文建筑</Link>
+              <Link to="/wechat" className="link">文旅情报</Link>
               <Link to="/achievements" className="link">成就</Link>
               <Link to="/profile" className="link">个人中心</Link>
               <button
@@ -162,6 +217,27 @@ export default function MapPage() {
             )}
           </div>
 
+          {/* 季节问候 */}
+          <div className="home-greeting">
+            <p className="home-greeting-text">
+              {greetingInfo.greeting}！{MONTH_NAMES[greetingInfo.month]}是上海的{greetingInfo.monthFeature.season}，{greetingInfo.monthFeature.desc}。
+            </p>
+            {greetingInfo.inSeasonFlowers.length > 0 && (
+              <div className="home-greeting-flowers">
+                <span className="home-greeting-label">🌸 当季花卉：</span>
+                {greetingInfo.inSeasonFlowers.map((f) => (
+                  <Link
+                    key={f.flower}
+                    to={`/seasonal/${encodeURIComponent(f.flower)}`}
+                    className="home-greeting-flower-chip"
+                  >
+                    {f.flower}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <p className="home-recommend-subtitle">
             根据当前天气和季节，挑选适合今天打卡的拍摄点。点击卡片在地图上查看位置。
           </p>
@@ -176,7 +252,8 @@ export default function MapPage() {
           ) : (
             <div className="home-recommend-list">
               {todayRecommendations.map((spot, idx) => {
-                const isSelected = selectedSpot?.id === spot.id;
+                const isSeasonal = spot._type === 'seasonal';
+                const isSelected = !isSeasonal && selectedSpot?.id === spot.id;
                 return (
                   <div
                     key={spot.id}
@@ -189,7 +266,9 @@ export default function MapPage() {
                     }}
                   >
                     <span className={`home-recommend-rank rank-${idx + 1}`}>{idx + 1}</span>
-                    {spot.photos && spot.photos.length > 0 ? (
+                    {isSeasonal ? (
+                      <FlowerImage name={spot.flower} className="home-recommend-img" alt={spot.name} />
+                    ) : spot.photos && spot.photos.length > 0 ? (
                       <img src={spot.photos[0]} alt={spot.name} className="home-recommend-img" />
                     ) : (
                       <div className="home-recommend-img-placeholder">📷</div>
@@ -207,11 +286,15 @@ export default function MapPage() {
                         </div>
                       )}
                       <Link
-                        to={`/spots/${spot.id}`}
+                        to={isSeasonal
+                          ? `/seasonal/${encodeURIComponent(spot.flower)}`
+                          : spot._type === 'flower'
+                            ? `/flowers/${spot.id}`
+                            : `/spots/${spot.id}`}
                         className="home-recommend-detail"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        查看详情 →
+                        {isSeasonal ? '查看花卉 →' : '查看详情 →'}
                       </Link>
                     </div>
                   </div>
@@ -229,6 +312,7 @@ export default function MapPage() {
         <main className="home-map">
           <MapView
             spots={spots}
+            flowers={flowers}
             places={places}
             onMapClick={user ? handleMapClick : null}
             highlightSpot={selectedSpot}

@@ -44,7 +44,15 @@ export async function fetchShanghaiWeather() {
     `&daily=sunrise,sunset&timezone=Asia%2FShanghai&forecast_days=1`;
 
   try {
-    const res = await fetch(url);
+    // 8 秒超时保护：网络异常时快速降级，不阻塞推荐加载
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 8000);
+    let res;
+    try {
+      res = await fetch(url, { signal: controller.signal });
+    } finally {
+      clearTimeout(timer);
+    }
     const json = await res.json();
 
     const code = json?.current?.weather_code;

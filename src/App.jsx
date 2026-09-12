@@ -3,10 +3,17 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import MapPage from './pages/MapPage';
+import SpotFlowerPage from './pages/SpotFlowerPage';
 import ProfilePage from './pages/ProfilePage';
 import AchievementsPage from './pages/AchievementsPage';
 import SpotDetailPage from './pages/SpotDetailPage';
+import HeritagePage from './pages/HeritagePage';
+import BuildingDetailPage from './pages/BuildingDetailPage';
+import FlowerDetailPage from './pages/FlowerDetailPage';
+import SeasonalFlowersPage from './pages/SeasonalFlowersPage';
+import SeasonalFlowerDetailPage from './pages/SeasonalFlowerDetailPage';
 import RecommendPage from './pages/RecommendPage';
+import WechatArticlesPage from './pages/WechatArticlesPage';
 import { ToastProvider } from './components/Toast';
 import { supabase } from './supabaseClient';
 
@@ -64,6 +71,13 @@ export default function App() {
           element={user ? <AchievementsPage /> : <Navigate to="/register" replace />}
         />
         <Route path="/spots/:id" element={<SpotDetailPage />} />
+        <Route path="/heritage" element={<HeritagePage />} />
+        <Route path="/wechat" element={<WechatArticlesPage />} />
+        <Route path="/building/:name" element={<BuildingDetailPage />} />
+        <Route path="/flowers/:id" element={<FlowerDetailPage />} />
+        <Route path="/seasonal" element={<SeasonalFlowersPage />} />
+        <Route path="/seasonal/:flower" element={<SeasonalFlowerDetailPage />} />
+        <Route path="/flower-spot/:name" element={<SpotFlowerPage />} />
         <Route path="/recommend" element={<RecommendPage />} />
         </Routes>
       </BrowserRouter>
