@@ -2766,7 +2766,7 @@ textarea:focus-visible {
 
 .flower-spot-img {
   width: 100%;
-  height: 150px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
   border-bottom: 1px solid var(--border);
@@ -2774,7 +2774,7 @@ textarea:focus-visible {
 
 .flower-spot-img-placeholder {
   width: 100%;
-  height: 150px;
+  aspect-ratio: 4 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2847,7 +2847,7 @@ textarea:focus-visible {
 
 .flower-spot-main-photo {
   width: 100%;
-  height: 220px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -3524,9 +3524,9 @@ textarea:focus-visible {
   padding: 2px 8px;
   margin: 6px 0 4px;
   border-radius: 6px;
-  color: #7c3aed;
-  background: linear-gradient(135deg, rgba(201, 167, 232, 0.28), rgba(201, 167, 232, 0.4));
-  border: 1px solid rgba(124, 58, 237, 0.35);
+  color: #ffffff;
+  background: #7c3aed;
+  border: 1px solid #7c3aed;
 }
 
 .wechat-card-pinned {
