@@ -1062,7 +1062,7 @@
     "url": "https://www.xiaohongshu.com/explore/67c3a3fb000000000e005a33",
     "title": "宝山永福庵，邂逅早春的一抹红梅香",
     "author": "文森特的摄影日志",
-    "category": "heritage",
+    "category": "seasonal",
     "name": "宝山永福庵",
     "district": "宝山区",
     "address": "永福庵（待核验）",
@@ -1089,12 +1089,11 @@
       "http://sns-webpic-qc.xhscdn.com/202609132050/703571c4730039be43ac4ffcfb6f32f4/notes_pre_post/1040g3k831egnvv0th0805pgl9241ojrqf4pu4rg!nd_dft_wgth_webp_3"
     ],
     "flags": [
-      "时令：2-3月红梅",
-      "地址待核验"
+      "时令：2-3月红梅"
     ],
     "photos": [
-      "./data/photos/58.2.webp",
-      "./data/photos/58.3.webp"
+      "./data/flower-photos/梅花/宝山永福庵.webp",
+      "./data/flower-photos/梅花/宝山永福庵 (2).webp"
     ],
     "photoBase": 107
   },
@@ -1178,5 +1177,39 @@
       "./data/photos/60.3.webp"
     ],
     "photoBase": 109
+  },
+  {
+    "noteId": "6863314e0000000013012422",
+    "url": "https://www.xiaohongshu.com/explore/6863314e0000000013012422",
+    "title": "设计哲学｜\"消失的建筑\"与在地性重构",
+    "author": "文森特的摄影日志",
+    "category": "heritage",
+    "name": "音宇宙LIVERSE剧场",
+    "district": "",
+    "address": "待核验",
+    "intro": "隈研吾设计\"消失的飘带\"剧场，悬浮式钢结构与流线型外观，透光镂空立面让建筑融于环境。",
+    "hours": "",
+    "price": "",
+    "featured": [],
+    "closedDays": [],
+    "tags": [
+      "建筑艺术",
+      "建筑与结构美学",
+      "上海citywalk",
+      "建筑设计"
+    ],
+    "imgs": [
+      "http://sns-webpic-qc.xhscdn.com/202609132207/d24fd2558977dcdee59b4c1371012b2e/notes_pre_post/1040g3k031jc2ceqbj24g5pgl9241ojrq1poh078!nd_dft_wlteh_webp_3",
+      "http://sns-webpic-qc.xhscdn.com/202609132207/9a9f4f7e702f20e630e5d6bca5f5ee7c/notes_pre_post/1040g3k031jc2ceqbj2505pgl9241ojrqpqj4hkg!nd_dft_wlteh_webp_3",
+      "http://sns-webpic-qc.xhscdn.com/202609132207/9e5db6c09288c9acdf685d348e0733b5/notes_pre_post/1040g3k031jc2ceqbj25g5pgl9241ojrqgmnb7e8!nd_dft_wlteh_webp_3"
+    ],
+    "photos": [
+      "./data/photos/61.1.webp",
+      "./data/photos/61.2.webp",
+      "./data/photos/61.3.webp"
+    ],
+    "flags": [
+      "地址待核验"
+    ]
   }
 ]
