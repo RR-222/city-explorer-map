@@ -201,9 +201,7 @@
       "地址待核验"
     ],
     "photos": [
-      "./data/photos/47.1.webp",
-      "./data/photos/47.2.webp",
-      "./data/photos/47.3.webp"
+      "./data/photos/47.1.webp"
     ],
     "photoBase": 85
   },
@@ -530,8 +528,7 @@
     ],
     "photos": [
       "./data/photos/51.1.webp",
-      "./data/photos/51.2.webp",
-      "./data/photos/51.3.webp"
+      "./data/photos/51.2.webp"
     ],
     "photoBase": 93
   },
@@ -571,8 +568,7 @@
     ],
     "photos": [
       "./data/photos/52.1.webp",
-      "./data/photos/52.2.webp",
-      "./data/photos/52.3.webp"
+      "./data/photos/52.2.webp"
     ],
     "photoBase": 94
   },
@@ -642,7 +638,6 @@
     ],
     "photos": [
       "./data/flower-photos/梧桐/松江袜子弄悬铃木大道.webp",
-      "./data/flower-photos/梧桐/松江袜子弄悬铃木大道 (2).webp",
       "./data/flower-photos/梧桐/松江袜子弄悬铃木大道 (3).webp"
     ],
     "photoBase": 96
@@ -804,7 +799,6 @@
     ],
     "flags": [],
     "photos": [
-      "./data/photos/54.1.webp",
       "./data/photos/54.2.webp",
       "./data/photos/54.3.webp"
     ],
@@ -887,7 +881,6 @@
     ],
     "photos": [
       "./data/photos/55.1.webp",
-      "./data/photos/55.2.webp",
       "./data/photos/55.3.webp"
     ],
     "photoBase": 102
@@ -978,8 +971,7 @@
     ],
     "photos": [
       "./data/photos/57.1.webp",
-      "./data/photos/57.2.webp",
-      "./data/photos/57.3.webp"
+      "./data/photos/57.2.webp"
     ],
     "photoBase": 104
   },
@@ -1019,7 +1011,6 @@
     ],
     "photos": [
       "./data/flower-photos/樱花/交大徐汇校区樱花.webp",
-      "./data/flower-photos/樱花/交大徐汇校区樱花 (2).webp",
       "./data/flower-photos/樱花/交大徐汇校区樱花 (3).webp"
     ],
     "photoBase": 105
@@ -1102,7 +1093,6 @@
       "地址待核验"
     ],
     "photos": [
-      "./data/photos/58.1.webp",
       "./data/photos/58.2.webp",
       "./data/photos/58.3.webp"
     ],
