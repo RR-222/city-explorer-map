@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import Brand from '../components/Brand';
 import FlowerImage from '../components/FlowerImage';
+import MarkButtons from '../components/MarkButtons';
+import { useToast } from '../components/Toast';
+import { supabase } from '../supabaseClient';
 import { getLocalPhotoUrl } from '../utils/flowerImages';
+import { fetchMarks, setMark } from '../utils/marks';
 import { getFlowerInfo } from '../data/flowerInfo';
 import flowerCalendar from '../../data/seasonal-flowers.json';
 
@@ -49,7 +53,59 @@ function parseNotes(notes) {
 export default function SeasonalFlowerDetailPage() {
   const { flower } = useParams();
   const navigate = useNavigate();
+  const toast = useToast();
   const flowerName = decodeURIComponent(flower || '');
+
+  // 当前用户 + 想去/去过标记
+  const [user, setUser] = useState(null);
+  const [marks, setMarks] = useState({});
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      const { data } = await supabase.auth.getUser();
+      if (!mounted) return;
+      setUser(data?.user ?? null);
+      if (data?.user) {
+        const m = await fetchMarks(data.user.id);
+        if (!mounted) return;
+        setMarks(m.__error ? {} : m);
+      }
+    })();
+    const { subscription } = supabase.auth.onAuthStateChange(async (_e, session) => {
+      setUser(session?.user ?? null);
+      if (session?.user) {
+        const m = await fetchMarks(session.user.id);
+        if (mounted) setMarks(m.__error ? {} : m);
+      } else if (mounted) {
+        setMarks({});
+      }
+    });
+    return () => {
+      mounted = false;
+      subscription?.unsubscribe();
+    };
+  }, []);
+
+  const handleMarkChange = async (key, status) => {
+    if (!user) {
+      toast.info('请先登录后再标记');
+      navigate('/login');
+      return;
+    }
+    const prev = marks[key];
+    setMarks((m) => ({ ...m, [key]: status })); // 乐观更新
+    const { error } = await setMark(user.id, 'flower', flowerName, status);
+    if (error) {
+      setMarks((m) => ({ ...m, [key]: prev }));
+      const msg = String(error.message || '');
+      if (msg.includes('does not exist') || msg.includes('marks')) {
+        toast.error('标记功能需要先初始化数据库，请执行 supabase/marks-schema.sql');
+      } else {
+        toast.error('操作失败，请重试');
+      }
+    }
+  };
 
   // 从 seasonal-flowers.json 取该花卉条目（景点选择 + 详细介绍）
   const calendar = flowerCalendar._花历 || flowerCalendar['花历'] || [];
@@ -85,6 +141,12 @@ export default function SeasonalFlowerDetailPage() {
           {info.latin && <span className="flower-latin">{info.latin}</span>}
           <div className="flower-detail-meta">
             {entry?.months && <span className="meta-chip">📅 花期 {formatMonths(entry.months)}</span>}
+            <MarkButtons
+              type="flower"
+              targetKey={entry?.flower || flowerName}
+              marks={marks}
+              onChange={handleMarkChange}
+            />
             <button className="flower-back-btn" onClick={() => navigate('/seasonal')}>← 返回时令景观</button>
           </div>
         </div>
@@ -125,6 +187,9 @@ export default function SeasonalFlowerDetailPage() {
           {/* 右侧：赏花地点 */}
           <aside className="flower-detail-spots">
             <h3 className="flower-spots-title">📍 赏花地点（{spots.length} 个）</h3>
+            <p className="flower-spots-note">
+              ⚠️ 花卉花期每年受气温与气候影响会有波动，且景点植物可能存在移栽、更新等情况，请结合当年的实际花讯安排行程。
+            </p>
             {spots.length === 0 ? (
               <p className="text-muted">暂无赏花地点数据，后续将补充。</p>
             ) : (

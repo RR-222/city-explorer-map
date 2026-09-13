@@ -3264,8 +3264,8 @@ textarea:focus-visible {
 
 .building-photo-main img {
   width: 100%;
-  max-height: 420px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -3608,4 +3608,122 @@ textarea:focus-visible {
   .wechat-page {
     padding: var(--s-5) var(--s-3) 48px;
   }
+}
+
+
+/* ===== 想去 / 去过 标记按钮 ===== */
+.mark-buttons {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mark-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.32rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--input);
+  color: var(--muted-foreground);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mark-btn:hover {
+  border-color: var(--primary);
+  color: var(--foreground);
+}
+
+.mark-btn.wish.active {
+  background: rgba(255, 122, 0, 0.15);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.mark-btn.visited.active {
+  background: rgba(46, 204, 113, 0.16);
+  border-color: rgba(46, 204, 113, 0.7);
+  color: #2ecc71;
+}
+
+.flower-detail-meta .mark-buttons {
+  margin-right: 0.5rem;
+}
+
+/* ===== 花卉详情页：赏花地点提示条 ===== */
+.flower-spots-note {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--muted-foreground);
+  background: rgba(255, 170, 0, 0.08);
+  border: 1px dashed rgba(255, 170, 0, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.7rem;
+  margin: 0.4rem 0 0.9rem;
+}
+
+/* ===== 成就页 Tab ===== */
+.achievement-tabs {
+  display: flex;
+  gap: 0.6rem;
+  margin: var(--s-4) 0;
+}
+
+.achievement-tab {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--input);
+  color: var(--muted-foreground);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.achievement-tab:hover {
+  border-color: var(--primary);
+  color: var(--foreground);
+}
+
+.achievement-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.badge-progress-note {
+  margin-top: var(--s-4);
+  background: var(--card, var(--input));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.badge-progress-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.badge-progress-row span {
+  color: var(--muted-foreground);
+  min-width: 5em;
+}
+
+.badge-progress-row b {
+  color: var(--primary);
+  font-size: 1.05rem;
+}
+
+.badge-progress-row i {
+  color: var(--muted-foreground);
+  font-style: normal;
+  font-size: 0.82rem;
 }

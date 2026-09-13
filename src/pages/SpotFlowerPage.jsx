@@ -1,10 +1,14 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import Brand from '../components/Brand';
+import MarkButtons from '../components/MarkButtons';
+import { useToast } from '../components/Toast';
+import { supabase } from '../supabaseClient';
 import { geocodeAddress } from '../utils/geocode';
 import { getLocalPhotoUrl } from '../utils/flowerImages';
+import { fetchMarks, setMark } from '../utils/marks';
 import flowerSpots from '../../data/flower-spots.json';
 import seedSpots from '../../data/spots-seed.json';
 
@@ -65,6 +69,8 @@ function FlyTo({ center, zoom }) {
 
 export default function SpotFlowerPage() {
   const { name } = useParams();
+  const navigate = useNavigate();
+  const toast = useToast();
   const spotName = decodeURIComponent(name || '');
   const spot = flowerSpots.spots.find((s) => s.id === spotName) || null;
 
@@ -72,6 +78,58 @@ export default function SpotFlowerPage() {
   const [locating, setLocating] = useState(true);
   const [showNearby, setShowNearby] = useState(false);
   const [focused, setFocused] = useState(null); // 附近建筑聚焦
+
+  // 当前用户 + 想去/去过标记
+  const [user, setUser] = useState(null);
+  const [marks, setMarks] = useState({});
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      const { data } = await supabase.auth.getUser();
+      if (!mounted) return;
+      setUser(data?.user ?? null);
+      if (data?.user) {
+        const m = await fetchMarks(data.user.id);
+        if (!mounted) return;
+        setMarks(m.__error ? {} : m);
+      }
+    })();
+    const { subscription } = supabase.auth.onAuthStateChange(async (_e, session) => {
+      setUser(session?.user ?? null);
+      if (session?.user) {
+        const m = await fetchMarks(session.user.id);
+        if (mounted) setMarks(m.__error ? {} : m);
+      } else if (mounted) {
+        setMarks({});
+      }
+    });
+    return () => {
+      mounted = false;
+      subscription?.unsubscribe();
+    };
+  }, []);
+
+  const handleMarkChange = async (key, status) => {
+    if (!user) {
+      toast.info('请先登录后再标记');
+      navigate('/login');
+      return;
+    }
+    if (!spot) return;
+    const prev = marks[key];
+    setMarks((m) => ({ ...m, [key]: status }));
+    const { error } = await setMark(user.id, 'spot', spot.id, status);
+    if (error) {
+      setMarks((m) => ({ ...m, [key]: prev }));
+      const msg = String(error.message || '');
+      if (msg.includes('does not exist') || msg.includes('marks')) {
+        toast.error('标记功能需要先初始化数据库，请执行 supabase/marks-schema.sql');
+      } else {
+        toast.error('操作失败，请重试');
+      }
+    }
+  };
 
   // 定位景点坐标：优先同名 seed 建筑，否则天地图正向地理编码
   useEffect(() => {
@@ -147,6 +205,12 @@ export default function SpotFlowerPage() {
         <aside className="home-recommend flower-spot-sidebar">
           <Link to="/seasonal" className="back-link">← 返回时令景观</Link>
           <h2 className="flower-spot-title">{spot.name}</h2>
+          <MarkButtons
+            type="spot"
+            targetKey={spot.id}
+            marks={marks}
+            onChange={handleMarkChange}
+          />
           <div className="spot-meta">
             {spot.district && <span className="meta-chip">{spot.district}</span>}
             {spot.flowers.slice(0, 4).map((f) => (

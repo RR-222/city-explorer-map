@@ -3,7 +3,11 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import Brand from '../components/Brand';
+import MarkButtons from '../components/MarkButtons';
+import { useToast } from '../components/Toast';
+import { supabase } from '../supabaseClient';
 import { getSeedPhotoUrl } from '../utils/flowerImages';
+import { fetchMarks, setMark } from '../utils/marks';
 import seedSpots from '../../data/spots-seed.json';
 
 // 默认图标
@@ -51,9 +55,62 @@ const tdtCvaUrl = `https://t0.tianditu.gov.cn/DataServer?T=cva_w&x={x}&y={y}&l={
 export default function BuildingDetailPage() {
   const { name } = useParams();
   const navigate = useNavigate();
+  const toast = useToast();
   const buildingName = decodeURIComponent(name || '');
   const building = seedSpots.find((b) => b.name === buildingName) || null;
   const [activePhoto, setActivePhoto] = useState(0);
+
+  // 当前用户 + 想去/去过标记
+  const [user, setUser] = useState(null);
+  const [marks, setMarks] = useState({});
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      const { data } = await supabase.auth.getUser();
+      if (!mounted) return;
+      setUser(data?.user ?? null);
+      if (data?.user) {
+        const m = await fetchMarks(data.user.id);
+        if (!mounted) return;
+        setMarks(m.__error ? {} : m);
+      }
+    })();
+    const { subscription } = supabase.auth.onAuthStateChange(async (_e, session) => {
+      setUser(session?.user ?? null);
+      if (session?.user) {
+        const m = await fetchMarks(session.user.id);
+        if (mounted) setMarks(m.__error ? {} : m);
+      } else if (mounted) {
+        setMarks({});
+      }
+    });
+    return () => {
+      mounted = false;
+      subscription?.unsubscribe();
+    };
+  }, []);
+
+  const handleMarkChange = async (key, status) => {
+    if (!user) {
+      toast.info('请先登录后再标记');
+      navigate('/login');
+      return;
+    }
+    if (!building) return;
+    const prev = marks[key];
+    setMarks((m) => ({ ...m, [key]: status }));
+    const { error } = await setMark(user.id, 'building', building.name, status);
+    if (error) {
+      setMarks((m) => ({ ...m, [key]: prev }));
+      const msg = String(error.message || '');
+      if (msg.includes('does not exist') || msg.includes('marks')) {
+        toast.error('标记功能需要先初始化数据库，请执行 supabase/marks-schema.sql');
+      } else {
+        toast.error('操作失败，请重试');
+      }
+    }
+  };
 
   useEffect(() => {
     setActivePhoto(0);
@@ -101,6 +158,12 @@ export default function BuildingDetailPage() {
         <aside className="building-info">
           <button className="back-link-btn" onClick={() => navigate(-1)}>← 返回</button>
           <h1 className="building-title">{building.name}</h1>
+          <MarkButtons
+            type="building"
+            targetKey={building.name}
+            marks={marks}
+            onChange={handleMarkChange}
+          />
           <div className="spot-meta">
             {building.district && <span className="meta-chip">{building.district}</span>}
             {tags.map((t) => <span key={t} className="meta-chip tag">{t}</span>)}
