@@ -1025,6 +1025,40 @@ button.danger:hover {
   min-width: 0;
 }
 
+/* 街道路线图例（带状景点详情页） */
+.street-routes-legend {
+  position: absolute;
+  left: var(--s-3);
+  bottom: var(--s-3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  background: rgba(3, 3, 3, 0.88);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--muted-foreground);
+  pointer-events: none;
+  max-width: 70%;
+}
+.street-routes-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.street-routes-line {
+  display: inline-block;
+  width: 18px;
+  height: 4px;
+  border-radius: 2px;
+  flex: 0 0 auto;
+}
+
 .leaflet-container {
   background: #1a1a1a !important;
   filter: brightness(0.92) contrast(1.05) saturate(0.9);
@@ -3259,7 +3293,8 @@ textarea:focus-visible {
   margin: var(--s-4) 0 var(--s-2);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  overflow: hidden;
+  padding: 2px;
+  background: var(--card);
 }
 
 .building-photo-main img {
@@ -3267,6 +3302,7 @@ textarea:focus-visible {
   height: auto;
   object-fit: contain;
   display: block;
+  border-radius: var(--radius-sm);
 }
 
 .building-photo-thumbs {
