@@ -8,6 +8,7 @@ import ProfilePage from './pages/ProfilePage';
 import AchievementsPage from './pages/AchievementsPage';
 import SpotDetailPage from './pages/SpotDetailPage';
 import HeritagePage from './pages/HeritagePage';
+import StoresPage from './pages/StoresPage';
 import BuildingDetailPage from './pages/BuildingDetailPage';
 import FlowerDetailPage from './pages/FlowerDetailPage';
 import SeasonalFlowersPage from './pages/SeasonalFlowersPage';
@@ -72,6 +73,7 @@ export default function App() {
         />
         <Route path="/spots/:id" element={<SpotDetailPage />} />
         <Route path="/heritage" element={<HeritagePage />} />
+        <Route path="/stores" element={<StoresPage />} />
         <Route path="/wechat" element={<WechatArticlesPage />} />
         <Route path="/building/:name" element={<BuildingDetailPage />} />
         <Route path="/flowers/:id" element={<FlowerDetailPage />} />

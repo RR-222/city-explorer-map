@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import MapView from '../components/MapView';
 import AddPlaceModal from '../components/AddPlaceModal';
-import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import EmptyState from '../components/EmptyState';
 import FlowerImage from '../components/FlowerImage';
 import { supabase } from '../supabaseClient';
@@ -168,36 +168,13 @@ export default function MapPage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand />
-        <div className="user-area">
-          {user ? (
-            <>
-              <span>{user.email}</span>
-              <Link to="/recommend" className="link">今日推荐</Link>
-              <Link to="/seasonal" className="link">时令景观</Link>
-              <Link to="/heritage" className="link">人文建筑</Link>
-              <Link to="/wechat" className="link">文旅情报</Link>
-              <Link to="/achievements" className="link">成就</Link>
-              <Link to="/profile" className="link">个人中心</Link>
-              <button
-                onClick={async () => {
-                  await supabase.auth.signOut();
-                  window.location.reload();
-                }}
-                className="link"
-              >
-                登出
-              </button>
-            </>
-          ) : (
-            <>
-              <Link to="/login" className="link">登录</Link>
-              <Link to="/register" className="link">注册</Link>
-            </>
-          )}
-        </div>
-      </div>
+      <TopBar
+        user={user}
+        onLogout={async () => {
+          await supabase.auth.signOut();
+          window.location.reload();
+        }}
+      />
 
       <div className="home-layout" id="main" tabIndex={-1}>
         {/* 今日推荐面板 */}

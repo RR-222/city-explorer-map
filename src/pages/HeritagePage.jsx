@@ -1,9 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
 import { getSeedPhotoUrl } from '../utils/flowerImages';
-import seedSpots from '../../data/spots-seed.json';
+import heritageData from '../../data/heritage-spots.json';
+
+const seedSpots = heritageData.spots;
 
 // 中文星期（new Date().getDay(): 0=周日）
 const WEEK_CN = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
@@ -82,18 +84,7 @@ export default function HeritagePage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand asLink to="/" />
-        <div className="user-area">
-          <Link to="/" className="link">地图</Link>
-          <Link to="/recommend" className="link">今日推荐</Link>
-          <Link to="/seasonal" className="link">时令景观</Link>
-          <Link to="/heritage" className="link active">人文建筑</Link>
-          <Link to="/wechat" className="link">文旅情报</Link>
-          <Link to="/achievements" className="link">成就</Link>
-          <Link to="/profile" className="link">个人中心</Link>
-        </div>
-      </div>
+      <TopBar />
 
       <div className="seasonal-page" id="main" tabIndex={-1}>
         <div className="page-header">

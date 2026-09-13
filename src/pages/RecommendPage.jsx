@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import { RecommendSkeleton } from '../components/Skeleton';
 import { fetchShanghaiWeather, getCurrentMonth } from '../utils/weather';
 import { getSeasonalGreeting } from '../utils/seasonalGreeting';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
 import { getSeedPhotoUrl } from '../utils/flowerImages';
 import FlowerImage from '../components/FlowerImage';
-import seedSpots from '../../data/spots-seed.json';
+import heritageData from '../../data/heritage-spots.json';
+
+const seedSpots = heritageData.spots;
 
 const MONTH_NAMES = ['', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];
 
@@ -53,7 +56,7 @@ export default function RecommendPage() {
     rank: i + 1,
   }));
 
-  // 右栏：人文建筑（spots-seed.json，按区筛选）
+  // 右栏：人文建筑（heritage-spots.json，按区筛选）
   const heritageSpots = seedSpots.filter(
     (s) => district === '全部' || s.district === district
   );
@@ -71,18 +74,7 @@ export default function RecommendPage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand asLink to="/" />
-        <div className="user-area">
-          <Link to="/" className="link">地图</Link>
-          <Link to="/recommend" className="link active">今日推荐</Link>
-          <Link to="/seasonal" className="link">时令景观</Link>
-          <Link to="/heritage" className="link">人文建筑</Link>
-          <Link to="/wechat" className="link">文旅情报</Link>
-          <Link to="/achievements" className="link">成就</Link>
-          <Link to="/profile" className="link">个人中心</Link>
-        </div>
-      </div>
+      <TopBar />
 
       <div className="recommend-page">
         {/* 天气状态条 */}

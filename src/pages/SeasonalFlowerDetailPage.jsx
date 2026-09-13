@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import FlowerImage from '../components/FlowerImage';
 import MarkButtons from '../components/MarkButtons';
 import { useToast } from '../components/Toast';
@@ -121,18 +121,7 @@ export default function SeasonalFlowerDetailPage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand asLink to="/" />
-        <div className="user-area">
-          <Link to="/" className="link">地图</Link>
-          <Link to="/recommend" className="link">今日推荐</Link>
-          <Link to="/seasonal" className="link active">时令景观</Link>
-          <Link to="/heritage" className="link">人文建筑</Link>
-          <Link to="/wechat" className="link">文旅情报</Link>
-          <Link to="/achievements" className="link">成就</Link>
-          <Link to="/profile" className="link">个人中心</Link>
-        </div>
-      </div>
+      <TopBar />
 
       <div className="seasonal-flower-detail" id="main" tabIndex={-1}>
         {/* 花卉标题 */}

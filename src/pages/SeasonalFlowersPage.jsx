@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import FlowerImage from '../components/FlowerImage';
 import { getCurrentMonth } from '../utils/weather';
 import { getFlowerCalendarByMonth } from '../utils/seasonalGreeting';
@@ -29,18 +29,7 @@ export default function SeasonalFlowersPage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand asLink to="/" />
-        <div className="user-area">
-          <Link to="/" className="link">地图</Link>
-          <Link to="/recommend" className="link">今日推荐</Link>
-          <Link to="/seasonal" className="link active">时令景观</Link>
-          <Link to="/heritage" className="link">人文建筑</Link>
-          <Link to="/wechat" className="link">文旅情报</Link>
-          <Link to="/achievements" className="link">成就</Link>
-          <Link to="/profile" className="link">个人中心</Link>
-        </div>
-      </div>
+      <TopBar />
 
       <div className="seasonal-page" id="main" tabIndex={-1}>
         <div className="page-header">

@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
-import spots from '../../data/spots-seed.json';
+import heritageData from '../../data/heritage-spots.json';
+
+const spots = heritageData.spots;
 
 const SPOTS_WITH_PHOTOS = spots.filter(
   (s) => Array.isArray(s.photos) && s.photos.length > 0

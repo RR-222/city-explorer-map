@@ -18,13 +18,13 @@ const classicPhotoUrls = import.meta.glob('/data/classic-photos/**/*.jpg', {
   eager: true,
 });
 
-// spots-seed.json 建筑照片（data/photos/）
+// heritage-spots.json 建筑照片（data/photos/）
 const seedPhotoUrls = import.meta.glob('/data/photos/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG}', {
   as: 'url',
   eager: true,
 });
 
-/** 把 spots-seed.json 中的建筑照片相对路径（./data/photos/...）转为可访问 URL */
+/** 把 heritage-spots.json 中的建筑照片相对路径（./data/photos/...）转为可访问 URL */
 export function getSeedPhotoUrl(relPath) {
   if (!relPath) return null;
   const key = relPath.startsWith('./') ? relPath.slice(1) : relPath;

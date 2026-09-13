@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import { SpotDetailSkeleton } from '../components/Skeleton';
 import { supabase } from '../supabaseClient';
 
@@ -83,9 +84,7 @@ export default function FlowerDetailPage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand asLink to="/" />
-      </div>
+      <TopBar />
 
       <div className="spot-detail" id="main" tabIndex={-1}>
         {/* 标题区 */}

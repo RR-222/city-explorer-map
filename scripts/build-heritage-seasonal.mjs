@@ -1,10 +1,10 @@
-// 重建 spots-seed.json 中每处人文建筑的 seasonal 时令关联（可重复运行）
+// 重建 data/heritage-spots.json 中每处人文建筑的 seasonal 时令关联（可重复运行）
 //
 // 数据源：
-//   data/spots-seed.json          41 个人文建筑（含 lat/lng/closedDays）
-//   data/flower-spots.json        129 个赏花点
-//   data/seasonal-flowers.json    _花历：花种 → 月份
-//   data/flower-spots-geo.json    赏花点坐标缓存（缺失条目会用天地图 TDT_SERVER_KEY 补）
+//   data/heritage-spots.json       人文建筑（含 lat/lng/closedDays）
+//   data/flower-spots.json         129 个赏花点
+//   data/seasonal-flowers.json     _花历：花种 → 月份
+//   data/flower-spots-geo.json     赏花点坐标缓存（缺失条目会用天地图 TDT_SERVER_KEY 补）
 //   data/heritage-flower-aliases.json  人工维护的「异名同址」映射
 //
 // 匹配规则（按优先级）：
@@ -20,8 +20,9 @@ import { readFileSync, writeFileSync } from 'fs';
 
 const NEARBY_KM = 1.2;
 
-const spotsPath = new URL('../data/spots-seed.json', import.meta.url);
-const heritage = JSON.parse(readFileSync(spotsPath, 'utf-8'));
+const spotsPath = new URL('../data/heritage-spots.json', import.meta.url);
+const heritageFile = JSON.parse(readFileSync(spotsPath, 'utf-8'));
+const heritage = heritageFile.spots;
 const flower = JSON.parse(readFileSync(new URL('../data/flower-spots.json', import.meta.url), 'utf-8')).spots;
 const seasonalCal = JSON.parse(readFileSync(new URL('../data/seasonal-flowers.json', import.meta.url), 'utf-8'))._花历;
 const geoPath = new URL('../data/flower-spots-geo.json', import.meta.url);
@@ -167,7 +168,8 @@ for (const h of heritage) {
   }
 }
 
-writeFileSync(spotsPath, JSON.stringify(heritage, null, 2) + '\n', 'utf-8');
+heritageFile.spots = heritage;
+writeFileSync(spotsPath, JSON.stringify(heritageFile, null, 2) + '\n', 'utf-8');
 
 console.log(`\n已写回 ${spotsPath.pathname.split('/').pop()}`);
 console.log(`同名关联新增 ${nameHits} 条，邻近关联新增 ${nearHits} 条`);

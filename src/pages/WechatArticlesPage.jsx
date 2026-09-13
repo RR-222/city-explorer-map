@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import { supabase } from '../supabaseClient';
 import snapshot from '../../data/wechat-articles.json';
 
@@ -134,18 +134,7 @@ export default function WechatArticlesPage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand asLink to="/" />
-        <div className="user-area">
-          <Link to="/" className="link">地图</Link>
-          <Link to="/recommend" className="link">今日推荐</Link>
-          <Link to="/seasonal" className="link">时令景观</Link>
-          <Link to="/heritage" className="link">人文建筑</Link>
-          <Link to="/wechat" className="link active">文旅情报</Link>
-          <Link to="/achievements" className="link">成就</Link>
-          <Link to="/profile" className="link">个人中心</Link>
-        </div>
-      </div>
+      <TopBar />
 
       <div className="wechat-page" id="main" tabIndex={-1}>
         <div className="page-header">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AddPlaceModal from '../components/AddPlaceModal';
-import Brand from '../components/Brand';
+import TopBar from '../components/TopBar';
 import { useToast } from '../components/Toast';
 import { PlaceListSkeleton } from '../components/Skeleton';
 import { supabase } from '../supabaseClient';
@@ -98,27 +98,13 @@ export default function ProfilePage() {
 
   return (
     <div className="app-root">
-      <div className="topbar">
-        <Brand asLink to="/" />
-        <div className="user-area">
-          {user ? (
-            <>
-              <Link to="/wechat" className="link">文旅情报</Link>
-              <Link to="/achievements" className="link">成就</Link>
-              <span>{user.email}</span>
-              <button
-                onClick={async () => {
-                  await supabase.auth.signOut();
-                  window.location.reload();
-                }}
-                className="link"
-              >
-                登出
-              </button>
-            </>
-          ) : null}
-        </div>
-      </div>
+      <TopBar
+        user={user}
+        onLogout={async () => {
+          await supabase.auth.signOut();
+          window.location.reload();
+        }}
+      />
 
       <div className="page" id="main" tabIndex={-1}>
         <div className="page-header">
