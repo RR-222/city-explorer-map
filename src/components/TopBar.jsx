@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { to: '/recommend', label: '今日推荐' },
   { to: '/seasonal', label: '时令景观' },
   { to: '/heritage', label: '人文建筑' },
-  { to: '/stores', label: '好逛店铺' },
+  { to: '/stores', label: '好逛街区' },
   { to: '/wechat', label: '文旅情报' },
   { to: '/achievements', label: '成就' },
   { to: '/profile', label: '个人中心' },

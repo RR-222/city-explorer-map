@@ -30,8 +30,8 @@ export default function StoresPage() {
 
       <div className="seasonal-page" id="main" tabIndex={-1}>
         <div className="page-header">
-          <h2 className="page-title">好逛店铺</h2>
-          <p className="text-muted">小红书上的宝藏小店与好逛空间，点击卡片查看原文与地图定位。</p>
+          <h2 className="page-title">好逛街区</h2>
+          <p className="text-muted">小红书上的宝藏街区、文创园区与好逛空间，点击卡片查看原文与地图定位。</p>
         </div>
 
         {/* 区筛选 */}
@@ -116,7 +116,7 @@ export default function StoresPage() {
           })}
         </div>
         {filtered.length === 0 && (
-          <p className="text-muted">该条件下暂无店铺收录。数据正在导入中，可先从人文建筑逛逛。</p>
+          <p className="text-muted">该条件下暂无街区收录。数据正在导入中，可先从人文建筑逛逛。</p>
         )}
       </div>
     </div>
