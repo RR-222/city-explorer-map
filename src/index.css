@@ -3729,3 +3729,48 @@ textarea:focus-visible {
   font-style: normal;
   font-size: 0.82rem;
 }
+
+/* 人文建筑：时令置顶 / 闭馆降级徽标 */
+.heritage-card-seasonal {
+  border-color: rgba(124, 58, 237, 0.45);
+  background: linear-gradient(180deg, rgba(201, 167, 232, 0.10), rgba(255, 255, 255, 0));
+}
+
+.heritage-card-seasonal:hover {
+  border-color: #7c3aed;
+}
+
+.heritage-card-closed .heritage-img,
+.heritage-card-closed .heritage-img-placeholder {
+  filter: grayscale(0.35);
+}
+
+.heritage-seasonal-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  margin: 6px 6px 4px 0;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #7c3aed;
+  border: 1px solid #7c3aed;
+}
+
+.heritage-seasonal-badge-muted {
+  color: #6d28d9;
+  background: rgba(124, 58, 237, 0.12);
+  border-color: rgba(124, 58, 237, 0.35);
+}
+
+.heritage-closed-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  margin: 6px 6px 4px 0;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #71717a;
+  border: 1px solid #71717a;
+}
