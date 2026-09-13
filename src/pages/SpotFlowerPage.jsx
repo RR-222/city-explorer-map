@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import Brand from '../components/Brand';
 import MarkButtons from '../components/MarkButtons';
@@ -58,12 +58,26 @@ function haversineKm(lat1, lng1, lat2, lng2) {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-/** 地图居中组件：坐标变化时 flyTo */
-function FlyTo({ center, zoom }) {
+/** 街道路线存在时：缩放到覆盖全部路线；否则居中到景点坐标 */
+function FitRoutes({ routes, fallbackCenter, fallbackZoom }) {
   const map = useMap();
   useEffect(() => {
-    if (center) map.flyTo(center, zoom || 14, { duration: 0.6 });
-  }, [map, center, zoom]);
+    if (routes && routes.length > 0) {
+      const all = routes.flatMap((r) => r.paths.flat());
+      if (all.length === 0) return;
+      const lats = all.map((p) => p[0]);
+      const lngs = all.map((p) => p[1]);
+      map.fitBounds(
+        [
+          [Math.min(...lats), Math.min(...lngs)],
+          [Math.max(...lats), Math.max(...lngs)],
+        ],
+        { padding: [36, 36], duration: 0.8 }
+      );
+      return;
+    }
+    if (fallbackCenter) map.flyTo(fallbackCenter, fallbackZoom || 14, { duration: 0.6 });
+  }, [map, routes, fallbackCenter, fallbackZoom]);
   return null;
 }
 
@@ -78,6 +92,7 @@ export default function SpotFlowerPage() {
   const [locating, setLocating] = useState(true);
   const [showNearby, setShowNearby] = useState(false);
   const [focused, setFocused] = useState(null); // 附近建筑聚焦
+  const [visibleRoutes, setVisibleRoutes] = useState({}); // 街道图层开关（默认全部隐藏，避免地图过乱）
 
   // 当前用户 + 想去/去过标记
   const [user, setUser] = useState(null);
@@ -138,16 +153,21 @@ export default function SpotFlowerPage() {
     setCoords(null);
     setShowNearby(false);
     setFocused(null);
+    setVisibleRoutes({});
     (async () => {
       let c = null;
       if (spot) {
-        const sameName = seedSpots.find(
-          (b) => b.name === spot.name || b.name.startsWith(spot.name) || spot.name.startsWith(b.name)
-        );
-        if (sameName?.lat != null && sameName?.lng != null) {
-          c = { lat: sameName.lat, lng: sameName.lng };
+        if (spot.lat != null && spot.lng != null) {
+          c = { lat: spot.lat, lng: spot.lng };
         } else {
-          c = (await geocodeAddress(spot.name)) || (await geocodeAddress(spot.address)) || null;
+          const sameName = seedSpots.find(
+            (b) => b.name === spot.name || b.name.startsWith(spot.name) || spot.name.startsWith(b.name)
+          );
+          if (sameName?.lat != null && sameName?.lng != null) {
+            c = { lat: sameName.lat, lng: sameName.lng };
+          } else {
+            c = (await geocodeAddress(spot.name)) || (await geocodeAddress(spot.address)) || null;
+          }
         }
       }
       if (!mounted) return;
@@ -170,6 +190,12 @@ export default function SpotFlowerPage() {
       .sort((a, b) => a.distanceKm - b.distanceKm)
       .slice(0, 5);
   }, [coords]);
+
+  // 当前可见的街道图层（用于折线渲染与自动缩放）
+  const visibleRouteList = useMemo(
+    () => (spot?.street_routes || []).filter((_, i) => visibleRoutes[i]),
+    [spot, visibleRoutes]
+  );
 
   const mainPhoto = spot?.photos?.[0] ? getLocalPhotoUrl(spot.photos[0]) : null;
 
@@ -282,48 +308,97 @@ export default function SpotFlowerPage() {
 
         {/* 右侧地图 */}
         <main className="home-map">
-          {coords ? (
-            <MapContainer
-              center={coords}
-              zoom={14}
-              style={{ height: '100%', width: '100%' }}
-              scrollWheelZoom
-            >
-              <TileLayer url={tdtVecUrl} attribution="&copy; 天地图" />
-              <TileLayer url={tdtCvaUrl} attribution="" />
-              <FlyTo center={coords} zoom={showNearby ? 13 : 14} />
-              {/* 景点本体 */}
-              <Marker position={[coords.lat, coords.lng]} icon={flowerSpotIcon}>
-                <Popup>
-                  <div style={{ fontWeight: 600 }}>{spot.name}</div>
-                  <div style={{ fontSize: 12 }}>{spot.district}</div>
-                </Popup>
-              </Marker>
-              {/* 附近建筑 */}
-              {showNearby &&
-                nearby.map((b) => (
-                  <Marker
-                    key={b.name}
-                    position={[b.lat, b.lng]}
-                    icon={nearbyIcon}
-                    eventHandlers={{ click: () => setFocused(b.name) }}
-                  >
+          <div style={{ position: 'relative', height: '100%', width: '100%' }}>
+            {coords ? (
+              <MapContainer
+                center={coords}
+                zoom={14}
+                style={{ height: '100%', width: '100%' }}
+                scrollWheelZoom
+              >
+                <TileLayer url={tdtVecUrl} attribution="&copy; 天地图" />
+                <TileLayer url={tdtCvaUrl} attribution="" />
+                <FitRoutes
+                  routes={visibleRouteList}
+                  fallbackCenter={coords}
+                  fallbackZoom={showNearby ? 13 : 14}
+                />
+
+                {/* 街道路线（按开关逐组显示，能贯通的同色） */}
+                {spot.street_routes?.map((r, i) =>
+                  visibleRoutes[i] ? (
+                    <Polyline
+                      key={`street-${i}`}
+                      positions={r.paths}
+                      pathOptions={{ color: r.color, weight: 5, opacity: 0.9 }}
+                    />
+                  ) : null
+                )}
+
+                {/* 景点本体（带状景点不显示单点标记） */}
+                {!spot.street_routes && (
+                  <Marker position={[coords.lat, coords.lng]} icon={flowerSpotIcon}>
                     <Popup>
-                      <div>
-                        <div style={{ fontWeight: 600 }}>{b.name}</div>
-                        <div style={{ fontSize: 12 }}>
-                          {b.district} · 距 {spot.name} 约 {b.distanceKm.toFixed(1)} km
-                        </div>
-                      </div>
+                      <div style={{ fontWeight: 600 }}>{spot.name}</div>
+                      <div style={{ fontSize: 12 }}>{spot.district}</div>
                     </Popup>
                   </Marker>
+                )}
+                {/* 附近建筑 */}
+                {showNearby &&
+                  nearby.map((b) => (
+                    <Marker
+                      key={b.name}
+                      position={[b.lat, b.lng]}
+                      icon={nearbyIcon}
+                      eventHandlers={{ click: () => setFocused(b.name) }}
+                    >
+                      <Popup>
+                        <div>
+                          <div style={{ fontWeight: 600 }}>{b.name}</div>
+                          <div style={{ fontSize: 12 }}>
+                            {b.district} · 距 {spot.name} 约 {b.distanceKm.toFixed(1)} km
+                          </div>
+                        </div>
+                      </Popup>
+                    </Marker>
+                  ))}
+              </MapContainer>
+            ) : (
+              <div className="map-placeholder">
+                {locating ? '正在定位景点…' : '地图加载中'}
+              </div>
+            )}
+
+            {/* 街道图层开关（复用主地图图层按钮样式，可逐组开关） */}
+            {spot.street_routes && coords && (
+              <div className="map-layer-bar">
+                {spot.street_routes.map((r, i) => (
+                  <button
+                    key={r.color}
+                    type="button"
+                    className={`map-layer-btn ${visibleRoutes[i] ? 'active' : ''}`}
+                    onClick={() => setVisibleRoutes((v) => ({ ...v, [i]: !v[i] }))}
+                    aria-pressed={!!visibleRoutes[i]}
+                    title={r.label}
+                    aria-label={r.label}
+                  >
+                    <span
+                      style={{
+                        width: 20,
+                        height: 20,
+                        borderRadius: 999,
+                        display: 'inline-block',
+                        background: r.color,
+                        boxShadow: '0 0 0 2px rgba(255,255,255,0.18)',
+                      }}
+                    />
+                    <span className="map-layer-tooltip">{r.label}</span>
+                  </button>
                 ))}
-            </MapContainer>
-          ) : (
-            <div className="map-placeholder">
-              {locating ? '正在定位景点…' : '地图加载中'}
-            </div>
-          )}
+              </div>
+            )}
+          </div>
         </main>
       </div>
     </div>
