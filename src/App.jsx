@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Register from './pages/Register';
 import Login from './pages/Login';
@@ -9,6 +9,7 @@ import AchievementsPage from './pages/AchievementsPage';
 import SpotDetailPage from './pages/SpotDetailPage';
 import HeritagePage from './pages/HeritagePage';
 import StoresPage from './pages/StoresPage';
+import StoreDetailPage from './pages/StoreDetailPage';
 import BuildingDetailPage from './pages/BuildingDetailPage';
 import FlowerDetailPage from './pages/FlowerDetailPage';
 import SeasonalFlowersPage from './pages/SeasonalFlowersPage';
@@ -74,6 +75,7 @@ export default function App() {
         <Route path="/spots/:id" element={<SpotDetailPage />} />
         <Route path="/heritage" element={<HeritagePage />} />
         <Route path="/stores" element={<StoresPage />} />
+        <Route path="/store/:name" element={<StoreDetailPage />} />
         <Route path="/wechat" element={<WechatArticlesPage />} />
         <Route path="/building/:name" element={<BuildingDetailPage />} />
         <Route path="/flowers/:id" element={<FlowerDetailPage />} />

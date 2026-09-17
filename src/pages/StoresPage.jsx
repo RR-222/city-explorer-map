@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+﻿import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import TopBar from '../components/TopBar';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
@@ -100,18 +100,14 @@ export default function StoresPage() {
               </>
             );
             // 有原文链接则整卡跳小红书原文（新窗口），否则静态卡片
-            return (s.source_url || s.source) ? (
-              <a
+            return (
+              <Link
                 key={s.name}
-                href={s.source_url || s.source}
-                target="_blank"
-                rel="noopener noreferrer"
+                to={`/store/${encodeURIComponent(s.name)}`}
                 className="heritage-card"
               >
                 {content}
-              </a>
-            ) : (
-              <div key={s.name} className="heritage-card">{content}</div>
+              </Link>
             );
           })}
         </div>

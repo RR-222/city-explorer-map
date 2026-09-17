@@ -3774,3 +3774,22 @@ textarea:focus-visible {
   background: #71717a;
   border: 1px solid #71717a;
 }
+
+/* StoreDetailPage: 营业时间/人均信息行 */
+.store-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2, 8px);
+  margin-bottom: var(--s-3, 12px);
+}
+.store-info-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--r-pill, 999px);
+  background: var(--input, #2a2a2a);
+  color: var(--text, #f0f0f0);
+  font-size: 13px;
+  font-weight: 500;
+}
