@@ -23,6 +23,8 @@ export default function RecommendPage() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(true);
   const [district, setDistrict] = useState('全部');
+  // 移动端时令景观折叠状态
+  const [seasonalOpen, setSeasonalOpen] = useState(true);
 
   const month = getCurrentMonth();
   const greetingInfo = getSeasonalGreeting();
@@ -85,15 +87,13 @@ export default function RecommendPage() {
             </span>
             {weather.temp != null && <span className="weather-temp">{weather.temp}°C</span>}
             <span className="weather-month">{MONTH_NAMES[month]}</span>
-            {weather.currentTimeStr && (
-              <span className="weather-sun">🕐 当前 {weather.currentTimeStr}</span>
-            )}
             {weather.sunriseStr && <span className="weather-sun">🌅 日出 {weather.sunriseStr}</span>}
             {weather.sunsetStr && <span className="weather-sun">🌇 日落 {weather.sunsetStr}</span>}
-            {weather.lightConditions.length > 0 && (
-              <span className="weather-light">
-                {weather.lightConditions.map((l) => WEATHER_EMOJI[l] || '').join(' ')} {weather.lightConditions.join('/')}
-              </span>
+            {weather.sunsetGlowProb != null && (
+              <span className="weather-sun">🌆 今日晚霞 {weather.sunsetGlowProb}%</span>
+            )}
+            {weather.sunriseGlowProb != null && (
+              <span className="weather-sun">🌅 明日朝霞 {weather.sunriseGlowProb}%</span>
             )}
           </div>
         )}
@@ -140,11 +140,38 @@ export default function RecommendPage() {
           ))}
         </div>
 
+        {/* 朝霞/晚霞高概率跳转窗口（TODO: 预览完成后改回 >= 60） */}
+        {weather && (weather.sunsetGlowProb != null || weather.sunriseGlowProb != null) && (
+          <Link to="/glow" className="glow-alert-card">
+            <div className="glow-alert-body">
+              <div className="glow-alert-title">
+                {weather.sunsetGlowProb != null && weather.sunriseGlowProb != null
+                  ? `🌆 今日晚霞 ${weather.sunsetGlowProb}% / 🌅 明日朝霞 ${weather.sunriseGlowProb}%`
+                  : weather.sunsetGlowProb != null
+                    ? `🌆 今日晚霞概率 ${weather.sunsetGlowProb}%`
+                    : `🌅 明日朝霞概率 ${weather.sunriseGlowProb}%`}
+              </div>
+              <div className="glow-alert-desc">
+                点击查看上海最佳朝霞/晚霞观赏地点 →
+              </div>
+            </div>
+            <span className="glow-alert-arrow">→</span>
+          </Link>
+        )}
+
         {/* 两栏：时令景观 | 人文建筑 */}
         <div className="recommend-split">
-          {/* 左栏：时令景观 */}
-          <section className="recommend-col seasonal-col">
-            <h3 className="col-title">🌸 时令景观</h3>
+          {/* 左栏：时令景观（移动端可折叠） */}
+          <section className={`recommend-col seasonal-col${seasonalOpen ? '' : ' collapsed'}`}>
+            <button
+              type="button"
+              className="col-title seasonal-toggle"
+              onClick={() => setSeasonalOpen((v) => !v)}
+              aria-expanded={seasonalOpen}
+            >
+              <span>时令景观</span>
+              <span className="toggle-text">{seasonalOpen ? '收起 ▴' : '展开 ▾'}</span>
+            </button>
             <p className="col-subtitle">本月当季花卉，正值盛放</p>
             <div className="recommend-grid">
               {seasonalRecs.map((spot) => (
@@ -169,10 +196,7 @@ export default function RecommendPage() {
 
           {/* 右栏：人文建筑 */}
           <section className="recommend-col heritage-col">
-            <h3 className="col-title">🏛 人文建筑</h3>
-            <p className="col-subtitle">
-              {district === '全部' ? '上海经典老建筑与地标' : `${district}的经典建筑与地标`}
-            </p>
+            <h3 className="col-title">人文建筑</h3>
             {heritageSpots.length === 0 ? (
               <p className="text-muted text-small">该区暂无建筑收录。</p>
             ) : (

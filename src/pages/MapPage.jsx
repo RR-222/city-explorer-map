@@ -10,6 +10,26 @@ import { fetchShanghaiWeather, getCurrentMonth } from '../utils/weather';
 import { getSeasonalGreeting } from '../utils/seasonalGreeting';
 import { recommendSpots } from '../utils/recommend';
 import { filterVisibleSpots } from '../utils/spotsFilter';
+import heritageData from '../../data/heritage-spots.json';
+import flowerCalendarData from '../../data/seasonal-flowers.json';
+
+const heritageLookup = {};
+(heritageData.spots || []).forEach(s => {
+  heritageLookup[s.name] = { seasonal: s.seasonal || [], closedDays: s.closedDays || [] };
+});
+const flowerCalendar = flowerCalendarData._花历 || flowerCalendarData["花历"] || [];
+const WEEK_CN = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+const HOLIDAY_RANGES = [
+  ['2026-01-01', '2026-01-03'], ['2026-02-15', '2026-02-23'], ['2026-04-04', '2026-04-06'],
+  ['2026-05-01', '2026-05-05'], ['2026-06-19', '2026-06-21'], ['2026-09-25', '2026-09-27'],
+  ['2026-10-01', '2026-10-07'],
+];
+function pad2(n) { return String(n).padStart(2, "0"); }
+function dayKey(d) { return d.getFullYear() + "-" + pad2(d.getMonth()+1) + "-" + pad2(d.getDate()); }
+function isHoliday(d) {
+  const k = dayKey(d);
+  return HOLIDAY_RANGES.some(([a, b]) => k >= a && k <= b);
+}
 
 const WEATHER_EMOJI = {
   '晴天': '☀️', '多云': '⛅', '雨天': '🌧️', '雾天': '🌫️',
@@ -31,6 +51,13 @@ export default function MapPage() {
   const month = getCurrentMonth();
   const greetingInfo = getSeasonalGreeting();
   const navigate = useNavigate();
+
+  // 移动端：跳转今日推荐页作为首页（地图在移动端不显示）
+  useEffect(() => {
+    if (window.matchMedia('(max-width: 640px)').matches) {
+      navigate('/recommend', { replace: true });
+    }
+  }, [navigate]);
 
   useEffect(() => {
     let mounted = true;
@@ -148,7 +175,47 @@ export default function MapPage() {
       matchScore: 1000 - i,
       matchReasons: ['当季限定'],
     }));
-    return [...seasonalRecs, ...recommendSpots(allSpots, weather, month)].slice(0, 8);
+    const now = new Date();
+    const todayWeekday = WEEK_CN[now.getDay()];
+    const todayHoliday = isHoliday(now);
+
+    // 当季花卉集合
+    const inSeasonFlowers = new Set(
+      flowerCalendar
+        .filter((e) => {
+          const months = (e.months || '').split(',').map((m) => parseInt(m.trim(), 10)).filter((n) => n >= 1 && n <= 12);
+          return months.includes(month);
+        })
+        .flatMap((e) => e.flower.split('/').map((f) => f.trim()))
+    );
+
+    // recommendSpots 排序后，对人文建筑按周边当季花树数量重排 + 过滤闭馆
+    const recs = recommendSpots(allSpots, weather, month).filter((spot) => {
+      if (spot._type === 'flower') return true;
+      const info = heritageLookup[spot.name];
+      if (info && info.closedDays.length > 0) {
+        return !(!todayHoliday && info.closedDays.includes(todayWeekday));
+      }
+      return true;
+    });
+
+    const heritageRecs = recs
+      .filter((s) => s._type !== 'flower')
+      .map((spot) => {
+        const info = heritageLookup[spot.name];
+        const nearbyCount = info
+          ? info.seasonal.filter(se => {
+              if (!se.distanceKm || se.distanceKm > 1.2) return false;
+              const flowers = (se.flower || '').split('/').map(f => f.trim());
+              return flowers.some(f => inSeasonFlowers.has(f));
+            }).length
+          : 0;
+        return { ...spot, nearbyFlowerCount: nearbyCount };
+      })
+      .sort((a, b) => b.nearbyFlowerCount - a.nearbyFlowerCount || b.matchScore - a.matchScore);
+
+    const flowerRecs = recs.filter((s) => s._type === 'flower');
+    return [...seasonalRecs, ...heritageRecs, ...flowerRecs].slice(0, 8);
   }, [allSpots, weather, month, greetingInfo.inSeasonFlowers]);
 
   const handleMapClick = (coords) => setAddingCoords(coords);

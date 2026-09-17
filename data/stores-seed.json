@@ -1,482 +1,572 @@
-[
-  {
-    "id": "store-01",
-    "name": "上海中欧街",
-    "district": "闵行区",
-    "address": "上海市闵行区浦星公路567号",
-    "lat": 31.1012,
-    "lng": 121.4876,
-    "desc": "复古南洋风情街区，满街欧式雕塑与彩色拱廊，仿佛一秒穿越到欧洲小镇。整个街区以浦星公路沿线的欧式建筑群为主体，雕塑、喷泉、拱廊层层叠叠，色彩明快而浓烈。适合周末闲逛拍照，建议下午光线柔和时前往，拱廊下的光影层次最为丰富。",
-    "photos": [
-      "./data/store-photos/上海中欧街 (2).webp",
-      "./data/store-photos/上海中欧街 (3).webp",
-      "./data/store-photos/上海中欧街.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6aa260ee000000002900da6a?xsec_token=ABHYy9zc42ikCJ3uELzM5SO1XzZn4wlmG1rPdFzPfnpTg=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-02",
-    "name": "星期天公园",
-    "district": "闵行区",
-    "address": "上海市长宁区延安西路1221号",
-    "lat": 31.1864,
-    "lng": 121.3821,
-    "desc": "开放式文艺街区，大量艺术装置、独立小店与精品咖啡聚集于此。延安西路沿线难得的松散空间，草坪、雕塑、彩色墙绘交替出现，适合花半天时间慢慢走。周末常有市集和快闪活动，是长宁区少有的免费开放式文创空间。",
-    "photos": [
-      "./data/store-photos/星期天公园 (2).webp",
-      "./data/store-photos/星期天公园 (3).webp",
-      "./data/store-photos/星期天公园.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a9b81b7000000002502f968?xsec_token=ABr5_muJ_Lj0neWnqm3IXVqkEQVe2R1TjpyrqxyMzwcyc=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-03",
-    "name": "Bloom Space",
-    "district": "静安区",
-    "address": "上海市静安区茂名北路65号",
-    "lat": 31.2236,
-    "lng": 121.4528,
-    "desc": "老上海石库门街区改造而成，沿街精品小店、展览空间与潮流餐饮并置。茂名北路的石库门弄堂保留了红砖门头与弄堂肌理，Bloom Space 在旧壳中注入当代设计感，新旧材料并置碰撞。适合喜欢老建筑更新与城市漫步的人，转角即是南京西路商圈。",
-    "photos": [
-      "./data/store-photos/茂名北路老洋房街区（Bloom Space） (2).webp",
-      "./data/store-photos/茂名北路老洋房街区（Bloom Space） (3).webp",
-      "./data/store-photos/茂名北路老洋房街区（Bloom Space）.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a9a42cc0000000011036390?xsec_token=ABGkIZple-6LgJfrNJ_eKp71KOIn0u5jUJnYIRdu1L1Ng=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-04",
-    "name": "森林书屋",
-    "district": "松江区",
-    "address": "上海市青浦区朱家角薛间村",
-    "lat": 31.0472,
-    "lng": 121.2157,
-    "desc": "藏在青浦郊野公园里的木质书屋，四面被水杉和樟树环绕，安静治愈。整栋建筑以原木为主材，大落地窗将绿意引入室内，适合带一本书坐一下午。周边有朱家角古镇可顺路游览，是近郊逃离城市的好去处。",
-    "photos": [
-      "./data/store-photos/森林书屋 (2).webp",
-      "./data/store-photos/森林书屋 (3).webp",
-      "./data/store-photos/森林书屋.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a225daf00000000360310ff?xsec_token=ABUAMT9VXvVV8z-T-UeBmlzET4-TfE6tZMZbes-A2UoyNM=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-06",
-    "name": "阿特麦文化创意产业园",
-    "district": "奉贤区",
-    "address": "上海市青浦区老朱枫公路6186弄39号",
-    "lat": 30.8631,
-    "lng": 121.4512,
-    "desc": "手作文创园区，木器工坊、陶艺体验、庭院空间一应俱全。青浦老朱枫公路沿线的旧厂房改造项目，保留了工业骨架，注入手作业态。适合带朋友或孩子体验半日工坊课程，园区内庭院绿植茂密，也适合拍照散步。",
-    "photos": [
-      "./data/store-photos/阿特麦文化创意产业园 (2).webp",
-      "./data/store-photos/阿特麦文化创意产业园 (3).webp",
-      "./data/store-photos/阿特麦文化创意产业园.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a0fa2ff000000003700e641?xsec_token=ABVbMdrX4vrzf8e2Kq87xUUcGnKjT1CECGpLlR9UPT0qk=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-07",
-    "name": "得丘礼享谷",
-    "district": "闵行区",
-    "address": "上海市闵行区申富路788号",
-    "lat": 31.1048,
-    "lng": 121.3396,
-    "desc": "古堡风文创园区，申富路沿线的欧式城堡建筑群。园区内展览馆、咖啡馆、花园穿插布局，城堡外观与庭院绿植形成强烈的视觉反差。适合周末半日游，城堡内部常有艺术展，外部庭院适合拍照。",
-    "photos": [
-      "./data/store-photos/得丘礼享谷 (2).webp",
-      "./data/store-photos/得丘礼享谷 (3).webp",
-      "./data/store-photos/得丘礼享谷.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/69d7082a000000001a0311fe?xsec_token=ABnlptH4BY8MC8xD4rpL_Vg5S-A9BDgOeU_S0-D3-PZ3Y=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-08",
-    "name": "梦谷南",
-    "district": "闵行区",
-    "address": "上海市闵行区曲吴路589号",
-    "lat": 31.0443,
-    "lng": 121.2514,
-    "desc": "旧厂房改造的美式复古文创园区，曲吴路沿线涂鸦墙、摄影工作室和小众店铺聚集。工业骨架保留完整，涂鸦和装置艺术覆盖了大面积墙面，风格硬朗而自由。适合喜欢街头摄影和小众独立店铺的人，周末人不多，拍照空间充裕。",
-    "photos": [
-      "./data/store-photos/梦谷南（美式复古街区） (2).webp",
-      "./data/store-photos/梦谷南（美式复古街区） (3).webp",
-      "./data/store-photos/梦谷南（美式复古街区）.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6948faf7000000000d03edf0?xsec_token=AB81Wny_2EoI2_rkD8_Nq3WRJvBiiUaou5bMusBgCSWLQ=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-09",
-    "name": "新梦堂",
-    "district": "闵行区",
-    "address": "上海市闵行区梅州路507号",
-    "lat": 31.1247,
-    "lng": 121.4215,
-    "desc": "南洋风复古街区，独栋洋房沿梅州路排列，彩色外墙和拱形门窗充满异域感。每栋建筑都有独立店铺入驻，咖啡馆、花店、手作坊穿插其中。适合周末拍照闲逛，建筑色彩浓烈，建议晴天的上午前往，光线打在彩色墙面上最为好看。",
-    "photos": [
-      "./data/store-photos/梅州路ins风建筑 (2).webp",
-      "./data/store-photos/梅州路ins风建筑 (3).webp",
-      "./data/store-photos/梅州路ins风建筑.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/68b9739e000000001d0399da?xsec_token=ABGFc-5A-JCr_fbhXeAiASMeiLTlpmAShinVyD2PcDOak=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-24",
-    "name": "九江路",
-    "district": "黄浦区",
-    "address": "九江路（点位：九江路69号）",
-    "lat": 31.237383,
-    "lng": 121.488708,
-    "desc": "黄浦区核心Citywalk路线，从外滩到人民广场段的九江路两侧排布着大量近代历史建筑。69号附近的装饰艺术风格建筑、沿街的老式招牌和弄堂口都是街拍好素材。建议结合南京路外滩段一起走，全程约1.5公里，半天可逛完。",
-    "photos": [
-      "./data/store-photos/九江路.jpg",
-      "./data/store-photos/九江路 (2).jpg",
-      "./data/store-photos/九江路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/691f22ad000000001e02571b?xsec_token=ABFdF-ISopMuhF9Xo7mVdCTSaU4-x-x2iB0mHJOHHCO8s=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-25",
-    "name": "新华路",
-    "district": "长宁区",
-    "address": "新华路",
-    "lat": 31.21082,
-    "lng": 121.43024,
-    "desc": "长宁区百年梧桐大道，两侧老洋房掩映在树冠之下，秋日落叶铺满整条路面。新华路外国弄堂、pagenose书店、沿线独立咖啡馆构成了松弛的漫步动线。秋天的新华路是上海最有电影感的马路之一，建议十月底至十一月中旬前往。",
-    "photos": [
-      "./data/store-photos/新华路.jpg",
-      "./data/store-photos/新华路 (2).jpg",
-      "./data/store-photos/新华路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/694bf5b3000000001e023420?xsec_token=ABDra5V7hvK42Ijtuhk3JXVCze3smVM_LcbbxTHs0g_rU=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-26",
-    "name": "南昌路",
-    "district": "黄浦区",
-    "address": "南昌路（地铁1/10/12陕西南路站6号口）",
-    "lat": 31.21644,
-    "lng": 121.45801,
-    "desc": "黄浦区老街漫步的经典路线，从陕西南路到瑞金二路一段的南昌路，两侧老式里弄、独立书店、 vintage 古着店和咖啡馆交替出现。街道不宽，梧桐遮天，下午阳光斜射在弄堂口时最为温柔。适合慢慢走，一路从咖啡到古着到书店，是一条完整的市井慢生活路线。",
-    "photos": [
-      "./data/store-photos/南昌路.jpg",
-      "./data/store-photos/南昌路 (2).jpg",
-      "./data/store-photos/南昌路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/69aec58a000000002801e94b?xsec_token=ABkeWAjPUF1rAfZPfH9S-wh1DJyR-nBjRiS7fzUEU4Zm4=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-27",
-    "name": "绍兴路",
-    "district": "黄浦区",
-    "address": "绍兴路（地铁9/12嘉善路站2号口骑行5分）",
-    "lat": 31.21343,
-    "lng": 121.45372,
-    "desc": "上海最短的文化马路之一，仅约500米，却聚集了上海昆剧团、多家出版社和画廊。老建筑保留完好，梧桐覆盖整条路面，街面安静而文气浓厚。适合午后散步，在昆剧团门口拍照，在老书房翻书，在弄堂口看老上海弄堂生活。",
-    "photos": [
-      "./data/store-photos/绍兴路.jpg",
-      "./data/store-photos/绍兴路 (2).jpg",
-      "./data/store-photos/绍兴路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a9eb3ad000000000b00e62b?xsec_token=ABxyGbxVUrcDw-Wizv2brD7UdINhf4GtCpf1KCGcyJWz0=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-28",
-    "name": "汾阳路",
-    "district": "徐汇区",
-    "address": "汾阳路（地铁10/12陕西南路站7号口）",
-    "lat": 31.21471,
-    "lng": 121.44784,
-    "desc": "徐汇区老洋房慢时光代表路段，从淮海中路到岳阳路一段的汾阳路，两侧近代花园洋房密集。上海音乐学院位于此路上，沿街常能听到练琴声。老洋房墙面斑驳、铁艺阳台精致，配上梧桐树影，整条路弥漫着音乐与艺术氛围。",
-    "photos": [
-      "./data/store-photos/汾阳路.jpg",
-      "./data/store-photos/汾阳路 (2).jpg",
-      "./data/store-photos/汾阳路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6aa3f706000000002601c7e9?xsec_token=ABd0x0rZO1UL1C3PLmH_caaVvqDw4sU3uzD51jSiFMyO4=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-29",
-    "name": "太原路",
-    "district": "徐汇区",
-    "address": "太原路（地铁9/12嘉善路站5号口步行5分）",
-    "lat": 31.21184,
-    "lng": 121.45123,
-    "desc": "徐汇区老城区浪漫路线，太原路两侧老洋房红瓦尖顶、水泥拉毛外墙、铁艺栏杆保留完好。从嘉善路口向南走，弄堂口的老式灯柱和藤蔓爬墙是经典画面。适合喜欢老建筑和城市漫游的人，建议结合周边岳阳路、永康路一起走。",
-    "photos": [
-      "./data/store-photos/太原路.jpg",
-      "./data/store-photos/太原路 (2).jpg",
-      "./data/store-photos/太原路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a9abaf2000000002b01db98?xsec_token=ABGkIZple-6LgJfrNJ_eKp7zWIRAt1ZIHWa_vwErbA0pw=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-30",
-    "name": "嘉善路",
-    "district": "徐汇区",
-    "address": "嘉善路（地铁9/12嘉善路站2号口）",
-    "lat": 31.21022,
-    "lng": 121.45537,
-    "desc": "徐汇区历史建筑与街巷日常并存的典型老街，从肇嘉浜路到永嘉路一段的嘉善路，老式里弄、烟纸店、咖啡店穿插。弄堂口的晾衣杆和盆栽与精修过的咖啡馆形成对比，烟火气和精致感共存。适合喜欢记录城市日常和建筑细节的人。",
-    "photos": [
-      "./data/store-photos/嘉善路.jpg",
-      "./data/store-photos/嘉善路 (2).jpg",
-      "./data/store-photos/嘉善路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a99697f00000000290178d4?xsec_token=ABDNlDc1OGIkOL6olufoXU3VSE-vAiOSgBngXSw70CNoA=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-31",
-    "name": "永嘉路",
-    "district": "徐汇区",
-    "address": "永嘉路",
-    "lat": 31.20773,
-    "lng": 121.44941,
-    "desc": "徐汇区梧桐区经典走街路线，从衡山路到瑞金二路一段的永嘉路，两侧老洋房和公寓楼交替出现。永嘉路沿线有诸多独立咖啡馆和买手店，适合从咖啡开始一路逛到岳阳路口。梧桐树冠遮天，夏天走也阴凉，秋天落叶铺路更有味道。",
-    "photos": [
-      "./data/store-photos/永嘉路.jpg",
-      "./data/store-photos/永嘉路 (2).jpg",
-      "./data/store-photos/永嘉路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a96c6c9000000002b01c18f?xsec_token=ABTFIjsuvea33G1Rze3azcT1tDz_5t2oDxVP1gRZ8iJi4=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-32",
-    "name": "永康路",
-    "district": "徐汇区",
-    "address": "永康路（地铁10/12陕西南路站6号口步行5分）",
-    "lat": 31.21512,
-    "lng": 121.45468,
-    "desc": "徐汇区一公里摄影路线，从嘉善路到襄阳南路一段的永康路，老洋房、咖啡店、古着店、面包房密集排列。永康路是上海独立咖啡店密度最高的马路之一，沿街座位和弄堂口的绿植构成丰富的前景。适合带相机慢走一公里，从日间到黄昏光线变化丰富。",
-    "photos": [
-      "./data/store-photos/永康路.jpg",
-      "./data/store-photos/永康路 (2).jpg",
-      "./data/store-photos/永康路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a93f357000000001f007aac?xsec_token=AB6NQIYv86JMty-FqH3yekur8N4cpGTt4EW77XV5BhIVs=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-33",
-    "name": "圆明园路",
-    "district": "黄浦区",
-    "address": "圆明园路·外滩源（地铁2/10南京东路站6号口步行3分）",
-    "lat": 31.24047,
-    "lng": 121.49174,
-    "desc": "黄浦区外滩源历史建筑街区，圆明园路从苏州河到滇池路段两侧排布着原英国领事馆、协进大楼、半岛酒店等近代建筑。万国建筑群保留完好，石雕立面和拱廊细节丰富，是外滩拍照的经典机位点。建议结合外滩源和南苏州河路一起走，全程约1公里。",
-    "photos": [
-      "./data/store-photos/圆明园路.jpg",
-      "./data/store-photos/圆明园路 (2).jpg",
-      "./data/store-photos/圆明园路 (2).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a6c82fe000000003303046f?xsec_token=ABymvgsj-Vf0zP7nOrcaqDFENjLv_f_9YI-A3iHBYqCwA=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-34",
-    "name": "东湖路",
-    "district": "徐汇区",
-    "address": "东湖路（地铁1/10/12陕西南路站7号口步行3分）",
-    "lat": 31.21831,
-    "lng": 121.45172,
-    "desc": "徐汇区梧桐区宝藏街区，从常熟路到富民路一段的东湖路，两侧老洋房和独立店铺穿插。东湖路沿线有数家热门咖啡和餐饮，周末午后坐街边的人很多。杜月笙公馆等老建筑也位于此路，适合边走边看建筑边喝咖啡。",
-    "photos": [
-      "./data/store-photos/东湖路.jpg",
-      "./data/store-photos/东湖路 (2).jpg",
-      "./data/store-photos/东湖路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a54d8a9000000002003941e?xsec_token=ABAK38NGW4sZxPuvkVZ4RuWTPWE8Vh-u-jZ_FjOJz4Cpk=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-35",
-    "name": "安福路",
-    "district": "徐汇区",
-    "address": "安福路（地铁1/7常熟路站8号口）",
-    "lat": 31.21446,
-    "lng": 121.44313,
-    "desc": "徐汇区时尚打卡地，从常熟路到武康路一段的安福路，老洋房、买手店、独立咖啡馆和热门餐厅密集排列。安福路是上海时尚博主出没频率最高的马路之一，沿街穿搭和橱窗陈列都很精致。适合喜欢时尚和城市漫步的人，建议结合武康路一起走。",
-    "photos": [
-      "./data/store-photos/安福路.jpg",
-      "./data/store-photos/安福路 (2).jpg",
-      "./data/store-photos/安福路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a50fc880000000008025c65?xsec_token=AB4T-bA5RtTQUYy-nt-kkoTgwwcwcQL5Xyg67UdExZd_c=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-36",
-    "name": "华亭路",
-    "district": "徐汇区",
-    "address": "华亭路（地铁1/7常熟路站1号口）",
-    "lat": 31.21604,
-    "lng": 121.44574,
-    "desc": "徐汇区老街记忆路线，华亭路从常熟路到淮海中路一段，两侧百年老建筑和服装小店交替。华亭路曾是小商品市场聚集地，如今改造后保留了老建筑骨架，注入独立店铺。老式里弄弄堂口和沿街的法式建筑立面值得细看。",
-    "photos": [
-      "./data/store-photos/华亭路.jpg",
-      "./data/store-photos/华亭路 (2).jpg",
-      "./data/store-photos/华亭路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a4e4060000000002201638c?xsec_token=ABRDjxCPRni2BBixfG0Oj2xF6qbqQ-NZWIKlKf9XWaADo=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-37",
-    "name": "康平路",
-    "district": "徐汇区",
-    "address": "康平路（地铁10/11上海图书馆站3号口步行3分）",
-    "lat": 31.20731,
-    "lng": 121.43704,
-    "desc": "徐汇区夏日油画街景代表，康平路从华山路到吴兴路一段，两侧梧桐老洋房、围墙爬藤和路边花坛交替。康平路相对安静，行人稀少，夏天午后阳光透过梧桐叶在路面上形成斑驳光影，整个画面像油画。适合带相机慢拍，电影镜头感很强。",
-    "photos": [
-      "./data/store-photos/康平路.jpg",
-      "./data/store-photos/康平路 (2).jpg",
-      "./data/store-photos/康平路 (2).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a3bc4bc000000000803e18e?xsec_token=ABqf8kvOcI3-vUWHS6cLMO8IuFYUpnB7zVpDvzYVCdUCI=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-38",
-    "name": "天平路",
-    "district": "徐汇区",
-    "address": "天平路（地铁10/11交通大学站1号口步行3分）",
-    "lat": 31.20414,
-    "lng": 121.44201,
-    "desc": "徐汇区梧桐街道路线，天平路从淮海中路到肇嘉浜路一段，两侧梧桐树冠遮天、老洋房沿街排布。树影斑驳在墙面和路面上，电影镜头感强。建议结合交通大学地铁站周边的华山路和广元路一起走，形成一个梧桐区小环线。",
-    "photos": [
-      "./data/store-photos/天平路.jpg",
-      "./data/store-photos/天平路 (2).jpg",
-      "./data/store-photos/天平路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a369f8000000000060316f4?xsec_token=AB1SX2QCd5CIy6YeNaYLhCX2UTXgZcM2lHT6F7Tsqp__k=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-40",
-    "name": "利西路",
-    "district": "长宁区",
-    "address": "利西路（地铁2/11江苏路站6号口步行5分）",
-    "lat": 31.22143,
-    "lng": 121.42802,
-    "desc": "长宁区S弯老洋房路线，利西路从愚园路到安化路一段，路面有明显的S弯，两侧红瓦尖顶老洋房沿弯道排列。凌霄花爬满弄堂围墙，设计感独立小店穿插在老建筑中。S弯弧度让街拍构图层次丰富，适合喜欢小众路线和建筑细节的人。",
-    "photos": [
-      "./data/store-photos/利西路.jpg",
-      "./data/store-photos/利西路 (2).jpg",
-      "./data/store-photos/利西路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a2ea33b0000000021020304?xsec_token=ABU3ygyTJXPG5sjVE7Ajy1Csz5IQO-kzc9ru1g5hYeOwg=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-41",
-    "name": "泰晤士小镇",
-    "district": "松江区",
-    "address": "三新北路900弄（地铁9松江大学城站3号口打车10分）",
-    "lat": 31.03386,
-    "lng": 121.19074,
-    "desc": "松江区英伦风格小镇，三新北路900弄，整个街区以英式建筑为主体，教堂、广场、石板路、尖塔错落布局。假装在欧洲的拍照胜地，全天免费开放。建议周末前往，小镇内有多家咖啡和书店，适合花半天拍照闲逛，秋天银杏季尤为好看。",
-    "photos": [
-      "./data/store-photos/泰晤士小镇.jpg",
-      "./data/store-photos/泰晤士小镇 (2).jpg",
-      "./data/store-photos/泰晤士小镇 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a23fc90000000000803f6c2?xsec_token=ABYFgEjMVJZsrC4Sr97f-o81nR36AqgcS1u1l35nw0P5M=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-42",
-    "name": "东平路",
-    "district": "徐汇区",
-    "address": "东平路",
-    "lat": 31.21724,
-    "lng": 121.44821,
-    "desc": "比武康路更浪漫的东平路，是上海私藏的温柔。短短几百米的小路，藏着上海最松弛的夏天。转角的百丘面包房，暖黄色的房子被梧桐叶滤过阳光，普希金雕像前，有人拉着小提琴，音符落在满目的绿意里，每一步都像走在老电影里，温柔得不像话",
-    "photos": [
-      "./data/store-photos/东平路 (1).jpg",
-      "./data/store-photos/东平路 (2).jpg",
-      "./data/store-photos/东平路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a183b11000000000803d659?xsec_token=ABJ3y31LVPSmBVvUOD41pxJChJXHqlm1jD3gnGZIXArfc=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-43",
-    "name": "之禾卡纷花园",
-    "district": "徐汇区",
-    "address": "衡山路2号（地铁1衡山路站4号口步行5分）",
-    "lat": 31.21902,
-    "lng": 121.45014,
-    "desc": "衡山路2号，徐汇区衡山路沿线慢生活代表空间，花园式庭院对外开放，免费免预约。老建筑改造的精品空间，庭院绿植、水景和户外座位松弛有度。适合从衡山路地铁站出来走五分钟到花园坐坐，再沿衡山路继续逛。",
-    "photos": [
-      "./data/store-photos/之禾卡纷花园.jpg",
-      "./data/store-photos/之禾卡纷花园 (2).jpg",
-      "./data/store-photos/之禾卡纷花园 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a1594c90000000008031f83?xsec_token=ABx7f1kWbSxXOdilTt2jwk35kvpbdlScr0dESx7OYmTVI=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-44",
-    "name": "延庆路",
-    "district": "徐汇区",
-    "address": "延庆路（地铁1/7常熟路站8号口）",
-    "lat": 31.21373,
-    "lng": 121.44682,
-    "desc": "徐汇区老洋房老城区浪漫路线，延庆路从常熟路到乌鲁木齐南路一段，两侧老式公寓和花园洋房交替。沿街老建筑的外墙肌理、铁艺阳台和弄堂口的老式招牌都很入镜。建议结合周边永嘉路、岳阳路一起走，形成一个衡复风貌区小环线。",
-    "photos": [
-      "./data/store-photos/延庆路.jpg",
-      "./data/store-photos/延庆路 (2).jpg",
-      "./data/store-photos/延庆路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/69e4cb5c000000001b023413?xsec_token=AB5yj3n7a1t9o4XqmBOtW4xba5TP8XgfYRZV8IoaKDOV8=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-45",
-    "name": "富民路",
-    "district": "静安区",
-    "address": "富民路（地铁2/7/14静安寺站8号口）",
-    "lat": 31.22271,
-    "lng": 121.44713,
-    "desc": "静安区柔光电影感午后路线，富民路从愚园路到武定路一段，两侧老洋房和法式公寓楼沿街排布。午后柔光打在墙面上，配上梧桐树影和老式阳台，电影感很强。靠近静安寺商圈，适合购物后顺路走一段，闹中取静。",
-    "photos": [
-      "./data/store-photos/富民路.jpg",
-      "./data/store-photos/富民路 (2).jpg",
-      "./data/store-photos/富民路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/69e222c1000000001e00dffd?xsec_token=ABvBVM1RbnsP1tAJpe1uwcED__p7sguE_gQ-HhSC95qcc=&xsec_source=pc_search"
-  },
-  {
-    "id": "store-46",
-    "name": "甜爱路",
-    "district": "虹口区",
-    "address": "甜爱路（地铁3/8虹口足球场站6号口步行5分）",
-    "lat": 31.27042,
-    "lng": 121.48041,
-    "desc": "虹口区甜爱路，被称为上海最浪漫的道路，从四川北路到甜爱路弄堂口段两侧围墙上有爱情诗和涂鸦。路不长但安静，梧桐树遮天，适合情侣散步拍照。甜爱路口的老式邮筒和涂鸦墙是经典机位，建议结合鲁迅公园和多伦路文化名人街一起走。",
-    "photos": [
-      "./data/store-photos/甜爱路.jpg",
-      "./data/store-photos/甜爱路 (2).jpg",
-      "./data/store-photos/甜爱路 (3).jpg"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/69aac91f000000001a02812c?xsec_token=ABgDCuRcf9vBZ5N_VPs3djQPfqazKtM2sAIAIt4sDOdTA=&xsec_source=pc_search"
-  }
+﻿[
+    {
+        "id":  "store-01",
+        "name":  "上海中欧街",
+        "district":  "闵行区",
+        "address":  "上海市闵行区浦星公路567号",
+        "lat":  31.1012,
+        "lng":  121.4876,
+        "desc":  "复古南洋风情街区，满街欧式雕塑与彩色拱廊，仿佛一秒穿越到欧洲小镇。整个街区以浦星公路沿线的欧式建筑群为主体，雕塑、喷泉、拱廊层层叠叠，色彩明快而浓烈。适合周末闲逛拍照，建议下午光线柔和时前往，拱廊下的光影层次最为丰富。",
+        "photos":  [
+                       "./data/store-photos/上海中欧街 (2).webp",
+                       "./data/store-photos/上海中欧街 (3).webp",
+                       "./data/store-photos/上海中欧街.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6aa260ee000000002900da6a?xsec_token=ABHYy9zc42ikCJ3uELzM5SO1XzZn4wlmG1rPdFzPfnpTg=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-02",
+        "name":  "星期天公园",
+        "district":  "闵行区",
+        "address":  "上海市长宁区延安西路1221号",
+        "lat":  31.1864,
+        "lng":  121.3821,
+        "desc":  "开放式文艺街区，大量艺术装置、独立小店与精品咖啡聚集于此。延安西路沿线难得的松散空间，草坪、雕塑、彩色墙绘交替出现，适合花半天时间慢慢走。周末常有市集和快闪活动，是长宁区少有的免费开放式文创空间。",
+        "photos":  [
+                       "./data/store-photos/星期天公园 (2).webp",
+                       "./data/store-photos/星期天公园 (3).webp",
+                       "./data/store-photos/星期天公园.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a9b81b7000000002502f968?xsec_token=ABr5_muJ_Lj0neWnqm3IXVqkEQVe2R1TjpyrqxyMzwcyc=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-03",
+        "name":  "Bloom Space",
+        "district":  "静安区",
+        "address":  "上海市静安区茂名北路65号",
+        "lat":  31.2236,
+        "lng":  121.4528,
+        "desc":  "老上海石库门街区改造而成，沿街精品小店、展览空间与潮流餐饮并置。茂名北路的石库门弄堂保留了红砖门头与弄堂肌理，Bloom Space 在旧壳中注入当代设计感，新旧材料并置碰撞。适合喜欢老建筑更新与城市漫步的人，转角即是南京西路商圈。",
+        "photos":  [
+                       "./data/store-photos/茂名北路老洋房街区（Bloom Space） (2).webp",
+                       "./data/store-photos/茂名北路老洋房街区（Bloom Space） (3).webp",
+                       "./data/store-photos/茂名北路老洋房街区（Bloom Space）.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a9a42cc0000000011036390?xsec_token=ABGkIZple-6LgJfrNJ_eKp71KOIn0u5jUJnYIRdu1L1Ng=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-04",
+        "name":  "森林书屋",
+        "district":  "松江区",
+        "address":  "上海市青浦区朱家角薛间村",
+        "lat":  31.0472,
+        "lng":  121.2157,
+        "desc":  "藏在青浦郊野公园里的木质书屋，四面被水杉和樟树环绕，安静治愈。整栋建筑以原木为主材，大落地窗将绿意引入室内，适合带一本书坐一下午。周边有朱家角古镇可顺路游览，是近郊逃离城市的好去处。",
+        "photos":  [
+                       "./data/store-photos/森林书屋 (2).webp",
+                       "./data/store-photos/森林书屋 (3).webp",
+                       "./data/store-photos/森林书屋.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a225daf00000000360310ff?xsec_token=ABUAMT9VXvVV8z-T-UeBmlzET4-TfE6tZMZbes-A2UoyNM=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "坐坐"
+                 ]
+    },
+    {
+        "id":  "store-06",
+        "name":  "阿特麦文化创意产业园",
+        "district":  "奉贤区",
+        "address":  "上海市青浦区老朱枫公路6186弄39号",
+        "lat":  30.8631,
+        "lng":  121.4512,
+        "desc":  "手作文创园区，木器工坊、陶艺体验、庭院空间一应俱全。青浦老朱枫公路沿线的旧厂房改造项目，保留了工业骨架，注入手作业态。适合带朋友或孩子体验半日工坊课程，园区内庭院绿植茂密，也适合拍照散步。",
+        "photos":  [
+                       "./data/store-photos/阿特麦文化创意产业园 (2).webp",
+                       "./data/store-photos/阿特麦文化创意产业园 (3).webp",
+                       "./data/store-photos/阿特麦文化创意产业园.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a0fa2ff000000003700e641?xsec_token=ABVbMdrX4vrzf8e2Kq87xUUcGnKjT1CECGpLlR9UPT0qk=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-07",
+        "name":  "得丘礼享谷",
+        "district":  "闵行区",
+        "address":  "上海市闵行区申富路788号",
+        "lat":  31.1048,
+        "lng":  121.3396,
+        "desc":  "古堡风文创园区，申富路沿线的欧式城堡建筑群。园区内展览馆、咖啡馆、花园穿插布局，城堡外观与庭院绿植形成强烈的视觉反差。适合周末半日游，城堡内部常有艺术展，外部庭院适合拍照。",
+        "photos":  [
+                       "./data/store-photos/得丘礼享谷 (2).webp",
+                       "./data/store-photos/得丘礼享谷 (3).webp",
+                       "./data/store-photos/得丘礼享谷.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/69d7082a000000001a0311fe?xsec_token=ABnlptH4BY8MC8xD4rpL_Vg5S-A9BDgOeU_S0-D3-PZ3Y=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-08",
+        "name":  "梦谷南",
+        "district":  "闵行区",
+        "address":  "上海市闵行区曲吴路589号",
+        "lat":  31.0443,
+        "lng":  121.2514,
+        "desc":  "旧厂房改造的美式复古文创园区，曲吴路沿线涂鸦墙、摄影工作室和小众店铺聚集。工业骨架保留完整，涂鸦和装置艺术覆盖了大面积墙面，风格硬朗而自由。适合喜欢街头摄影和小众独立店铺的人，周末人不多，拍照空间充裕。",
+        "photos":  [
+                       "./data/store-photos/梦谷南（美式复古街区） (2).webp",
+                       "./data/store-photos/梦谷南（美式复古街区） (3).webp",
+                       "./data/store-photos/梦谷南（美式复古街区）.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6948faf7000000000d03edf0?xsec_token=AB81Wny_2EoI2_rkD8_Nq3WRJvBiiUaou5bMusBgCSWLQ=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-09",
+        "name":  "新梦堂",
+        "district":  "闵行区",
+        "address":  "上海市闵行区梅州路507号",
+        "lat":  31.1247,
+        "lng":  121.4215,
+        "desc":  "南洋风复古街区，独栋洋房沿梅州路排列，彩色外墙和拱形门窗充满异域感。每栋建筑都有独立店铺入驻，咖啡馆、花店、手作坊穿插其中。适合周末拍照闲逛，建筑色彩浓烈，建议晴天的上午前往，光线打在彩色墙面上最为好看。",
+        "photos":  [
+                       "./data/store-photos/梅州路ins风建筑 (2).webp",
+                       "./data/store-photos/梅州路ins风建筑 (3).webp",
+                       "./data/store-photos/梅州路ins风建筑.webp"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/68b9739e000000001d0399da?xsec_token=ABGFc-5A-JCr_fbhXeAiASMeiLTlpmAShinVyD2PcDOak=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-24",
+        "name":  "九江路",
+        "district":  "黄浦区",
+        "address":  "九江路（点位：九江路69号）",
+        "lat":  31.237383,
+        "lng":  121.488708,
+        "desc":  "黄浦区核心Citywalk路线，从外滩到人民广场段的九江路两侧排布着大量近代历史建筑。69号附近的装饰艺术风格建筑、沿街的老式招牌和弄堂口都是街拍好素材。建议结合南京路外滩段一起走，全程约1.5公里，半天可逛完。",
+        "photos":  [
+                       "./data/store-photos/九江路.jpg",
+                       "./data/store-photos/九江路 (2).jpg",
+                       "./data/store-photos/九江路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/691f22ad000000001e02571b?xsec_token=ABFdF-ISopMuhF9Xo7mVdCTSaU4-x-x2iB0mHJOHHCO8s=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-25",
+        "name":  "新华路",
+        "district":  "长宁区",
+        "address":  "新华路",
+        "lat":  31.21082,
+        "lng":  121.43024,
+        "desc":  "长宁区百年梧桐大道，两侧老洋房掩映在树冠之下，秋日落叶铺满整条路面。新华路外国弄堂、pagenose书店、沿线独立咖啡馆构成了松弛的漫步动线。秋天的新华路是上海最有电影感的马路之一，建议十月底至十一月中旬前往。",
+        "photos":  [
+                       "./data/store-photos/新华路.jpg",
+                       "./data/store-photos/新华路 (2).jpg",
+                       "./data/store-photos/新华路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/694bf5b3000000001e023420?xsec_token=ABDra5V7hvK42Ijtuhk3JXVCze3smVM_LcbbxTHs0g_rU=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-26",
+        "name":  "南昌路",
+        "district":  "黄浦区",
+        "address":  "南昌路（地铁1/10/12陕西南路站6号口）",
+        "lat":  31.21644,
+        "lng":  121.45801,
+        "desc":  "黄浦区老街漫步的经典路线，从陕西南路到瑞金二路一段的南昌路，两侧老式里弄、独立书店、 vintage 古着店和咖啡馆交替出现。街道不宽，梧桐遮天，下午阳光斜射在弄堂口时最为温柔。适合慢慢走，一路从咖啡到古着到书店，是一条完整的市井慢生活路线。",
+        "photos":  [
+                       "./data/store-photos/南昌路.jpg",
+                       "./data/store-photos/南昌路 (2).jpg",
+                       "./data/store-photos/南昌路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/69aec58a000000002801e94b?xsec_token=ABkeWAjPUF1rAfZPfH9S-wh1DJyR-nBjRiS7fzUEU4Zm4=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-27",
+        "name":  "绍兴路",
+        "district":  "黄浦区",
+        "address":  "绍兴路（地铁9/12嘉善路站2号口骑行5分）",
+        "lat":  31.21343,
+        "lng":  121.45372,
+        "desc":  "上海最短的文化马路之一，仅约500米，却聚集了上海昆剧团、多家出版社和画廊。老建筑保留完好，梧桐覆盖整条路面，街面安静而文气浓厚。适合午后散步，在昆剧团门口拍照，在老书房翻书，在弄堂口看老上海弄堂生活。",
+        "photos":  [
+                       "./data/store-photos/绍兴路.jpg",
+                       "./data/store-photos/绍兴路 (2).jpg",
+                       "./data/store-photos/绍兴路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a9eb3ad000000000b00e62b?xsec_token=ABxyGbxVUrcDw-Wizv2brD7UdINhf4GtCpf1KCGcyJWz0=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-28",
+        "name":  "汾阳路",
+        "district":  "徐汇区",
+        "address":  "汾阳路（地铁10/12陕西南路站7号口）",
+        "lat":  31.21471,
+        "lng":  121.44784,
+        "desc":  "徐汇区老洋房慢时光代表路段，从淮海中路到岳阳路一段的汾阳路，两侧近代花园洋房密集。上海音乐学院位于此路上，沿街常能听到练琴声。老洋房墙面斑驳、铁艺阳台精致，配上梧桐树影，整条路弥漫着音乐与艺术氛围。",
+        "photos":  [
+                       "./data/store-photos/汾阳路.jpg",
+                       "./data/store-photos/汾阳路 (2).jpg",
+                       "./data/store-photos/汾阳路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6aa3f706000000002601c7e9?xsec_token=ABd0x0rZO1UL1C3PLmH_caaVvqDw4sU3uzD51jSiFMyO4=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-29",
+        "name":  "太原路",
+        "district":  "徐汇区",
+        "address":  "太原路（地铁9/12嘉善路站5号口步行5分）",
+        "lat":  31.21184,
+        "lng":  121.45123,
+        "desc":  "徐汇区老城区浪漫路线，太原路两侧老洋房红瓦尖顶、水泥拉毛外墙、铁艺栏杆保留完好。从嘉善路口向南走，弄堂口的老式灯柱和藤蔓爬墙是经典画面。适合喜欢老建筑和城市漫游的人，建议结合周边岳阳路、永康路一起走。",
+        "photos":  [
+                       "./data/store-photos/太原路.jpg",
+                       "./data/store-photos/太原路 (2).jpg",
+                       "./data/store-photos/太原路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a9abaf2000000002b01db98?xsec_token=ABGkIZple-6LgJfrNJ_eKp7zWIRAt1ZIHWa_vwErbA0pw=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-30",
+        "name":  "嘉善路",
+        "district":  "徐汇区",
+        "address":  "嘉善路（地铁9/12嘉善路站2号口）",
+        "lat":  31.21022,
+        "lng":  121.45537,
+        "desc":  "徐汇区历史建筑与街巷日常并存的典型老街，从肇嘉浜路到永嘉路一段的嘉善路，老式里弄、烟纸店、咖啡店穿插。弄堂口的晾衣杆和盆栽与精修过的咖啡馆形成对比，烟火气和精致感共存。适合喜欢记录城市日常和建筑细节的人。",
+        "photos":  [
+                       "./data/store-photos/嘉善路.jpg",
+                       "./data/store-photos/嘉善路 (2).jpg",
+                       "./data/store-photos/嘉善路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a99697f00000000290178d4?xsec_token=ABDNlDc1OGIkOL6olufoXU3VSE-vAiOSgBngXSw70CNoA=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-31",
+        "name":  "永嘉路",
+        "district":  "徐汇区",
+        "address":  "永嘉路",
+        "lat":  31.20773,
+        "lng":  121.44941,
+        "desc":  "徐汇区梧桐区经典走街路线，从衡山路到瑞金二路一段的永嘉路，两侧老洋房和公寓楼交替出现。永嘉路沿线有诸多独立咖啡馆和买手店，适合从咖啡开始一路逛到岳阳路口。梧桐树冠遮天，夏天走也阴凉，秋天落叶铺路更有味道。",
+        "photos":  [
+                       "./data/store-photos/永嘉路.jpg",
+                       "./data/store-photos/永嘉路 (2).jpg",
+                       "./data/store-photos/永嘉路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a96c6c9000000002b01c18f?xsec_token=ABTFIjsuvea33G1Rze3azcT1tDz_5t2oDxVP1gRZ8iJi4=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-32",
+        "name":  "永康路",
+        "district":  "徐汇区",
+        "address":  "永康路（地铁10/12陕西南路站6号口步行5分）",
+        "lat":  31.21512,
+        "lng":  121.45468,
+        "desc":  "徐汇区一公里摄影路线，从嘉善路到襄阳南路一段的永康路，老洋房、咖啡店、古着店、面包房密集排列。永康路是上海独立咖啡店密度最高的马路之一，沿街座位和弄堂口的绿植构成丰富的前景。适合带相机慢走一公里，从日间到黄昏光线变化丰富。",
+        "photos":  [
+                       "./data/store-photos/永康路.jpg",
+                       "./data/store-photos/永康路 (2).jpg",
+                       "./data/store-photos/永康路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a93f357000000001f007aac?xsec_token=AB6NQIYv86JMty-FqH3yekur8N4cpGTt4EW77XV5BhIVs=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-33",
+        "name":  "圆明园路",
+        "district":  "黄浦区",
+        "address":  "圆明园路·外滩源（地铁2/10南京东路站6号口步行3分）",
+        "lat":  31.24047,
+        "lng":  121.49174,
+        "desc":  "黄浦区外滩源历史建筑街区，圆明园路从苏州河到滇池路段两侧排布着原英国领事馆、协进大楼、半岛酒店等近代建筑。万国建筑群保留完好，石雕立面和拱廊细节丰富，是外滩拍照的经典机位点。建议结合外滩源和南苏州河路一起走，全程约1公里。",
+        "photos":  [
+                       "./data/store-photos/圆明园路.jpg",
+                       "./data/store-photos/圆明园路 (2).jpg",
+                       "./data/store-photos/圆明园路 (2).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a6c82fe000000003303046f?xsec_token=ABymvgsj-Vf0zP7nOrcaqDFENjLv_f_9YI-A3iHBYqCwA=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-34",
+        "name":  "东湖路",
+        "district":  "徐汇区",
+        "address":  "东湖路（地铁1/10/12陕西南路站7号口步行3分）",
+        "lat":  31.21831,
+        "lng":  121.45172,
+        "desc":  "徐汇区梧桐区宝藏街区，从常熟路到富民路一段的东湖路，两侧老洋房和独立店铺穿插。东湖路沿线有数家热门咖啡和餐饮，周末午后坐街边的人很多。杜月笙公馆等老建筑也位于此路，适合边走边看建筑边喝咖啡。",
+        "photos":  [
+                       "./data/store-photos/东湖路.jpg",
+                       "./data/store-photos/东湖路 (2).jpg",
+                       "./data/store-photos/东湖路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a54d8a9000000002003941e?xsec_token=ABAK38NGW4sZxPuvkVZ4RuWTPWE8Vh-u-jZ_FjOJz4Cpk=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-35",
+        "name":  "安福路",
+        "district":  "徐汇区",
+        "address":  "安福路（地铁1/7常熟路站8号口）",
+        "lat":  31.21446,
+        "lng":  121.44313,
+        "desc":  "徐汇区时尚打卡地，从常熟路到武康路一段的安福路，老洋房、买手店、独立咖啡馆和热门餐厅密集排列。安福路是上海时尚博主出没频率最高的马路之一，沿街穿搭和橱窗陈列都很精致。适合喜欢时尚和城市漫步的人，建议结合武康路一起走。",
+        "photos":  [
+                       "./data/store-photos/安福路.jpg",
+                       "./data/store-photos/安福路 (2).jpg",
+                       "./data/store-photos/安福路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a50fc880000000008025c65?xsec_token=AB4T-bA5RtTQUYy-nt-kkoTgwwcwcQL5Xyg67UdExZd_c=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-36",
+        "name":  "华亭路",
+        "district":  "徐汇区",
+        "address":  "华亭路（地铁1/7常熟路站1号口）",
+        "lat":  31.21604,
+        "lng":  121.44574,
+        "desc":  "徐汇区老街记忆路线，华亭路从常熟路到淮海中路一段，两侧百年老建筑和服装小店交替。华亭路曾是小商品市场聚集地，如今改造后保留了老建筑骨架，注入独立店铺。老式里弄弄堂口和沿街的法式建筑立面值得细看。",
+        "photos":  [
+                       "./data/store-photos/华亭路.jpg",
+                       "./data/store-photos/华亭路 (2).jpg",
+                       "./data/store-photos/华亭路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a4e4060000000002201638c?xsec_token=ABRDjxCPRni2BBixfG0Oj2xF6qbqQ-NZWIKlKf9XWaADo=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-37",
+        "name":  "康平路",
+        "district":  "徐汇区",
+        "address":  "康平路（地铁10/11上海图书馆站3号口步行3分）",
+        "lat":  31.20731,
+        "lng":  121.43704,
+        "desc":  "徐汇区夏日油画街景代表，康平路从华山路到吴兴路一段，两侧梧桐老洋房、围墙爬藤和路边花坛交替。康平路相对安静，行人稀少，夏天午后阳光透过梧桐叶在路面上形成斑驳光影，整个画面像油画。适合带相机慢拍，电影镜头感很强。",
+        "photos":  [
+                       "./data/store-photos/康平路.jpg",
+                       "./data/store-photos/康平路 (2).jpg",
+                       "./data/store-photos/康平路 (2).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a3bc4bc000000000803e18e?xsec_token=ABqf8kvOcI3-vUWHS6cLMO8IuFYUpnB7zVpDvzYVCdUCI=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-38",
+        "name":  "天平路",
+        "district":  "徐汇区",
+        "address":  "天平路（地铁10/11交通大学站1号口步行3分）",
+        "lat":  31.20414,
+        "lng":  121.44201,
+        "desc":  "徐汇区梧桐街道路线，天平路从淮海中路到肇嘉浜路一段，两侧梧桐树冠遮天、老洋房沿街排布。树影斑驳在墙面和路面上，电影镜头感强。建议结合交通大学地铁站周边的华山路和广元路一起走，形成一个梧桐区小环线。",
+        "photos":  [
+                       "./data/store-photos/天平路.jpg",
+                       "./data/store-photos/天平路 (2).jpg",
+                       "./data/store-photos/天平路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a369f8000000000060316f4?xsec_token=AB1SX2QCd5CIy6YeNaYLhCX2UTXgZcM2lHT6F7Tsqp__k=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-40",
+        "name":  "利西路",
+        "district":  "长宁区",
+        "address":  "利西路（地铁2/11江苏路站6号口步行5分）",
+        "lat":  31.22143,
+        "lng":  121.42802,
+        "desc":  "长宁区S弯老洋房路线，利西路从愚园路到安化路一段，路面有明显的S弯，两侧红瓦尖顶老洋房沿弯道排列。凌霄花爬满弄堂围墙，设计感独立小店穿插在老建筑中。S弯弧度让街拍构图层次丰富，适合喜欢小众路线和建筑细节的人。",
+        "photos":  [
+                       "./data/store-photos/利西路.jpg",
+                       "./data/store-photos/利西路 (2).jpg",
+                       "./data/store-photos/利西路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a2ea33b0000000021020304?xsec_token=ABU3ygyTJXPG5sjVE7Ajy1Csz5IQO-kzc9ru1g5hYeOwg=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-41",
+        "name":  "泰晤士小镇",
+        "district":  "松江区",
+        "address":  "三新北路900弄（地铁9松江大学城站3号口打车10分）",
+        "lat":  31.03386,
+        "lng":  121.19074,
+        "desc":  "松江区英伦风格小镇，三新北路900弄，整个街区以英式建筑为主体，教堂、广场、石板路、尖塔错落布局。假装在欧洲的拍照胜地，全天免费开放。建议周末前往，小镇内有多家咖啡和书店，适合花半天拍照闲逛，秋天银杏季尤为好看。",
+        "photos":  [
+                       "./data/store-photos/泰晤士小镇.jpg",
+                       "./data/store-photos/泰晤士小镇 (2).jpg",
+                       "./data/store-photos/泰晤士小镇 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a23fc90000000000803f6c2?xsec_token=ABYFgEjMVJZsrC4Sr97f-o81nR36AqgcS1u1l35nw0P5M=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-42",
+        "name":  "东平路",
+        "district":  "徐汇区",
+        "address":  "东平路",
+        "lat":  31.21724,
+        "lng":  121.44821,
+        "desc":  "比武康路更浪漫的东平路，是上海私藏的温柔。短短几百米的小路，藏着上海最松弛的夏天。转角的百丘面包房，暖黄色的房子被梧桐叶滤过阳光，普希金雕像前，有人拉着小提琴，音符落在满目的绿意里，每一步都像走在老电影里，温柔得不像话",
+        "photos":  [
+                       "./data/store-photos/东平路 (1).jpg",
+                       "./data/store-photos/东平路 (2).jpg",
+                       "./data/store-photos/东平路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a183b11000000000803d659?xsec_token=ABJ3y31LVPSmBVvUOD41pxJChJXHqlm1jD3gnGZIXArfc=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-43",
+        "name":  "之禾卡纷花园",
+        "district":  "徐汇区",
+        "address":  "衡山路2号（地铁1衡山路站4号口步行5分）",
+        "lat":  31.21902,
+        "lng":  121.45014,
+        "desc":  "衡山路2号，徐汇区衡山路沿线慢生活代表空间，花园式庭院对外开放，免费免预约。老建筑改造的精品空间，庭院绿植、水景和户外座位松弛有度。适合从衡山路地铁站出来走五分钟到花园坐坐，再沿衡山路继续逛。",
+        "photos":  [
+                       "./data/store-photos/之禾卡纷花园.jpg",
+                       "./data/store-photos/之禾卡纷花园 (2).jpg",
+                       "./data/store-photos/之禾卡纷花园 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/6a1594c90000000008031f83?xsec_token=ABx7f1kWbSxXOdilTt2jwk35kvpbdlScr0dESx7OYmTVI=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-44",
+        "name":  "延庆路",
+        "district":  "徐汇区",
+        "address":  "延庆路（地铁1/7常熟路站8号口）",
+        "lat":  31.21373,
+        "lng":  121.44682,
+        "desc":  "徐汇区老洋房老城区浪漫路线，延庆路从常熟路到乌鲁木齐南路一段，两侧老式公寓和花园洋房交替。沿街老建筑的外墙肌理、铁艺阳台和弄堂口的老式招牌都很入镜。建议结合周边永嘉路、岳阳路一起走，形成一个衡复风貌区小环线。",
+        "photos":  [
+                       "./data/store-photos/延庆路.jpg",
+                       "./data/store-photos/延庆路 (2).jpg",
+                       "./data/store-photos/延庆路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/69e4cb5c000000001b023413?xsec_token=AB5yj3n7a1t9o4XqmBOtW4xba5TP8XgfYRZV8IoaKDOV8=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-45",
+        "name":  "富民路",
+        "district":  "静安区",
+        "address":  "富民路（地铁2/7/14静安寺站8号口）",
+        "lat":  31.22271,
+        "lng":  121.44713,
+        "desc":  "静安区柔光电影感午后路线，富民路从愚园路到武定路一段，两侧老洋房和法式公寓楼沿街排布。午后柔光打在墙面上，配上梧桐树影和老式阳台，电影感很强。靠近静安寺商圈，适合购物后顺路走一段，闹中取静。",
+        "photos":  [
+                       "./data/store-photos/富民路.jpg",
+                       "./data/store-photos/富民路 (2).jpg",
+                       "./data/store-photos/富民路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/69e222c1000000001e00dffd?xsec_token=ABvBVM1RbnsP1tAJpe1uwcED__p7sguE_gQ-HhSC95qcc=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    },
+    {
+        "id":  "store-46",
+        "name":  "甜爱路",
+        "district":  "虹口区",
+        "address":  "甜爱路（地铁3/8虹口足球场站6号口步行5分）",
+        "lat":  31.27042,
+        "lng":  121.48041,
+        "desc":  "虹口区甜爱路，被称为上海最浪漫的道路，从四川北路到甜爱路弄堂口段两侧围墙上有爱情诗和涂鸦。路不长但安静，梧桐树遮天，适合情侣散步拍照。甜爱路口的老式邮筒和涂鸦墙是经典机位，建议结合鲁迅公园和多伦路文化名人街一起走。",
+        "photos":  [
+                       "./data/store-photos/甜爱路.jpg",
+                       "./data/store-photos/甜爱路 (2).jpg",
+                       "./data/store-photos/甜爱路 (3).jpg"
+                   ],
+        "source":  "小红书",
+        "source_url":  "https://www.xiaohongshu.com/explore/69aac91f000000001a02812c?xsec_token=ABgDCuRcf9vBZ5N_VPs3djQPfqazKtM2sAIAIt4sDOdTA=\u0026xsec_source=pc_search",
+        "tags":  [
+                     "逛逛"
+                 ]
+    }
 ]

@@ -126,7 +126,7 @@ export default function SeasonalFlowerDetailPage() {
       <div className="seasonal-flower-detail" id="main" tabIndex={-1}>
         {/* 花卉标题 */}
         <div className="flower-detail-header">
-          <h1>🌸 {entry?.flower || flowerName}</h1>
+          <h1>{entry?.flower || flowerName}</h1>
           {info.latin && <span className="flower-latin">{info.latin}</span>}
           <div className="flower-detail-meta">
             {entry?.months && <span className="meta-chip">📅 花期 {formatMonths(entry.months)}</span>}

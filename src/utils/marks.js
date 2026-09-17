@@ -13,7 +13,8 @@ export async function fetchMarks(userId) {
     .select('target_type, target_key, status')
     .eq('user_id', userId);
   if (error) {
-    console.error('fetchMarks error:', error?.message);
+    // marks 表可能尚未创建，降级为空数据，不阻断页面
+    console.warn('fetchMarks: marks 表未就绪，标记功能暂时不可用');
     return { __error: error };
   }
   const map = {};

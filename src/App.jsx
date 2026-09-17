@@ -16,6 +16,7 @@ import SeasonalFlowersPage from './pages/SeasonalFlowersPage';
 import SeasonalFlowerDetailPage from './pages/SeasonalFlowerDetailPage';
 import RecommendPage from './pages/RecommendPage';
 import WechatArticlesPage from './pages/WechatArticlesPage';
+import GlowSpotsPage from './pages/GlowSpotsPage';
 import { ToastProvider } from './components/Toast';
 import { supabase } from './supabaseClient';
 
@@ -83,6 +84,7 @@ export default function App() {
         <Route path="/seasonal/:flower" element={<SeasonalFlowerDetailPage />} />
         <Route path="/flower-spot/:name" element={<SpotFlowerPage />} />
         <Route path="/recommend" element={<RecommendPage />} />
+        <Route path="/glow" element={<GlowSpotsPage />} />
         </Routes>
       </HashRouter>
     </ToastProvider>
