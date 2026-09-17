@@ -33,10 +33,11 @@ export default function TopBar() {
     supabase.auth.getSession().then(({ data }) => {
       setUser(data.session?.user || null);
     });
-    const { subscription } = supabase.auth.onAuthStateChange((_e, session) => {
+    const result = supabase.auth.onAuthStateChange((_e, session) => {
       setUser(session?.user || null);
     });
-    return () => subscription.unsubscribe();
+    const subscription = result?.subscription || result?.data?.subscription;
+    return () => subscription?.unsubscribe?.();
   }, []);
 
   const handleLogout = async () => {
