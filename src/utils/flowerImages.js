@@ -24,11 +24,24 @@ const seedPhotoUrls = import.meta.glob('/data/photos/**/*.{jpg,jpeg,png,webp,JPG
   eager: true,
 });
 
+// stores-seed.json 好逛街区照片（data/store-photos/）
+const storePhotoUrls = import.meta.glob('/data/store-photos/**/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG}', {
+  as: 'url',
+  eager: true,
+});
+
 /** 把 heritage-spots.json 中的建筑照片相对路径（./data/photos/...）转为可访问 URL */
 export function getSeedPhotoUrl(relPath) {
   if (!relPath) return null;
   const key = relPath.startsWith('./') ? relPath.slice(1) : relPath;
   return seedPhotoUrls[key] || null;
+}
+
+/** 把 stores-seed.json 中的街区照片相对路径（./data/store-photos/...）转为可访问 URL */
+export function getStorePhotoUrl(relPath) {
+  if (!relPath) return null;
+  const key = relPath.startsWith('./') ? relPath.slice(1) : relPath;
+  return storePhotoUrls[key] || null;
 }
 
 /** 把 seasonal-flowers.json 中的相对照片路径（./data/...）转为可访问 URL */

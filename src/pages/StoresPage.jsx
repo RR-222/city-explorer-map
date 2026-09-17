@@ -2,14 +2,14 @@ import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import TopBar from '../components/TopBar';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
-import { getSeedPhotoUrl } from '../utils/flowerImages';
+import { getStorePhotoUrl } from '../utils/flowerImages';
 import storesData from '../../data/stores-seed.json';
 
 export default function StoresPage() {
   const [district, setDistrict] = useState('全部');
   const [tag, setTag] = useState('全部');
 
-  const stores = storesData.stores || [];
+  const stores = Array.isArray(storesData) ? storesData : (storesData.stores || []);
 
   // 全部标签
   const allTags = useMemo(() => {
@@ -68,7 +68,7 @@ export default function StoresPage() {
 
         <div className="heritage-grid">
           {filtered.map((s) => {
-            const photo = s.photos?.[0] ? getSeedPhotoUrl(s.photos[0]) : null;
+            const photo = s.photos?.[0] ? getStorePhotoUrl(s.photos[0]) : null;
             const content = (
               <>
                 {photo ? (
@@ -81,7 +81,7 @@ export default function StoresPage() {
                   {s.price != null && <span className="heritage-district">人均 ¥{s.price}</span>}
                   <div className="heritage-name">{s.name}</div>
                   {s.district && <span className="heritage-district">{s.district}</span>}
-                  {s.intro && <p className="heritage-desc">{s.intro}</p>}
+                  {s.desc && <p className="heritage-desc">{s.desc}</p>}
                   {s.featured && s.featured.length > 0 && (
                     <div className="card-reasons">
                       {s.featured.slice(0, 4).map((f) => (
@@ -100,10 +100,10 @@ export default function StoresPage() {
               </>
             );
             // 有原文链接则整卡跳小红书原文（新窗口），否则静态卡片
-            return s.source_url ? (
+            return (s.source_url || s.source) ? (
               <a
                 key={s.name}
-                href={s.source_url}
+                href={s.source_url || s.source}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="heritage-card"

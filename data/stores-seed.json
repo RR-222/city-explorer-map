@@ -3,99 +3,144 @@
     "id": "store-01",
     "name": "上海中欧街",
     "district": "闵行区",
-    "address": "浦锦路2049号",
+    "address": "上海市闵行区浦星公路567号",
     "lat": 31.1012,
     "lng": 121.4876,
     "desc": "复古南洋风情街区，满街欧式雕塑与彩色拱廊，适合拍照闲逛",
-    "photos": ["data/photos/store-01.1.webp","data/photos/store-01.2.webp","data/photos/store-01.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/上海中欧街 (2).webp",
+      "./data/store-photos/上海中欧街 (3).webp",
+      "./data/store-photos/上海中欧街.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6aa260ee000000002900da6a?xsec_token=ABHYy9zc42ikCJ3uELzM5SO1XzZn4wlmG1rPdFzPfnpTg=&xsec_source=pc_search"
   },
   {
     "id": "store-02",
     "name": "星期天公园",
     "district": "闵行区",
-    "address": "吴中路1588号",
+    "address": "上海市长宁区延安西路1221号",
     "lat": 31.1864,
     "lng": 121.3821,
     "desc": "开放式文艺街区，大量艺术装置、小店与咖啡",
-    "photos": ["data/photos/store-02.1.webp","data/photos/store-02.2.webp","data/photos/store-02.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/星期天公园 (2).webp",
+      "./data/store-photos/星期天公园 (3).webp",
+      "./data/store-photos/星期天公园.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a9b81b7000000002502f968?xsec_token=ABr5_muJ_Lj0neWnqm3IXVqkEQVe2R1TjpyrqxyMzwcyc=&xsec_source=pc_search"
   },
   {
     "id": "store-03",
     "name": "茂名北路Bloom Space",
     "district": "静安区",
-    "address": "茂名北路245弄",
+    "address": "上海市静安区茂名北路65号",
     "lat": 31.2236,
     "lng": 121.4528,
     "desc": "老上海石库门街区，沿街精品小店、展览空间",
-    "photos": ["data/photos/store-03.1.webp","data/photos/store-03.2.webp","data/photos/store-03.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/茂名北路老洋房街区（Bloom Space） (2).webp",
+      "./data/store-photos/茂名北路老洋房街区（Bloom Space） (3).webp",
+      "./data/store-photos/茂名北路老洋房街区（Bloom Space）.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a9a42cc0000000011036390?xsec_token=ABGkIZple-6LgJfrNJ_eKp71KOIn0u5jUJnYIRdu1L1Ng=&xsec_source=pc_search"
   },
   {
     "id": "store-04",
     "name": "森林书屋",
     "district": "松江区",
-    "address": "辰塔路3488号",
+    "address": "上海市青浦区朱家角薛间村",
     "lat": 31.0472,
     "lng": 121.2157,
     "desc": "藏在郊野公园里的木质书屋，安静治愈",
-    "photos": ["data/photos/store-04.1.webp","data/photos/store-04.2.webp","data/photos/store-04.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/森林书屋 (2).webp",
+      "./data/store-photos/森林书屋 (3).webp",
+      "./data/store-photos/森林书屋.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a225daf00000000360310ff?xsec_token=ABUAMT9VXvVV8z-T-UeBmlzET4-TfE6tZMZbes-A2UoyNM=&xsec_source=pc_search"
   },
   {
     "id": "store-05",
     "name": "宝山田园咖啡",
     "district": "宝山区",
-    "address": "宝山乡野",
+    "address": "上海市宝山区（地址待核验）",
     "lat": 31.4125,
     "lng": 121.3841,
     "desc": "乡野田园咖啡店，开阔户外草坪，近郊休闲",
-    "photos": ["data/photos/store-05.1.webp","data/photos/store-05.2.webp","data/photos/store-05.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/宝山田园咖啡店 (2).webp",
+      "./data/store-photos/宝山田园咖啡店 (3).webp",
+      "./data/store-photos/宝山田园咖啡店.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a1e356c000000003802199f?xsec_token=ABqfSrgK8l_Ds7nAWGSbj84QsifUslMEepVYQPfdStfx4=&xsec_source=pc_search"
   },
   {
     "id": "store-06",
     "name": "阿特麦",
     "district": "奉贤区",
-    "address": "沪杭公路3379号",
+    "address": "上海市青浦区老朱枫公路6186弄39号",
     "lat": 30.8631,
     "lng": 121.4512,
     "desc": "手作文创园区，木器工坊、庭院空间，适合半日游",
-    "photos": ["data/photos/store-06.1.webp","data/photos/store-06.2.webp","data/photos/store-06.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/阿特麦文化创意产业园 (2).webp",
+      "./data/store-photos/阿特麦文化创意产业园 (3).webp",
+      "./data/store-photos/阿特麦文化创意产业园.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a0fa2ff000000003700e641?xsec_token=ABVbMdrX4vrzf8e2Kq87xUUcGnKjT1CECGpLlR9UPT0qk=&xsec_source=pc_search"
   },
   {
     "id": "store-07",
     "name": "得丘礼享谷",
     "district": "闵行区",
-    "address": "申富路788号",
+    "address": "上海市闵行区申富路788号",
     "lat": 31.1048,
     "lng": 121.3396,
     "desc": "古堡风文创园区，展览、咖啡馆、花园",
-    "photos": ["data/photos/store-07.1.webp","data/photos/store-07.2.webp","data/photos/store-07.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/得丘礼享谷 (2).webp",
+      "./data/store-photos/得丘礼享谷 (3).webp",
+      "./data/store-photos/得丘礼享谷.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/69d7082a000000001a0311fe?xsec_token=ABnlptH4BY8MC8xD4rpL_Vg5S-A9BDgOeU_S0-D3-PZ3Y=&xsec_source=pc_search"
   },
   {
     "id": "store-08",
     "name": "梦谷南",
     "district": "闵行区",
-    "address": "广富林路4855弄",
+    "address": "上海市闵行区曲吴路589号",
     "lat": 31.0443,
     "lng": 121.2514,
     "desc": "旧厂房改造文创园区，涂鸦、摄影、小众店铺",
-    "photos": ["data/photos/store-08.1.webp","data/photos/store-08.2.webp","data/photos/store-08.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/梦谷南（美式复古街区） (2).webp",
+      "./data/store-photos/梦谷南（美式复古街区） (3).webp",
+      "./data/store-photos/梦谷南（美式复古街区）.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6948faf7000000000d03edf0?xsec_token=AB81Wny_2EoI2_rkD8_Nq3WRJvBiiUaou5bMusBgCSWLQ=&xsec_source=pc_search"
   },
   {
     "id": "store-09",
     "name": "梅州路新梦堂",
     "district": "闵行区",
-    "address": "梅州路445号",
+    "address": "上海市闵行区梅州路507号",
     "lat": 31.1247,
     "lng": 121.4215,
     "desc": "南洋风复古街区，独栋洋房、特色小店",
-    "photos": ["data/photos/store-09.1.webp","data/photos/store-09.2.webp","data/photos/store-09.3.webp"],
-    "source": "小红书"
+    "photos": [
+      "./data/store-photos/梅州路ins风建筑 (2).webp",
+      "./data/store-photos/梅州路ins风建筑 (3).webp",
+      "./data/store-photos/梅州路ins风建筑.webp"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/68b9739e000000001d0399da?xsec_token=ABGFc-5A-JCr_fbhXeAiASMeiLTlpmAShinVyD2PcDOak=&xsec_source=pc_search"
   }
 ]
