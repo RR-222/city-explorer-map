@@ -1,9 +1,12 @@
-import React, { useMemo, useState } from 'react';
+﻿import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import TopBar from '../components/TopBar';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
 import { getSeedPhotoUrl } from '../utils/flowerImages';
 import heritageData from '../../data/heritage-spots.json';
+import flowerCalendarData from '../../data/seasonal-flowers.json';
+
+const flowerCalendar = flowerCalendarData._花历 || flowerCalendarData['花历'] || [];
 
 const seedSpots = heritageData.spots;
 
@@ -57,11 +60,10 @@ export default function HeritagePage() {
     return Array.from(set);
   }, []);
 
-  // 排序管线：
-  //   组0 置顶：当月花讯重合 且 今日开放（紫边卡片 + 紫底白字徽标）
-  //   组1 正常：无当月花讯 且 今日开放（基础序）
-  //   组2 沉底：今日闭馆（灰徽标「今日闭馆 · 可外观」，节假日豁免）
-  // 硬规则：闭馆的时令点降级、不置顶——只要今日闭馆就进组2，徽标弱化显示。
+  // 排序管线（第一权重：周边时令花树数量）：
+  //   1. 统计 seasonal 数组里 distanceKm ≤ 1.2 的有效条数
+  //   2. 今日闭馆的景点沉底（组2），不推荐
+  //   3. 开放的景点按 nearbyFlowerCount 降序排列，附近花树越多越靠前
   const { filtered, sorted } = useMemo(() => {
     const list = seedSpots.filter(
       (s) =>
@@ -69,16 +71,36 @@ export default function HeritagePage() {
         (tag === '全部' || (s.tags || []).includes(tag))
     );
 
+    // 当季花卉集合（按月筛选）
+    const inSeasonFlowers = new Set(
+      flowerCalendar
+        .filter((e) => {
+          const months = (e.months || '').split(',').map((m) => parseInt(m.trim(), 10)).filter((n) => n >= 1 && n <= 12);
+          return months.includes(today.month);
+        })
+        .flatMap((e) => e.flower.split('/').map((f) => f.trim()))
+    );
+
     const rows = list.map((s) => {
-      const seasonalFlowers = (s.seasonal || [])
-        .filter((se) => (se.months || []).map(Number).includes(today.month))
-        .map((se) => se.category || se.flower)
-        .filter((v, i, a) => v && a.indexOf(v) === i);
+      // 统计 distanceKm ≤ 1.2 且花卉当季的有效时令点位
+      const nearbyFlowers = (s.seasonal || [])
+        .filter((se) => se.distanceKm != null && se.distanceKm <= 1.2)
+        .filter((se) => {
+          const flowers = (se.flower || '').split('/').map((f) => f.trim());
+          return flowers.some((f) => inSeasonFlowers.has(f));
+        });
+      const nearbyFlowerCount = nearbyFlowers.length;
+      const nearbyFlowerNames = [...new Set(nearbyFlowers.map((se) => se.flower).filter(Boolean))]
+        .slice(0, 3);
       const closedToday = !today.holiday && (s.closedDays || []).includes(today.weekday);
-      const group = closedToday ? 2 : seasonalFlowers.length > 0 ? 0 : 1;
-      return { s, seasonalFlowers, closedToday, group };
+      const group = closedToday ? 2 : 1;
+      return { s, nearbyFlowerCount, nearbyFlowerNames, closedToday, group };
     });
-    rows.sort((a, b) => a.group - b.group);
+    // 闭馆沉底，开放组内按 nearbyFlowerCount 降序
+    rows.sort((a, b) => {
+      if (a.group !== b.group) return a.group - b.group;
+      return b.nearbyFlowerCount - a.nearbyFlowerCount;
+    });
     return { filtered: list, sorted: rows };
   }, [district, tag, today]);
 
@@ -123,16 +145,16 @@ export default function HeritagePage() {
         </div>
 
         <div className="heritage-grid">
-          {sorted.map(({ s, seasonalFlowers, closedToday }) => {
+          {sorted.map(({ s, nearbyFlowerCount, nearbyFlowerNames, closedToday }) => {
             const photo = s.photos?.[0] ? getSeedPhotoUrl(s.photos[0]) : null;
-            const seasonalLabel = seasonalFlowers.length > 0
-              ? (seasonalFlowers.length > 3
-                  ? `${seasonalFlowers.slice(0, 3).join(' / ')} 等${seasonalFlowers.length}种`
-                  : seasonalFlowers.join(' / '))
+            const seasonalLabel = nearbyFlowerCount > 0
+              ? (nearbyFlowerCount > 3
+                  ? `${nearbyFlowerNames.join(' / ')} 等${nearbyFlowerCount}处`
+                  : nearbyFlowerNames.join(' / '))
               : null;
             const cardClass = closedToday
               ? 'heritage-card heritage-card-closed'
-              : seasonalFlowers.length > 0
+              : nearbyFlowerCount > 0
                 ? 'heritage-card heritage-card-seasonal'
                 : 'heritage-card';
             return (
@@ -154,7 +176,7 @@ export default function HeritagePage() {
                     <span
                       className={`heritage-seasonal-badge${closedToday ? ' heritage-seasonal-badge-muted' : ''}`}
                     >
-                      {today.month}月 · {seasonalLabel}
+                      附近{nearbyFlowerCount}处花树 · {seasonalLabel}
                     </span>
                   )}
                   <div className="heritage-name">{s.name}</div>

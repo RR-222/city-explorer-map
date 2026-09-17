@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+﻿import React, { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import MapView from '../components/MapView';
 import AddPlaceModal from '../components/AddPlaceModal';
@@ -289,7 +289,6 @@ export default function MapPage() {
         <main className="home-map">
           <MapView
             spots={spots}
-            flowers={flowers}
             places={places}
             onMapClick={user ? handleMapClick : null}
             highlightSpot={selectedSpot}
