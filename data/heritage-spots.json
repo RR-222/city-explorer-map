@@ -155,8 +155,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "弄堂",
-        "石库门"
+        "老建筑"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a86c6940000000032033d62?xsec_token=ABO99XLjqFcxSi3FjFfE-jTuzhkK1aznXx2yAMXlQzzBw=&xsec_source=pc_feed",
       "closedDays": [],
@@ -193,8 +192,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "老建筑",
-        "红色文化"
+        "老建筑"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a7442630000000021020e02?xsec_token=ABELs8Uox6vhkYqYEGx8bz_sn1X7oTfZa_fChUymCPDO0=&xsec_source=pc_feed",
       "closedDays": [
@@ -222,7 +220,7 @@
       "seasons": "全年",
       "tags": [
         "老建筑",
-        "纪念馆"
+        "名人故居"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a7ad3650000000025000665?xsec_token=ABf3tfAHRuqC3x2a3n88u34ubqoLF4MCUYNqGyh6x4mqA=&xsec_source=pc_feed",
       "closedDays": [
@@ -250,8 +248,8 @@
       ],
       "seasons": "全年",
       "tags": [
-        "纪念馆",
-        "历史"
+        "名人故居",
+        "老建筑"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a6844f30000000011013ee0?xsec_token=ABbeREdpQPeujUHcAtyZ-poCC38MWfU_-tfGII72j2p-Y=&xsec_source=pc_feed",
       "closedDays": [
@@ -446,8 +444,7 @@
       "district": "青浦区",
       "seasons": "全年",
       "tags": [
-        "商业",
-        "古镇"
+        "老建筑"
       ],
       "photos": [
         "./data/photos/14.jpg"
@@ -546,7 +543,7 @@
       "district": "虹口区",
       "seasons": "全年",
       "tags": [
-        "文化空间"
+        "文艺"
       ],
       "photos": [
         "./data/photos/18.1.jpg",
@@ -565,8 +562,7 @@
       "district": "静安区",
       "seasons": "全年",
       "tags": [
-        "老建筑",
-        "社区"
+        "老建筑"
       ],
       "photos": [
         "./data/photos/19.1.jpg",
@@ -611,8 +607,8 @@
       "district": "黄浦区",
       "seasons": "全年",
       "tags": [
-        "工业风",
-        "艺术"
+        "工业遗存",
+        "文艺"
       ],
       "photos": [
         "./data/photos/21.1.jpg",
@@ -650,7 +646,7 @@
       "district": "杨浦区",
       "seasons": "全年",
       "tags": [
-        "工业风",
+        "工业遗存",
         "老建筑"
       ],
       "photos": [
@@ -758,8 +754,7 @@
       "district": "长宁区",
       "seasons": "全年",
       "tags": [
-        "老建筑",
-        "校园"
+        "老建筑"
       ],
       "photos": [
         "./data/photos/25.jpg"
@@ -1400,8 +1395,7 @@
       "district": "长宁区",
       "seasons": "全年",
       "tags": [
-        "老建筑",
-        "园林"
+        "老建筑"
       ],
       "photos": [
         "./data/photos/39.1.jpg",
@@ -1733,7 +1727,6 @@
       "seasons": "全年",
       "tags": [
         "老建筑",
-        "Art Deco",
         "外滩"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/68450c43000000000f03295e?xsec_token=ABi7QLotnxgHKryEz5KgI6vMJ9eXhKHvBLmSNi_wMbw8o=&xsec_source=pc_search",
@@ -1880,8 +1873,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "园林",
-        "新中式"
+        "老建筑"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a1fbd71000000003603063e?xsec_token=ABCesYgFvSSk2JSdY6ZINSNXVSuJiQSazDmsxw29F7LPU=&xsec_source=pc_search",
       "closedDays": [],
@@ -1900,7 +1892,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "新建筑",
+        "现代建筑",
         "文艺"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/695f86530000000022008d75?xsec_token=ABO-0qjh9jLZtk4QWvDx6asUVcbLlW5tX9CgP-XtOLpf4=&xsec_source=pc_search",
@@ -1928,8 +1920,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "新建筑",
-        "几何光影"
+        "现代建筑"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6937f5b3000000000d03429f?xsec_token=ABu-tufnyiXUwsygIVfF7KFAXtJI1LLjQk56isgT4xCP8=&xsec_source=pc_user",
       "closedDays": [],
@@ -1948,7 +1939,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "科技建筑",
+        "现代建筑",
         "地标"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/696ad197000000002102916e?xsec_token=ABG6fmbB8tFrlbjrWAiQK-B9sZINj2LtzLh5aZefcirds=&xsec_source=pc_search",
@@ -1968,8 +1959,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "艺术装置",
-        "新建筑"
+        "现代建筑"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/68c37f91000000001d01c300?xsec_token=ABc3eJL8xhfTwLs3HowDdC62bdCxbPO7fJXFsfmCgghpg=&xsec_source=pc_search",
       "closedDays": [],
@@ -1989,7 +1979,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "新建筑",
+        "现代建筑",
         "文艺",
         "地标"
       ],
@@ -2011,10 +2001,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "现代建筑",
-        "马术场馆",
-        "世博文化公园",
-        "光影打卡"
+        "现代建筑"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69299799000000001e033331?xsec_token=AB4RvAWIJfCGZjpvRryMTKtWevd5i2hDJOUO3Lb7Eu2d4=&xsec_source=pc_search",
       "closedDays": [],
@@ -2035,8 +2022,7 @@
       "seasons": "全年",
       "tags": [
         "老洋房",
-        "红色地标",
-        "音乐历史",
+        "文艺",
         "衡复风貌区"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a1303be0000000007027186?xsec_token=ABuLU5cd16Cax3_7ZxTxoA4G2FqcoHD_fFjQiQ6_xVsJ0=&xsec_source=pc_search",
@@ -2058,9 +2044,7 @@
       "seasons": "全年",
       "tags": [
         "老洋房",
-        "优秀历史建筑",
-        "衡复风貌区",
-        "花园住宅"
+        "衡复风貌区"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a119d5e000000000803fa23?xsec_token=AB2LY2A2cgJUhPO7QPG6rxcU-26lpeRZTwrdPAs64BAu0=&xsec_source=pc_search",
       "closedDays": [],
@@ -2080,9 +2064,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "邬达克",
-        "英式乡村建筑",
-        "老建筑更新",
+        "老洋房",
         "衡复风貌区"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a0472f3000000000702263f?xsec_token=ABgvRZxYdF7rURdIxgmQ4rjJsQXnxWFmZNtN1ct6XNRFs=&xsec_source=pc_search",
@@ -2103,10 +2085,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "哥特式城堡",
-        "民国私宅",
-        "优秀历史建筑",
-        "愚园路"
+        "老洋房"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69e76ab700000000220257a7?xsec_token=AB_DZyYdYX6JNri0d-Qy9Uh3AQazofFlh53_W9RhxNBfI=&xsec_source=pc_search",
       "closedDays": [],
@@ -2126,10 +2105,7 @@
       ],
       "seasons": "全年",
       "tags": [
-        "工业遗存",
-        "城市更新",
-        "文创园区",
-        "武夷路"
+        "工业遗存"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6957bd07000000001f007f64?xsec_token=AB1OqPqfFrGutvLLmWK0UbbsHshniaUU_7dp1WuFUUAsI=&xsec_source=pc_search",
       "closedDays": [],
