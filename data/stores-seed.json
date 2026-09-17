@@ -142,5 +142,357 @@
     ],
     "source": "小红书",
     "source_url": "https://www.xiaohongshu.com/explore/68b9739e000000001d0399da?xsec_token=ABGFc-5A-JCr_fbhXeAiASMeiLTlpmAShinVyD2PcDOak=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-24",
+    "name": "九江路",
+    "district": "黄浦区",
+    "address": "九江路（点位：九江路69号）",
+    "lat": 31.237383,
+    "lng": 121.488708,
+    "desc": "Citywalk扫街、地标老建筑、街拍",
+    "photos": [
+      "./data/store-photos/九江路.jpg",
+      "./data/store-photos/九江路 (2).jpg",
+      "./data/store-photos/九江路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/691f22ad000000001e02571b?xsec_token=ABFdF-ISopMuhF9Xo7mVdCTSaU4-x-x2iB0mHJOHHCO8s=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-25",
+    "name": "新华路",
+    "district": "长宁区",
+    "address": "新华路",
+    "lat": 31.21082,
+    "lng": 121.43024,
+    "desc": "老洋房、梧桐树、秋日落叶街拍",
+    "photos": [
+      "./data/store-photos/新华路.jpg",
+      "./data/store-photos/新华路 (2).jpg",
+      "./data/store-photos/新华路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/694bf5b3000000001e023420?xsec_token=ABDra5V7hvK42Ijtuhk3JXVCze3smVM_LcbbxTHs0g_rU=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-26",
+    "name": "南昌路",
+    "district": "黄浦区",
+    "address": "南昌路（地铁1/10/12陕西南路站6号口）",
+    "lat": 31.21644,
+    "lng": 121.45801,
+    "desc": "一整部温柔的电影，老街漫步、市井慢生活",
+    "photos": [
+      "./data/store-photos/南昌路.jpg",
+      "./data/store-photos/南昌路 (2).jpg",
+      "./data/store-photos/南昌路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/69aec58a000000002801e94b?xsec_token=ABkeWAjPUF1rAfZPfH9S-wh1DJyR-nBjRiS7fzUEU4Zm4=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-27",
+    "name": "绍兴路",
+    "district": "黄浦区",
+    "address": "绍兴路（地铁9/12嘉善路站2号口骑行5分）",
+    "lat": 31.21343,
+    "lng": 121.45372,
+    "desc": "上海昆剧团、百年老建筑、梧桐区小马路",
+    "photos": [
+      "./data/store-photos/绍兴路.jpg",
+      "./data/store-photos/绍兴路 (2).jpg",
+      "./data/store-photos/绍兴路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a9eb3ad000000000b00e62b?xsec_token=ABxyGbxVUrcDw-Wizv2brD7UdINhf4GtCpf1KCGcyJWz0=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-28",
+    "name": "汾阳路",
+    "district": "徐汇区",
+    "address": "汾阳路（地铁10/12陕西南路站7号口）",
+    "lat": 31.21471,
+    "lng": 121.44784,
+    "desc": "老洋房慢时光、音乐与艺术氛围",
+    "photos": [
+      "./data/store-photos/汾阳路.jpg",
+      "./data/store-photos/汾阳路 (2).jpg",
+      "./data/store-photos/汾阳路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6aa3f706000000002601c7e9?xsec_token=ABd0x0rZO1UL1C3PLmH_caaVvqDw4sU3uzD51jSiFMyO4=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-29",
+    "name": "太原路",
+    "district": "徐汇区",
+    "address": "太原路（地铁9/12嘉善路站5号口步行5分）",
+    "lat": 31.21184,
+    "lng": 121.45123,
+    "desc": "老洋房、老城区浪漫、城市漫游",
+    "photos": [
+      "./data/store-photos/太原路.jpg",
+      "./data/store-photos/太原路 (2).jpg",
+      "./data/store-photos/太原路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a9abaf2000000002b01db98?xsec_token=ABGkIZple-6LgJfrNJ_eKp7zWIRAt1ZIHWa_vwErbA0pw=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-30",
+    "name": "嘉善路",
+    "district": "徐汇区",
+    "address": "嘉善路（地铁9/12嘉善路站2号口）",
+    "lat": 31.21022,
+    "lng": 121.45537,
+    "desc": "历史建筑×街巷日常、咖啡店、烟火诗意",
+    "photos": [
+      "./data/store-photos/嘉善路.jpg",
+      "./data/store-photos/嘉善路 (2).jpg",
+      "./data/store-photos/嘉善路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a99697f00000000290178d4?xsec_token=ABDNlDc1OGIkOL6olufoXU3VSE-vAiOSgBngXSw70CNoA=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-31",
+    "name": "永嘉路",
+    "district": "徐汇区",
+    "address": "永嘉路",
+    "lat": 31.20773,
+    "lng": 121.44941,
+    "desc": "老洋房、梧桐区、走街串巷",
+    "photos": [
+      "./data/store-photos/永嘉路.jpg",
+      "./data/store-photos/永嘉路 (2).jpg",
+      "./data/store-photos/永嘉路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a96c6c9000000002b01c18f?xsec_token=ABTFIjsuvea33G1Rze3azcT1tDz_5t2oDxVP1gRZ8iJi4=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-32",
+    "name": "永康路",
+    "district": "徐汇区",
+    "address": "永康路（地铁10/12陕西南路站6号口步行5分）",
+    "lat": 31.21512,
+    "lng": 121.45468,
+    "desc": "咖啡店、老洋房、一公里摄影",
+    "photos": [
+      "./data/store-photos/永康路.jpg",
+      "./data/store-photos/永康路 (2).jpg",
+      "./data/store-photos/永康路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a93f357000000001f007aac?xsec_token=AB6NQIYv86JMty-FqH3yekur8N4cpGTt4EW77XV5BhIVs=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-33",
+    "name": "圆明园路",
+    "district": "黄浦区",
+    "address": "圆明园路·外滩源（地铁2/10南京东路站6号口步行3分）",
+    "lat": 31.24047,
+    "lng": 121.49174,
+    "desc": "外滩源历史建筑街区、万国建筑群",
+    "photos": [
+      "./data/store-photos/圆明园路.jpg",
+      "./data/store-photos/圆明园路 (2).jpg",
+      "./data/store-photos/圆明园路 (2).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a6c82fe000000003303046f?xsec_token=ABymvgsj-Vf0zP7nOrcaqDFENjLv_f_9YI-A3iHBYqCwA=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-34",
+    "name": "东湖路",
+    "district": "徐汇区",
+    "address": "东湖路（地铁1/10/12陕西南路站7号口步行3分）",
+    "lat": 31.21831,
+    "lng": 121.45172,
+    "desc": "梧桐区宝藏街区、沿线店铺",
+    "photos": [
+      "./data/store-photos/东湖路.jpg",
+      "./data/store-photos/东湖路 (2).jpg",
+      "./data/store-photos/东湖路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a54d8a9000000002003941e?xsec_token=ABAK38NGW4sZxPuvkVZ4RuWTPWE8Vh-u-jZ_FjOJz4Cpk=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-35",
+    "name": "安福路",
+    "district": "徐汇区",
+    "address": "安福路（地铁1/7常熟路站8号口）",
+    "lat": 31.21446,
+    "lng": 121.44313,
+    "desc": "时尚打卡地、武康路片区、老洋房",
+    "photos": [
+      "./data/store-photos/安福路.jpg",
+      "./data/store-photos/安福路 (2).jpg",
+      "./data/store-photos/安福路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a50fc880000000008025c65?xsec_token=AB4T-bA5RtTQUYy-nt-kkoTgwwcwcQL5Xyg67UdExZd_c=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-36",
+    "name": "华亭路",
+    "district": "徐汇区",
+    "address": "华亭路（地铁1/7常熟路站1号口）",
+    "lat": 31.21604,
+    "lng": 121.44574,
+    "desc": "老街记忆、百年老建筑、城市扫街",
+    "photos": [
+      "./data/store-photos/华亭路.jpg",
+      "./data/store-photos/华亭路 (2).jpg",
+      "./data/store-photos/华亭路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a4e4060000000002201638c?xsec_token=ABRDjxCPRni2BBixfG0Oj2xF6qbqQ-NZWIKlKf9XWaADo=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-37",
+    "name": "康平路",
+    "district": "徐汇区",
+    "address": "康平路（地铁10/11上海图书馆站3号口步行3分）",
+    "lat": 31.20731,
+    "lng": 121.43704,
+    "desc": "夏日油画街景、梧桐老洋房、电影感",
+    "photos": [
+      "./data/store-photos/康平路.jpg",
+      "./data/store-photos/康平路 (2).jpg",
+      "./data/store-photos/康平路 (2).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a3bc4bc000000000803e18e?xsec_token=ABqf8kvOcI3-vUWHS6cLMO8IuFYUpnB7zVpDvzYVCdUCI=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-38",
+    "name": "天平路",
+    "district": "徐汇区",
+    "address": "天平路（地铁10/11交通大学站1号口步行3分）",
+    "lat": 31.20414,
+    "lng": 121.44201,
+    "desc": "梧桐街道、树影斑驳、电影镜头感",
+    "photos": [
+      "./data/store-photos/天平路.jpg",
+      "./data/store-photos/天平路 (2).jpg",
+      "./data/store-photos/天平路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a369f8000000000060316f4?xsec_token=AB1SX2QCd5CIy6YeNaYLhCX2UTXgZcM2lHT6F7Tsqp__k=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-40",
+    "name": "利西路",
+    "district": "长宁区",
+    "address": "利西路（地铁2/11江苏路站6号口步行5分）",
+    "lat": 31.22143,
+    "lng": 121.42802,
+    "desc": "S弯老洋房、凌霄花、红瓦尖顶、设计感小店",
+    "photos": [
+      "./data/store-photos/利西路.jpg",
+      "./data/store-photos/利西路 (2).jpg",
+      "./data/store-photos/利西路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a2ea33b0000000021020304?xsec_token=ABU3ygyTJXPG5sjVE7Ajy1Csz5IQO-kzc9ru1g5hYeOwg=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-41",
+    "name": "泰晤士小镇",
+    "district": "松江区",
+    "address": "三新北路900弄（地铁9松江大学城站3号口打车10分）",
+    "lat": 31.03386,
+    "lng": 121.19074,
+    "desc": "英伦小镇、教堂、假装在欧洲、拍照，全天免费",
+    "photos": [
+      "./data/store-photos/泰晤士小镇.jpg",
+      "./data/store-photos/泰晤士小镇 (2).jpg",
+      "./data/store-photos/泰晤士小镇 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a23fc90000000000803f6c2?xsec_token=ABYFgEjMVJZsrC4Sr97f-o81nR36AqgcS1u1l35nw0P5M=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-42",
+    "name": "东平路",
+    "district": "徐汇区",
+    "address": "东平路",
+    "lat": 31.21724,
+    "lng": 121.44821,
+    "desc": "比武康路更浪漫的东平路，是上海私藏的温柔。短短几百米的小路，藏着上海最松弛的夏天。转角的百丘面包房，暖黄色的房子被梧桐叶滤过阳光，普希金雕像前，有人拉着小提琴，音符落在满目的绿意里，每一步都像走在老电影里，温柔得不像话",
+    "photos": [
+      "./data/store-photos/东平路 (1).jpg",
+      "./data/store-photos/东平路 (2).jpg",
+      "./data/store-photos/东平路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a183b11000000000803d659?xsec_token=ABJ3y31LVPSmBVvUOD41pxJChJXHqlm1jD3gnGZIXArfc=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-43",
+    "name": "之禾卡纷花园",
+    "district": "徐汇区",
+    "address": "衡山路2号（地铁1衡山路站4号口步行5分）",
+    "lat": 31.21902,
+    "lng": 121.45014,
+    "desc": "衡山路慢生活、花园，免费免预约",
+    "photos": [
+      "./data/store-photos/之禾卡纷花园.jpg",
+      "./data/store-photos/之禾卡纷花园 (2).jpg",
+      "./data/store-photos/之禾卡纷花园 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/6a1594c90000000008031f83?xsec_token=ABx7f1kWbSxXOdilTt2jwk35kvpbdlScr0dESx7OYmTVI=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-44",
+    "name": "延庆路",
+    "district": "徐汇区",
+    "address": "延庆路（地铁1/7常熟路站8号口）",
+    "lat": 31.21373,
+    "lng": 121.44682,
+    "desc": "老洋房、老城区浪漫、扫街",
+    "photos": [
+      "./data/store-photos/延庆路.jpg",
+      "./data/store-photos/延庆路 (2).jpg",
+      "./data/store-photos/延庆路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/69e4cb5c000000001b023413?xsec_token=AB5yj3n7a1t9o4XqmBOtW4xba5TP8XgfYRZV8IoaKDOV8=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-45",
+    "name": "富民路",
+    "district": "静安区",
+    "address": "富民路（地铁2/7/14静安寺站8号口）",
+    "lat": 31.22271,
+    "lng": 121.44713,
+    "desc": "柔光电影感午后、老洋房、烟火气",
+    "photos": [
+      "./data/store-photos/富民路.jpg",
+      "./data/store-photos/富民路 (2).jpg",
+      "./data/store-photos/富民路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/69e222c1000000001e00dffd?xsec_token=ABvBVM1RbnsP1tAJpe1uwcED__p7sguE_gQ-HhSC95qcc=&xsec_source=pc_search"
+  },
+  {
+    "id": "store-46",
+    "name": "甜爱路",
+    "district": "虹口区",
+    "address": "甜爱路（地铁3/8虹口足球场站6号口步行5分）",
+    "lat": 31.27042,
+    "lng": 121.48041,
+    "desc": "上海最浪漫道路、情侣打卡",
+    "photos": [
+      "./data/store-photos/甜爱路.jpg",
+      "./data/store-photos/甜爱路 (2).jpg",
+      "./data/store-photos/甜爱路 (3).jpg"
+    ],
+    "source": "小红书",
+    "source_url": "https://www.xiaohongshu.com/explore/69aac91f000000001a02812c?xsec_token=ABgDCuRcf9vBZ5N_VPs3djQPfqazKtM2sAIAIt4sDOdTA=&xsec_source=pc_search"
   }
 ]

@@ -9,8 +9,8 @@
       "lat": 31.21395,
       "lng": 121.45484,
       "photos": [
-        "./data/photos/1.1",
-        "./data/photos/1.2"
+        "./data/photos/1.1.jpg",
+        "./data/photos/1.2.jpg"
       ],
       "seasons": "全年",
       "tags": [
@@ -48,8 +48,8 @@
       "lat": 31.24647,
       "lng": 121.48056,
       "photos": [
-        "./data/photos/2.1",
-        "./data/photos/2.2"
+        "./data/photos/2.1.jpg",
+        "./data/photos/2.2.jpg"
       ],
       "seasons": "全年",
       "tags": [
@@ -113,7 +113,7 @@
       "lat": 31.217954,
       "lng": 121.461389,
       "photos": [
-        "./data/photos/3"
+        "./data/photos/3.jpg"
       ],
       "seasons": "全年",
       "tags": [
@@ -150,8 +150,8 @@
       "lat": 31.21778,
       "lng": 121.46111,
       "photos": [
-        "./data/photos/4.1",
-        "./data/photos/4.2"
+        "./data/photos/4.1.jpg",
+        "./data/photos/4.2.jpg"
       ],
       "seasons": "全年",
       "tags": [
@@ -189,7 +189,7 @@
       "lat": 31.214213,
       "lng": 121.46854,
       "photos": [
-        "./data/photos/5"
+        "./data/photos/5.jpg"
       ],
       "seasons": "全年",
       "tags": [
@@ -217,7 +217,7 @@
       "lat": 31.216091,
       "lng": 121.467528,
       "photos": [
-        "./data/photos/6"
+        "./data/photos/6.jpg"
       ],
       "seasons": "全年",
       "tags": [
@@ -245,8 +245,8 @@
       "lat": 31.254309,
       "lng": 121.509167,
       "photos": [
-        "./data/photos/7.1",
-        "./data/photos/7.2"
+        "./data/photos/7.1.jpg",
+        "./data/photos/7.2.jpg"
       ],
       "seasons": "全年",
       "tags": [
@@ -270,7 +270,7 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/8"
+        "./data/photos/8.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a6984cf000000000f0311d6?xsec_token=ABxCv9f2ro2FNDET3q7MaAs1DK9AjZHTRFxQe42UUPU7o=&xsec_source=pc_feed",
       "lat": 31.2559,
@@ -288,8 +288,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/9.1",
-        "./data/photos/9.2"
+        "./data/photos/9.1.jpg",
+        "./data/photos/9.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a6b2a71000000002c004ac0?xsec_token=ABKY1VY2FNes334Tbn-EBsWyruwSMQsDisoSC-wc6LKpg=&xsec_source=pc_feed",
       "lat": 31.2155,
@@ -314,8 +314,8 @@
         "宗教建筑"
       ],
       "photos": [
-        "./data/photos/10.1",
-        "./data/photos/10.2"
+        "./data/photos/10.1.jpg",
+        "./data/photos/10.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a60b132000000000f01f716?xsec_token=ABtqQgOf6Za5HrdicKSuhqIsTqghAvX72-ViyxDLds0jE=&xsec_source=pc_feed",
       "lat": 31.2316,
@@ -346,8 +346,8 @@
         "博物馆"
       ],
       "photos": [
-        "./data/photos/11.1",
-        "./data/photos/11.2"
+        "./data/photos/11.1.jpg",
+        "./data/photos/11.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a549438000000001102f806?xsec_token=ABAK38NGW4sZxPuvkVZ4RuWRZp7Z2xA817KGESHoesCV4=&xsec_source=pc_feed",
       "lat": 31.1992,
@@ -392,8 +392,8 @@
         "现代建筑"
       ],
       "photos": [
-        "./data/photos/12.1",
-        "./data/photos/12.2"
+        "./data/photos/12.1.jpg",
+        "./data/photos/12.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a4caa06000000000f0066dc?xsec_token=AB-acjZu6hfrYvJxNIUAQMGTz5uxjKhE_HukUEVhNAcQM=&xsec_source=pc_feed",
       "lat": 31.1755,
@@ -411,8 +411,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/13.1",
-        "./data/photos/13.2"
+        "./data/photos/13.1.jpg",
+        "./data/photos/13.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a4f7de0000000000f01e535?xsec_token=ABtchr2qyteJEH1ZQ1WWHWJXzKNjzII4acB8Sl0bhBg8A=&xsec_source=pc_feed",
       "lat": 31.2182,
@@ -468,7 +468,7 @@
         "博物馆"
       ],
       "photos": [
-        "./data/photos/15"
+        "./data/photos/15.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a44af9300000000110117b5?xsec_token=ABT9QjVj8na5hTCP8WcSlWjP355gsDARpgx7NUD1hxjmg=&xsec_source=pc_feed",
       "lat": 31.2909,
@@ -488,8 +488,8 @@
         "博物馆"
       ],
       "photos": [
-        "./data/photos/16.1",
-        "./data/photos/16.2"
+        "./data/photos/16.1.jpg",
+        "./data/photos/16.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a1f81580000000022028aa8?xsec_token=ABCesYgFvSSk2JSdY6ZINSNd0y7ObcvoiCISm9BMOJJio=&xsec_source=pc_feed",
       "lat": 31.2366,
@@ -523,8 +523,8 @@
         "名人故居"
       ],
       "photos": [
-        "./data/photos/17.1",
-        "./data/photos/17.2"
+        "./data/photos/17.1.jpg",
+        "./data/photos/17.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a1530910000000036001c96?xsec_token=ABx7f1kWbSxXOdilTt2jwk36qDkPmtBD0QPpl-buJj84c=&xsec_source=pc_feed",
       "lat": 31.2448,
@@ -549,8 +549,8 @@
         "文化空间"
       ],
       "photos": [
-        "./data/photos/18.1",
-        "./data/photos/18.2"
+        "./data/photos/18.1.jpg",
+        "./data/photos/18.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a16c5670000000035025eab?xsec_token=ABU1Gi-ND4kBGjiwWBLALhbf4JOwd87NDq7qGLKGgI1UU=&xsec_source=pc_feed",
       "lat": 31.2553,
@@ -569,8 +569,8 @@
         "社区"
       ],
       "photos": [
-        "./data/photos/19.1",
-        "./data/photos/19.2"
+        "./data/photos/19.1.jpg",
+        "./data/photos/19.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a0ea176000000003502fcc6?xsec_token=ABaStjBHazgxI4esD8Uy4j9385qqapxkn-VPA-SNQRmkI=&xsec_source=pc_feed",
       "lat": 31.2446,
@@ -595,8 +595,8 @@
         "宗教建筑"
       ],
       "photos": [
-        "./data/photos/20.1",
-        "./data/photos/20.2"
+        "./data/photos/20.1.jpg",
+        "./data/photos/20.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a02e829000000003502adba?xsec_token=ABwiVgYo9DYH2zpWgEl5Wyadq77oITj42AhKLvR3s_rLg=&xsec_source=pc_feed",
       "lat": 31.2135,
@@ -615,8 +615,8 @@
         "艺术"
       ],
       "photos": [
-        "./data/photos/21.1",
-        "./data/photos/21.2"
+        "./data/photos/21.1.jpg",
+        "./data/photos/21.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6a0587070000000036001e0f?xsec_token=AB3lynxmweVzpMpznEDk-5kpK_L3Wzqj8XbLwdGpQeWmU=&xsec_source=pc_feed",
       "lat": 31.2427,
@@ -654,7 +654,7 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/22.1"
+        "./data/photos/22.1.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69fc4c130000000035021b6e?xsec_token=AB-S8lGchXxtWrKQmoBpsmSyM-jRTijy7G1evZcKOehKU=&xsec_source=pc_feed",
       "lat": 31.2632,
@@ -691,8 +691,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/23.1",
-        "./data/photos/23.2"
+        "./data/photos/23.1.jpg",
+        "./data/photos/23.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69fde82e0000000035025f0a?xsec_token=AByG9CFlvlWNfsznURImrVZxzTu4Zem1YKqPsk7_Ny0-0=&xsec_source=pc_feed",
       "lat": 31.231,
@@ -723,8 +723,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/24.1",
-        "./data/photos/24.2"
+        "./data/photos/24.1.jpg",
+        "./data/photos/24.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69ddc30f00000000210044a1?xsec_token=ABjOkItNGUMwsIGNJANHBqy91u1xfoCKQy0Ox1BeukDPw=&xsec_source=pc_feed",
       "lat": 31.2195,
@@ -762,7 +762,7 @@
         "校园"
       ],
       "photos": [
-        "./data/photos/25"
+        "./data/photos/25.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69e9c83f0000000013030803?xsec_token=ABrsL83qwDlhDUE-HUrAAdd8UQq0LQhfrGMm40mTi7ubI=&xsec_source=pc_feed",
       "lat": 31.2224,
@@ -787,8 +787,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/26.1",
-        "./data/photos/26.2"
+        "./data/photos/26.1.jpg",
+        "./data/photos/26.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69e71472000000001d019fc8?xsec_token=AB_DZyYdYX6JNri0d-Qy9Uhy4j9aeBvXqgxNiVSv3WRzM=&xsec_source=pc_feed",
       "lat": 31.213,
@@ -832,8 +832,8 @@
         "博物馆"
       ],
       "photos": [
-        "./data/photos/27.1",
-        "./data/photos/27.2"
+        "./data/photos/27.1.jpg",
+        "./data/photos/27.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69d5efc80000000023022152?xsec_token=ABHXsqsO8mKAykXeS0qU_wEjzDG2P5Ix9Iuf0THWTHZls=&xsec_source=pc_feed",
       "lat": 31.2115,
@@ -884,7 +884,7 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/28"
+        "./data/photos/28.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69dcf709000000002200fe06?xsec_token=ABMYyUKYzT_i8f4zpDvKzTb6FO-ZalmghDDnk2E4oqHMg=&xsec_source=pc_search&source=web_user_page",
       "lat": 31.2245,
@@ -921,8 +921,8 @@
         "宗教建筑"
       ],
       "photos": [
-        "./data/photos/29.1",
-        "./data/photos/29.2"
+        "./data/photos/29.1.jpg",
+        "./data/photos/29.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69cb5cff0000000023022758?xsec_token=ABnCcqa3KCMURUtyCYojwCZkPUk3cCxbOGnVG7abXKIt0=&xsec_source=pc_search",
       "lat": 31.2112,
@@ -977,8 +977,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/30.1",
-        "./data/photos/30.2"
+        "./data/photos/30.1.jpg",
+        "./data/photos/30.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69c24e0d000000002100552b?xsec_token=ABKIhBRyoQoh6_bmPBtBCPUOwSPT3djRRN-7Tf57bgdWY=&xsec_source=pc_search",
       "lat": 31.2112,
@@ -1034,8 +1034,8 @@
         "文艺"
       ],
       "photos": [
-        "./data/photos/31.1",
-        "./data/photos/31.2"
+        "./data/photos/31.1.jpg",
+        "./data/photos/31.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69ca36b2000000002200f0d1?xsec_token=ABWPKEsHxwurHiD33TeP1JxgMMWFXhua9GF6F1T32HR7I=&xsec_source=pc_search",
       "lat": 31.2108,
@@ -1090,8 +1090,8 @@
         "宗教建筑"
       ],
       "photos": [
-        "./data/photos/32.1",
-        "./data/photos/32.2"
+        "./data/photos/32.1.jpg",
+        "./data/photos/32.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69bbdc670000000021007a88?xsec_token=AB2dfkp8s77oEfVDuRJUADXiiGcB4mZu6rTp2K_UBiZoE=&xsec_source=pc_search",
       "lat": 31.2148,
@@ -1109,8 +1109,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/33.1",
-        "./data/photos/33.2"
+        "./data/photos/33.1.jpg",
+        "./data/photos/33.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69ba75310000000023022ebc?xsec_token=AB_n1I1fVjt-3obvwX1PU1xk7iZHNJHuPl2G_YPPAOcbo=&xsec_source=pc_search",
       "lat": 31.2092,
@@ -1160,8 +1160,8 @@
         "名人故居"
       ],
       "photos": [
-        "./data/photos/34.1",
-        "./data/photos/34.2"
+        "./data/photos/34.1.jpg",
+        "./data/photos/34.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69b8dc00000000001d01e9b6?xsec_token=ABqP0PUqvYuiB-6S59YfwdansyUGKC7ZXavvM7YgPZhuk=&xsec_source=pc_search",
       "lat": 31.205,
@@ -1213,7 +1213,7 @@
         "名人故居"
       ],
       "photos": [
-        "./data/photos/35"
+        "./data/photos/35.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69b13f1c000000002603ffce?xsec_token=ABGJMw-3O4U4h0KRxm1xWz0CSLq5mF8igG81hFUKB73_s=&xsec_source=pc_search",
       "lat": 31.2096,
@@ -1265,8 +1265,8 @@
         "文艺"
       ],
       "photos": [
-        "./data/photos/36.1",
-        "./data/photos/36.2"
+        "./data/photos/36.1.jpg",
+        "./data/photos/36.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69aec1fe00000000220201dd?xsec_token=ABkeWAjPUF1rAfZPfH9S-wh4pn5woRODQGXPrCsIIyQHk=&xsec_source=pc_search",
       "lat": 31.2098,
@@ -1315,8 +1315,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/37.1",
-        "./data/photos/37.2"
+        "./data/photos/37.1.jpg",
+        "./data/photos/37.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/69a12ec2000000002603e3a8?xsec_token=ABkaw1SDsBGikPhAOPl4xltnO7GKlPTir_csCiOjPhAfI=&xsec_source=pc_search",
       "lat": 31.2333,
@@ -1359,8 +1359,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/38.1",
-        "./data/photos/38.2"
+        "./data/photos/38.1.jpg",
+        "./data/photos/38.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/699e66c5000000002603dadf?xsec_token=ABhDXpHcF88Mu2tvaMjQ7KsY5abkjW2YC-QSzHHV5i8s0=&xsec_source=pc_search",
       "lat": 31.2336,
@@ -1404,8 +1404,8 @@
         "园林"
       ],
       "photos": [
-        "./data/photos/39.1",
-        "./data/photos/39.2"
+        "./data/photos/39.1.jpg",
+        "./data/photos/39.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/698c3239000000000a02e6fd?xsec_token=ABo4p2mSl-pMGQ7sTNVkZOxGEUEpvYLyHII7odhjZS0zg=&xsec_source=pc_search",
       "lat": 31.2116,
@@ -1466,8 +1466,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/40.1",
-        "./data/photos/40.2"
+        "./data/photos/40.1.jpg",
+        "./data/photos/40.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/698d705e000000000903b310?xsec_token=ABlwgoSX-tPgxc592ooeYy4T5HftruiQbXCW3XINHQ0ec=&xsec_source=pc_search",
       "lat": 31.2095,
@@ -1498,8 +1498,8 @@
         "老建筑"
       ],
       "photos": [
-        "./data/photos/45.1",
-        "./data/photos/45.2"
+        "./data/photos/45.1.jpg",
+        "./data/photos/45.2.jpg"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/698184e6000000000a03d75e?xsec_token=ABqxo7Dgdlg4C7YhtVAi6QO0Cof_l0t5p1P5mjMhAoAPg=&xsec_source=pc_search",
       "lat": 31.2345,
@@ -1727,7 +1727,7 @@
       "lat": 31.23972,
       "lng": 121.49083,
       "photos": [
-        "./data/photos/55.2.webp",
+        "./data/photos/55.1.webp",
         "./data/photos/55.3.webp"
       ],
       "seasons": "全年",
@@ -1994,6 +1994,144 @@
         "地标"
       ],
       "source_url": "https://www.xiaohongshu.com/explore/6863314e0000000013012422?xsec_token=AB5hLelb_mSFIx2JnjdzGFlH_RO2Si6O5qaJD8G-1AecM=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "上海久事国际马术中心",
+      "address": "上海市浦东新区通耀路251号（世博文化公园内，地铁7号线后滩站4号口步行320米）",
+      "description": "历史：2023年正式启用，国内首座达到国际五星级赛事标准的专业马术场馆，由久事集团投资建设。\n特色：设计取意“马术谷”，起伏园景、峡谷游廊的建筑形态，拥有国际马联FEI标准室外主赛场、室内训练场、高标准马房，兼顾赛事、青少年马术教育与公众体验。\n文化影响：黄浦江畔世博文化公园地标，集马文化展示、光影艺术、互动打卡于一体。",
+      "district": "浦东新区",
+      "lat": 31.174504,
+      "lng": 121.475476,
+      "photos": [
+        "./data/photos/62.1.jpg",
+        "./data/photos/62.2.jpg",
+        "./data/photos/62.3.jpg"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "现代建筑",
+        "马术场馆",
+        "世博文化公园",
+        "光影打卡"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/69299799000000001e033331?xsec_token=AB4RvAWIJfCGZjpvRryMTKtWevd5i2hDJOUO3Lb7Eu2d4=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "百代小楼",
+      "address": "上海市徐汇区衡山路811号（徐家汇公园内）",
+      "description": "历史：建成于1921年，法国新艺术运动风格独立花园住宅，俗称“小红楼”，是原百代唱片公司旧址。1935年在此灌制《义勇军进行曲》首张唱片。\n特色：红砖红瓦孟莎式陡坡屋顶，老虎窗、精致木构件，假三层砖木结构，保留老式壁炉与雕花主楼梯。\n文化影响：上海市优秀历史建筑、上海市不可移动革命文物，中国唱片业摇篮，国歌重要纪念地；免费免预约，周二至周日9:00-17:00开放。",
+      "district": "徐汇区",
+      "lat": 31.197851,
+      "lng": 121.441928,
+      "photos": [
+        "./data/photos/63.1.jpg",
+        "./data/photos/63.2.jpg",
+        "./data/photos/63.3.jpg"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "老洋房",
+        "红色地标",
+        "音乐历史",
+        "衡复风貌区"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a1303be0000000007027186?xsec_token=ABuLU5cd16Cax3_7ZxTxoA4G2FqcoHD_fFjQiQ6_xVsJ0=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "丽波花园",
+      "address": "上海市徐汇区衡山路300弄1-8号（地铁1号线衡山路站1号口步行170米）",
+      "description": "历史：近代花园住宅群，上海市第四批优秀历史建筑。\n特色：多栋三层砖混花园住宅，水泥砂浆拉毛外墙，折线拱券窗楣，红瓦尖顶，弄堂内绿树成荫。\n文化影响：衡复历史文化风貌区内代表性住宅群落，欧式花园居住风貌遗存。",
+      "district": "徐汇区",
+      "lat": 31.203004,
+      "lng": 121.444938,
+      "photos": [
+        "./data/photos/64.1.jpg",
+        "./data/photos/64.2.jpg",
+        "./data/photos/64.3.jpg"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "老洋房",
+        "优秀历史建筑",
+        "衡复风貌区",
+        "花园住宅"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a119d5e000000000803fa23?xsec_token=AB2LY2A2cgJUhPO7QPG6rxcU-26lpeRZTwrdPAs64BAu0=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "66梧桐院-天平邻里汇",
+      "address": "上海市徐汇区乌鲁木齐南路66号（地铁1号线衡山路站4号口步行400米）",
+      "description": "历史：主楼由邬达克设计，1932年落成，英式乡村风格老建筑，徐汇区文物保护点。原为国际礼拜堂牧师居所。\n特色：假三层砖木结构，外露木构架，陡峭红瓦屋顶，庭院空间开阔。\n文化影响：衡复风貌区地标，改造为社区综合服务空间，免费免预约，周一至周日9:00-17:30对外开放。",
+      "district": "徐汇区",
+      "lat": 31.205902,
+      "lng": 121.448433,
+      "photos": [
+        "./data/photos/65.1.jpg",
+        "./data/photos/65.2.jpg",
+        "./data/photos/65.3.jpg"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "邬达克",
+        "英式乡村建筑",
+        "老建筑更新",
+        "衡复风貌区"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a0472f3000000000702263f?xsec_token=ABgvRZxYdF7rURdIxgmQ4rjJsQXnxWFmZNtN1ct6XNRFs=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "长宁区少年宫",
+      "address": "上海市长宁区愚园路1136弄31号",
+      "description": "历史：原名王伯群住宅，1934年建成，协隆洋行柳士英设计，意大利哥特式城堡风格。民国时期为王伯群私宅，1960年改为长宁区少年宫，上海市文物保护单位、优秀近代建筑。\n特色：四层钢筋混凝土结构，城堡式造型，32间厅室，彩绘壁画、紫铜铸造门窗拉手，南侧拥有1.3公顷大草坪，配水池、假山、花坛。\n文化影响：愚园路百年历史地标，上海知名哥特式城堡老建筑，草坪花园向市民开放。",
+      "district": "长宁区",
+      "lat": 31.22014,
+      "lng": 121.42132,
+      "photos": [
+        "./data/photos/66.1.jpg",
+        "./data/photos/66.2.jpg",
+        "./data/photos/66.3.jpg"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "哥特式城堡",
+        "民国私宅",
+        "优秀历史建筑",
+        "愚园路"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/69e76ab700000000220257a7?xsec_token=AB_DZyYdYX6JNri0d-Qy9Uh3AQazofFlh53_W9RhxNBfI=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "翡悦里",
+      "address": "上海市长宁区武夷路168号",
+      "description": "历史：前身为飞乐音响厂旧址，即新中国第一股诞生地，由建筑师柳亦春主持更新改造。\n特色：保留原有红砖工业厂房，新旧建筑并置，立体空中连廊与屋顶花园，集文创办公、商业、展演公共空间于一体。\n文化影响：武夷路城市更新标杆项目，工业遗存活化地标，历史厂房与现代创意业态融合。",
+      "district": "长宁区",
+      "lat": 31.212879,
+      "lng": 121.427389,
+      "photos": [
+        "./data/photos/67.1.jpg",
+        "./data/photos/67.2.jpg",
+        "./data/photos/67.3.jpg"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "工业遗存",
+        "城市更新",
+        "文创园区",
+        "武夷路"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6957bd07000000001f007f64?xsec_token=AB1OqPqfFrGutvLLmWK0UbbsHshniaUU_7dp1WuFUUAsI=&xsec_source=pc_search",
       "closedDays": [],
       "seasonal": []
     }

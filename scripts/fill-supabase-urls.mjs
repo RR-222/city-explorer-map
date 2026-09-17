@@ -45,10 +45,10 @@ heritage.spots.forEach(spot => {
     if (url) { hUpdated++; return url; }
     return p; // 保留原始路径（文件缺失时）
   });
-  spot.photos = newPhotos;
+  // 注意：不修改 spot.photos，保留本地路径供前端 Vite glob 使用
 });
-writeFileSync(resolve(cwd, 'data/heritage-spots.json'), JSON.stringify(heritage, null, 2), 'utf-8');
-console.log('Heritage photos updated:', hUpdated);
+// 不写回 heritage-spots.json，保留本地路径
+console.log('Heritage photos with local paths (no modification to JSON)');
 
 // 处理 stores-seed.json（上传到 store-photos bucket 如果有的话，否则保留本地路径）
 // stores 照片在 store-photos bucket，先检查
