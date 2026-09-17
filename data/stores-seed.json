@@ -1,19 +1,101 @@
-{
-  "_说明": "上海「好逛店铺」栏目数据（小红书笔记导入，2026-09 新建栏目）。id 为店铺名称，photos 为本地照片相对路径，source_url 为小红书原文链接。公共字段与 heritage-spots.json 一致，额外字段：hours（营业时间）、price（人均消费，单位：元）、featured（特色推荐，字符串数组）。",
-  "_schema": {
-    "name": "店铺名称（必填，唯一）",
-    "district": "所在行政区（必填，与 SHANGHAI_DISTRICTS 对齐）",
-    "address": "详细地址（必填，用于地理编码）",
-    "intro": "一句话简介（必填）",
-    "description": "详细描述（可选，参考小红书原文整理，注明来源）",
-    "tags": "标签数组（可选，如 咖啡馆/书店/买手店/文创/展览空间）",
-    "hours": "营业时间（可选，如 10:00-22:00）",
-    "price": "人均消费（可选，数字，单位：元）",
-    "featured": "特色推荐（可选，字符串数组，如 ['招牌手冲', '限定甜品']）",
-    "lat": "纬度（由导入器地理编码自动填写）",
-    "lng": "经度（由导入器地理编码自动填写）",
-    "photos": "本地照片相对路径数组（./data/store-photos/...）",
-    "source_url": "小红书原文链接（必填，可溯源）"
+[
+  {
+    "id": "store-01",
+    "name": "上海中欧街",
+    "district": "闵行区",
+    "address": "浦锦路2049号",
+    "lat": 31.1012,
+    "lng": 121.4876,
+    "desc": "复古南洋风情街区，满街欧式雕塑与彩色拱廊，适合拍照闲逛",
+    "photos": ["data/photos/store-01.1.webp","data/photos/store-01.2.webp","data/photos/store-01.3.webp"],
+    "source": "小红书"
   },
-  "stores": []
-}
+  {
+    "id": "store-02",
+    "name": "星期天公园",
+    "district": "闵行区",
+    "address": "吴中路1588号",
+    "lat": 31.1864,
+    "lng": 121.3821,
+    "desc": "开放式文艺街区，大量艺术装置、小店与咖啡",
+    "photos": ["data/photos/store-02.1.webp","data/photos/store-02.2.webp","data/photos/store-02.3.webp"],
+    "source": "小红书"
+  },
+  {
+    "id": "store-03",
+    "name": "茂名北路Bloom Space",
+    "district": "静安区",
+    "address": "茂名北路245弄",
+    "lat": 31.2236,
+    "lng": 121.4528,
+    "desc": "老上海石库门街区，沿街精品小店、展览空间",
+    "photos": ["data/photos/store-03.1.webp","data/photos/store-03.2.webp","data/photos/store-03.3.webp"],
+    "source": "小红书"
+  },
+  {
+    "id": "store-04",
+    "name": "森林书屋",
+    "district": "松江区",
+    "address": "辰塔路3488号",
+    "lat": 31.0472,
+    "lng": 121.2157,
+    "desc": "藏在郊野公园里的木质书屋，安静治愈",
+    "photos": ["data/photos/store-04.1.webp","data/photos/store-04.2.webp","data/photos/store-04.3.webp"],
+    "source": "小红书"
+  },
+  {
+    "id": "store-05",
+    "name": "宝山田园咖啡",
+    "district": "宝山区",
+    "address": "宝山乡野",
+    "lat": 31.4125,
+    "lng": 121.3841,
+    "desc": "乡野田园咖啡店，开阔户外草坪，近郊休闲",
+    "photos": ["data/photos/store-05.1.webp","data/photos/store-05.2.webp","data/photos/store-05.3.webp"],
+    "source": "小红书"
+  },
+  {
+    "id": "store-06",
+    "name": "阿特麦",
+    "district": "奉贤区",
+    "address": "沪杭公路3379号",
+    "lat": 30.8631,
+    "lng": 121.4512,
+    "desc": "手作文创园区，木器工坊、庭院空间，适合半日游",
+    "photos": ["data/photos/store-06.1.webp","data/photos/store-06.2.webp","data/photos/store-06.3.webp"],
+    "source": "小红书"
+  },
+  {
+    "id": "store-07",
+    "name": "得丘礼享谷",
+    "district": "闵行区",
+    "address": "申富路788号",
+    "lat": 31.1048,
+    "lng": 121.3396,
+    "desc": "古堡风文创园区，展览、咖啡馆、花园",
+    "photos": ["data/photos/store-07.1.webp","data/photos/store-07.2.webp","data/photos/store-07.3.webp"],
+    "source": "小红书"
+  },
+  {
+    "id": "store-08",
+    "name": "梦谷南",
+    "district": "闵行区",
+    "address": "广富林路4855弄",
+    "lat": 31.0443,
+    "lng": 121.2514,
+    "desc": "旧厂房改造文创园区，涂鸦、摄影、小众店铺",
+    "photos": ["data/photos/store-08.1.webp","data/photos/store-08.2.webp","data/photos/store-08.3.webp"],
+    "source": "小红书"
+  },
+  {
+    "id": "store-09",
+    "name": "梅州路新梦堂",
+    "district": "闵行区",
+    "address": "梅州路445号",
+    "lat": 31.1247,
+    "lng": 121.4215,
+    "desc": "南洋风复古街区，独栋洋房、特色小店",
+    "photos": ["data/photos/store-09.1.webp","data/photos/store-09.2.webp","data/photos/store-09.3.webp"],
+    "source": "小红书"
+  }
+]

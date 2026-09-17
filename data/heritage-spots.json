@@ -22,33 +22,21 @@
       "seasonal": [
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "襄阳公园",
-          "distanceKm": 0.607
+          "distanceKm": 0.51,
+          "months": null
         },
         {
           "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "太原路215弄",
-          "distanceKm": 0.881
+          "distanceKm": 0.88,
+          "months": null
         },
         {
-          "flower": "虞美人",
-          "months": [
-            4
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
-          "spotName": "肇嘉浜路2号口",
-          "distanceKm": 1.047
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.91,
+          "months": null
         }
       ]
     },
@@ -74,97 +62,46 @@
       ],
       "seasonal": [
         {
-          "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
-          "spotName": "四川路桥",
-          "distanceKm": 0.176
-        },
-        {
           "flower": "梅花",
-          "months": [
-            2,
-            3
-          ],
-          "category": "传统名花",
-          "source": "邻近",
           "spotName": "上海总商会旧址",
-          "distanceKm": 0.35
-        },
-        {
-          "flower": "杜鹃",
-          "months": [
-            4
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "外滩老市府露台",
-          "distanceKm": 0.451
+          "distanceKm": 0.36,
+          "months": null
         },
         {
           "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
-          "spotName": "苏州河樱花谷驿站",
-          "distanceKm": 0.708
-        },
-        {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "苏州河樱花谷驿站",
-          "distanceKm": 0.708
-        },
-        {
-          "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "苏州河樱花谷驿站",
-          "distanceKm": 0.708
+          "spotName": "四川路桥",
+          "distanceKm": 0.36,
+          "months": null
         },
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "外滩",
-          "distanceKm": 0.806
+          "distanceKm": 0.54,
+          "months": null
         },
         {
-          "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "圣三一堂",
-          "distanceKm": 0.865
+          "flower": "杜鹃",
+          "spotName": "外滩老市府露台",
+          "distanceKm": 0.45,
+          "months": null
         },
         {
           "flower": "泡桐",
-          "months": [
-            4
-          ],
-          "category": "行道树花",
-          "source": "邻近",
           "spotName": "汉口路老市府",
-          "distanceKm": 1.054
+          "distanceKm": 0.95,
+          "months": null
+        },
+        {
+          "flower": "樱花/紫藤/绣球",
+          "spotName": "苏州河樱花谷驿站",
+          "distanceKm": 0.36,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "圣三一堂",
+          "distanceKm": 0.87,
+          "months": null
         }
       ]
     },
@@ -187,54 +124,21 @@
       "seasonal": [
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "襄阳公园",
-          "distanceKm": 0.868
-        },
-        {
-          "flower": "杜鹃",
-          "months": [
-            4
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.947
-        },
-        {
-          "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.947
+          "distanceKm": 0.81,
+          "months": null
         },
         {
           "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "复兴中路",
-          "distanceKm": 1.167
+          "distanceKm": 1.17,
+          "months": null
         },
         {
-          "flower": "虞美人",
-          "months": [
-            4
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
-          "spotName": "肇嘉浜路2号口",
-          "distanceKm": 1.194
+          "flower": "杜鹃/绣球",
+          "spotName": "辅德里公园",
+          "distanceKm": 0.95,
+          "months": null
         }
       ]
     },
@@ -259,54 +163,21 @@
       "seasonal": [
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "襄阳公园",
-          "distanceKm": 0.844
-        },
-        {
-          "flower": "杜鹃",
-          "months": [
-            4
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.967
-        },
-        {
-          "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.967
-        },
-        {
-          "flower": "虞美人",
-          "months": [
-            4
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
-          "spotName": "肇嘉浜路2号口",
-          "distanceKm": 1.178
+          "distanceKm": 0.79,
+          "months": null
         },
         {
           "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "复兴中路",
-          "distanceKm": 1.196
+          "distanceKm": 1.2,
+          "months": null
+        },
+        {
+          "flower": "杜鹃/绣球",
+          "spotName": "辅德里公园",
+          "distanceKm": 0.97,
+          "months": null
         }
       ]
     },
@@ -332,23 +203,9 @@
       "seasonal": [
         {
           "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "复兴中路",
-          "distanceKm": 0.743
-        },
-        {
-          "flower": "虞美人",
-          "months": [
-            4
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
-          "spotName": "肇嘉浜路2号口",
-          "distanceKm": 0.957
+          "distanceKm": 0.74,
+          "months": null
         }
       ]
     },
@@ -374,23 +231,9 @@
       "seasonal": [
         {
           "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "复兴中路",
-          "distanceKm": 0.677
-        },
-        {
-          "flower": "虞美人",
-          "months": [
-            4
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
-          "spotName": "肇嘉浜路2号口",
-          "distanceKm": 1.087
+          "distanceKm": 0.68,
+          "months": null
         }
       ]
     },
@@ -455,23 +298,9 @@
       "seasonal": [
         {
           "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "复兴中路",
-          "distanceKm": 0.709
-        },
-        {
-          "flower": "虞美人",
-          "months": [
-            4
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
-          "spotName": "肇嘉浜路2号口",
-          "distanceKm": 1.032
+          "distanceKm": 0.71,
+          "months": null
         }
       ]
     },
@@ -495,24 +324,15 @@
       "seasonal": [
         {
           "flower": "桃花",
-          "months": [
-            3
-          ],
-          "category": "传统名花",
-          "source": "邻近",
           "spotName": "桃林路",
-          "distanceKm": 0.54
+          "distanceKm": 0.54,
+          "months": null
         },
         {
           "flower": "栾树",
-          "months": [
-            9,
-            10
-          ],
-          "category": "行道树花",
-          "source": "邻近",
           "spotName": "桃林路天桥",
-          "distanceKm": 0.54
+          "distanceKm": 0.54,
+          "months": null
         }
       ]
     },
@@ -537,46 +357,28 @@
       ],
       "seasonal": [
         {
-          "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
-          "spotName": "琴键春园",
-          "distanceKm": 0.415
-        },
-        {
           "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "黄浦滨江",
-          "distanceKm": 0.451
+          "distanceKm": 0.45,
+          "months": null
         },
         {
-          "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "局门路",
-          "distanceKm": 0.862
+          "flower": "向日葵/乌桕/银杏",
+          "spotName": "南园滨江绿地",
+          "distanceKm": 1.13,
+          "months": null
         },
         {
           "flower": "粉黛乱子草",
-          "months": [
-            10,
-            11
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
           "spotName": "白莲泾公园",
-          "distanceKm": 0.886
+          "distanceKm": 0.83,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "局门路",
+          "distanceKm": 0.86,
+          "months": null
         }
       ]
     },
@@ -618,45 +420,22 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "复兴中路",
-          "distanceKm": 0.898
-        },
-        {
-          "flower": "杜鹃",
-          "months": [
-            4
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.957
-        },
-        {
-          "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.957
-        },
-        {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "襄阳公园",
-          "distanceKm": 1.131
+          "distanceKm": 1.08,
+          "months": null
+        },
+        {
+          "flower": "蔷薇",
+          "spotName": "复兴中路",
+          "distanceKm": 0.9,
+          "months": null
+        },
+        {
+          "flower": "杜鹃/绣球",
+          "spotName": "辅德里公园",
+          "distanceKm": 0.96,
+          "months": null
         }
       ]
     },
@@ -677,17 +456,7 @@
       "lat": 31.1878,
       "lng": 121.2598,
       "closedDays": [],
-      "seasonal": [
-        {
-          "flower": "油菜花",
-          "months": [
-            3
-          ],
-          "category": "田园花海",
-          "source": "同名",
-          "spotName": "余德耀美术馆"
-        }
-      ]
+      "seasonal": []
     },
     {
       "name": "上海汽车博物馆",
@@ -731,34 +500,15 @@
       "seasonal": [
         {
           "flower": "白玉兰 / 二乔玉兰",
-          "months": [
-            3
-          ],
-          "category": "玉兰",
-          "source": "邻近",
           "spotName": "陆家嘴中心绿地",
-          "distanceKm": 0.561
+          "distanceKm": 0.81,
+          "months": null
         },
         {
           "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
           "spotName": "古城公园",
-          "distanceKm": 1.034
-        },
-        {
-          "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
-          "spotName": "外滩",
-          "distanceKm": 1.157
+          "distanceKm": 1.03,
+          "months": null
         }
       ]
     },
@@ -783,13 +533,9 @@
       "seasonal": [
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "静安雕塑公园",
-          "distanceKm": 0.996
+          "distanceKm": 1.07,
+          "months": null
         }
       ]
     },
@@ -810,18 +556,7 @@
       "lat": 31.2553,
       "lng": 121.4842,
       "closedDays": [],
-      "seasonal": [
-        {
-          "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
-          "spotName": "四川路桥",
-          "distanceKm": 1.179
-        }
-      ]
+      "seasonal": []
     },
     {
       "name": "蝴蝶湾党群服务中心（蝴蝶湾社区食堂）",
@@ -844,13 +579,9 @@
       "seasonal": [
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "静安雕塑公园",
-          "distanceKm": 0.937
+          "distanceKm": 1.01,
+          "months": null
         }
       ]
     },
@@ -893,35 +624,22 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
-          "spotName": "静安雕塑公园",
-          "distanceKm": 0.936
+          "flower": "梅花",
+          "spotName": "上海总商会旧址",
+          "distanceKm": 1.17,
+          "months": null
         },
         {
           "flower": "海棠",
-          "months": [
-            3
-          ],
-          "category": "海棠",
-          "source": "邻近",
           "spotName": "人民公园",
-          "distanceKm": 0.992
+          "distanceKm": 1.05,
+          "months": null
         },
         {
-          "flower": "梅花",
-          "months": [
-            2,
-            3
-          ],
-          "category": "传统名花",
-          "source": "邻近",
-          "spotName": "上海总商会旧址",
-          "distanceKm": 1.145
+          "flower": "郁金香",
+          "spotName": "静安雕塑公园",
+          "distanceKm": 0.98,
+          "months": null
         }
       ]
     },
@@ -944,24 +662,22 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
-          "spotName": "杨浦滨江",
-          "distanceKm": 0.305
+          "flower": "樱花",
+          "spotName": "绿之丘",
+          "distanceKm": 0.3,
+          "months": null
         },
         {
-          "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
-          "spotName": "绿之丘",
-          "distanceKm": 0.824
+          "flower": "樱花/马鞭草",
+          "spotName": "东方渔人码头",
+          "distanceKm": 0.76,
+          "months": null
+        },
+        {
+          "flower": "郁金香",
+          "spotName": "杨浦滨江",
+          "distanceKm": 0.3,
+          "months": null
         }
       ]
     },
@@ -984,24 +700,16 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "白玉兰 / 二乔玉兰",
-          "months": [
-            3
-          ],
-          "category": "玉兰",
-          "source": "邻近",
-          "spotName": "上海展览中心·西花园",
-          "distanceKm": 0.555
+          "flower": "樱花",
+          "spotName": "德莱蒙德住宅（华山路263弄7号）",
+          "distanceKm": 1.09,
+          "months": null
         },
         {
-          "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
-          "spotName": "德莱蒙德住宅（华山路263弄7号）",
-          "distanceKm": 1.088
+          "flower": "白玉兰 / 二乔玉兰",
+          "spotName": "上海展览中心·西花园",
+          "distanceKm": 0.69,
+          "months": null
         }
       ]
     },
@@ -1024,45 +732,22 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "杜鹃",
-          "months": [
-            4
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.777
-        },
-        {
-          "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 0.777
-        },
-        {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "襄阳公园",
-          "distanceKm": 0.92
+          "distanceKm": 0.88,
+          "months": null
         },
         {
           "flower": "蔷薇",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "复兴中路",
-          "distanceKm": 1.099
+          "distanceKm": 1.1,
+          "months": null
+        },
+        {
+          "flower": "杜鹃/绣球",
+          "spotName": "辅德里公园",
+          "distanceKm": 0.78,
+          "months": null
         }
       ]
     },
@@ -1086,13 +771,9 @@
       "seasonal": [
         {
           "flower": "木香花",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "愚园路1088弄",
-          "distanceKm": 0.993
+          "distanceKm": 0.99,
+          "months": null
         }
       ]
     },
@@ -1115,35 +796,28 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.939
-        },
-        {
           "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
           "spotName": "德莱蒙德住宅（华山路263弄7号）",
-          "distanceKm": 0.983
+          "distanceKm": 0.98,
+          "months": null
         },
         {
           "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "太原路215弄",
-          "distanceKm": 1.132
+          "distanceKm": 1.13,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.43,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.94,
+          "months": null
         }
       ]
     },
@@ -1169,45 +843,34 @@
       ],
       "seasonal": [
         {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "太原路215弄",
-          "distanceKm": 0.602
+          "flower": "郁金香",
+          "spotName": "襄阳公园",
+          "distanceKm": 0.75,
+          "months": null
         },
         {
-          "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
-          "spotName": "襄阳公园",
-          "distanceKm": 0.845
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 0.6,
+          "months": null
         },
         {
           "flower": "虞美人",
-          "months": [
-            4
-          ],
-          "category": "草甸花海",
-          "source": "邻近",
           "spotName": "肇嘉浜路2号口",
-          "distanceKm": 0.944
+          "distanceKm": 1.13,
+          "months": null
         },
         {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 1.13
+          "distanceKm": 1.13,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.79,
+          "months": null
         }
       ]
     },
@@ -1230,32 +893,21 @@
       "seasonal": [
         {
           "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "同名",
-          "spotName": "德莱蒙德住宅（华山路263弄7号）"
+          "spotName": "德莱蒙德住宅（华山路263弄7号）",
+          "distanceKm": 0.5,
+          "months": null
         },
         {
           "flower": "白玉兰 / 二乔玉兰",
-          "months": [
-            3
-          ],
-          "category": "玉兰",
-          "source": "邻近",
           "spotName": "上海展览中心·西花园",
-          "distanceKm": 0.289
+          "distanceKm": 0.14,
+          "months": null
         },
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "襄阳公园",
-          "distanceKm": 0.848
+          "distanceKm": 0.95,
+          "months": null
         }
       ]
     },
@@ -1278,46 +930,40 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.737
+          "flower": "郁金香",
+          "spotName": "襄阳公园",
+          "distanceKm": 1.1,
+          "months": null
         },
         {
           "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "太原路215弄",
-          "distanceKm": 0.777
+          "distanceKm": 0.78,
+          "months": null
+        },
+        {
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 1.04,
+          "months": null
         },
         {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 1.035
+          "distanceKm": 1.04,
+          "months": null
         },
         {
-          "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
-          "spotName": "襄阳公园",
-          "distanceKm": 1.135
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.11,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.74,
+          "months": null
         }
       ]
     },
@@ -1340,46 +986,40 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.737
+          "flower": "樱花",
+          "spotName": "德莱蒙德住宅（华山路263弄7号）",
+          "distanceKm": 1.18,
+          "months": null
         },
         {
           "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
           "spotName": "太原路215弄",
-          "distanceKm": 0.997
+          "distanceKm": 1,
+          "months": null
+        },
+        {
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 1.16,
+          "months": null
         },
         {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 1.157
+          "distanceKm": 1.16,
+          "months": null
         },
         {
-          "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
-          "spotName": "德莱蒙德住宅（华山路263弄7号）",
-          "distanceKm": 1.182
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.37,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.74,
+          "months": null
         }
       ]
     },
@@ -1403,46 +1043,40 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "太原路215弄",
-          "distanceKm": 0.483
+          "flower": "郁金香",
+          "spotName": "襄阳公园",
+          "distanceKm": 0.9,
+          "months": null
         },
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.876
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 0.48,
+          "months": null
+        },
+        {
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 0.92,
+          "months": null
         },
         {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 0.924
+          "distanceKm": 0.92,
+          "months": null
         },
         {
-          "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
-          "spotName": "襄阳公园",
-          "distanceKm": 0.962
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.33,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.88,
+          "months": null
         }
       ]
     },
@@ -1484,36 +1118,34 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.552
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 1,
+          "months": null
         },
         {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "太原路215弄",
-          "distanceKm": 0.999
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 1.04,
+          "months": null
         },
         {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 1.043
+          "distanceKm": 1.04,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.54,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.55,
+          "months": null
         }
       ]
     },
@@ -1539,36 +1171,34 @@
       ],
       "seasonal": [
         {
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 0.42,
+          "months": null
+        },
+        {
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 0.31,
+          "months": null
+        },
+        {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 0.312
+          "distanceKm": 0.31,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.75,
+          "months": null
         },
         {
           "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
           "spotName": "安亭路",
-          "distanceKm": 0.363
-        },
-        {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "太原路215弄",
-          "distanceKm": 0.422
+          "distanceKm": 0.36,
+          "months": null
         }
       ]
     },
@@ -1593,36 +1223,34 @@
       ],
       "seasonal": [
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.553
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 0.87,
+          "months": null
         },
         {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "太原路215弄",
-          "distanceKm": 0.869
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 0.98,
+          "months": null
         },
         {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 0.979
+          "distanceKm": 0.98,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.39,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.55,
+          "months": null
         }
       ]
     },
@@ -1646,36 +1274,34 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.614
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 1.02,
+          "months": null
         },
         {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "太原路215弄",
-          "distanceKm": 1.019
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 1.09,
+          "months": null
         },
         {
           "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
           "spotName": "肇嘉浜路",
-          "distanceKm": 1.092
+          "distanceKm": 1.09,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.51,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.61,
+          "months": null
         }
       ]
     },
@@ -1699,65 +1325,27 @@
       "seasonal": [
         {
           "flower": "海棠",
-          "months": [
-            3
-          ],
-          "category": "海棠",
-          "source": "邻近",
           "spotName": "人民公园",
-          "distanceKm": 0.157
-        },
-        {
-          "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "上海音乐厅",
-          "distanceKm": 0.603
-        },
-        {
-          "flower": "泡桐",
-          "months": [
-            4
-          ],
-          "category": "行道树花",
-          "source": "邻近",
-          "spotName": "汉口路老市府",
-          "distanceKm": 0.904
+          "distanceKm": 0.34,
+          "months": null
         },
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "静安雕塑公园",
-          "distanceKm": 1.104
+          "distanceKm": 1.07,
+          "months": null
         },
         {
-          "flower": "杜鹃",
-          "months": [
-            4
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
+          "flower": "杜鹃/绣球",
           "spotName": "辅德里公园",
-          "distanceKm": 1.113
+          "distanceKm": 1.11,
+          "months": null
         },
         {
-          "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "辅德里公园",
-          "distanceKm": 1.113
+          "flower": "银杏",
+          "spotName": "上海音乐厅",
+          "distanceKm": 0.54,
+          "months": null
         }
       ]
     },
@@ -1781,45 +1369,27 @@
       "seasonal": [
         {
           "flower": "海棠",
-          "months": [
-            3
-          ],
-          "category": "海棠",
-          "source": "邻近",
           "spotName": "人民公园",
-          "distanceKm": 0.312
-        },
-        {
-          "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "上海音乐厅",
-          "distanceKm": 0.558
+          "distanceKm": 0.53,
+          "months": null
         },
         {
           "flower": "泡桐",
-          "months": [
-            4
-          ],
-          "category": "行道树花",
-          "source": "邻近",
           "spotName": "汉口路老市府",
-          "distanceKm": 0.731
+          "distanceKm": 1.07,
+          "months": null
         },
         {
           "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
+          "spotName": "上海音乐厅",
+          "distanceKm": 0.54,
+          "months": null
+        },
+        {
+          "flower": "银杏",
           "spotName": "圣三一堂",
-          "distanceKm": 1.06
+          "distanceKm": 1.06,
+          "months": null
         }
       ]
     },
@@ -1843,56 +1413,46 @@
       "closedDays": [],
       "seasonal": [
         {
-          "flower": "乌桕",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
-          "spotName": "安亭路",
-          "distanceKm": 0.77
-        },
-        {
-          "flower": "紫藤",
-          "months": [
-            4
-          ],
-          "category": "藤蔓花卉",
-          "source": "邻近",
-          "spotName": "太原路215弄",
-          "distanceKm": 0.909
-        },
-        {
-          "flower": "绣球",
-          "months": [
-            4,
-            5
-          ],
-          "category": "灌木花卉",
-          "source": "邻近",
-          "spotName": "肇嘉浜路",
-          "distanceKm": 1.13
-        },
-        {
           "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
           "spotName": "德莱蒙德住宅（华山路263弄7号）",
-          "distanceKm": 1.143
+          "distanceKm": 1.14,
+          "months": null
         },
         {
           "flower": "郁金香",
-          "months": [
-            3
-          ],
-          "category": "球根花卉",
-          "source": "邻近",
           "spotName": "襄阳公园",
-          "distanceKm": 1.195
+          "distanceKm": 1.17,
+          "months": null
+        },
+        {
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 0.91,
+          "months": null
+        },
+        {
+          "flower": "虞美人",
+          "spotName": "肇嘉浜路2号口",
+          "distanceKm": 1.13,
+          "months": null
+        },
+        {
+          "flower": "绣球",
+          "spotName": "肇嘉浜路",
+          "distanceKm": 1.13,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 0.24,
+          "months": null
+        },
+        {
+          "flower": "乌桕",
+          "spotName": "安亭路",
+          "distanceKm": 0.77,
+          "months": null
         }
       ]
     },
@@ -1916,13 +1476,15 @@
       "seasonal": [
         {
           "flower": "樱花",
-          "months": [
-            3
-          ],
-          "category": "樱花",
-          "source": "邻近",
           "spotName": "上海交通大学（徐汇校区）",
-          "distanceKm": 0.988
+          "distanceKm": 1.06,
+          "months": null
+        },
+        {
+          "flower": "樱花",
+          "spotName": "交大徐汇校区樱花",
+          "distanceKm": 0.99,
+          "months": null
         }
       ]
     },
@@ -1945,59 +1507,491 @@
       "closedDays": [],
       "seasonal": [
         {
+          "flower": "梅花",
+          "spotName": "上海总商会旧址",
+          "distanceKm": 1.13,
+          "months": null
+        },
+        {
+          "flower": "樱花",
+          "spotName": "四川路桥",
+          "distanceKm": 1.12,
+          "months": null
+        },
+        {
           "flower": "海棠",
-          "months": [
-            3
-          ],
-          "category": "海棠",
-          "source": "邻近",
           "spotName": "人民公园",
-          "distanceKm": 0.507
+          "distanceKm": 0.74,
+          "months": null
         },
         {
           "flower": "泡桐",
-          "months": [
-            4
-          ],
-          "category": "行道树花",
-          "source": "邻近",
           "spotName": "汉口路老市府",
-          "distanceKm": 0.51
+          "distanceKm": 0.84,
+          "months": null
+        },
+        {
+          "flower": "樱花/紫藤/绣球",
+          "spotName": "苏州河樱花谷驿站",
+          "distanceKm": 1.12,
+          "months": null
         },
         {
           "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
           "spotName": "上海音乐厅",
-          "distanceKm": 0.639
+          "distanceKm": 0.67,
+          "months": null
         },
         {
           "flower": "银杏",
-          "months": [
-            11,
-            12
-          ],
-          "category": "彩叶",
-          "source": "邻近",
           "spotName": "圣三一堂",
-          "distanceKm": 0.838
-        },
-        {
-          "flower": "梅花",
-          "months": [
-            2,
-            3
-          ],
-          "category": "传统名花",
-          "source": "邻近",
-          "spotName": "上海总商会旧址",
-          "distanceKm": 1.181
+          "distanceKm": 0.84,
+          "months": null
         }
       ]
+    },
+    {
+      "name": "汇丰银行大楼（现浦发银行）",
+      "address": "上海市黄浦区中山东一路12号",
+      "description": "历史：1921年建成，由英商公和洋行设计，新古典主义风格，外滩体量最大的建筑，曾被誉为\"从苏伊士运河到白令海峡最华贵的建筑\"。\n特色：立面横五段纵三段，底部正中设3座罗马拱门，中部穹顶高耸。内部曾铺有名为\"世界的天空\"的马赛克壁画（现保存）。曾为汇丰银行中国总部、上海市人民政府所在地。\n文化影响：全国重点文物保护单位，外滩C位楼王，是外滩万国建筑博览群的视觉中心。",
+      "district": "黄浦区",
+      "lat": 31.23944,
+      "lng": 121.49028,
+      "photos": [
+        "./data/photos/46.1.webp",
+        "./data/photos/46.2.webp",
+        "./data/photos/46.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "老建筑",
+        "外滩"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6aa260ee000000002900da6a?xsec_token=ABHYy9zc42ikCJ3uELzM5SO1XzZn4wlmG1rPdFzPfnpTg=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": [
+        {
+          "flower": "郁金香",
+          "spotName": "外滩",
+          "distanceKm": 0.69,
+          "months": null
+        },
+        {
+          "flower": "杜鹃",
+          "spotName": "外滩老市府露台",
+          "distanceKm": 0.77,
+          "months": null
+        },
+        {
+          "flower": "泡桐",
+          "spotName": "汉口路老市府",
+          "distanceKm": 0.82,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "圣三一堂",
+          "distanceKm": 0.86,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "古城公园",
+          "distanceKm": 1.01,
+          "months": null
+        }
+      ]
+    },
+    {
+      "name": "张朴桥天主堂",
+      "address": "上海市松江区（地址待核验）",
+      "description": "位于松江稻田中的白色教堂，造型简洁纯净，是上海郊野少见的西式宗教建筑遗存。稻田季节性金黄，与白色教堂体量形成色彩对比，适合田园风格摄影。",
+      "district": "松江区",
+      "lat": 31.03456,
+      "lng": 121.22345,
+      "photos": [
+        "./data/photos/47.1.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "宗教建筑",
+        "老建筑"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6aa0a64300000000250369b7?xsec_token=ABUxtOoNaukd_moxDPjRIdgjVwoEhsYJpvCeILufWAukc=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "七宝天主堂",
+      "address": "上海市闵行区七宝南街50号",
+      "description": "历史：1867年建造，哥特式天主教堂，是上海西南郊最具规模的近代教堂建筑之一。\n特色：青砖外墙、尖拱窗、钟楼高耸，内部木屋架结构。教堂隐于七宝老街之中，中西建筑风格的碰撞与交融成为独特的拍摄题材。\n文化影响：闵行区文物保护单位，七宝老街文化地标之一。",
+      "district": "闵行区",
+      "lat": 31.15521,
+      "lng": 121.34789,
+      "photos": [
+        "./data/photos/48.1.webp",
+        "./data/photos/48.2.webp",
+        "./data/photos/48.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "宗教建筑",
+        "老建筑"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a9b81b7000000002502f968?xsec_token=ABr5_muJ_Lj0neWnqm3IXVqkEQVe2R1TjpyrqxyMzwcyc=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "佘山天主教堂",
+      "address": "上海市松江区外青松公路9142号",
+      "description": "历史：1871年初建，1935年重建，由耶稣会神父叶肇昌设计，巴洛克与哥特式混合风格，被称为\"远东第一圣殿\"。\n特色：位于西佘山顶，红色砖墙、罗马拱廊、穹顶高耸，可俯瞰松江平原。建筑体量与山顶地形结合，朝圣路径与视觉轴线层次分明。\n文化影响：全国重点文物保护单位，上海天主教朝圣中心，佘山天文台相邻。",
+      "district": "松江区",
+      "lat": 31.05389,
+      "lng": 121.18806,
+      "photos": [
+        "./data/photos/49.1.webp",
+        "./data/photos/49.2.webp",
+        "./data/photos/49.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "宗教建筑",
+        "老建筑",
+        "地标"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a9a42cc0000000011036390?xsec_token=ABGkIZple-6LgJfrNJ_eKp71KOIn0u5jUJnYIRdu1L1Ng=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "东林寺",
+      "address": "上海市金山区（地址待核验）",
+      "description": "三项吉尼斯纪录的佛教寺院：室内千手观音像、千佛门、山体合一。山寺一体、佛寺如山的独特造型，金顶红墙在郊野绿野中格外醒目。联票30元。",
+      "district": "金山区",
+      "lat": 30.91667,
+      "lng": 121.33333,
+      "photos": [
+        "./data/photos/50.1.webp",
+        "./data/photos/50.2.webp",
+        "./data/photos/50.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "宗教建筑",
+        "地标"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a9017cf0000000020033dd5?xsec_token=ABpqV2mWDS94aNbSZjfi87Cz3f298KC7xUx9xd6XrVBN8=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "真如寺",
+      "address": "上海市普陀区兰溪路399号",
+      "description": "历史：始建于南宋（1320年迁建现址），是上海城区唯一保存的元代木结构建筑。\n特色：真如寺大殿为元代原物，面阔三间，单檐歇山顶，斗栱粗壮，梁架简洁，体现了早期江南木构的典型做法。寺内另有铁铸弥陀像等文物。\n文化影响：全国重点文物保护单位，上海最古老的木建筑之一，是研究江南元代建筑的重要实例。",
+      "district": "普陀区",
+      "lat": 31.25222,
+      "lng": 121.40389,
+      "photos": [
+        "./data/photos/51.1.webp",
+        "./data/photos/51.2.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "老建筑",
+        "宗教建筑"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a274c9000000000160276bd?xsec_token=ABb-G8BuPf1vFzz-M5qIxZKhU7aBDxB8KjgA37OKZG7T8=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": [
+        {
+          "flower": "腊梅",
+          "spotName": "真如公园",
+          "distanceKm": 0.56,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "真如寺",
+          "distanceKm": 0.65,
+          "months": null
+        }
+      ]
+    },
+    {
+      "name": "和平饭店",
+      "address": "上海市黄浦区南京东路20号",
+      "description": "历史：1929年建成，原名沙逊大厦，由公和洋行设计，Art Deco装饰艺术风格的代表作，曾被誉为\"远东第一楼\"。\n特色：10层钢架结构，红砖与金山石外墙，顶部金字塔形铜屋顶覆绿铜瓦。内部拥有闻名遐迩的\"龙凤厅\"中餐厅和大堂老式爵士酒吧。\n文化影响：全国重点文物保护单位，外滩北端地标建筑，老上海风华的象征。",
+      "district": "黄浦区",
+      "lat": 31.23972,
+      "lng": 121.49083,
+      "photos": [
+        "./data/photos/53.1.webp",
+        "./data/photos/53.2.webp",
+        "./data/photos/53.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "老建筑",
+        "Art Deco",
+        "外滩"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a225daf00000000360310ff?xsec_token=ABUAMT9VXvVV8z-T-UeBmlzET4-TfE6tZMZbes-A2UoyNM=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": [
+        {
+          "flower": "郁金香",
+          "spotName": "外滩",
+          "distanceKm": 0.7,
+          "months": null
+        },
+        {
+          "flower": "杜鹃",
+          "spotName": "外滩老市府露台",
+          "distanceKm": 0.78,
+          "months": null
+        },
+        {
+          "flower": "泡桐",
+          "spotName": "汉口路老市府",
+          "distanceKm": 0.87,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "圣三一堂",
+          "distanceKm": 0.91,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "古城公园",
+          "distanceKm": 1.05,
+          "months": null
+        }
+      ]
+    },
+    {
+      "name": "外滩华尔道夫",
+      "address": "上海市黄浦区中山东一路2号",
+      "description": "历史：1910年建成，原为上海总会大楼，由英国皇家建筑师学会设计，新古典主义风格。上海最早引入电梯的建筑之一。\n特色：白色大理石立面，6根贯通2-3层的爱奥尼式柱式，顶部三角山花。内部34米长的吧台曾是远东最长酒吧。\n文化影响：全国重点文物保护单位，现为华尔道夫酒店，非住客也可进入大堂参观，是外滩经典机位之一。",
+      "district": "黄浦区",
+      "lat": 31.23917,
+      "lng": 121.49,
+      "photos": [
+        "./data/photos/54.2.webp",
+        "./data/photos/54.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "老建筑",
+        "外滩"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a1fbd71000000003603063e?xsec_token=ABCesYgFvSSk2JSdY6ZINSNXVSuJiQSazDmsxw29F7LPU=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": [
+        {
+          "flower": "郁金香",
+          "spotName": "外滩",
+          "distanceKm": 0.69,
+          "months": null
+        },
+        {
+          "flower": "杜鹃",
+          "spotName": "外滩老市府露台",
+          "distanceKm": 0.77,
+          "months": null
+        },
+        {
+          "flower": "泡桐",
+          "spotName": "汉口路老市府",
+          "distanceKm": 0.79,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "圣三一堂",
+          "distanceKm": 0.83,
+          "months": null
+        },
+        {
+          "flower": "银杏",
+          "spotName": "古城公园",
+          "distanceKm": 0.98,
+          "months": null
+        }
+      ]
+    },
+    {
+      "name": "上海交响音乐博物馆",
+      "address": "上海市徐汇区宝庆路3号",
+      "description": "历史：原为\"染料大王\"周宗良宅邸，建于1920-1930年代，法式风格花园洋房。2017年改造为国内第一座交响音乐主题博物馆。\n特色：白色外墙、法式孟莎顶、花园有百年香樟。常设展包括中国交响音乐史、手稿、乐器等。每周二至周六开放（周一、周日闭馆）。\n文化影响：徐汇区文物保护单位，衡复风貌区文化新地标，是了解上海近代音乐史的重要窗口。",
+      "district": "徐汇区",
+      "lat": 31.21611,
+      "lng": 121.45639,
+      "photos": [
+        "./data/photos/55.1.webp",
+        "./data/photos/55.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "老建筑",
+        "博物馆",
+        "文艺"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a1e356c000000003802199f?xsec_token=ABqfSrgK8l_Ds7nAWGSbj84QsifUslMEepVYQPfdStfx4=&xsec_source=pc_search",
+      "closedDays": [
+        "周一",
+        "周日"
+      ],
+      "seasonal": [
+        {
+          "flower": "郁金香",
+          "spotName": "襄阳公园",
+          "distanceKm": 0.41,
+          "months": null
+        },
+        {
+          "flower": "紫藤",
+          "spotName": "太原路215弄",
+          "distanceKm": 1.16,
+          "months": null
+        },
+        {
+          "flower": "梧桐",
+          "spotName": "梧桐黄叶街道（徐家汇-衡山路-淮海路，天平路-武康路-湖南路-兴国路，常乐路-富民路-汾阳路，华山路-江苏路-愚园路）",
+          "distanceKm": 1.13,
+          "months": null
+        }
+      ]
+    },
+    {
+      "name": "泗泾舣园",
+      "address": "上海市松江区（地址待核验）",
+      "description": "松江泗泾的新中式园林，结合传统园林意境与现代设计手法，是上海郊野少见的当代中式造园实例。水岸、月洞、花木构成丰富的空间层次。",
+      "district": "松江区",
+      "lat": 31.12611,
+      "lng": 121.31861,
+      "photos": [
+        "./data/photos/56.1.webp",
+        "./data/photos/56.2.webp",
+        "./data/photos/56.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "园林",
+        "新中式"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6a0fa2ff000000003700e641?xsec_token=ABVbMdrX4vrzf8e2Kq87xUUcGnKjT1CECGpLlR9UPT0qk=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "言子书院",
+      "address": "上海市奉贤区（地址待核验）",
+      "description": "奉贤的新建文化建筑，以孔子弟子言偃（言子）为主题。建筑获得IAF锋建筑奖，纯白几何造型、庭院水池、光影廊道构成现代东方意境，是上海新晋的文青打卡地。",
+      "district": "奉贤区",
+      "lat": 30.91667,
+      "lng": 121.46667,
+      "photos": [
+        "./data/photos/57.1.webp",
+        "./data/photos/57.2.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "新建筑",
+        "文艺"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/69d7082a000000001a0311fe?xsec_token=ABnlptH4BY8MC8xD4rpL_Vg5S-A9BDgOeU_S0-D3-PZ3Y=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": [
+        {
+          "flower": "红枫",
+          "spotName": "古华公园",
+          "distanceKm": 0.72,
+          "months": null
+        }
+      ]
+    },
+    {
+      "name": "张江科学会堂",
+      "address": "上海市浦东新区（地址待核验）",
+      "description": "张江科学城的标志性公共建筑，以几何形体、光影节奏和清水混凝土为语言，展现当代科学与建筑的对话。屋顶平台与中庭的几何构成适合建筑摄影。",
+      "district": "浦东新区",
+      "lat": 31.205,
+      "lng": 121.605,
+      "photos": [
+        "./data/photos/59.1.webp",
+        "./data/photos/59.2.webp",
+        "./data/photos/59.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "新建筑",
+        "几何光影"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/696c2f12000000002102a8eb?xsec_token=AB7Hm77cfN7x3a3zn26FoL5kVPHQn5JsXnonGRu6LNUmo=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "天马射电望远镜",
+      "address": "上海市松江区（地址待核验）",
+      "description": "位于松江天马山的65米口径射电望远镜，是国之重器、亚洲最大可转动射电望远镜之一。巨大的白色抛物面与山体结合，科幻感与工业感兼具，是上海郊野独特的景观。",
+      "district": "松江区",
+      "lat": 31.05361,
+      "lng": 121.18861,
+      "photos": [
+        "./data/photos/60.1.webp",
+        "./data/photos/60.2.webp",
+        "./data/photos/60.3.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "科技建筑",
+        "地标"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/696ad197000000002102916e?xsec_token=ABG6fmbB8tFrlbjrWAiQK-B9sZINj2LtzLh5aZefcirds=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "前滩四方城莫比乌斯环",
+      "address": "上海市浦东新区前滩四方城3F",
+      "description": "前滩四方城3层的艺术装置，以莫比乌斯环为造型灵感，铝合金镜面材质。曲面反射城市天际线，是前滩最具未来感的当代艺术装置机位之一。",
+      "district": "浦东新区",
+      "lat": 31.17806,
+      "lng": 121.51472,
+      "photos": [
+        "./data/photos/61.1.webp",
+        "./data/photos/61.2.webp"
+      ],
+      "seasons": "全年",
+      "tags": [
+        "艺术装置",
+        "新建筑"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/695f86530000000022008d75?xsec_token=ABO-0qjh9jLZtk4QWvDx6asUVcbLlW5tX9CgP-XtOLpf4=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
+    },
+    {
+      "name": "音宇宙 LIVERSE 剧场",
+      "address": "上海市徐汇区漕宝路261号鑫耀·光环Live",
+      "description": "由隈研吾设计的飘带剧场，以音宇宙（LIVERSE）为概念，将声学、光影与建筑融为一体。飘带造型屋顶与清水混凝土体量构成独特空间，是徐汇新晋的文化地标与建筑摄影机位。",
+      "district": "徐汇区",
+      "lat": 31.17472,
+      "lng": 121.41361,
+      "photos": [],
+      "seasons": "全年",
+      "tags": [
+        "新建筑",
+        "文艺",
+        "地标"
+      ],
+      "source_url": "https://www.xiaohongshu.com/explore/6863314e0000000013012422?xsec_token=AB5hLelb_mSFIx2JnjdzGFlH_RO2Si6O5qaJD8G-1AecM=&xsec_source=pc_search",
+      "closedDays": [],
+      "seasonal": []
     }
   ]
 }
