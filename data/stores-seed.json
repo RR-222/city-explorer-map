@@ -33,7 +33,7 @@
   },
   {
     "id": "store-03",
-    "name": "茂名北路Bloom Space",
+    "name": "Bloom Space",
     "district": "静安区",
     "address": "上海市静安区茂名北路65号",
     "lat": 31.2236,
@@ -64,24 +64,8 @@
     "source_url": "https://www.xiaohongshu.com/explore/6a225daf00000000360310ff?xsec_token=ABUAMT9VXvVV8z-T-UeBmlzET4-TfE6tZMZbes-A2UoyNM=&xsec_source=pc_search"
   },
   {
-    "id": "store-05",
-    "name": "宝山田园咖啡",
-    "district": "宝山区",
-    "address": "上海市宝山区（地址待核验）",
-    "lat": 31.4125,
-    "lng": 121.3841,
-    "desc": "乡野田园风格咖啡店，开阔户外草坪、木质棚架和手作装饰营造松弛氛围。远离市区喧嚣，适合周末骑行或自驾前往。草坪上经常有帐篷和野餐垫，天气好时坐在户外喝杯手冲，吹风发呆即可消磨一下午。",
-    "photos": [
-      "./data/store-photos/宝山田园咖啡店 (2).webp",
-      "./data/store-photos/宝山田园咖啡店 (3).webp",
-      "./data/store-photos/宝山田园咖啡店.webp"
-    ],
-    "source": "小红书",
-    "source_url": "https://www.xiaohongshu.com/explore/6a1e356c000000003802199f?xsec_token=ABqfSrgK8l_Ds7nAWGSbj84QsifUslMEepVYQPfdStfx4=&xsec_source=pc_search"
-  },
-  {
     "id": "store-06",
-    "name": "阿特麦",
+    "name": "阿特麦文化创意产业园",
     "district": "奉贤区",
     "address": "上海市青浦区老朱枫公路6186弄39号",
     "lat": 30.8631,
@@ -129,7 +113,7 @@
   },
   {
     "id": "store-09",
-    "name": "梅州路新梦堂",
+    "name": "新梦堂",
     "district": "闵行区",
     "address": "上海市闵行区梅州路507号",
     "lat": 31.1247,
