@@ -102,7 +102,7 @@ export async function fetchShanghaiWeather() {
       sunriseGlowProb,
     };
   } catch (err) {
-    console.error('获取天气失败', err);
+    if (err?.name !== 'AbortError') console.error('获取天气失败', err);
     // 降级：返回默认值，不阻断推荐
     const now = new Date();
     const hour = now.getHours();
