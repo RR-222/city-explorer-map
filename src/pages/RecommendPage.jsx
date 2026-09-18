@@ -89,11 +89,11 @@ export default function RecommendPage() {
             <span className="weather-month">{MONTH_NAMES[month]}</span>
             {weather.sunriseStr && <span className="weather-sun">🌅 日出 {weather.sunriseStr}</span>}
             {weather.sunsetStr && <span className="weather-sun">🌇 日落 {weather.sunsetStr}</span>}
-            {weather.sunsetGlowProb != null && (
-              <span className="weather-sun">🌆 今日晚霞 {weather.sunsetGlowProb}%</span>
+            {weather.sunsetGlow && (
+              <span className="weather-sun">🌆 今日日落火烧云 {weather.sunsetGlow.prob}%</span>
             )}
-            {weather.sunriseGlowProb != null && (
-              <span className="weather-sun">🌅 明日朝霞 {weather.sunriseGlowProb}%</span>
+            {weather.sunriseGlow && (
+              <span className="weather-sun">🌅 明日日出火烧云 {weather.sunriseGlow.prob}%</span>
             )}
           </div>
         )}
@@ -140,16 +140,16 @@ export default function RecommendPage() {
           ))}
         </div>
 
-        {/* 朝霞/晚霞高概率跳转窗口（TODO: 预览完成后改回 >= 60） */}
-        {weather && (weather.sunsetGlowProb != null || weather.sunriseGlowProb != null) && (
+        {/* 火烧云跳转窗口 */}
+        {weather && (weather.sunsetGlow || weather.sunriseGlow) && (
           <Link to="/glow" className="glow-alert-card">
             <div className="glow-alert-body">
               <div className="glow-alert-title">
-                {weather.sunsetGlowProb != null && weather.sunriseGlowProb != null
-                  ? `🌆 今日晚霞 ${weather.sunsetGlowProb}% / 🌅 明日朝霞 ${weather.sunriseGlowProb}%`
-                  : weather.sunsetGlowProb != null
-                    ? `🌆 今日晚霞概率 ${weather.sunsetGlowProb}%`
-                    : `🌅 明日朝霞概率 ${weather.sunriseGlowProb}%`}
+                {weather.sunsetGlow && weather.sunriseGlow
+                  ? `🌆 今日日落火烧云 ${weather.sunsetGlow.prob}%（${weather.sunsetGlow.level}） / 🌅 明日日出火烧云 ${weather.sunriseGlow.prob}%（${weather.sunriseGlow.level}）`
+                  : weather.sunsetGlow
+                    ? `🌆 今日日落火烧云 ${weather.sunsetGlow.prob}%（${weather.sunsetGlow.level}）`
+                    : `🌅 明日日出火烧云 ${weather.sunriseGlow.prob}%（${weather.sunriseGlow.level}）`}
               </div>
               <div className="glow-alert-desc">
                 点击查看上海最佳朝霞/晚霞观赏地点 →

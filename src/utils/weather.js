@@ -1,10 +1,12 @@
 // 上海当前天气获取（Open-Meteo 免费API，无需key）
-// 文档：https://open-meteo.com/en/docs
+// 火烧云鲜艳度算法参考 sunsetbot.top 方法论：
+//   鲜艳度 = 中高云反射分 + 低云遮挡扣分 + 云量适中分 + 气溶胶扣分
+//   数据源：GFS 多层云量 + CAMS 气溶胶光学厚度
 
 // 上海市中心坐标
 export const SHANGHAI_COORDS = { lat: 31.2304, lng: 121.4737 };
 
-// Open-Meteo weathercode -> 中文天气关键词（与 spots.weather_tags 对齐）
+// Open-Meteo weathercode -> 中文天气关键词
 const WEATHER_CODE_MAP = {
   0: '晴天',
   1: '多云', 2: '多云', 3: '多云',
@@ -19,43 +21,128 @@ const WEATHER_CODE_MAP = {
   95: '雷雨', 96: '雷雨', 99: '雷雨',
 };
 
-// 将 ISO 字符串（如 "2026-09-09T05:38"）格式化为 "05:38"
 function formatTime(isoStr) {
   if (!isoStr) return null;
-  // 取 T 后面的 HH:mm 部分
   const timePart = isoStr.split('T')[1];
   if (!timePart) return null;
-  // 处理可能带秒/时区的情况，只保留 HH:mm
   return timePart.slice(0, 5);
 }
 
 /**
- * 获取上海当前天气
- * 返回: {
- *   keyword, temp, sunrise, sunset, sunriseStr, sunsetStr,
- *   hour, lightConditions, coords, currentTimeStr,
- *   sunsetGlowProb, sunriseGlowProb
- * }
+ * 火烧云鲜艳度计算（参考 sunsetbot.top 方法论）
+ *
+ * 核心物理原理：
+ * - 日出/日落时阳光低角度照射，红橙光散射到云底
+ * - 中云（高积云）和高云（卷云）是最佳反射体
+ * - 低云（层积云）遮挡阳光，不利
+ * - 云量 30-70% 最理想（有云反射 + 有缝隙透光）
+ * - 气溶胶（AOD）高时天空浑浊，颜色饱和度下降
+ *
+ * @returns { vividity: number, prob: number, level: string }
+ *   vividity: 0-2.5+ 鲜艳度（与 sunsetbot 对齐）
+ *   prob: 0-100 概率百分比
+ *   level: '微烧'|'小烧'|'中等烧'|'中到大烧'|'大烧'
+ */
+function calcFireCloud(targetIso, hourlyTimes, cloudLow, cloudMid, cloudHigh, aodArr) {
+  if (!targetIso || !hourlyTimes.length) return null;
+
+  // 找最接近日出/日落时刻的小时索引
+  const target = new Date(targetIso);
+  const targetTs = target.getTime();
+  let bestIdx = -1;
+  let bestDiff = Infinity;
+  for (let i = 0; i < hourlyTimes.length; i++) {
+    const diff = Math.abs(new Date(hourlyTimes[i]).getTime() - targetTs);
+    if (diff < bestDiff) {
+      bestDiff = diff;
+      bestIdx = i;
+    }
+  }
+  if (bestIdx < 0) return null;
+
+  const low = cloudLow?.[bestIdx] ?? 0;
+  const mid = cloudMid?.[bestIdx] ?? 0;
+  const high = cloudHigh?.[bestIdx] ?? 0;
+  const aod = aodArr?.[bestIdx] ?? 0.1;
+  const total = Math.min(100, low + mid + high);
+
+  // 1. 中高云反射分 (0 ~ 1.3)
+  //    中云是最理想的反射体，高云次之
+  const reflector = Math.max(mid, high * 0.85);
+  const reflectorScore = Math.min(1.3, (reflector / 100) * 1.6);
+
+  // 2. 低云遮挡扣分 (-0.5 ~ 0)
+  //    低云遮住阳光，严重不利
+  const lowPenalty = -Math.min(0.5, (low / 100) * 0.6);
+
+  // 3. 云量适中分 (0 ~ 0.5)
+  //    30-70% 最佳，太少无云可烧，太多全遮
+  let gapScore;
+  if (total >= 30 && total <= 70) {
+    gapScore = 0.5 - Math.abs(total - 50) * 0.01;
+  } else if (total > 70 && total <= 85) {
+    gapScore = 0.2;
+  } else if (total < 30) {
+    gapScore = (total / 30) * 0.3;
+  } else {
+    gapScore = 0;
+  }
+
+  // 4. 气溶胶扣分 (-0.3 ~ 0)
+  //    AOD > 0.3 开始明显影响
+  const aodPenalty = -Math.min(0.3, Math.max(0, aod - 0.1) * 0.5);
+
+  const vividity = Math.max(0, reflectorScore + lowPenalty + gapScore + aodPenalty);
+
+  // 鲜艳度 → 概率百分比
+  const prob = Math.min(100, Math.round(vividity * 55));
+
+  // 档位（与 sunsetbot 对齐）
+  let level;
+  if (vividity >= 0.8) level = '大烧';
+  else if (vividity >= 0.6) level = '中到大烧';
+  else if (vividity >= 0.4) level = '中等烧';
+  else if (vividity >= 0.2) level = '小烧';
+  else level = '微烧';
+
+  return {
+    vividity: parseFloat(vividity.toFixed(3)),
+    prob,
+    level,
+  };
+}
+
+/**
+ * 获取上海当前天气 + 火烧云预报
  */
 export async function fetchShanghaiWeather() {
   const { lat, lng } = SHANGHAI_COORDS;
 
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}` +
+  // 天气 API：多层云量
+  const weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}` +
     `&current=weather_code,temperature_2m` +
-    `&hourly=cloud_cover` +
+    `&hourly=cloud_cover,cloud_cover_low,cloud_cover_mid,cloud_cover_high` +
     `&daily=sunrise,sunset&timezone=Asia%2FShanghai&forecast_days=2`;
 
+  // 空气质量 API：气溶胶光学厚度
+  const aodUrl = `https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${lat}&longitude=${lng}` +
+    `&hourly=aerosol_optical_depth&timezone=Asia%2FShanghai&forecast_days=2`;
+
   try {
-    // 8 秒超时保护：网络异常时快速降级，不阻塞推荐加载
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 8000);
-    let res;
+    const timer = setTimeout(() => controller.abort(), 10000);
+
+    const [weatherRes, aodRes] = await Promise.all([
+      fetch(weatherUrl, { signal: controller.signal }),
+      fetch(aodUrl, { signal: controller.signal }).catch(() => null),
+    ]);
+    clearTimeout(timer);
+
+    const json = await weatherRes.json();
+    let aodJson = null;
     try {
-      res = await fetch(url, { signal: controller.signal });
-    } finally {
-      clearTimeout(timer);
-    }
-    const json = await res.json();
+      if (aodRes?.ok) aodJson = await aodRes.json();
+    } catch (_) { /* CAMS 降级不影响主流程 */ }
 
     const code = json?.current?.weather_code;
     const temp = json?.current?.temperature_2m;
@@ -65,45 +152,42 @@ export async function fetchShanghaiWeather() {
 
     const keyword = WEATHER_CODE_MAP[code] || '多云';
 
-    // 判断光线条件
     const now = new Date();
     const hour = now.getHours();
     const lightConditions = [];
-
-    // 日出：5-7点且天气晴
     if (hour >= 5 && hour <= 8) lightConditions.push('日出');
-    // 日落：17-19点
     if (hour >= 17 && hour <= 20) lightConditions.push('日落');
-    // 夜景：20点后或5点前
     if (hour >= 20 || hour < 5) lightConditions.push('夜景');
 
-    // 当前时间 HH:mm
     const pad = (n) => String(n).padStart(2, '0');
     const currentTimeStr = `${pad(now.getHours())}:${pad(now.getMinutes())}`;
 
-    // 计算晚霞/朝霞概率（基于云量）
     const hourlyTimes = json?.hourly?.time || [];
-    const hourlyCloud = json?.hourly?.cloud_cover || [];
-    const sunsetGlowProb = calcGlowProb(sunsetIso, hourlyTimes, hourlyCloud);
-    const sunriseGlowProb = calcGlowProb(tomorrowSunriseIso, hourlyTimes, hourlyCloud);
+    const cloudLow = json?.hourly?.cloud_cover_low || [];
+    const cloudMid = json?.hourly?.cloud_cover_mid || [];
+    const cloudHigh = json?.hourly?.cloud_cover_high || [];
+    const aodArr = aodJson?.hourly?.aerosol_optical_depth || [];
+
+    // 今日日落火烧云 / 明日日出火烧云
+    const sunsetGlow = calcFireCloud(sunsetIso, hourlyTimes, cloudLow, cloudMid, cloudHigh, aodArr);
+    const sunriseGlow = calcFireCloud(tomorrowSunriseIso, hourlyTimes, cloudLow, cloudMid, cloudHigh, aodArr);
 
     return {
       keyword,
       temp: temp != null ? Math.round(temp) : null,
       sunrise: sunriseIso,
       sunset: sunsetIso,
-      sunriseStr: formatTime(sunriseIso),    // "05:38"
-      sunsetStr: formatTime(sunsetIso),       // "18:12"
+      sunriseStr: formatTime(sunriseIso),
+      sunsetStr: formatTime(sunsetIso),
       hour,
       lightConditions,
       coords: { lat, lng },
       currentTimeStr,
-      sunsetGlowProb,
-      sunriseGlowProb,
+      sunsetGlow,
+      sunriseGlow,
     };
   } catch (err) {
     if (err?.name !== 'AbortError') console.error('获取天气失败', err);
-    // 降级：返回默认值，不阻断推荐
     const now = new Date();
     const hour = now.getHours();
     const lightConditions = [];
@@ -125,54 +209,12 @@ export async function fetchShanghaiWeather() {
       lightConditions,
       coords: { lat, lng },
       currentTimeStr,
-      sunsetGlowProb: null,
-      sunriseGlowProb: null,
+      sunsetGlow: null,
+      sunriseGlow: null,
     };
   }
 }
 
-/**
- * 根据云量计算朝霞/晚霞概率
- * 规则：云量 30-70% → 高概率；20-30% 或 70-80% → 中；<20% 或 >80% → 低
- * @param {string} targetIso - 日出/日落的 ISO 时间
- * @param {string[]} hourlyTimes - 逐时时间数组
- * @param {number[]} hourlyCloud - 逐时云量数组
- * @returns {number|null} 0-100 的概率值
- */
-function calcGlowProb(targetIso, hourlyTimes, hourlyCloud) {
-  if (!targetIso || !hourlyTimes.length || !hourlyCloud.length) return null;
-
-  // 找到最接近目标时间的小时索引
-  const target = new Date(targetIso);
-  const targetTs = target.getTime();
-  let bestIdx = -1;
-  let bestDiff = Infinity;
-  for (let i = 0; i < hourlyTimes.length; i++) {
-    const diff = Math.abs(new Date(hourlyTimes[i]).getTime() - targetTs);
-    if (diff < bestDiff) {
-      bestDiff = diff;
-      bestIdx = i;
-    }
-  }
-  if (bestIdx < 0) return null;
-
-  const cloud = hourlyCloud[bestIdx];
-  if (cloud == null) return null;
-
-  // 云量与朝霞/晚霞概率的关系
-  if (cloud >= 30 && cloud <= 70) {
-    // 理想云量：高空有云能反射色彩
-    return Math.round(85 - Math.abs(cloud - 50) * 0.5);
-  } else if ((cloud >= 20 && cloud < 30) || (cloud > 70 && cloud <= 80)) {
-    // 次理想：偏少或偏多
-    return Math.round(50 - Math.abs(cloud - 50) * 0.3);
-  } else {
-    // 云太少（无云可反射）或太多（遮蔽太阳）
-    return Math.max(10, Math.round(30 - Math.abs(cloud - 50) * 0.2));
-  }
-}
-
-// 获取当前月份（1-12）
 export function getCurrentMonth() {
   return new Date().getMonth() + 1;
 }
