@@ -3602,6 +3602,7 @@ textarea:focus-visible {
     flex: none;
     height: auto;
     overflow: visible;
+    order: 1;
   }
 
   .building-map {

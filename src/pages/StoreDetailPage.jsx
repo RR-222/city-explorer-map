@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
@@ -80,6 +80,9 @@ export default function StoreDetailPage() {
   };
 
   useEffect(() => { setActivePhoto(0); }, [storeName]);
+
+  // 移动端进入详情页时强制滚到顶部，确保先看到图片而非地图
+  useEffect(() => { window.scrollTo(0, 0); }, [storeName]);
 
   if (!store) {
     return (
