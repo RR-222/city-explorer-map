@@ -5,6 +5,14 @@ export default defineConfig({
   plugins: [react()],
   // 相对路径 base：兼容 GitHub Pages 子路径（https://<user>.github.io/<repo>/）与自定义域名
   base: './',
+  build: {
+    rollupOptions: {
+      output: {
+        // 纯 hash 命名，避免中文文件名导致 URL 编码 404
+        assetFileNames: 'assets/[hash][extname]',
+      },
+    },
+  },
   server: {
     port: 5173,
     watch: {

@@ -1,4 +1,4 @@
-﻿import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import TopBar from '../components/TopBar';
 import { SHANGHAI_DISTRICTS } from '../utils/geocode';
@@ -6,6 +6,64 @@ import { getStorePhotoUrl } from '../utils/flowerImages';
 import storesData from '../../data/stores-seed.json';
 import flowerData from '../../data/flower-spots.json';
 import flowerCalendarData from '../../data/seasonal-flowers.json';
+
+// 店铺卡片：支持多图切换
+function StoreCard({ s, nearbyCount, isActive, onClick }) {
+  const photos = (s.photos || []).map(p => getStorePhotoUrl(p)).filter(Boolean);
+  const [photoIdx, setPhotoIdx] = useState(0);
+  const photo = photos[photoIdx] || null;
+
+  return (
+    <>
+      {photo ? (
+        <div className="store-photo-wrap">
+          <img src={photo} alt={s.name} className="heritage-img" loading="lazy" />
+          {photos.length > 1 && (
+            <>
+              <div className="store-photo-dots">
+                {photos.map((_, i) => (
+                  <button
+                    key={i}
+                    className={`store-dot${i === photoIdx ? ' active' : ''}`}
+                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); setPhotoIdx(i); }}
+                    aria-label={`第${i + 1}张`}
+                  />
+                ))}
+              </div>
+              <span className="store-photo-count">{photoIdx + 1}/{photos.length}</span>
+            </>
+          )}
+        </div>
+      ) : (
+        <div className="heritage-img-placeholder">🛍</div>
+      )}
+      <div className="heritage-body">
+        {nearbyCount > 0 && (
+          <span className="heritage-seasonal-badge">附近{nearbyCount}处花树</span>
+        )}
+        {s.hours && <span className="heritage-closed-badge">{s.hours}</span>}
+        {s.price != null && <span className="heritage-district">人均 ¥{s.price}</span>}
+        <div className="heritage-name">{s.name}</div>
+        {s.district && <span className="heritage-district">{s.district}</span>}
+        {s.desc && <p className="heritage-desc">{s.desc}</p>}
+        {s.featured && s.featured.length > 0 && (
+          <div className="card-reasons">
+            {s.featured.slice(0, 4).map((f) => (
+              <span key={f} className="reason-chip">{f}</span>
+            ))}
+          </div>
+        )}
+        {s.tags && s.tags.length > 0 && (
+          <div className="card-reasons">
+            {s.tags.slice(0, 4).map((t) => (
+              <span key={t} className="reason-chip tag">{t}</span>
+            ))}
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
 
 const flowerCalendar = flowerCalendarData._花历 || flowerCalendarData['花历'] || [];
 
@@ -109,39 +167,8 @@ export default function StoresPage() {
 
         <div className="heritage-grid">
           {filtered.map(({ s, nearbyCount }) => {
-            const photo = s.photos?.[0] ? getStorePhotoUrl(s.photos[0]) : null;
             const content = (
-              <>
-                {photo ? (
-                  <img src={photo} alt={s.name} className="heritage-img" loading="lazy" />
-                ) : (
-                  <div className="heritage-img-placeholder">🛍</div>
-                )}
-                <div className="heritage-body">
-                  {nearbyCount > 0 && (
-                    <span className="heritage-seasonal-badge">附近{nearbyCount}处花树</span>
-                  )}
-                  {s.hours && <span className="heritage-closed-badge">{s.hours}</span>}
-                  {s.price != null && <span className="heritage-district">人均 ¥{s.price}</span>}
-                  <div className="heritage-name">{s.name}</div>
-                  {s.district && <span className="heritage-district">{s.district}</span>}
-                  {s.desc && <p className="heritage-desc">{s.desc}</p>}
-                  {s.featured && s.featured.length > 0 && (
-                    <div className="card-reasons">
-                      {s.featured.slice(0, 4).map((f) => (
-                        <span key={f} className="reason-chip">{f}</span>
-                      ))}
-                    </div>
-                  )}
-                  {s.tags && s.tags.length > 0 && (
-                    <div className="card-reasons">
-                      {s.tags.slice(0, 4).map((t) => (
-                        <span key={t} className="reason-chip tag">{t}</span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </>
+              <StoreCard s={s} nearbyCount={nearbyCount} />
             );
             // 有原文链接则整卡跳小红书原文（新窗口），否则静态卡片
             return (
